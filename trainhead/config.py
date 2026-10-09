@@ -43,6 +43,7 @@ DEFAULTS: dict[str, Any] = {
     },
     "picks": {"per_weekend": 2, "fallback": True, "avoid_repeat_weeks": 8},
     "region": {"bbox": [10.60, 47.25, 13.10, 47.97]},
+    "catalog": {"bus_stops": True},
 }
 
 

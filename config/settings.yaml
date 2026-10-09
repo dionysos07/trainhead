@@ -52,4 +52,10 @@ picks:
 
 region:
   # west, south, east, north (degrees). Prealps and Alps reachable from Munich.
+  # The map data covers Oberbayern and Schwaben, so Austrian trails are left out for now.
   bbox: [10.60, 47.25, 13.10, 47.97]
+
+catalog:
+  # Mountain bus stops (650-1,400 m, 3+ km from a railway station, near a summit
+  # over 1,000 m) as trailheads. The weekly check drops them when no bus runs.
+  bus_stops: true

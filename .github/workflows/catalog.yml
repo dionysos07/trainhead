@@ -6,6 +6,16 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 2 1 * *"   # 1st of the month, 02:17 UTC
+  push:
+    branches: [main]
+    paths:
+      - "trainhead/catalog.py"
+      - "trainhead/graph.py"
+      - "trainhead/osm_extract.py"
+      - "trainhead/difficulty.py"
+      - "trainhead/dem.py"
+      - "config/settings.yaml"
+      - ".github/workflows/catalog.yml"
 
 permissions:
   contents: write
@@ -20,6 +30,8 @@ jobs:
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -39,28 +51,60 @@ jobs:
           key: dem-v1-${{ hashFiles('config/settings.yaml') }}
           restore-keys: dem-v1-
 
-      - name: Download OpenStreetMap (Oberbayern, Geofabrik)
+      - name: Skip if only non-catalog settings changed
+        id: gate
+        if: github.event_name == 'push'
+        run: |
+          python - <<'PY'
+          import os, subprocess, yaml
+          before = os.environ.get("BEFORE", "")
+          keys = ("hiking", "region", "catalog", "running")
+          def relevant(text):
+              d = yaml.safe_load(text) or {}
+              return {k: d.get(k) for k in keys}
+          changed_files = subprocess.run(["git", "diff", "--name-only", before, "HEAD"], capture_output=True, text=True).stdout.split()
+          only_settings = changed_files == ["config/settings.yaml"]
+          skip = False
+          if only_settings and before and set(before) != {"0"}:
+              old = subprocess.run(["git", "show", f"{before}:config/settings.yaml"], capture_output=True, text=True).stdout
+              skip = relevant(old) == relevant(open("config/settings.yaml").read())
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"skip={'true' if skip else 'false'}\n")
+          print("skip" if skip else "build")
+          PY
+        env:
+          BEFORE: ${{ github.event.before }}
+
+      - name: Download OpenStreetMap (Oberbayern and Schwaben, Geofabrik)
+        if: steps.gate.outputs.skip != 'true'
         run: |
           mkdir -p .cache/osm
-          curl -fsSL --retry 3 -o .cache/osm/oberbayern.osm.pbf \
-            https://download.geofabrik.de/europe/germany/bayern/oberbayern-latest.osm.pbf
+          for region in oberbayern schwaben; do
+            curl -fsSL --retry 3 -o .cache/osm/$region.osm.pbf \
+              https://download.geofabrik.de/europe/germany/bayern/$region-latest.osm.pbf
+          done
+          osmium merge --overwrite -o .cache/osm/merged.osm.pbf .cache/osm/oberbayern.osm.pbf .cache/osm/schwaben.osm.pbf
           ls -lh .cache/osm
 
       - name: Cut the region and keep what the router needs
+        if: steps.gate.outputs.skip != 'true'
         run: |
           BBOX=$(python -c "import yaml; b = yaml.safe_load(open('config/settings.yaml'))['region']['bbox']; print(','.join(map(str, b)))")
           osmium extract -b "$BBOX" --strategy=smart --overwrite \
-            -o .cache/osm/region.osm.pbf .cache/osm/oberbayern.osm.pbf
+            -o .cache/osm/region.osm.pbf .cache/osm/merged.osm.pbf
           osmium tags-filter --overwrite -o .cache/osm/filtered.osm.pbf .cache/osm/region.osm.pbf \
             w/highway r/route=hiking,foot \
             n/railway=station,halt n/natural=peak n/tourism=alpine_hut,viewpoint \
-            n/amenity=restaurant,cafe,biergarten
+            n/amenity=restaurant,cafe,biergarten \
+            n/highway=bus_stop n/public_transport=platform,stop_position
           osmium fileinfo -e .cache/osm/filtered.osm.pbf | grep -E "Number of (nodes|ways|relations)"
 
       - name: Build catalog
+        if: steps.gate.outputs.skip != 'true'
         run: python -m trainhead.cli catalog --osm .cache/osm/filtered.osm.pbf --out out/catalog --dem-cache .cache/dem
 
       - name: Summary
+        if: steps.gate.outputs.skip != 'true'
         run: |
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json
@@ -75,4 +119,5 @@ jobs:
           PY
 
       - name: Publish to the data branch
+        if: steps.gate.outputs.skip != 'true'
         run: scripts/publish_data.sh out "catalog $(date -u +%Y-%m-%d)"

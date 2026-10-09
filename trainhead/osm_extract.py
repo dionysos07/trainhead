@@ -19,6 +19,11 @@ log = logging.getLogger(__name__)
 
 EXCLUDED_STATION_TYPES = {"subway", "light_rail", "monorail", "funicular", "miniature", "tram"}
 MOUNTAIN_FOOD = {"restaurant", "cafe", "biergarten"}
+# Cog railways and cable cars aren't trailheads the planner can rely on.
+MOUNTAIN_RAILWAY = re.compile(
+    r"talstation|bergstation|mittelstation|seilbahn|zugspitzbahn|wendelsteinbahn|bergbahn|zahnrad|chiemsee-bahn",
+    re.IGNORECASE,
+)
 
 
 @dataclass
@@ -32,6 +37,7 @@ class OsmData:
     way_marked: list = field(default_factory=list)
     way_unpaved: list = field(default_factory=list)
     stations: list = field(default_factory=list)    # dicts: id, name, lat, lon
+    bus_stops: list = field(default_factory=list)   # dicts: id, name, lat, lon
     targets: list = field(default_factory=list)     # dicts: id, name, lat, lon, kind, ele
 
     @property
@@ -70,6 +76,26 @@ def _station_from_node(node, bbox):
         return None
     name = tags.get("name")
     if not name:
+        return None
+    if MOUNTAIN_RAILWAY.search(name) or MOUNTAIN_RAILWAY.search(tags.get("operator", "")):
+        return None
+    if tags.get("railway:preserved") == "yes" or tags.get("usage") == "tourism":
+        return None
+    lat, lon = node.location.lat, node.location.lon
+    if not _in_bbox(lat, lon, bbox):
+        return None
+    return {"id": node.id, "name": name, "lat": lat, "lon": lon}
+
+
+def _bus_stop_from_node(node, bbox):
+    tags = node.tags
+    is_stop = tags.get("highway") == "bus_stop" or (
+        tags.get("public_transport") in ("platform", "stop_position") and tags.get("bus") == "yes"
+    )
+    if not is_stop:
+        return None
+    name = tags.get("name")
+    if not name or tags.get("disused") == "yes":
         return None
     lat, lon = node.location.lat, node.location.lon
     if not _in_bbox(lat, lon, bbox):
@@ -130,6 +156,10 @@ def read_osm(path: str, bbox) -> OsmData:
             if st:
                 data.stations.append(st)
                 continue
+            bs = _bus_stop_from_node(obj, bbox)
+            if bs:
+                data.bus_stops.append(bs)
+                continue
             tg = _target_from_node(obj, bbox)
             if tg:
                 data.targets.append(tg)
@@ -169,9 +199,10 @@ def read_osm(path: str, bbox) -> OsmData:
         data.way_unpaved.append(dif.is_unpaved(cls, tags.get("surface")))
 
     log.info(
-        "read %d walkable ways, %d stations, %d destinations",
+        "read %d walkable ways, %d stations, %d bus stops, %d destinations",
         data.n_ways,
         len(data.stations),
+        len(data.bus_stops),
         len(data.targets),
     )
     return data

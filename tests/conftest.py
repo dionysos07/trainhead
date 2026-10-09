@@ -53,6 +53,10 @@ def build_osm(path: Path) -> Path:
     node(47.6305, 11.8302, {"natural": "peak", "name": "Testkopf", "ele": "1500"}, nid=3)
     node(47.6095, 11.8505, {"tourism": "alpine_hut", "name": "Testhütte"}, nid=4)
     node(47.6000, 11.8300, {"railway": "station", "name": "Bergbahn Gipfel", "station": "funicular"}, nid=5)
+    node(47.6010, 11.8100, {"railway": "station", "name": "Testbergbahn Talstation"}, nid=6)
+    # Mountain bus stop far from the railway, on a path to the summit; and one next to the station.
+    node(47.6300, 11.7950, {"highway": "bus_stop", "name": "Almbus Wendeplatz"}, nid=7)
+    node(47.6005, 11.8005, {"highway": "bus_stop", "name": "Talbahnhof Bus"}, nid=8)
 
     a = node(47.6003, 11.8003)
     b = node(47.6003, 11.8597)
@@ -79,6 +83,9 @@ def build_osm(path: Path) -> Path:
     w5_link = [mid1, hi]
     way(w5, {"highway": "path"}, 105)
     way(w5_link, {"highway": "path"}, 106)
+
+    w7 = [7] + [node(la, lo) for la, lo in _line((47.6300, 11.7950), (47.6305, 11.8300), 20)[1:-1]] + [p]
+    way(w7, {"highway": "path", "sac_scale": "mountain_hiking"}, 107)
 
     lines = ["<?xml version='1.0' encoding='UTF-8'?>", '<osm version="0.6" generator="trainhead-test">']
     for nid, (lat, lon, tags) in sorted(nodes.items()):

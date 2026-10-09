@@ -68,11 +68,26 @@ def prefilter(routes: list[dict], settings: dict, history: list[dict], today: da
     return {"hike": hikes, "run": runs, "fallback": fallbacks}
 
 
+WX_STEP_DEG = 0.02   # ~2 km, the resolution of the ICON-D2 model
+WX_STEP_ELE = 50
+
+
+def _q(value: float, step: float) -> float:
+    return round(round(value / step) * step, 6)
+
+
+def _wx_point(lat: float, lon: float, ele: float) -> tuple[float, float, int]:
+    return _q(lat, WX_STEP_DEG), _q(lon, WX_STEP_DEG), int(_q(ele, WX_STEP_ELE))
+
+
 def _wx_key(lat: float, lon: float, ele: float) -> str:
-    return f"{lat:.2f},{lon:.2f},{int(round(ele, -1))}"
+    qlat, qlon, qele = _wx_point(lat, lon, ele)
+    return f"{qlat:.2f},{qlon:.2f},{qele}"
 
 
 def weather_points(routes: list[dict]) -> list[dict]:
+    """Two forecast points per route: the start (lowest point) and the
+    destination (highest point), snapped to a ~2 km / 50 m grid."""
     pts = {}
     for r in routes:
         for lat, lon, ele in (
@@ -80,7 +95,8 @@ def weather_points(routes: list[dict]) -> list[dict]:
             (r["target"]["lat"], r["target"]["lon"], r["max_ele_m"]),
         ):
             k = _wx_key(lat, lon, ele)
-            pts[k] = {"key": k, "lat": round(lat, 2), "lon": round(lon, 2), "ele": int(round(ele, -1))}
+            qlat, qlon, qele = _wx_point(lat, lon, ele)
+            pts[k] = {"key": k, "lat": qlat, "lon": qlon, "ele": qele}
     return list(pts.values())
 
 
@@ -108,32 +124,22 @@ def _brief(r: dict) -> dict:
             "run_min", "max_sac", "t3_km", "marked_share", "unpaved_share", "road_km", "score")
     out = {k: r.get(k) for k in keys}
     out["start"] = r["start"]["name"]
+    out["start_mode"] = r["start"].get("mode", "rail")
     out["end"] = r["end"]["name"]
+    out["end_mode"] = r["end"].get("mode", "rail")
     out["target"] = {k: r["target"].get(k) for k in ("name", "kind", "ele")}
     return out
 
 
-def shortlist(cands: list[tuple[float, dict, dict]], n: int, per_station: int = 2) -> list[tuple]:
-    out, count, targets = [], {}, set()
-    for item in sorted(cands, key=lambda x: -x[0]):
-        r = item[1]
-        st = r["start"]["name"]
-        tg = r["target"]["name"]
-        if count.get(st, 0) >= per_station or tg in targets:
-            continue
-        count[st] = count.get(st, 0) + 1
-        targets.add(tg)
-        out.append(item)
-        if len(out) >= n:
-            break
-    return out
+QUOTAS = {"hike": 10, "run": 4, "fallback": 3}
+MAX_ATTEMPTS_FACTOR = 3   # look this far past the quota when connections fail
+PER_STATION = 2
 
 
 def run_weekly(settings: dict, routes: list[dict], history: list[dict], today: date,
                fetch_weather: Callable[..., dict], client, now: datetime | None = None) -> dict:
     tz = ZoneInfo(settings["schedule"]["timezone"])
     sched = settings["schedule"]
-    tr = settings["transit"]
     rules = settings["weather"]
     days = weekend_dates(today, sched["days"])
     pools = prefilter(routes, settings, history, today)
@@ -141,6 +147,7 @@ def run_weekly(settings: dict, routes: list[dict], history: list[dict], today: d
 
     all_routes = {r["id"]: r for pool in pools.values() for r in pool}
     pts = weather_points(list(all_routes.values()))
+    log.info("%d weather points", len(pts))
     wx = fetch_weather(pts, days[0].isoformat(), days[-1].isoformat(), sched["timezone"])
 
     home = None
@@ -152,16 +159,13 @@ def run_weekly(settings: dict, routes: list[dict], history: list[dict], today: d
         home = {"name": settings["home"]["stop"], "lat": settings["home"]["lat"], "lon": settings["home"]["lon"]}
     home_place = T.place(home["lat"], home["lon"])
 
-    out_cache: dict = {}
-    ret_cache: dict = {}
-    notes: list[str] = []
+    ctx = {"out": {}, "ret": {}, "errors": 0, "calls": 0}
     result = {
         "generated_at": (now or datetime.now(tz)).isoformat(timespec="minutes"),
         "home": home,
         "days": {},
-        "notes": notes,
+        "notes": [],
     }
-    quotas = {"hike": 10, "run": 4, "fallback": 3}
 
     for day in days:
         earliest = _hhmm(day, sched["earliest_departure"], tz)
@@ -176,65 +180,83 @@ def run_weekly(settings: dict, routes: list[dict], history: list[dict], today: d
                 if a is None:
                     continue
                 weight = a["score"] if kind != "fallback" else (1.0 - a["precip_mm"] / 10)
-                prelim.append((r["score"] * (0.35 + 0.65 * max(weight, 0)), r, a))
-            chosen = []
-            for _, r, _a in shortlist(prelim, quotas[kind]):
+                prelim.append((r["score"] * (0.35 + 0.65 * max(weight, 0)), r))
+            prelim.sort(key=lambda x: -x[0])
+            chosen, attempts, per_station, targets = [], 0, {}, set()
+            quota = QUOTAS[kind]
+            for _, r in prelim:
+                if len(chosen) >= quota or attempts >= quota * MAX_ATTEMPTS_FACTOR:
+                    break
+                st, tg = r["start"]["name"], r["target"]["name"]
+                if per_station.get(st, 0) >= PER_STATION or tg in targets:
+                    continue
+                attempts += 1
                 entry = _with_transit(r, kind, day, earliest, latest_home, home_place, client, settings,
-                                      wx, rules, out_cache, ret_cache, tz)
+                                      wx, rules, ctx, tz)
                 if entry:
                     chosen.append(entry)
+                    per_station[st] = per_station.get(st, 0) + 1
+                    targets.add(tg)
             chosen.sort(key=lambda e: -e["rank_score"])
             day_out[kind + "s"] = chosen
         result["days"][day.isoformat()] = day_out
+
+    if ctx["calls"] and ctx["errors"] >= max(3, ctx["calls"] // 2):
+        result["notes"].append(
+            f"Connection checks failed for {ctx['errors']} of {ctx['calls']} requests; "
+            "candidates without a checked connection are marked transit_checked=false."
+        )
     return result
 
 
-def _with_transit(r, kind, day, earliest, latest_home, home_place, client, settings, wx, rules,
-                  out_cache, ret_cache, tz):
+def _plan(client, ctx, *args, **kwargs):
+    ctx["calls"] += 1
+    try:
+        return client.plan(*args, **kwargs)
+    except T.TransitError as exc:
+        ctx["errors"] += 1
+        log.warning("connection lookup failed: %s", exc)
+        return None
+
+
+def _with_transit(r, kind, day, earliest, latest_home, home_place, client, settings, wx, rules, ctx, tz):
+    """Adds connections to a candidate. Returns None when there is no usable
+    connection; keeps the candidate unchecked when the lookup itself failed."""
     tr = settings["transit"]
     sched = settings["schedule"]
-    key_o = (r["start"]["name"], day)
-    if key_o not in out_cache:
-        try:
-            resp = client.plan(home_place, T.place(r["start"]["lat"], r["start"]["lon"]), earliest,
-                               num=4, regional_only=tr["regional_only"], max_transfers=tr["max_transfers"])
-            out_cache[key_o] = T.best_outbound(resp, earliest, tz, tr["max_one_way_min"])
-        except T.TransitError as exc:
-            log.warning("outbound %s: %s", key_o, exc)
-            out_cache[key_o] = []
-    outbound = out_cache[key_o]
-    if not outbound:
+    kw = {"regional_only": tr["regional_only"], "max_transfers": tr["max_transfers"]}
+
+    key_o = (r["start"]["name"], r["start"]["lat"], day)
+    if key_o not in ctx["out"]:
+        resp = _plan(client, ctx, home_place, T.place(r["start"]["lat"], r["start"]["lon"]), earliest, num=4, **kw)
+        ctx["out"][key_o] = None if resp is None else T.best_outbound(resp, earliest, tz, tr["max_one_way_min"])
+    outbound = ctx["out"][key_o]
+
+    key_r = (r["end"]["name"], r["end"]["lat"], day)
+    if key_r not in ctx["ret"]:
+        resp = _plan(client, ctx, T.place(r["end"]["lat"], r["end"]["lon"]), home_place, latest_home,
+                     arrive_by=True, num=3, **kw)
+        ctx["ret"][key_r] = "ERR" if resp is None else T.latest_return(resp, tz, tr["max_one_way_min"])
+    last = ctx["ret"][key_r]
+
+    if outbound is None or last == "ERR":
+        return _unchecked(r, kind, day, settings, wx, rules, tz)
+    if not outbound or not last:
         return None
+
     first = outbound[0]
     walk_start = datetime.fromisoformat(first["arr"]) + timedelta(minutes=10)
     finish = walk_start + timedelta(minutes=duration_min(r, kind, settings))
-
-    key_r = (r["end"]["name"], day)
-    if key_r not in ret_cache:
-        try:
-            resp = client.plan(T.place(r["end"]["lat"], r["end"]["lon"]), home_place, latest_home,
-                               arrive_by=True, num=3, regional_only=tr["regional_only"],
-                               max_transfers=tr["max_transfers"])
-            ret_cache[key_r] = T.latest_return(resp, tz, tr["max_one_way_min"])
-        except T.TransitError as exc:
-            log.warning("return %s: %s", key_r, exc)
-            ret_cache[key_r] = None
-    last = ret_cache[key_r]
-    if not last:
-        return None
     last_dep = datetime.fromisoformat(last["dep"])
     buffer_min = (last_dep - finish).total_seconds() / 60
     if buffer_min < sched["last_train_buffer_min"]:
         return None
 
-    suggested = None
-    try:
-        resp = client.plan(T.place(r["end"]["lat"], r["end"]["lon"]), home_place,
-                           finish + timedelta(minutes=15), num=2, regional_only=tr["regional_only"],
-                           max_transfers=tr["max_transfers"])
-        suggested = T.first_after(resp, finish + timedelta(minutes=15), tz, tr["max_one_way_min"])
-    except T.TransitError as exc:
-        log.warning("suggested return for %s: %s", r["id"], exc)
+    after = finish + timedelta(minutes=15)
+    resp = _plan(client, ctx, T.place(r["end"]["lat"], r["end"]["lon"]), home_place, after, num=2, **kw)
+    suggested = T.first_after(resp, after, tz, tr["max_one_way_min"]) if resp else None
+    if suggested and suggested["dep"] > last["dep"]:
+        suggested = None  # the only later option is past the last sensible one
 
     a = route_weather(r, wx, walk_start, finish, rules) or {"score": 0, "flags": ["no weather data"]}
     issues = sorted(set(first["issues"] + last["issues"] + (suggested["issues"] if suggested else [])))
@@ -244,6 +266,7 @@ def _with_transit(r, kind, day, earliest, latest_home, home_place, client, setti
     return {
         "route": _brief(r),
         "kind": kind,
+        "transit_checked": True,
         "weather": a,
         "outbound": first,
         "outbound_alternatives": outbound[1:3],
@@ -256,6 +279,22 @@ def _with_transit(r, kind, day, earliest, latest_home, home_place, client, setti
         "transit_issues": issues,
         "travel_min_total": travel_min,
         "rank_score": round(rank, 4),
+    }
+
+
+def _unchecked(r, kind, day, settings, wx, rules, tz):
+    walk_start = _hhmm(day, "09:30", tz)
+    finish = walk_start + timedelta(minutes=duration_min(r, kind, settings))
+    a = route_weather(r, wx, walk_start, finish, rules) or {"score": 0, "flags": ["no weather data"]}
+    return {
+        "route": _brief(r),
+        "kind": kind,
+        "transit_checked": False,
+        "weather": a,
+        "walk_start": walk_start.strftime("%H:%M"),
+        "expected_finish": finish.strftime("%H:%M"),
+        "transit_issues": ["connections could not be checked; confirm in DB Navigator before leaving"],
+        "rank_score": round(r["score"] * (0.35 + 0.65 * a["score"]) - 0.3, 4),
     }
 
 

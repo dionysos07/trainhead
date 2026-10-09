@@ -47,9 +47,9 @@ def cmd_catalog(args) -> int:
     hk = settings["hiking"]
     g = G.build_graph(osm, dem, max_sac=int(hk["max_sac"]), untagged_max_ele_m=float(hk["untagged_path_max_ele_m"]),
                       anchors=C.anchors_for(osm))
-    params = C.CatalogParams()
-    stations = C.prepare_stations(osm, g, dem, params)
+    params = C.CatalogParams(bus_stops=bool(settings.get("catalog", {}).get("bus_stops", True)))
     targets = C.prepare_targets(osm, g, dem)
+    stations = C.prepare_stations(osm, g, dem, params, targets=targets)
     cands = C.generate(g, stations, targets, params)
     chosen = C.select(cands, stations, params)
     pace = float(settings["running"]["pace_min_per_effort_km"])

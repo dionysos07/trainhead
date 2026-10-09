@@ -111,3 +111,30 @@ def test_destination_in_middle_of_a_path_is_reachable(mini_osm, dem, settings):
     routes = [C.finalize(g, c, stations, targets, dem)
               for c in C.select(C.generate(g, stations, targets, params), stations, params)]
     assert any(r["target"]["name"] == "Testhütte" for r in routes)
+
+
+def test_mountain_railway_station_is_skipped(mini_osm, settings):
+    osm = read_osm(str(mini_osm), settings["region"]["bbox"])
+    assert "Testbergbahn Talstation" not in {s["name"] for s in osm.stations}
+    assert {b["name"] for b in osm.bus_stops} == {"Almbus Wendeplatz", "Talbahnhof Bus"}
+
+
+def test_bus_stop_trailheads(mini_osm, dem, settings):
+    osm, g, params, _, targets = _build(mini_osm, dem, settings)
+    stations = C.prepare_stations(osm, g, dem, params, targets=targets)
+    by_name = {s["name"]: s for s in stations}
+    assert by_name["Almbus Wendeplatz"]["mode"] == "bus"
+    assert "Talbahnhof Bus" not in by_name  # within 3 km of a railway station
+    assert by_name["Talbahnhof"]["mode"] == "rail"
+    routes = [C.finalize(g, c, stations, targets, dem)
+              for c in C.select(C.generate(g, stations, targets, params), stations, params)]
+    bus_routes = [r for r in routes if "bus" in (r["start"]["mode"], r["end"]["mode"])]
+    assert bus_routes
+    assert all(r["max_sac"] <= 3 for r in bus_routes)
+
+
+def test_no_bus_stops_when_disabled(mini_osm, dem, settings):
+    osm, g, params, _, targets = _build(mini_osm, dem, settings)
+    params.bus_stops = False
+    stations = C.prepare_stations(osm, g, dem, params, targets=targets)
+    assert all(s["mode"] == "rail" for s in stations)

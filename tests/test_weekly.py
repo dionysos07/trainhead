@@ -220,3 +220,56 @@ def test_recheck_flags_new_storm(settings):
 
     calm = P.run_recheck(settings, {"a": route}, plan, fake_weather, FakeClient())
     assert not calm["changed"]
+
+
+class FailingClient(FakeClient):
+    def plan(self, *args, **kwargs):
+        raise T.TransitError("503 for /api/v6/plan")
+
+
+def test_transit_outage_keeps_unchecked_candidates(settings):
+    routes = [_route("a", 300), _route("b", 300, start="Lenggries")]
+    res = P.run_weekly(settings, routes, [], date(2026, 10, 15), fake_weather, FailingClient())
+    hikes = res["days"]["2026-10-17"]["hikes"]
+    assert hikes and all(h["transit_checked"] is False for h in hikes)
+    assert res["notes"] and "failed" in res["notes"][0]
+
+
+def test_weather_points_are_gridded():
+    r1 = _route("a", 300)
+    r2 = _route("b", 300)
+    r2["start"] = dict(r2["start"], lat=r2["start"]["lat"] + 0.004)  # 450 m away: same grid cell
+    pts = P.weather_points([r1, r2])
+    assert len(pts) == 2
+    for p in pts:
+        assert p["ele"] % 50 == 0
+
+
+class _Resp:
+    def __init__(self, status, payload=None):
+        self.status_code = status
+        self._payload = payload
+        self.text = "" if payload is not None else "not found"
+
+    def json(self):
+        return self._payload
+
+
+class _Session:
+    def __init__(self, responses):
+        self.responses = responses
+        self.paths = []
+
+    def get(self, url, params=None, timeout=None, headers=None):
+        path = url.split("transitous.org")[-1]
+        self.paths.append(path)
+        return self.responses[path]
+
+
+def test_plan_falls_back_to_older_api_version():
+    session = _Session({"/api/v6/plan": _Resp(404), "/api/v5/plan": _Resp(200, {"itineraries": []})})
+    client = T.Client(pause_s=0, session=session)
+    when = datetime(2026, 10, 17, 7, 0, tzinfo=TZ)
+    assert client.plan("48.1,11.5", "47.6,11.9", when) == {"itineraries": []}
+    assert client.plan("48.1,11.5", "47.6,11.9", when) == {"itineraries": []}
+    assert session.paths == ["/api/v6/plan", "/api/v5/plan", "/api/v5/plan"]

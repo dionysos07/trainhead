@@ -35,22 +35,35 @@ class Client:
         self.session = session or requests.Session()
         self._last = 0.0
 
+    plan_paths = ["/api/v6/plan", "/api/v5/plan"]
+
     def _get(self, path: str, params: dict) -> object:
         for attempt in range(4):
             wait = self.pause_s - (time.time() - self._last)
             if wait > 0:
                 time.sleep(wait)
             self._last = time.time()
-            resp = self.session.get(
-                self.base + path, params=params, timeout=60,
-                headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
-            )
+            try:
+                resp = self.session.get(
+                    self.base + path, params=params, timeout=60,
+                    headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
+                )
+            except requests.RequestException as exc:
+                if attempt == 3:
+                    raise TransitError(f"network error for {path}: {exc}") from exc
+                time.sleep(10 * (attempt + 1))
+                continue
             if resp.status_code in (429, 500, 502, 503, 504):
                 time.sleep(10 * (attempt + 1))
                 continue
             if resp.status_code >= 400:
-                raise TransitError(f"{resp.status_code} for {path}: {resp.text[:200]}")
-            return resp.json()
+                err = TransitError(f"{resp.status_code} for {path}: {resp.text[:200]}")
+                err.status = resp.status_code
+                raise err
+            try:
+                return resp.json()
+            except ValueError as exc:
+                raise TransitError(f"invalid JSON from {path}") from exc
         raise TransitError(f"giving up on {path}")
 
     def geocode_stop(self, text: str, near: tuple[float, float] | None = None) -> dict | None:
@@ -78,7 +91,17 @@ class Client:
             params["transitModes"] = ",".join(REGIONAL_MODES)
         if max_transfers is not None:
             params["maxTransfers"] = max_transfers
-        return self._get("/api/v6/plan", params)
+        # Newer API version first; if the server doesn't know it, remember the older one.
+        for path in list(self.plan_paths):
+            try:
+                return self._get(path, params)
+            except TransitError as exc:
+                if getattr(exc, "status", None) == 404 and len(self.plan_paths) > 1:
+                    log.warning("%s not found, falling back", path)
+                    self.plan_paths = [p for p in self.plan_paths if p != path]
+                    continue
+                raise
+        raise TransitError("no plan endpoint available")
 
 
 def place(lat: float, lon: float) -> str:

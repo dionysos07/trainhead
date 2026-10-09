@@ -1,6 +1,6 @@
 name: weekly
 
-# Thursday morning: weather and train connections for the coming weekend.
+# Thursday afternoon: weather and train connections for the coming weekend.
 # The Thursday evening Claude run picks from what this writes.
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
         description: "Pretend today is YYYY-MM-DD (optional)"
         required: false
   schedule:
-    - cron: "41 4 * * 4"   # Thursdays 04:41 UTC
+    - cron: "41 13 * * 4"   # Thursdays 13:41 UTC, a few hours before the Claude run
 
 permissions:
   contents: write

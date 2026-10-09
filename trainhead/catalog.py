@@ -34,7 +34,7 @@ from .store import load_catalog  # noqa: F401  (re-exported)
 log = logging.getLogger(__name__)
 
 KIND_RANK = {"peak": 0, "hut": 1, "viewpoint": 2, "inn": 3}
-SNAP_M = {"peak": 60.0, "hut": 80.0, "viewpoint": 60.0, "inn": 80.0, "station": 400.0}
+SNAP_M = {"peak": 60.0, "hut": 80.0, "viewpoint": 60.0, "inn": 80.0, "station": 400.0, "bus": 300.0}
 MIN_ELE = {"peak": 700.0, "hut": 0.0, "viewpoint": 750.0, "inn": 900.0}
 
 
@@ -53,6 +53,15 @@ class CatalogParams:
     total: int = 1500
     loop_penalty: float = 4.0
     t3_penalty: float = 1.25
+    # Bus stops as trailheads: only mountain stops away from the railway that
+    # serve a real summit. Whether a bus runs that day is checked weekly.
+    bus_stops: bool = True
+    bus_min_ele_m: float = 650.0
+    bus_max_ele_m: float = 1400.0
+    bus_min_rail_km: float = 3.0
+    bus_target_km: float = 6.0
+    bus_min_target_ele_m: float = 1000.0
+    bus_spacing_km: float = 1.5
 
 
 def slug(text: str) -> str:
@@ -66,35 +75,104 @@ def _project(lat, lon, lat0=47.6):
 
 
 def anchors_for(osm: OsmData) -> list[tuple[float, float, float]]:
-    """Points that must become graph vertices: stations and destinations."""
+    """Points that must become graph vertices: stations, bus stops, destinations."""
     pts = [(s["lat"], s["lon"], SNAP_M["station"]) for s in osm.stations]
+    pts += [(b["lat"], b["lon"], SNAP_M["bus"]) for b in osm.bus_stops]
     pts += [(t["lat"], t["lon"], SNAP_M[t["kind"]]) for t in osm.targets]
     return pts
 
 
-def prepare_stations(osm: OsmData, g: G.Graph, dem: DemSampler, params: CatalogParams) -> list[dict]:
+def _spaced(items: list[dict], min_dist_m: float) -> list[dict]:
+    """Greedy thinning in list order: keep an item unless a kept one is closer
+    than min_dist_m. Grid-hashed, so it stays fast for thousands of points."""
+    cell = min_dist_m
+    grid: dict[tuple[int, int], list] = {}
+    kept = []
+    for it in items:
+        x, y = _project(it["lat"], it["lon"])
+        cx, cy = int(x // cell), int(y // cell)
+        close = False
+        for dx in (-1, 0, 1):
+            for dy in (-1, 0, 1):
+                for px, py in grid.get((cx + dx, cy + dy), ()):
+                    if (px - x) ** 2 + (py - y) ** 2 < min_dist_m ** 2:
+                        close = True
+                        break
+                if close:
+                    break
+            if close:
+                break
+        if close:
+            continue
+        grid.setdefault((cx, cy), []).append((x, y))
+        kept.append(it)
+    return kept
+
+
+def prepare_stations(osm: OsmData, g: G.Graph, dem: DemSampler, params: CatalogParams,
+                     targets: list[dict] | None = None) -> list[dict]:
+    """Railway stations, plus mountain bus stops when destinations are given."""
     out = []
     seen = []
-    if not osm.stations:
-        return out
-    eles = dem.sample([s["lat"] for s in osm.stations], [s["lon"] for s in osm.stations])
-    for st, ele in zip(osm.stations, eles):
-        if np.isfinite(ele) and ele > params.max_station_ele_m:
-            continue  # mountain railway top stations
-        snapped = G.snap(g, st["lat"], st["lon"], SNAP_M["station"])
+    if osm.stations:
+        eles = dem.sample([s["lat"] for s in osm.stations], [s["lon"] for s in osm.stations])
+        for st, ele in zip(osm.stations, eles):
+            if np.isfinite(ele) and ele > params.max_station_ele_m:
+                continue  # mountain railway top stations
+            snapped = G.snap(g, st["lat"], st["lon"], SNAP_M["station"])
+            if snapped is None:
+                continue
+            dup = any(
+                s["name"] == st["name"] and haversine_m(s["lat"], s["lon"], st["lat"], st["lon"]) < 1500
+                for s in seen
+            )
+            if dup:
+                continue
+            rec = dict(st, vertex=snapped[0], snap_m=round(snapped[1]), mode="rail",
+                       ele=None if not np.isfinite(ele) else round(float(ele)))
+            seen.append(rec)
+            out.append(rec)
+    n_rail = len(out)
+    if targets is not None and params.bus_stops:
+        out += prepare_bus_stops(osm, g, dem, params, out, targets)
+    log.info("%d usable stations, %d bus stops", n_rail, len(out) - n_rail)
+    return out
+
+
+def prepare_bus_stops(osm: OsmData, g: G.Graph, dem: DemSampler, params: CatalogParams,
+                      rail: list[dict], targets: list[dict]) -> list[dict]:
+    if not osm.bus_stops or not targets:
+        return []
+    # Platforms on both sides of the road share a name: one stop per name per 400 m.
+    stops = []
+    by_name: dict[str, list] = {}
+    for b in osm.bus_stops:
+        same = by_name.setdefault(b["name"], [])
+        if any(haversine_m(o["lat"], o["lon"], b["lat"], b["lon"]) < 400 for o in same):
+            continue
+        same.append(b)
+        stops.append(b)
+    eles = dem.sample([b["lat"] for b in stops], [b["lon"] for b in stops])
+    rail_tree = cKDTree(_project([s["lat"] for s in rail], [s["lon"] for s in rail])) if rail else None
+    high = [t for t in targets if (t.get("ele") or 0) >= params.bus_min_target_ele_m]
+    if not high:
+        return []
+    high_tree = cKDTree(_project([t["lat"] for t in high], [t["lon"] for t in high]))
+    cands = []
+    for b, ele in zip(stops, eles):
+        if not np.isfinite(ele) or not params.bus_min_ele_m <= ele <= params.bus_max_ele_m:
+            continue
+        p = _project(b["lat"], b["lon"])
+        if rail_tree is not None and rail_tree.query(p)[0] < params.bus_min_rail_km * 1000:
+            continue
+        if high_tree.query(p)[0] > params.bus_target_km * 1000:
+            continue
+        snapped = G.snap(g, b["lat"], b["lon"], SNAP_M["bus"])
         if snapped is None:
             continue
-        dup = any(
-            s["name"] == st["name"] and haversine_m(s["lat"], s["lon"], st["lat"], st["lon"]) < 1500
-            for s in seen
-        )
-        if dup:
-            continue
-        rec = dict(st, vertex=snapped[0], snap_m=round(snapped[1]), ele=None if not np.isfinite(ele) else round(float(ele)))
-        seen.append(rec)
-        out.append(rec)
-    log.info("%d usable stations", len(out))
-    return out
+        cands.append(dict(b, vertex=snapped[0], snap_m=round(snapped[1]), mode="bus", ele=round(float(ele))))
+    cands.sort(key=lambda b: -b["ele"])  # higher stops make better trailheads
+    return _spaced(cands, params.bus_spacing_km * 1000)
 
 
 def prepare_targets(osm: OsmData, g: G.Graph, dem: DemSampler) -> list[dict]:
@@ -115,16 +193,7 @@ def prepare_targets(osm: OsmData, g: G.Graph, dem: DemSampler) -> list[dict]:
         cands.append(dict(t, ele=round(ele), vertex=snapped[0], snap_m=round(snapped[1])))
     # One destination per 300 m: peaks over huts over viewpoints over inns, then height.
     cands.sort(key=lambda t: (KIND_RANK[t["kind"]], -t["ele"]))
-    kept = []
-    tree_pts = []
-    for t in cands:
-        p = _project(t["lat"], t["lon"])
-        if tree_pts:
-            d = np.min(np.linalg.norm(np.asarray(tree_pts) - p, axis=1))
-            if d < 300:
-                continue
-        kept.append(t)
-        tree_pts.append(p)
+    kept = _spaced(cands, 300.0)
     log.info("%d usable destinations", len(kept))
     return kept
 
@@ -226,12 +295,13 @@ def generate(g: G.Graph, stations: list[dict], targets: list[dict], params: Cata
                     continue
                 shared = np.intersect1d(e1, e2)
                 overlap = g.elen[shared].sum() / max(min(s1["length_m"], s2["length_m"]), 1)
-                rtype = "out-and-back" if overlap > 0.7 else "traverse"
+                if overlap > 0.7:
+                    continue  # same path up and down to two nearby stops: not a real traverse
                 de, df = _reverse(e2, f2)
                 cands.append({
-                    "start": si1, "end": si2, "target": ti, "type": rtype,
+                    "start": si1, "end": si2, "target": ti, "type": "traverse",
                     "edges": np.concatenate([e1, de]), "fwd": np.concatenate([f1, df]),
-                    "stats": stats, "score": score(stats, tgt["kind"], rtype),
+                    "stats": stats, "score": score(stats, tgt["kind"], "traverse"),
                 })
             # Loop back to the same station, avoiding the way up where possible.
             w = G.penalized_weights(g, e1, params.loop_penalty)
@@ -341,8 +411,10 @@ def finalize(g: G.Graph, c: dict, stations: list[dict], targets: list[dict], dem
         "id": rid,
         "name": name,
         "type": c["type"],
-        "start": {"name": s1["name"], "lat": s1["lat"], "lon": s1["lon"], "osm_node": s1["id"]},
-        "end": {"name": s2["name"], "lat": s2["lat"], "lon": s2["lon"], "osm_node": s2["id"]},
+        "start": {"name": s1["name"], "mode": s1.get("mode", "rail"), "lat": s1["lat"], "lon": s1["lon"],
+                  "osm_node": s1["id"]},
+        "end": {"name": s2["name"], "mode": s2.get("mode", "rail"), "lat": s2["lat"], "lon": s2["lon"],
+                "osm_node": s2["id"]},
         "target": {"name": tg["name"], "kind": tg["kind"], "ele": tg.get("ele"),
                    "lat": tg["lat"], "lon": tg["lon"], "osm_node": tg["id"], "km_from_start": summit_dist},
         "distance_km": round(length_km, 1),
@@ -372,7 +444,7 @@ def write_catalog(routes: list[dict], stations: list[dict], targets: list[dict],
     out.mkdir(parents=True, exist_ok=True)
     with gzip.open(out / "routes.json.gz", "wt", encoding="utf-8") as fh:
         json.dump(routes, fh, ensure_ascii=False, separators=(",", ":"))
-    slim_st = [{k: s[k] for k in ("id", "name", "lat", "lon", "ele")} for s in stations]
+    slim_st = [{k: s.get(k) for k in ("id", "name", "mode", "lat", "lon", "ele")} for s in stations]
     (out / "stations.json").write_text(json.dumps(slim_st, ensure_ascii=False, indent=1), encoding="utf-8")
     slim_tg = [{k: t[k] for k in ("id", "name", "kind", "ele", "lat", "lon")} for t in targets]
     (out / "destinations.json").write_text(json.dumps(slim_tg, ensure_ascii=False, indent=1), encoding="utf-8")
