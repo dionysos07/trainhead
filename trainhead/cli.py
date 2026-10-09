@@ -110,6 +110,47 @@ def cmd_recheck(args) -> int:
     return 0
 
 
+def cmd_page(args) -> int:
+    """Enrich plans/latest.json from the weekly data and write the page files."""
+    from datetime import timedelta
+
+    from . import page as PG
+
+    settings = load_settings(args.settings)
+    tz = ZoneInfo(settings["schedule"]["timezone"])
+    today = datetime.now(tz).date()
+    days_to_thu = (3 - today.weekday()) % 7
+    next_thu = today + timedelta(days=days_to_thu)
+    next_plan = f"{PG.day_label(next_thu.isoformat())}, evening"
+    out = Path(args.out)
+    if args.empty:
+        data = {"updated": None, "notice": None, "next_plan": next_plan, "home": settings["home"]["stop"],
+                "days": [], "fallback": None, "previous": [], "rules": PG.rules_summary(settings)}
+        (out / "gpx").mkdir(parents=True, exist_ok=True)
+        _write_json(out / "plan.json", data)
+        print(json.dumps({"files": ["plan.json"]}))
+        return 0
+
+    from .store import load_catalog
+
+    routes = {r["id"]: r for r in load_catalog(args.catalog)}
+    plan_path = Path(args.plan)
+    plan = _read_json(plan_path, {})
+    if args.weekly:
+        weekly = _read_json(Path(args.weekly), {})
+        plan = PG.enrich_plan(plan, weekly)
+        plan["updated"] = datetime.now(tz).isoformat(timespec="minutes")
+        _write_json(plan_path, plan)
+        if plan.get("weekend"):
+            _write_json(plan_path.parent / f"{plan['weekend'][0]}.json", plan)
+    previous = _read_json(Path(args.previous), None) if args.previous else None
+    data = PG.site_data(plan, routes, settings, previous, notice=args.notice, next_plan=next_plan)
+    files = PG.write_site(data, routes, out)
+    missing = [p["route_id"] for p in plan.get("picks", []) if p.get("route_id") not in routes]
+    print(json.dumps({"files": files, "missing_routes": missing}, ensure_ascii=False))
+    return 1 if missing else 0
+
+
 def _find(routes, rid):
     for r in routes:
         if r["id"] == rid:
@@ -168,6 +209,16 @@ def main(argv=None) -> int:
     x.add_argument("--route", required=True)
     x.add_argument("--out", required=True)
     x.set_defaults(fn=cmd_gpx)
+
+    pg = sub.add_parser("page")
+    pg.add_argument("--plan", default=str(REPO_ROOT / "plans" / "latest.json"))
+    pg.add_argument("--weekly", help="weekly/latest.json from the data branch; enriches the plan when given")
+    pg.add_argument("--catalog", default="data/catalog")
+    pg.add_argument("--previous", help="last weekend's plan file, for the rating list")
+    pg.add_argument("--notice", help="a banner line, e.g. the Friday change")
+    pg.add_argument("--empty", action="store_true", help="page files with no plan yet")
+    pg.add_argument("--out", default="out/site")
+    pg.set_defaults(fn=cmd_page)
 
     s = sub.add_parser("show")
     s.add_argument("--catalog", default="data/catalog")

@@ -9,10 +9,11 @@ sensible train back. Friday evening: a ping only if something changed.
 ## How it works
 
 1. **Catalog (monthly, GitHub Actions).** Reads OpenStreetMap for the Prealps
-   and Alps south of Munich and a 30 m elevation model. Builds day hikes from a
-   station over a summit, hut or viewpoint to the same or another station,
-   using only trails the difficulty rules allow. Writes about 1,500 routes to
-   the `data` branch.
+   and Alps south of Munich (Oberbayern and Schwaben) and a 30 m elevation
+   model. Builds day hikes from a station or mountain bus stop over a summit,
+   hut or viewpoint to the same or another stop, using only trails the
+   difficulty rules allow. Writes about 1,500 routes to the `data` branch.
+   Also rebuilds when catalog code or the hiking settings change.
 2. **Weekly data (Thursday morning, GitHub Actions).** Filters the catalog by
    your settings and history, scores it on the weekend forecast at the start
    and at the highest point, and checks real connections from home to the
@@ -20,9 +21,15 @@ sensible train back. Friday evening: a ping only if something changed.
    branch.
 3. **Plan (Thursday evening, Claude).** A mastermind run with four subagents
    (conditions, logistics, route scout, safety checker) picks from the weekly
-   data. See [MASTERMIND.md](MASTERMIND.md).
+   data and publishes route cards to the
+   [route page](https://claude.ai/artifact/NpeYLgvDoYNfEV29p1a2Us). See
+   [MASTERMIND.md](MASTERMIND.md).
 4. **Recheck (Friday, GitHub Actions + Claude).** Fresh weather and
-   connections for the picks; a message only when something changed.
+   connections for the picks; the page and message change only when
+   something did.
+5. **Ratings.** After the weekend, one tap per route on the page (too easy,
+   right, too hard, skipped). The next Thursday run copies them into
+   `state/history.json` and plans with them.
 
 ## The difficulty rules
 

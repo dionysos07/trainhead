@@ -1,0 +1,727 @@
+<title>Trainhead</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow column of trail-sign cards grouped by day; ratings and limits at the foot. */
+:root {
+  --bg: #edf0ea;
+  --surface: #fbfcf9;
+  --ink: #1b2420;
+  --muted: #56635b;
+  --line: #cdd5cb;
+  --chip: #e2e7df;
+  --sign: #f2c230;
+  --on-sign: #17130a;
+  --blaze: #c42b2b;
+  --blaze-white: #ffffff;
+  --contour: #8f6f41;
+  --contour-fill: rgba(143, 111, 65, 0.16);
+  --route: #c42b2b;
+  --ok: #2f7a4c;
+  --warn: #9a5c00;
+  --bad: #b42318;
+  --focus: #1d5fd1;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111814; --surface: #18211c; --ink: #e6ece7; --muted: #9ba89f; --line: #2c3731;
+    --chip: #222c26; --sign: #e9b91f; --on-sign: #17130a; --blaze: #e5564f; --blaze-white: #f1f1f1;
+    --contour: #c8a673; --contour-fill: rgba(200, 166, 115, 0.18); --route: #f06a5f;
+    --ok: #5dbb83; --warn: #e3a33b; --bad: #f2766b; --focus: #7aa7ff;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111814; --surface: #18211c; --ink: #e6ece7; --muted: #9ba89f; --line: #2c3731;
+  --chip: #222c26; --sign: #e9b91f; --on-sign: #17130a; --blaze: #e5564f; --blaze-white: #f1f1f1;
+  --contour: #c8a673; --contour-fill: rgba(200, 166, 115, 0.18); --route: #f06a5f;
+  --ok: #5dbb83; --warn: #e3a33b; --bad: #f2766b; --focus: #7aa7ff;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-inline: 16px;
+  padding-block: 20px 48px;
+  display: grid;
+  gap: 28px;
+}
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+
+/* Header */
+.masthead { display: grid; gap: 6px; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand svg { width: 34px; height: 34px; flex: none; }
+.brand h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2.1rem;
+  letter-spacing: 0.01em;
+  line-height: 1;
+}
+.sub { color: var(--muted); font-size: 0.95rem; }
+.updated { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+
+.notice {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--warn);
+  border-left-width: 6px;
+  border-radius: 6px;
+  background: var(--surface);
+}
+.notice strong { font-family: var(--font-display); font-size: 1.15rem; letter-spacing: 0.02em; }
+
+/* Day sections */
+.day { display: grid; gap: 14px; }
+.day-head { display: grid; gap: 2px; }
+.day-head h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
+.day-head p { color: var(--muted); }
+.eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Route card */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 14px;
+  padding-block: 0 16px;
+  overflow: hidden;
+}
+.card > .pad { padding-inline: 16px; }
+.sign {
+  background: var(--sign);
+  color: var(--on-sign);
+  clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
+  padding: 10px 38px 10px 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.sign .dest {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.55rem;
+  line-height: 1.1;
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+.sign .dest small { font-weight: 600; font-size: 1.05rem; margin-left: 6px; }
+.sign .time {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.55rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.kind {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1.5px solid var(--on-sign);
+  border-radius: 3px;
+  padding: 0 6px;
+  align-self: center;
+}
+.via { font-weight: 700; }
+.via .mode { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+  gap: 10px 14px;
+  margin: 0;
+}
+.stats div { display: grid; gap: 0; min-width: 0; }
+.stats dt { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.02em; }
+.stats dd { margin: 0; font-family: var(--font-mono); font-weight: 500; font-variant-numeric: tabular-nums; }
+.blaze { display: inline-flex; align-items: center; gap: 6px; }
+.blaze svg { width: 22px; height: 14px; flex: none; }
+
+.visuals { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 12px; }
+@media (max-width: 34rem) { .visuals { grid-template-columns: minmax(0, 1fr); } }
+.visuals figure { margin: 0; display: grid; gap: 4px; min-width: 0; }
+.visuals figcaption { font-size: 0.78rem; color: var(--muted); }
+.visuals svg { width: 100%; height: auto; display: block; background: var(--bg); border-radius: 6px; }
+
+.legs { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.legs li {
+  display: grid;
+  grid-template-columns: 3.4rem 4.2rem minmax(0, 1fr);
+  gap: 8px;
+  align-items: baseline;
+  font-size: 0.95rem;
+}
+.legs .t { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.legs .line {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  background: var(--chip);
+  border-radius: 3px;
+  padding: 0 5px;
+  justify-self: start;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.legs .walk .line { background: var(--sign); color: var(--on-sign); }
+.legs .where { min-width: 0; overflow-wrap: anywhere; }
+.legs .arr { color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; white-space: nowrap; }
+.leg-block { display: grid; gap: 6px; }
+.leg-block h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.last { font-size: 0.9rem; color: var(--muted); }
+.last b { color: var(--ink); font-family: var(--font-mono); font-weight: 500; }
+
+.weather { display: flex; flex-wrap: wrap; gap: 6px 14px; font-family: var(--font-mono); font-size: 0.85rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font-size: 0.85rem;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--chip);
+}
+.chip.warn { border-color: var(--warn); color: var(--warn); background: transparent; }
+.chip.bad { border-color: var(--bad); color: var(--bad); background: transparent; }
+.chip.ok { border-color: var(--ok); color: var(--ok); background: transparent; }
+.why { max-width: 65ch; }
+.notes { margin: 0; padding-left: 1.1rem; color: var(--muted); display: grid; gap: 2px; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.btn {
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: transparent;
+  border: 1.5px solid var(--ink);
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn:hover { background: var(--chip); }
+.btn[disabled] { opacity: 0.5; cursor: default; }
+.status { font-size: 0.85rem; color: var(--muted); }
+
+/* Fallback */
+.fallback .sign { background: var(--chip); color: var(--ink); }
+.fallback .kind { border-color: var(--ink); }
+
+/* Empty state */
+.empty {
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  padding: 18px 16px;
+  display: grid;
+  gap: 10px;
+}
+.empty h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.5rem; }
+.empty p { max-width: 65ch; }
+
+/* Ratings */
+.ratings { display: grid; gap: 12px; }
+.ratings h2, .rules h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.4rem; }
+.rate-row {
+  display: grid;
+  gap: 8px;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.rate-row .name { font-weight: 700; overflow-wrap: anywhere; }
+.rate-row .meta { font-size: 0.85rem; color: var(--muted); }
+.seg { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg button {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.seg button[disabled] { cursor: default; opacity: 0.6; }
+
+/* Rules */
+.rules { display: grid; gap: 10px; }
+.rules dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(7rem, max-content) minmax(0, 1fr);
+  gap: 6px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.rules dt { color: var(--muted); font-size: 0.9rem; }
+.rules dd { margin: 0; min-width: 0; }
+.rules .hint { font-size: 0.9rem; color: var(--muted); max-width: 65ch; }
+
+footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border-top: 1px solid var(--line); padding-top: 14px; }
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: var(--surface);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  max-width: calc(100% - 32px);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .toast { transition: opacity 0.2s ease; }
+}
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">
+      <svg viewBox="0 0 34 34" aria-hidden="true">
+        <rect x="15.5" y="6" width="3" height="26" rx="1" fill="var(--muted)"></rect>
+        <path d="M5 7h20l5 4.5-5 4.5H5z" fill="var(--sign)" stroke="var(--on-sign)" stroke-width="1"></path>
+        <path d="M29 18H9l-5 4.5 5 4.5h20z" fill="var(--sign)" stroke="var(--on-sign)" stroke-width="1"></path>
+      </svg>
+      <h1>Trainhead</h1>
+    </div>
+    <p class="sub" id="sub">Weekend hikes and trail runs from Munich, by regional train and bus.</p>
+    <p class="updated" id="updated"></p>
+  </header>
+
+  <div id="notice" class="notice" role="status" hidden>
+    <strong>Plan changed</strong>
+    <p id="notice-text"></p>
+  </div>
+
+  <main id="plan" class="day-list" style="display:grid;gap:28px">
+    <section class="empty" id="loading">
+      <h2>Loading the weekend plan</h2>
+    </section>
+  </main>
+
+  <section class="ratings" id="ratings" hidden>
+    <h2>How did last weekend go?</h2>
+    <p class="sub" id="ratings-hint">One tap per route. The next plan uses it: "too hard" routes stay out, "too easy" ones push the next picks longer or higher.</p>
+    <div id="rate-rows" style="display:grid;gap:10px"></div>
+  </section>
+
+  <section class="rules" id="rules" hidden>
+    <h2>Your limits</h2>
+    <dl id="rules-list"></dl>
+    <p class="hint">Change any of these in the Trainhead project chat, for example "nothing over 1,200 m of ascent".</p>
+  </section>
+
+  <footer>
+    <p>Trails, stations and peaks © OpenStreetMap contributors (ODbL). Elevation: Copernicus DEM GLO-30, © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018, provided under COPERNICUS by the European Union and ESA.</p>
+    <p>Weather: Open-Meteo (CC BY 4.0). Connections: Transitous, built on open timetable data. Walking times by DIN 33466, without breaks.</p>
+  </footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var RATINGS = [
+    ["too_easy", "Too easy"],
+    ["right", "Right"],
+    ["too_hard", "Too hard"],
+    ["skipped", "Skipped"]
+  ];
+  var MODE_LABEL = { rail: "station", bus: "bus stop" };
+  var TYPE_LABEL = { traverse: "traverse", loop: "loop", "out-and-back": "there and back" };
+  var WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+  function use(name) {
+    try {
+      if (window.claude && typeof window.claude.use === "function") return window.claude.use(name);
+    } catch (e) { /* not in a viewer */ }
+    return Promise.resolve(null);
+  }
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  function el(id) { return document.getElementById(id); }
+
+  var toastTimer = null;
+  function toast(msg) {
+    var t = el("toast");
+    t.textContent = msg;
+    t.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.hidden = true; }, 3200);
+  }
+
+  function fmtUpdated(iso) {
+    if (!iso) return "";
+    var m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/.exec(iso);
+    if (!m) return iso;
+    var d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+    return WEEKDAYS[d.getUTCDay()] + " " + (+m[3]) + " " + MONTHS[+m[2] - 1] + ", " + m[4] + ":" + m[5];
+  }
+
+  function decodePolyline(str) {
+    var index = 0, lat = 0, lon = 0, out = [];
+    while (index < str.length) {
+      var vals = [0, 0];
+      for (var k = 0; k < 2; k++) {
+        var shift = 0, result = 0, b;
+        do {
+          b = str.charCodeAt(index++) - 63;
+          result |= (b & 0x1f) << shift;
+          shift += 5;
+        } while (b >= 0x20);
+        vals[k] = (result & 1) ? ~(result >> 1) : (result >> 1);
+      }
+      lat += vals[0];
+      lon += vals[1];
+      out.push([lat / 1e5, lon / 1e5]);
+    }
+    return out;
+  }
+
+  function blazeSvg(level) {
+    // Swiss-style trail marks: yellow for T1, white-red-white for T2-T3, white-blue-white above.
+    var mid = level >= 4 ? "#2a62c9" : "var(--blaze)";
+    if (level <= 1) {
+      return '<svg viewBox="0 0 22 14" aria-hidden="true"><path d="M11 1l9 6-9 6-9-6z" fill="var(--sign)" stroke="var(--on-sign)" stroke-width="1"></path></svg>';
+    }
+    return '<svg viewBox="0 0 22 14" aria-hidden="true">' +
+      '<rect x="0.5" y="0.5" width="21" height="13" rx="1.5" fill="var(--blaze-white)" stroke="var(--line)"></rect>' +
+      '<rect x="0.5" y="5" width="21" height="4" fill="' + mid + '"></rect></svg>';
+  }
+
+  function sketchSvg(route) {
+    var pts = decodePolyline(route.polyline || "");
+    if (pts.length < 2) return "";
+    var lat0 = pts[0][0] * Math.PI / 180;
+    var kx = Math.cos(lat0) * 111.32, ky = 110.54; // km per degree
+    var xs = pts.map(function (p) { return p[1] * kx; });
+    var ys = pts.map(function (p) { return -p[0] * ky; });
+    var minX = Math.min.apply(null, xs), maxX = Math.max.apply(null, xs);
+    var minY = Math.min.apply(null, ys), maxY = Math.max.apply(null, ys);
+    var W = 240, H = 180, pad = 16;
+    var span = Math.max(maxX - minX, (maxY - minY) * W / H, 0.5);
+    var scale = (W - 2 * pad) / span;
+    var offX = pad + ((W - 2 * pad) - (maxX - minX) * scale) / 2;
+    var offY = pad + ((H - 2 * pad) - (maxY - minY) * scale) / 2;
+    function px(x) { return (offX + (x - minX) * scale).toFixed(1); }
+    function py(y) { return (offY + (y - minY) * scale).toFixed(1); }
+    var d = xs.map(function (x, i) { return (i ? "L" : "M") + px(x) + " " + py(ys[i]); }).join("");
+    var tg = route.target || {};
+    var tx = px(tg.lon * kx), ty = py(-tg.lat * ky);
+    var sx = px(xs[0]), sy = py(ys[0]);
+    var ex = px(xs[xs.length - 1]), ey = py(ys[ys.length - 1]);
+    // Scale bar: 1 km, or 500 m on short routes.
+    var barKm = span > 3 ? 1 : 0.5;
+    var barPx = barKm * scale;
+    return '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Route sketch from ' + esc(route.start) + ' to ' + esc(route.end) + '">' +
+      '<path d="' + d + '" fill="none" stroke="var(--route)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></path>' +
+      '<path d="M' + tx + ' ' + (ty - 8) + 'l6 10h-12z" fill="var(--contour)" stroke="var(--surface)" stroke-width="1.5"></path>' +
+      '<circle cx="' + sx + '" cy="' + sy + '" r="5" fill="var(--ink)" stroke="var(--surface)" stroke-width="1.5"></circle>' +
+      (route.start === route.end ? "" :
+        '<rect x="' + (ex - 4.5) + '" y="' + (ey - 4.5) + '" width="9" height="9" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"></rect>') +
+      '<line x1="' + (W - pad - barPx).toFixed(1) + '" y1="' + (H - 8) + '" x2="' + (W - pad) + '" y2="' + (H - 8) + '" stroke="var(--muted)" stroke-width="2"></line>' +
+      '<text x="' + (W - pad) + '" y="' + (H - 12) + '" text-anchor="end" font-size="10" fill="var(--muted)" font-family="IBM Plex Mono, monospace">' + (barKm === 1 ? "1 km" : "500 m") + '</text>' +
+      '</svg>';
+  }
+
+  function profileSvg(route) {
+    var prof = route.profile || [];
+    if (prof.length < 2) return "";
+    var W = 360, H = 180, padL = 40, padR = 10, padT = 14, padB = 22;
+    var kms = prof.map(function (p) { return p[0]; });
+    var eles = prof.map(function (p) { return p[1]; });
+    var maxKm = kms[kms.length - 1] || 1;
+    var lo = Math.min.apply(null, eles), hi = Math.max.apply(null, eles);
+    var step = (hi - lo) > 900 ? 400 : (hi - lo) > 400 ? 200 : 100;
+    var gLo = Math.floor(lo / step) * step, gHi = Math.ceil(hi / step) * step;
+    if (gHi === gLo) gHi = gLo + step;
+    function x(km) { return padL + (km / maxKm) * (W - padL - padR); }
+    function y(e) { return padT + (1 - (e - gLo) / (gHi - gLo)) * (H - padT - padB); }
+    var line = prof.map(function (p, i) { return (i ? "L" : "M") + x(p[0]).toFixed(1) + " " + y(p[1]).toFixed(1); }).join("");
+    var area = line + "L" + x(maxKm).toFixed(1) + " " + y(gLo).toFixed(1) + "L" + x(0).toFixed(1) + " " + y(gLo).toFixed(1) + "Z";
+    var grid = "";
+    for (var g = gLo; g <= gHi; g += step) {
+      grid += '<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + y(g).toFixed(1) + '" y2="' + y(g).toFixed(1) + '" stroke="var(--line)" stroke-width="1"></line>' +
+        '<text x="' + (padL - 5) + '" y="' + (y(g) + 3.5).toFixed(1) + '" text-anchor="end" font-size="10" fill="var(--muted)" font-family="IBM Plex Mono, monospace">' + g + '</text>';
+    }
+    var iMax = eles.indexOf(hi);
+    var mx = x(kms[iMax]), my = y(hi);
+    var labelAnchor = mx > W - 70 ? "end" : mx < padL + 40 ? "start" : "middle";
+    return '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Elevation profile, ' + lo + ' to ' + hi + ' metres over ' + maxKm + ' km">' +
+      grid +
+      '<path d="' + area + '" fill="var(--contour-fill)"></path>' +
+      '<path d="' + line + '" fill="none" stroke="var(--contour)" stroke-width="2" stroke-linejoin="round"></path>' +
+      '<circle cx="' + mx.toFixed(1) + '" cy="' + my.toFixed(1) + '" r="3.5" fill="var(--contour)"></circle>' +
+      '<text x="' + mx.toFixed(1) + '" y="' + (my - 6).toFixed(1) + '" text-anchor="' + labelAnchor + '" font-size="10.5" fill="var(--ink)" font-family="IBM Plex Mono, monospace">' + hi + ' m</text>' +
+      '<text x="' + padL + '" y="' + (H - 6) + '" font-size="10" fill="var(--muted)" font-family="IBM Plex Mono, monospace">0</text>' +
+      '<text x="' + (W - padR) + '" y="' + (H - 6) + '" text-anchor="end" font-size="10" fill="var(--muted)" font-family="IBM Plex Mono, monospace">' + maxKm + ' km</text>' +
+      '</svg>';
+  }
+
+  function legRows(legs) {
+    return legs.map(function (l) {
+      return '<li><span class="t">' + esc(l.dep || "") + '</span><span class="line">' + esc(l.line || l.mode || "") + '</span>' +
+        '<span class="where">' + esc(l.from || "") + ' → ' + esc(l.to || "") + (l.arr ? ' <span class="arr">' + esc(l.arr) + '</span>' : "") +
+        (l.cancelled ? ' <span class="chip bad">cancelled</span>' : "") + '</span></li>';
+    }).join("");
+  }
+
+  function weatherLine(w) {
+    if (!w) return "";
+    var parts = [];
+    if (w.temp_min != null && w.temp_max != null) parts.push(w.temp_min + " to " + w.temp_max + " °C");
+    if (w.precip_mm != null) parts.push(w.precip_mm + " mm rain");
+    if (w.gust_max_kmh != null) parts.push("gusts " + w.gust_max_kmh + " km/h on top");
+    if (w.cloud_mean != null) parts.push(w.cloud_mean + "% cloud");
+    if (w.freezing_level_min_m != null) parts.push("0 °C at " + w.freezing_level_min_m + " m");
+    var flags = (w.flags || []).map(function (f) { return '<span class="chip warn">' + esc(f) + '</span>'; }).join("");
+    return '<div class="weather">' + parts.map(function (p) { return "<span>" + esc(p) + "</span>"; }).join("") + '</div>' +
+      (flags ? '<div class="chips">' + flags + '</div>' : "");
+  }
+
+  function cardHtml(c, opts) {
+    var r = c.route;
+    var isRun = c.kind === "run";
+    var time = isRun ? r.run : r.din;
+    var ele = r.target && r.target.ele ? '<small>' + esc(r.target.ele) + ' m</small>' : "";
+    var walkLabel = isRun ? "Run" : "Walk";
+    var walk = (c.times && c.times.walk_start) ?
+      '<li class="walk"><span class="t">' + esc(c.times.walk_start) + '</span><span class="line">' + walkLabel + '</span>' +
+      '<span class="where">' + esc(r.start) + ' → ' + esc(r.end) + (c.times.finish ? ' <span class="arr">' + esc(c.times.finish) + '</span>' : "") + '</span></li>' : "";
+    var there = c.there && c.there.length ? legRows(c.there) : "";
+    var back = c.back && c.back.length ? legRows(c.back) : "";
+    var last = c.last && c.last.dep ? '<p class="last">Last sensible train back: <b>' + esc(c.last.dep) + '</b> from ' + esc(c.last.from) + (c.last.arr ? ', home ' + esc(c.last.arr) : "") + '</p>' : "";
+    var unchecked = c.transit_checked === false ? '<p class="chip warn">Connections not checked this week. Look them up before leaving.</p>' : "";
+    var dticket = c.dticket === false ? '<span class="chip warn">a leg not covered by the Deutschlandticket</span>' : "";
+    var notes = (c.notes || []).filter(Boolean);
+    var t3 = r.t3_km > 0 ? " (" + r.t3_km + " km T3)" : "";
+    var mapHref = r.target && r.target.lat ? "https://www.openstreetmap.org/?mlat=" + r.target.lat + "&mlon=" + r.target.lon + "#map=14/" + r.target.lat + "/" + r.target.lon : "";
+    return '<article class="card' + (opts.fallback ? " fallback" : "") + '" data-key="' + esc(c.key) + '">' +
+      '<div class="sign"><h3 class="dest">' + esc(r.target ? r.target.name : r.name) + ele + '</h3>' +
+      '<span class="kind">' + (opts.fallback ? "Bad weather" : isRun ? "Trail run" : "Hike") + '</span>' +
+      '<span class="time" aria-label="' + (isRun ? "running time " : "walking time ") + esc(time) + '">' + esc(time) + '</span></div>' +
+      '<div class="pad" style="display:grid;gap:14px">' +
+        '<p class="via">' + esc(r.start) + ' <span class="mode">' + esc(MODE_LABEL[r.start_mode] || "") + '</span> → ' +
+          esc(r.end) + ' <span class="mode">' + esc(MODE_LABEL[r.end_mode] || "") + ', ' + esc(TYPE_LABEL[r.type] || r.type) + '</span></p>' +
+        '<dl class="stats">' +
+          '<div><dt>Distance</dt><dd>' + esc(r.distance_km) + ' km</dd></div>' +
+          '<div><dt>Up</dt><dd>' + esc(r.ascent_m) + ' m</dd></div>' +
+          '<div><dt>Down</dt><dd>' + esc(r.descent_m) + ' m</dd></div>' +
+          '<div><dt>' + (isRun ? "Walking time" : "Running time") + '</dt><dd>' + esc(isRun ? r.din : r.run) + '</dd></div>' +
+          '<div><dt>Hardest trail</dt><dd class="blaze">' + blazeSvg(r.max_sac) + 'T' + esc(r.max_sac) + esc(t3) + '</dd></div>' +
+        '</dl>' +
+        '<div class="visuals"><figure>' + sketchSvg(r) + '<figcaption>● start' + (r.start === r.end ? "" : "  ■ finish") + '  ▲ ' + esc(r.target ? r.target.name : "") + '</figcaption></figure>' +
+          '<figure>' + profileSvg(r) + '<figcaption>Elevation, metres</figcaption></figure></div>' +
+        (c.why ? '<p class="why">' + esc(c.why) + '</p>' : "") +
+        '<div class="leg-block"><h3>Getting there</h3>' + unchecked + '<ol class="legs">' + there + walk + '</ol></div>' +
+        ((back || last) ? '<div class="leg-block"><h3>Back</h3><ol class="legs">' + back + '</ol>' + last + '</div>' : "") +
+        weatherLine(c.weather) +
+        (dticket ? '<div class="chips">' + dticket + '</div>' : "") +
+        (notes.length ? '<ul class="notes">' + notes.map(function (n) { return "<li>" + esc(n) + "</li>"; }).join("") + '</ul>' : "") +
+        '<div class="actions">' +
+          '<button class="btn gpx" type="button" data-gpx="' + esc(c.gpx) + '" data-name="' + esc(r.id) + '" hidden>Save GPX</button>' +
+          (mapHref ? '<a class="btn" href="' + esc(mapHref) + '" target="_blank" rel="noopener">Map</a>' : "") +
+        '</div>' +
+      '</div></article>';
+  }
+
+  function render(data) {
+    var plan = el("plan");
+    el("sub").textContent = "Weekend hikes and trail runs from " + (data.home || "Munich") + ", by regional train and bus.";
+    el("updated").textContent = data.updated ? "Plan updated " + fmtUpdated(data.updated) : "";
+    if (data.notice) {
+      el("notice-text").textContent = data.notice;
+      el("notice").hidden = false;
+    }
+
+    var days = (data.days || []).filter(function (d) { return d.cards && d.cards.length; });
+    if (!days.length) {
+      plan.innerHTML = '<section class="empty"><h2>' +
+        (data.next_plan ? "First plan arrives " + esc(data.next_plan) : "No plan for this weekend yet") + '</h2>' +
+        '<p>Every Thursday evening this page gets two picks for the weekend and a bad-weather fallback. Each card shows the route, walking and running time, the hardest trail section, the train there and the last sensible train back, plus the forecast at the top.</p>' +
+        '<p>On Friday evening the plan is checked again against fresh weather and timetables. You only hear about it if something changed.</p></section>';
+    } else {
+      plan.innerHTML = days.map(function (d) {
+        return '<section class="day"><div class="day-head"><p class="eyebrow">' + esc(d.date) + '</p><h2>' + esc(d.label) + '</h2>' +
+          (d.summary ? '<p>' + esc(d.summary) + '</p>' : "") + '</div>' +
+          d.cards.map(function (c) { return cardHtml(c, {}); }).join("") + '</section>';
+      }).join("") +
+        (data.fallback ? '<section class="day"><div class="day-head"><h2>If the weather turns</h2><p>Lower and shorter, close to the railway.</p></div>' + cardHtml(data.fallback, { fallback: true }) + '</section>' : "");
+    }
+
+    var rules = data.rules || [];
+    if (rules.length) {
+      el("rules-list").innerHTML = rules.map(function (r) { return "<dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd>"; }).join("");
+      el("rules").hidden = false;
+    }
+
+    initGpx();
+    initRatings(data.previous || []);
+  }
+
+  function initGpx() {
+    use("downloads").then(function (dl) {
+      if (!dl) return;
+      Array.prototype.forEach.call(document.querySelectorAll(".btn.gpx"), function (btn) {
+        btn.hidden = false;
+        btn.addEventListener("click", function () {
+          btn.disabled = true;
+          fetch(btn.getAttribute("data-gpx"), { cache: "no-store" })
+            .then(function (res) { if (!res.ok) throw new Error("missing"); return res.blob(); })
+            .then(function (blob) { return dl.save({ filename: btn.getAttribute("data-name") + "-gpx.zip", data: blob }); })
+            .then(function () { toast("GPX saved as a zip. Unzip it and open the .gpx in your map app."); })
+            .catch(function (e) {
+              if (e && e.code === "declined") return;
+              toast(e && e.message === "missing" ? "The GPX file for this route is missing from this version of the page." : "Couldn't save the GPX file. Try again in a moment.");
+            })
+            .then(function () { btn.disabled = false; });
+        });
+      });
+    });
+  }
+
+  function initRatings(items) {
+    if (!items.length) return;
+    var section = el("ratings");
+    var rows = el("rate-rows");
+    rows.innerHTML = items.map(function (it) {
+      return '<div class="rate-row" data-key="' + esc(it.key) + '"><div><p class="name">' + esc(it.name) + '</p>' +
+        '<p class="meta">' + esc(it.day) + ' · ' + (it.kind === "run" ? "trail run" : "hike") + ' <span class="status" aria-live="polite"></span></p></div>' +
+        '<div class="seg" role="group" aria-label="Rating for ' + esc(it.name) + '">' +
+        RATINGS.map(function (r) { return '<button type="button" data-rating="' + r[0] + '" aria-pressed="false" disabled>' + r[1] + '</button>'; }).join("") +
+        '</div></div>';
+    }).join("");
+    section.hidden = false;
+
+    var byKey = {};
+    items.forEach(function (it) { byKey[it.key] = it; });
+    var current = {};
+    var busy = {};
+
+    function paint() {
+      Array.prototype.forEach.call(rows.querySelectorAll(".rate-row"), function (row) {
+        var key = row.getAttribute("data-key");
+        Array.prototype.forEach.call(row.querySelectorAll("button"), function (b) {
+          b.setAttribute("aria-pressed", current[key] === b.getAttribute("data-rating") ? "true" : "false");
+        });
+      });
+    }
+
+    function setStatus(key, text) {
+      var row = rows.querySelector('.rate-row[data-key="' + key + '"]');
+      if (row) row.querySelector(".status").textContent = text ? "· " + text : "";
+    }
+
+    Promise.all([use("db"), use("user")]).then(function (caps) {
+      var db = caps[0], user = caps[1];
+      if (!db) {
+        el("ratings-hint").textContent = "Ratings save when this page is open on claude.ai and you are signed in.";
+        return;
+      }
+      var ownerCheck = user ? user.isOwner() : Promise.resolve(null);
+      ownerCheck.then(function (isOwner) {
+        var readOnly = isOwner === false;
+        if (readOnly) el("ratings-hint").textContent = "Only the page's owner can rate routes.";
+        db.collection("ratings").onSnapshot(function (snap) {
+          var next = {};
+          snap.docs.forEach(function (d) { var v = d.data(); if (v && v.rating) next[d.id] = v.rating; });
+          current = next;
+          paint();
+        }, function () {
+          el("ratings-hint").textContent = "Saved ratings couldn't be loaded. Reload the page to try again.";
+        });
+        Array.prototype.forEach.call(rows.querySelectorAll(".rate-row"), function (row) {
+          var key = row.getAttribute("data-key");
+          Array.prototype.forEach.call(row.querySelectorAll("button"), function (b) {
+            b.disabled = readOnly;
+            b.addEventListener("click", function () {
+              var rating = b.getAttribute("data-rating");
+              if (busy[key] || current[key] === rating) return;
+              var it = byKey[key];
+              busy[key] = true;
+              var before = current[key];
+              current[key] = rating;
+              paint();
+              setStatus(key, "saving");
+              db.doc("ratings/" + key).set({
+                date: it.date, route_id: it.route_id, kind: it.kind, name: it.name,
+                rating: rating, rated_at: new Date().toISOString()
+              }).then(function () {
+                setStatus(key, "saved");
+              }).catch(function (e) {
+                current[key] = before;
+                paint();
+                if (e && e.code === "invalid_argument") {
+                  setStatus(key, "");
+                  el("ratings-hint").textContent = "This view can't save ratings. Open the page as its owner.";
+                  Array.prototype.forEach.call(rows.querySelectorAll("button"), function (x) { x.disabled = true; });
+                } else {
+                  setStatus(key, "not saved, try again");
+                }
+              }).then(function () { busy[key] = false; });
+            });
+          });
+        });
+      });
+    });
+  }
+
+  fetch("plan.json", { cache: "no-store" })
+    .then(function (res) { if (!res.ok) throw new Error(res.status); return res.json(); })
+    .then(render)
+    .catch(function () {
+      el("plan").innerHTML = '<section class="empty"><h2>The plan file is missing</h2><p>This version of the page was published without its plan. The next Thursday run publishes it again.</p></section>';
+    });
+})();
+</script>
