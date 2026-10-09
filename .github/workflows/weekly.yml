@@ -1,0 +1,66 @@
+name: weekly
+
+# Thursday morning: weather and train connections for the coming weekend.
+# The Thursday evening Claude run picks from what this writes.
+on:
+  workflow_dispatch:
+    inputs:
+      today:
+        description: "Pretend today is YYYY-MM-DD (optional)"
+        required: false
+  schedule:
+    - cron: "41 4 * * 4"   # Thursdays 04:41 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-branch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data-branch
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-light.txt
+
+      - run: pip install -q -r requirements-light.txt
+
+      - name: Fetch weather and connections
+        env:
+          TODAY: ${{ github.event.inputs.today }}
+        run: |
+          ARGS=()
+          if [[ "$TODAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then ARGS=(--today "$TODAY"); fi
+          python -m trainhead.cli weekly --catalog data-branch/catalog --history state/history.json --out out/weekly "${ARGS[@]}"
+
+      - name: Summary
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          res = json.load(open("out/weekly/latest.json"))
+          for day, d in res["days"].items():
+              print(f"### {d['weekday'].title()} {day}\n")
+              for kind in ("hikes", "runs", "fallbacks"):
+                  for c in d.get(kind, [])[:5]:
+                      w = c["weather"]
+                      print(f"- {kind[:-1]}: {c['route']['name']}, weather {w['score']}, "
+                            f"{', '.join(w['flags']) or 'no flags'}, out {c['outbound']['dep'][11:16]}, "
+                            f"buffer {c['buffer_min']} min")
+              print()
+          PY
+
+      - name: Publish to the data branch
+        run: scripts/publish_data.sh out "weekly $(date -u +%Y-%m-%d)"

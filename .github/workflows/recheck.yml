@@ -1,0 +1,43 @@
+name: recheck
+
+# Friday: fresh weather and connections for the picks in plans/latest.json.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 13 * * 5"   # Fridays 13:41 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-branch
+  cancel-in-progress: false
+
+jobs:
+  recheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data-branch
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-light.txt
+
+      - run: pip install -q -r requirements-light.txt
+
+      - name: Recheck the picks
+        run: |
+          if [ ! -f plans/latest.json ]; then echo "no plan yet"; exit 0; fi
+          python -m trainhead.cli recheck --catalog data-branch/catalog --plan plans/latest.json --out out/recheck
+
+      - name: Publish to the data branch
+        run: |
+          if [ -d out/recheck ]; then scripts/publish_data.sh out "recheck $(date -u +%Y-%m-%d)"; fi

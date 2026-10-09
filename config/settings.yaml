@@ -1,0 +1,55 @@
+# trainhead settings
+#
+# Every run reads this file. Change it here, or tell the mastermind in the
+# Project chat ("nothing over 1,200 m of ascent") and it edits this file.
+
+home:
+  # Public stop used as the origin and destination of every train connection.
+  stop: "München Hbf"
+  # Fallback if the stop name can't be resolved by the routing service.
+  lat: 48.1402
+  lon: 11.5600
+
+schedule:
+  timezone: Europe/Berlin
+  days: [saturday, sunday]
+  earliest_departure: "06:30"   # don't plan trains before this
+  latest_home: "22:30"          # last sensible arrival back home
+  last_train_buffer_min: 45     # must reach the end station this long before the last sensible train
+
+transit:
+  regional_only: true           # regional trains, S-Bahn, U-Bahn, trams, buses (Deutschlandticket / Bayern-Ticket)
+  max_one_way_min: 150
+  max_transfers: 3
+
+hiking:
+  # SAC scale: T1 path, T2 mountain path, T3 demanding mountain path, T4+ alpine.
+  # Roughly: DAV blue ≈ T2, red ≈ T3, black ≈ T4 and above.
+  max_sac: 3                    # blue and red trails, no black
+  max_t3_km: 2.0                # cap on T3 sections until ratings show you want more
+  untagged_path_max_ele_m: 1000 # paths without a difficulty tag are only used below this height
+  din_hours: [3.0, 7.5]         # walking time window (DIN 33466, without breaks)
+  break_factor: 1.15            # breaks on top of DIN time
+  max_ascent_m: 1400
+
+running:
+  enabled: true
+  pace_min_per_effort_km: 7.0   # effort km = km + ascent/100; tune after a few runs
+  max_sac: 2
+  distance_km: [10, 24]
+  max_ascent_m: 1200
+
+weather:
+  max_precip_mm: 1.0            # rain over the walking window
+  storm_cape_jkg: 800           # convective energy that marks thunderstorm risk
+  max_gusts_kmh: 60             # at the highest point
+  snow_depth_max_m: 0.05        # more than this at the highest point means snow on the route
+
+picks:
+  per_weekend: 2
+  fallback: true                # one low, short option for bad weather
+  avoid_repeat_weeks: 8         # routes you did stay out this long; ones rated "too hard" stay out
+
+region:
+  # west, south, east, north (degrees). Prealps and Alps reachable from Munich.
+  bbox: [10.60, 47.25, 13.10, 47.97]

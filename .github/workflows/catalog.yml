@@ -1,0 +1,78 @@
+name: catalog
+
+# Builds the route catalog from OpenStreetMap and a 30 m elevation model.
+# Runs monthly; trigger it by hand after changing hiking.max_sac or the region.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 2 1 * *"   # 1st of the month, 02:17 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-branch
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q osmium-tool
+          pip install -q -r requirements.txt
+
+      - name: Cache elevation tiles
+        uses: actions/cache@v4
+        with:
+          path: .cache/dem
+          key: dem-v1-${{ hashFiles('config/settings.yaml') }}
+          restore-keys: dem-v1-
+
+      - name: Download OpenStreetMap (Oberbayern, Geofabrik)
+        run: |
+          mkdir -p .cache/osm
+          curl -fsSL --retry 3 -o .cache/osm/oberbayern.osm.pbf \
+            https://download.geofabrik.de/europe/germany/bayern/oberbayern-latest.osm.pbf
+          ls -lh .cache/osm
+
+      - name: Cut the region and keep what the router needs
+        run: |
+          BBOX=$(python -c "import yaml; b = yaml.safe_load(open('config/settings.yaml'))['region']['bbox']; print(','.join(map(str, b)))")
+          osmium extract -b "$BBOX" --strategy=smart --overwrite \
+            -o .cache/osm/region.osm.pbf .cache/osm/oberbayern.osm.pbf
+          osmium tags-filter --overwrite -o .cache/osm/filtered.osm.pbf .cache/osm/region.osm.pbf \
+            w/highway r/route=hiking,foot \
+            n/railway=station,halt n/natural=peak n/tourism=alpine_hut,viewpoint \
+            n/amenity=restaurant,cafe,biergarten
+          osmium fileinfo -e .cache/osm/filtered.osm.pbf | grep -E "Number of (nodes|ways|relations)"
+
+      - name: Build catalog
+        run: python -m trainhead.cli catalog --osm .cache/osm/filtered.osm.pbf --out out/catalog --dem-cache .cache/dem
+
+      - name: Summary
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from trainhead.store import load_catalog
+          meta = json.load(open("out/catalog/meta.json"))
+          routes = load_catalog("out/catalog")
+          print(f"### Catalog\n\n{meta['routes']} routes from {meta['candidates']} candidates, "
+                f"{meta['stations']} stations, {meta['destinations']} destinations (DEM: {meta['dem']}).\n")
+          print("| Route | km | up | DIN | SAC |\n|---|---|---|---|---|")
+          for r in routes[:25]:
+              print(f"| {r['name']} | {r['distance_km']} | {r['ascent_m']} | {r['din_min'] // 60}:{r['din_min'] % 60:02d} | T{r['max_sac']} |")
+          PY
+
+      - name: Publish to the data branch
+        run: scripts/publish_data.sh out "catalog $(date -u +%Y-%m-%d)"
