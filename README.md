@@ -73,6 +73,8 @@ python -m trainhead.cli gpx --catalog out/catalog --route <id> --out route.gpx
 - Weather: [Open-Meteo](https://open-meteo.com), CC BY 4.0. The free API is
   for non-commercial use; a public or sponsored version would need their paid
   plan.
-- Connections: [Transitous](https://transitous.org), a community routing
-  service on open timetable data. Requests are few, paced and identified;
-  check their usage policy before raising the volume.
+- Connections: [Transitous](https://transitous.org) ([sources](https://transitous.org/sources/)),
+  a community routing service on open timetable data. Its usage policy asks
+  for a contact in every request (`transit.contact` in the settings), asks
+  projects to get in touch before using route planning, and rules out
+  commercial use. trainhead sends about 150 paced requests a week.

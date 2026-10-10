@@ -21,6 +21,9 @@ transit:
   regional_only: true           # regional trains, S-Bahn, U-Bahn, trams, buses (Deutschlandticket / Bayern-Ticket)
   max_one_way_min: 150
   max_transfers: 3
+  # Transitous (the timetable service) asks every app for a contact in its
+  # requests: a GitHub profile URL or an email address.
+  contact: ""
 
 hiking:
   # SAC scale: T1 path, T2 mountain path, T3 demanding mountain path, T4+ alpine.

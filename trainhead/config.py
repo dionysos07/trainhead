@@ -19,7 +19,7 @@ DEFAULTS: dict[str, Any] = {
         "latest_home": "22:30",
         "last_train_buffer_min": 45,
     },
-    "transit": {"regional_only": True, "max_one_way_min": 150, "max_transfers": 3},
+    "transit": {"regional_only": True, "max_one_way_min": 150, "max_transfers": 3, "contact": ""},
     "hiking": {
         "max_sac": 3,
         "max_t3_km": 2.0,

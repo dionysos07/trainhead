@@ -14,7 +14,7 @@ import requests
 log = logging.getLogger(__name__)
 
 BASE = "https://api.transitous.org"
-USER_AGENT = "trainhead/0.1 (personal weekend hiking planner, a few dozen requests per week)"
+USER_AGENT = "trainhead/0.2 (personal weekend hiking planner, about 150 requests a week)"
 
 REGIONAL_MODES = ["REGIONAL_RAIL", "REGIONAL_FAST_RAIL", "RAIL", "SUBURBAN", "SUBWAY", "METRO", "TRAM", "BUS"]
 LONG_DISTANCE_MODES = {"HIGHSPEED_RAIL", "LONG_DISTANCE", "NIGHT_RAIL", "COACH", "AIRPLANE"}
@@ -29,7 +29,10 @@ class TransitError(RuntimeError):
 
 
 class Client:
-    def __init__(self, base: str = BASE, pause_s: float = 1.2, session: requests.Session | None = None):
+    def __init__(self, base: str = BASE, pause_s: float = 1.2, session: requests.Session | None = None,
+                 contact: str | None = None):
+        # Transitous asks for app name, version and a contact in every request.
+        self.user_agent = USER_AGENT if not contact else USER_AGENT[:-1] + f"; contact: {contact})"
         self.base = base.rstrip("/")
         self.pause_s = pause_s
         self.session = session or requests.Session()
@@ -46,7 +49,7 @@ class Client:
             try:
                 resp = self.session.get(
                     self.base + path, params=params, timeout=60,
-                    headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
+                    headers={"User-Agent": self.user_agent, "Accept": "application/json"},
                 )
             except requests.RequestException as exc:
                 if attempt == 3:

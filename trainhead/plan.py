@@ -125,9 +125,15 @@ def _brief(r: dict) -> dict:
     return out
 
 
-QUOTAS = {"hike": 10, "run": 4, "fallback": 3}
-MAX_ATTEMPTS_FACTOR = 3   # look this far past the quota when connections fail
+QUOTAS = {"hike": 8, "run": 3, "fallback": 2}
+MAX_ATTEMPTS_FACTOR = 4   # look this far past the quota when connections fail
 PER_STATION = 2
+PER_AREA = 2              # candidates starting in the same ~10 km cell
+AREA_DEG = 0.1
+
+
+def _area(r: dict) -> tuple[int, int]:
+    return round(r["start"]["lat"] / AREA_DEG), round(r["start"]["lon"] / AREA_DEG)
 
 
 def run_weekly(settings: dict, routes: list[dict], history: list[dict], today: date,
@@ -176,25 +182,33 @@ def run_weekly(settings: dict, routes: list[dict], history: list[dict], today: d
                 weight = a["score"] if kind != "fallback" else (1.0 - a["precip_mm"] / 10)
                 prelim.append((r["score"] * (0.35 + 0.65 * max(weight, 0)), r))
             prelim.sort(key=lambda x: -x[0])
-            chosen, attempts, per_station, targets = [], 0, {}, set()
+            chosen, attempts, per_station, per_area, targets = [], 0, {}, {}, set()
             quota = QUOTAS[kind]
             for _, r in prelim:
                 if len(chosen) >= quota or attempts >= quota * MAX_ATTEMPTS_FACTOR:
                     break
-                st, tg = r["start"]["name"], r["target"]["name"]
-                if per_station.get(st, 0) >= PER_STATION or tg in targets:
+                st, tg, ar = r["start"]["name"], r["target"]["name"], _area(r)
+                if per_station.get(st, 0) >= PER_STATION or per_area.get(ar, 0) >= PER_AREA or tg in targets:
                     continue
                 attempts += 1
                 entry = _with_transit(r, kind, day, earliest, latest_home, home_place, client, settings,
                                       wx, rules, ctx, tz)
                 if entry:
+                    entry["_route"] = r
                     chosen.append(entry)
                     per_station[st] = per_station.get(st, 0) + 1
+                    per_area[ar] = per_area.get(ar, 0) + 1
                     targets.add(tg)
+            # The return after the walk is looked up only for what made the list.
+            for entry in chosen:
+                r = entry.pop("_route")
+                if entry.get("transit_checked"):
+                    _add_suggested_return(entry, r, home_place, client, settings, ctx, tz)
             chosen.sort(key=lambda e: -e["rank_score"])
             day_out[kind + "s"] = chosen
         result["days"][day.isoformat()] = day_out
 
+    log.info("%d connection lookups, %d failed", ctx["calls"], ctx["errors"])
     if ctx["calls"] and ctx["errors"] >= max(3, ctx["calls"] // 2):
         result["notes"].append(
             f"Connection checks failed for {ctx['errors']} of {ctx['calls']} requests; "
@@ -246,16 +260,10 @@ def _with_transit(r, kind, day, earliest, latest_home, home_place, client, setti
     if buffer_min < sched["last_train_buffer_min"]:
         return None
 
-    after = finish + timedelta(minutes=15)
-    resp = _plan(client, ctx, T.place(r["end"]["lat"], r["end"]["lon"]), home_place, after, num=2, **kw)
-    suggested = T.first_after(resp, after, tz, tr["max_one_way_min"]) if resp else None
-    if suggested and suggested["dep"] > last["dep"]:
-        suggested = None  # the only later option is past the last sensible one
-
     a = route_weather(r, wx, walk_start, finish, rules) or {"score": 0, "flags": ["no weather data"]}
-    issues = sorted(set(first["issues"] + last["issues"] + (suggested["issues"] if suggested else [])))
+    issues = sorted(set(first["issues"] + last["issues"]))
     covered = first["covered_by_dticket"] and last["covered_by_dticket"]
-    travel_min = first["duration_min"] + (suggested or last)["duration_min"]
+    travel_min = first["duration_min"] + last["duration_min"]
     rank = r["score"] * (0.35 + 0.65 * a["score"]) - min(travel_min / 600, 0.25) - (0.15 if not covered else 0)
     return {
         "route": _brief(r),
@@ -266,7 +274,7 @@ def _with_transit(r, kind, day, earliest, latest_home, home_place, client, setti
         "outbound_alternatives": outbound[1:3],
         "walk_start": walk_start.strftime("%H:%M"),
         "expected_finish": finish.strftime("%H:%M"),
-        "suggested_return": suggested,
+        "suggested_return": None,
         "last_sensible_return": last,
         "buffer_min": int(buffer_min),
         "covered_by_dticket": covered,
@@ -274,6 +282,25 @@ def _with_transit(r, kind, day, earliest, latest_home, home_place, client, setti
         "travel_min_total": travel_min,
         "rank_score": round(rank, 4),
     }
+
+
+def _add_suggested_return(entry, r, home_place, client, settings, ctx, tz):
+    """The first connection home after the walk, 15 minutes after the expected finish."""
+    tr = settings["transit"]
+    last = entry["last_sensible_return"]
+    finish = datetime.fromisoformat(last["dep"]).replace(
+        hour=int(entry["expected_finish"][:2]), minute=int(entry["expected_finish"][3:5]))
+    after = finish + timedelta(minutes=15)
+    resp = _plan(client, ctx, T.place(r["end"]["lat"], r["end"]["lon"]), home_place, after, num=2,
+                 regional_only=tr["regional_only"], max_transfers=tr["max_transfers"])
+    suggested = T.first_after(resp, after, tz, tr["max_one_way_min"]) if resp else None
+    if suggested and suggested["dep"] > last["dep"]:
+        suggested = None  # the only later option is past the last sensible one
+    if suggested:
+        entry["suggested_return"] = suggested
+        entry["transit_issues"] = sorted(set(entry["transit_issues"] + suggested["issues"]))
+        entry["covered_by_dticket"] = entry["covered_by_dticket"] and suggested["covered_by_dticket"]
+        entry["travel_min_total"] = entry["outbound"]["duration_min"] + suggested["duration_min"]
 
 
 def _unchecked(r, kind, day, settings, wx, rules, tz):

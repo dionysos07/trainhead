@@ -294,3 +294,16 @@ def test_austrian_operator_is_flagged_for_a_ticket_check():
     s = T.summarize(_it([leg], leg["startTime"], leg["endTime"], 0), TZ)
     assert not s["covered_by_dticket"]
     assert any("check whether the Deutschlandticket is valid" in i for i in s["issues"])
+
+
+def test_candidates_spread_across_areas(settings):
+    same_area = [_route(f"r{i}", 300, start=f"Stop {i}", end=f"End {i}") for i in range(4)]
+    for i, r in enumerate(same_area):
+        r["target"] = dict(r["target"], name=f"Peak {i}")
+    res = P.run_weekly(settings, same_area, [], date(2026, 10, 15), fake_weather, FakeClient())
+    assert len(res["days"]["2026-10-17"]["hikes"]) == P.PER_AREA
+
+
+def test_contact_goes_into_the_user_agent():
+    assert "contact: https://github.com/x" in T.Client(contact="https://github.com/x").user_agent
+    assert "contact" not in T.Client().user_agent

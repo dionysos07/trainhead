@@ -85,7 +85,7 @@ def cmd_weekly(args) -> int:
     history = _read_json(Path(args.history), [])
     tz = ZoneInfo(settings["schedule"]["timezone"])
     today = date.fromisoformat(args.today) if args.today else datetime.now(tz).date()
-    result = run_weekly(settings, routes, history, today, W.fetch, T.Client())
+    result = run_weekly(settings, routes, history, today, W.fetch, T.Client(contact=settings["transit"].get("contact") or None))
     out = Path(args.out)
     _write_json(out / "latest.json", result)
     _write_json(out / f"{today.isoformat()}.json", result)
@@ -103,7 +103,7 @@ def cmd_recheck(args) -> int:
     settings = load_settings(args.settings)
     routes = {r["id"]: r for r in load_catalog(args.catalog)}
     plan = _read_json(Path(args.plan), {})
-    result = run_recheck(settings, routes, plan, W.fetch, T.Client())
+    result = run_recheck(settings, routes, plan, W.fetch, T.Client(contact=settings["transit"].get("contact") or None))
     result["checked_at"] = datetime.now(ZoneInfo(settings["schedule"]["timezone"])).isoformat(timespec="minutes")
     _write_json(Path(args.out) / "latest.json", result)
     log.info("recheck: changed=%s", result["changed"])
