@@ -44,9 +44,12 @@ yet, the route catalog hasn't been built: finish with "No plan this week: the
 route catalog is still being built." If `weekly/latest.json` was not
 generated today (`generated_at`), stop and finish with one line: "The
 Thursday data job didn't run, so there's no plan this week." Never plan from
-stale data. In both cases, look at the latest runs of the `catalog` and
-`weekly` workflows if you can (`gh run list`) and add the failing step in a
-second line.
+stale data. In both cases, read `logs/weekly.log` (or `logs/catalog.log`) on
+the data branch and add the error in a second line. The GitHub API also works
+from these sessions through plain curl (the `gh` CLI isn't logged in):
+`curl -sSL https://api.github.com/repos/dionysos07/trainhead/actions/runs?per_page=5`
+lists runs, and a failed job's `/check-runs/<job id>/annotations` holds the end
+of its log. Raw log downloads are blocked here.
 
 ## Thursday run
 

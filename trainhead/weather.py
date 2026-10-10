@@ -26,7 +26,9 @@ THUNDER_CODES = {95, 96, 99}
 
 
 def fetch(points: list[dict], start_date: str, end_date: str, timezone: str = "Europe/Berlin",
-          batch: int = 50, session: requests.Session | None = None, pause_s: float = 0.5) -> dict:
+          batch: int = 40, session: requests.Session | None = None, pause_s: float = 8.0) -> dict:
+    """Each location counts as at least one call against the free tier's
+    600 per minute, so batches are paced to about 300 locations a minute."""
     """points: [{"key", "lat", "lon", "ele"}]. Returns key -> location forecast dict."""
     session = session or requests.Session()
     out: dict = {}
@@ -50,10 +52,15 @@ def fetch(points: list[dict], start_date: str, end_date: str, timezone: str = "E
                 log.warning("Open-Meteo rejected the full variable list (%s); using core variables", resp.text[:200])
                 hourly = list(HOURLY_CORE)
                 continue
-            if resp.status_code in (429, 500, 502, 503, 504):
-                time.sleep(5 * (attempt + 1))
+            if resp.status_code == 429:
+                log.warning("Open-Meteo rate limit; waiting a minute")
+                time.sleep(65)
                 continue
-            resp.raise_for_status()
+            if resp.status_code in (500, 502, 503, 504):
+                time.sleep(10 * (attempt + 1))
+                continue
+            if resp.status_code >= 400:
+                raise RuntimeError(f"Open-Meteo {resp.status_code}: {resp.text[:300]}")
             data = resp.json()
             if isinstance(data, dict):
                 data = [data]
@@ -96,8 +103,12 @@ def sunset(loc: dict, day: str) -> datetime | None:
     return None
 
 
-def assess(valley: dict, top: dict, start: datetime, end: datetime, top_ele: float, rules: dict) -> dict:
-    """Weather over the walking window at the start and at the highest point."""
+def assess(valley: dict, top: dict, start: datetime, end: datetime, top_ele: float, rules: dict,
+           valley_ele: float | None = None, ref_ele: float | None = None) -> dict:
+    """Weather over the walking window at the start and at the highest point.
+
+    When both points were fetched at a common reference height (`ref_ele`),
+    temperatures are moved to the real heights with the standard lapse rate."""
     iv = window(valley, start, end)
     it = window(top, start, end)
     precip = max(sum(_vals(valley, "precipitation", iv)), sum(_vals(top, "precipitation", it)))
@@ -108,7 +119,13 @@ def assess(valley: dict, top: dict, start: datetime, end: datetime, top_ele: flo
     gust = max(_vals(top, "wind_gusts_10m", it) or [0])
     cloud = _vals(top, "cloud_cover", it)
     cloud_mean = sum(cloud) / len(cloud) if cloud else None
-    temps = _vals(top, "temperature_2m", it) + _vals(valley, "temperature_2m", iv)
+    top_t = _vals(top, "temperature_2m", it)
+    valley_t = _vals(valley, "temperature_2m", iv)
+    if ref_ele is not None:
+        top_t = [x - 0.0065 * (top_ele - ref_ele) for x in top_t]
+        if valley_ele is not None:
+            valley_t = [x - 0.0065 * (valley_ele - ref_ele) for x in valley_t]
+    temps = top_t + valley_t
     fz = _vals(top, "freezing_level_height", it)
     snow = max(_vals(top, "snow_depth", it) or [0])
     vis = _vals(top, "visibility", it)

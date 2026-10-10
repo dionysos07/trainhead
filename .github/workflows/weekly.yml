@@ -42,9 +42,11 @@ jobs:
         env:
           TODAY: ${{ github.event.inputs.today }}
         run: |
+          set -o pipefail
+          mkdir -p out/logs
           ARGS=()
           if [[ "$TODAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then ARGS=(--today "$TODAY"); fi
-          python -m trainhead.cli weekly --catalog data-branch/catalog --history state/history.json --out out/weekly "${ARGS[@]}"
+          python -m trainhead.cli weekly --catalog data-branch/catalog --history state/history.json --out out/weekly "${ARGS[@]}" 2>&1 | tee out/logs/weekly.log
 
       - name: Summary
         run: |
@@ -56,11 +58,18 @@ jobs:
               for kind in ("hikes", "runs", "fallbacks"):
                   for c in d.get(kind, [])[:5]:
                       w = c["weather"]
+                      dep = ((c.get("outbound") or {}).get("dep") or "")[11:16] or "unchecked"
                       print(f"- {kind[:-1]}: {c['route']['name']}, weather {w['score']}, "
-                            f"{', '.join(w['flags']) or 'no flags'}, out {c['outbound']['dep'][11:16]}, "
-                            f"buffer {c['buffer_min']} min")
+                            f"{', '.join(w['flags']) or 'no flags'}, out {dep}, "
+                            f"buffer {c.get('buffer_min', '?')} min")
               print()
           PY
 
+      - name: Report a failure
+        if: failure()
+        run: python scripts/annotate_failure.py out/logs/weekly.log "weekly failed"
+
       - name: Publish to the data branch
-        run: scripts/publish_data.sh out "weekly $(date -u +%Y-%m-%d)"
+        if: always()
+        run: |
+          if [ -d out ]; then scripts/publish_data.sh out "weekly $(date -u +%Y-%m-%d) (${{ job.status }})"; fi

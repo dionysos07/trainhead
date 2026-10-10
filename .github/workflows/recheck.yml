@@ -36,8 +36,15 @@ jobs:
       - name: Recheck the picks
         run: |
           if [ ! -f plans/latest.json ]; then echo "no plan yet"; exit 0; fi
-          python -m trainhead.cli recheck --catalog data-branch/catalog --plan plans/latest.json --out out/recheck
+          set -o pipefail
+          mkdir -p out/logs
+          python -m trainhead.cli recheck --catalog data-branch/catalog --plan plans/latest.json --out out/recheck 2>&1 | tee out/logs/recheck.log
+
+      - name: Report a failure
+        if: failure()
+        run: python scripts/annotate_failure.py out/logs/recheck.log "recheck failed"
 
       - name: Publish to the data branch
+        if: always()
         run: |
-          if [ -d out/recheck ]; then scripts/publish_data.sh out "recheck $(date -u +%Y-%m-%d)"; fi
+          if [ -d out ]; then scripts/publish_data.sh out "recheck $(date -u +%Y-%m-%d) (${{ job.status }})"; fi

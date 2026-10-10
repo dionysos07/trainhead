@@ -238,11 +238,19 @@ def test_transit_outage_keeps_unchecked_candidates(settings):
 def test_weather_points_are_gridded():
     r1 = _route("a", 300)
     r2 = _route("b", 300)
-    r2["start"] = dict(r2["start"], lat=r2["start"]["lat"] + 0.004)  # 450 m away: same grid cell
-    pts = P.weather_points([r1, r2])
-    assert len(pts) == 2
-    for p in pts:
-        assert p["ele"] % 50 == 0
+    r2["start"] = dict(r2["start"], lat=r2["start"]["lat"] + 0.004)  # 450 m away: same ~4 km cell
+    far = _route("c", 300)
+    far["start"] = dict(far["start"], lat=far["start"]["lat"] + 0.15)  # 17 km away: its own cell
+    assert len(P.weather_points([r1, r2])) == len(P.weather_points([r1]))
+    assert len(P.weather_points([r1, far])) == len(P.weather_points([r1])) + 1
+    assert all(p["ele"] == P.WX_REF_ELE for p in P.weather_points([r1, r2, far]))
+
+
+def test_temperature_moves_with_height():
+    loc = make_loc(temperature_2m=10.0)
+    a = W.assess(loc, loc, *window(), top_ele=2000, rules=RULES, valley_ele=800, ref_ele=1000)
+    assert a["temp_max"] == round(10.0 + 0.0065 * 200)   # valley, 200 m below the reference
+    assert a["temp_min"] == round(10.0 - 0.0065 * 1000)  # top, 1000 m above it
 
 
 class _Resp:

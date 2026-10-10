@@ -102,7 +102,10 @@ jobs:
 
       - name: Build catalog
         if: steps.gate.outputs.skip != 'true'
-        run: python -m trainhead.cli catalog --osm .cache/osm/filtered.osm.pbf --out out/catalog --dem-cache .cache/dem
+        run: |
+          set -o pipefail
+          mkdir -p out/logs
+          python -m trainhead.cli catalog --osm .cache/osm/filtered.osm.pbf --out out/catalog --dem-cache .cache/dem 2>&1 | tee out/logs/catalog.log
 
       - name: Summary
         if: steps.gate.outputs.skip != 'true'
@@ -119,6 +122,11 @@ jobs:
               print(f"| {r['name']} | {r['distance_km']} | {r['ascent_m']} | {r['din_min'] // 60}:{r['din_min'] % 60:02d} | T{r['max_sac']} |")
           PY
 
+      - name: Report a failure
+        if: failure()
+        run: python scripts/annotate_failure.py out/logs/catalog.log "catalog failed"
+
       - name: Publish to the data branch
-        if: steps.gate.outputs.skip != 'true'
-        run: scripts/publish_data.sh out "catalog $(date -u +%Y-%m-%d)"
+        if: always() && steps.gate.outputs.skip != 'true'
+        run: |
+          if [ -d out ]; then scripts/publish_data.sh out "catalog $(date -u +%Y-%m-%d) (${{ job.status }})"; fi

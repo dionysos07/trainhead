@@ -68,35 +68,28 @@ def prefilter(routes: list[dict], settings: dict, history: list[dict], today: da
     return {"hike": hikes, "run": runs, "fallback": fallbacks}
 
 
-WX_STEP_DEG = 0.02   # ~2 km, the resolution of the ICON-D2 model
-WX_STEP_ELE = 50
+WX_STEP_DEG = 0.04   # ~4 km cells; ICON-D2 runs at 2.2 km, so neighbouring routes share a cell
+WX_REF_ELE = 1000    # every point is fetched at this height; temperatures are moved to the real height
+LAPSE_C_PER_M = 0.0065
 
 
 def _q(value: float, step: float) -> float:
     return round(round(value / step) * step, 6)
 
 
-def _wx_point(lat: float, lon: float, ele: float) -> tuple[float, float, int]:
-    return _q(lat, WX_STEP_DEG), _q(lon, WX_STEP_DEG), int(_q(ele, WX_STEP_ELE))
-
-
-def _wx_key(lat: float, lon: float, ele: float) -> str:
-    qlat, qlon, qele = _wx_point(lat, lon, ele)
-    return f"{qlat:.2f},{qlon:.2f},{qele}"
+def _wx_key(lat: float, lon: float) -> str:
+    return f"{_q(lat, WX_STEP_DEG):.2f},{_q(lon, WX_STEP_DEG):.2f}"
 
 
 def weather_points(routes: list[dict]) -> list[dict]:
-    """Two forecast points per route: the start (lowest point) and the
-    destination (highest point), snapped to a ~2 km / 50 m grid."""
+    """One forecast point per ~4 km cell that holds a route's start or destination.
+    Keeps the weekly request to a few hundred points, inside Open-Meteo's
+    free per-minute limit."""
     pts = {}
     for r in routes:
-        for lat, lon, ele in (
-            (r["start"]["lat"], r["start"]["lon"], r["min_ele_m"]),
-            (r["target"]["lat"], r["target"]["lon"], r["max_ele_m"]),
-        ):
-            k = _wx_key(lat, lon, ele)
-            qlat, qlon, qele = _wx_point(lat, lon, ele)
-            pts[k] = {"key": k, "lat": qlat, "lon": qlon, "ele": qele}
+        for lat, lon in ((r["start"]["lat"], r["start"]["lon"]), (r["target"]["lat"], r["target"]["lon"])):
+            k = _wx_key(lat, lon)
+            pts[k] = {"key": k, "lat": _q(lat, WX_STEP_DEG), "lon": _q(lon, WX_STEP_DEG), "ele": WX_REF_ELE}
     return list(pts.values())
 
 
@@ -107,11 +100,12 @@ def duration_min(route: dict, kind: str, settings: dict) -> float:
 
 
 def route_weather(route: dict, wx: dict, start: datetime, end: datetime, rules: dict) -> dict | None:
-    valley = wx.get(_wx_key(route["start"]["lat"], route["start"]["lon"], route["min_ele_m"]))
-    top = wx.get(_wx_key(route["target"]["lat"], route["target"]["lon"], route["max_ele_m"]))
+    valley = wx.get(_wx_key(route["start"]["lat"], route["start"]["lon"]))
+    top = wx.get(_wx_key(route["target"]["lat"], route["target"]["lon"]))
     if not valley or not top:
         return None
-    a = W.assess(valley, top, start.replace(tzinfo=None), end.replace(tzinfo=None), route["max_ele_m"], rules)
+    a = W.assess(valley, top, start.replace(tzinfo=None), end.replace(tzinfo=None), route["max_ele_m"], rules,
+                 valley_ele=route["min_ele_m"], ref_ele=WX_REF_ELE)
     ss = W.sunset(valley, start.date().isoformat())
     if ss and end.replace(tzinfo=None) > ss - timedelta(minutes=30):
         a["flags"].append(f"finishes after sunset ({ss.strftime('%H:%M')})")
