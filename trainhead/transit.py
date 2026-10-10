@@ -124,6 +124,9 @@ def _leg_line(leg: dict) -> str:
 
 LONG_DISTANCE_LINE = re.compile(r"^(ICE|IC|ECE|EC|RJX|RJ|NJ|EN|FLX)\d")
 ON_DEMAND = re.compile(r"\bAST\b|(?i:rufbus|ruftaxi|anrufsammeltaxi|on.demand)")
+# Austrian operators near the border. Some cross-border lines accept the
+# Deutschlandticket and most don't, so these legs are flagged for a ticket check.
+AUSTRIAN_OPERATOR = re.compile(r"ÖBB|Postbus|Salzburg AG|Salzburg Verkehr|Albus|Salzburger Lokalbahn|VVT|Verkehrsverbund Tirol")
 
 
 def _leg_covered(leg: dict) -> bool:
@@ -156,6 +159,10 @@ def summarize(it: dict, tz: ZoneInfo) -> dict:
             issues.append(f"{_leg_line(leg)} cancelled")
         if not ok:
             issues.append(f"{_leg_line(leg)} not covered by the Deutschlandticket")
+        if ok and mode != "WALK" and AUSTRIAN_OPERATOR.search(str(leg.get("agencyName") or "")):
+            ok = False
+            covered = False
+            issues.append(f"{_leg_line(leg)} is run by {leg.get('agencyName')}: check whether the Deutschlandticket is valid")
         label = " ".join(str(leg.get(k) or "") for k in ("displayName", "routeShortName", "routeLongName", "headsign"))
         if ON_DEMAND.search(label):
             issues.append(f"{_leg_line(leg)} is an on-demand service: book it by phone in advance")

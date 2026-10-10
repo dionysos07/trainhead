@@ -279,3 +279,10 @@ def test_on_demand_leg_is_flagged():
     leg = _leg("BUS", "AST 303", "Kreuth", "Bayerwald", "2026-10-17T06:00:00Z", "2026-10-17T06:20:00Z", "RVO")
     s = T.summarize(_it([leg], leg["startTime"], leg["endTime"], 0), TZ)
     assert any("on-demand" in i for i in s["issues"])
+
+
+def test_austrian_operator_is_flagged_for_a_ticket_check():
+    leg = _leg("BUS", "840", "Berchtesgaden", "Salzburg", "2026-10-17T06:00:00Z", "2026-10-17T06:45:00Z", "Albus Salzburg")
+    s = T.summarize(_it([leg], leg["startTime"], leg["endTime"], 0), TZ)
+    assert not s["covered_by_dticket"]
+    assert any("check whether the Deutschlandticket is valid" in i for i in s["issues"])
