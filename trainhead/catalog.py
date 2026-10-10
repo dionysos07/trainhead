@@ -53,6 +53,9 @@ class CatalogParams:
     total: int = 1500
     loop_penalty: float = 4.0
     t3_penalty: float = 1.25
+    keep_per_target: int = 12        # traverse candidates kept per destination before selection
+    loops_per_target: int = 2        # loop searches per destination, from its nearest stops
+    loop_limit_factor: float = 1.8   # loop descent may cost at most this times the way up
     # Bus stops as trailheads: only mountain stops away from the railway that
     # serve a real summit. Whether a bus runs that day is checked weekly.
     bus_stops: bool = True
@@ -251,14 +254,21 @@ def _passes(stats: dict, params: CatalogParams) -> bool:
 
 
 def generate(g: G.Graph, stations: list[dict], targets: list[dict], params: CatalogParams) -> list[dict]:
-    """All candidate routes with approximate stats, before selection."""
+    """Candidate routes with approximate stats, before selection.
+
+    Memory stays flat on large graphs: a candidate references its legs
+    instead of copying edge lists, and only the best few traverses per
+    destination are kept (selection takes at most `per_target` anyway).
+    """
     t0 = time.time()
     limit = params.max_leg_km * 1000 * 1.6
     st_xy = _project([s["lat"] for s in stations], [s["lon"] for s in stations])
     tg_xy = _project([t["lat"] for t in targets], [t["lon"] for t in targets])
     tg_tree = cKDTree(tg_xy) if targets else None
 
-    legs: dict[int, list] = {}  # target index -> [(station index, edges, fwd, stats)]
+    # target index -> [(station index, edges, fwd, stats, cost)]
+    legs: dict[int, list] = {}
+    n_legs = 0
     for si, st in enumerate(stations):
         near = tg_tree.query_ball_point(st_xy[si], params.max_target_km * 1000) if tg_tree else []
         near = [ti for ti in near if np.linalg.norm(tg_xy[ti] - st_xy[si]) >= params.min_target_km * 1000]
@@ -276,36 +286,50 @@ def generate(g: G.Graph, stations: list[dict], targets: list[dict], params: Cata
             stats = G.path_stats(g, edges, fwd)
             if stats["length_m"] > params.max_leg_km * 1000:
                 continue
-            legs.setdefault(ti, []).append((si, edges, fwd, stats))
-    log.info("legs computed for %d destinations in %.0fs", len(legs), time.time() - t0)
+            legs.setdefault(ti, []).append((si, edges, fwd, stats, float(dist[tv])))
+            n_legs += 1
+    log.info("%d legs to %d destinations in %.0fs", n_legs, len(legs), time.time() - t0)
 
     cands = []
+    n_loops = 0
     for ti, entries in legs.items():
         tgt = targets[ti]
-        for si1, e1, f1, s1 in entries:
-            # Traverses to another station.
-            for si2, e2, f2, s2 in entries:
-                if si1 == si2:
+
+        # Traverses to another stop: score every ordered pair, keep the best few.
+        pairs = []
+        for a, (si1, _e1, _f1, s1, _c1) in enumerate(entries):
+            for b, (si2, _e2, _f2, s2, _c2) in enumerate(entries):
+                if a == b or stations[si1]["name"] == stations[si2]["name"]:
                     continue
-                if stations[si1]["name"] == stations[si2]["name"]:
-                    continue
-                desc_stats = _flip(s2)
-                stats = _combine(s1, desc_stats)
-                if not _passes(stats, params):
-                    continue
-                shared = np.intersect1d(e1, e2)
-                overlap = g.elen[shared].sum() / max(min(s1["length_m"], s2["length_m"]), 1)
-                if overlap > 0.7:
-                    continue  # same path up and down to two nearby stops: not a real traverse
-                de, df = _reverse(e2, f2)
-                cands.append({
-                    "start": si1, "end": si2, "target": ti, "type": "traverse",
-                    "edges": np.concatenate([e1, de]), "fwd": np.concatenate([f1, df]),
-                    "stats": stats, "score": score(stats, tgt["kind"], "traverse"),
-                })
-            # Loop back to the same station, avoiding the way up where possible.
-            w = G.penalized_weights(g, e1, params.loop_penalty)
-            dist, pred = G.shortest_tree(g, tgt["vertex"], limit, weights=w)
+                stats = _combine(s1, _flip(s2))
+                if _passes(stats, params):
+                    pairs.append((score(stats, tgt["kind"], "traverse"), a, b, stats))
+        pairs.sort(key=lambda x: -x[0])
+        seen = set()
+        kept = 0
+        for sc, a, b, stats in pairs:
+            if kept >= params.keep_per_target:
+                break
+            key = (min(a, b), max(a, b))
+            if key in seen:
+                continue  # the other direction already scored higher
+            up, down = entries[a], entries[b]
+            shared = np.intersect1d(up[1], down[1])
+            overlap = g.elen[shared].sum() / max(min(up[3]["length_m"], down[3]["length_m"]), 1)
+            if overlap > 0.7:
+                continue  # same path up and down to two nearby stops: not a real traverse
+            seen.add(key)
+            kept += 1
+            cands.append({"start": up[0], "end": down[0], "target": ti, "type": "traverse",
+                          "up": up, "down": down, "stats": stats, "score": sc})
+
+        # Loops back to the nearest stops, avoiding the way up where possible.
+        nearest = sorted(range(len(entries)), key=lambda i: entries[i][4])[:params.loops_per_target]
+        for i in nearest:
+            si1, e1, f1, s1, c1 = entries[i]
+            lim = min(limit, params.loop_limit_factor * c1 + 1000.0)
+            dist, pred = G.shortest_tree_avoiding(g, tgt["vertex"], lim, e1, params.loop_penalty)
+            n_loops += 1
             sv = stations[si1]["vertex"]
             if not np.isfinite(dist[sv]):
                 continue
@@ -320,13 +344,21 @@ def generate(g: G.Graph, stations: list[dict], targets: list[dict], params: Cata
             shared = np.intersect1d(e1, de)
             overlap = g.elen[shared].sum() / max(min(s1["length_m"], desc["length_m"]), 1)
             rtype = "out-and-back" if overlap > 0.7 else "loop"
-            cands.append({
-                "start": si1, "end": si1, "target": ti, "type": rtype,
-                "edges": np.concatenate([e1, de]), "fwd": np.concatenate([f1, df]),
-                "stats": stats, "score": score(stats, tgt["kind"], rtype),
-            })
-    log.info("%d candidate routes in %.0fs", len(cands), time.time() - t0)
+            cands.append({"start": si1, "end": si1, "target": ti, "type": rtype,
+                          "up": entries[i], "down_path": (de, df), "stats": stats,
+                          "score": score(stats, tgt["kind"], rtype)})
+    log.info("%d candidate routes (%d loop searches) in %.0fs", len(cands), n_loops, time.time() - t0)
     return cands
+
+
+def candidate_path(c: dict) -> tuple[np.ndarray, np.ndarray]:
+    """Edges and directions of a candidate, start to end."""
+    up_e, up_f = c["up"][1], c["up"][2]
+    if "down_path" in c:
+        de, df = c["down_path"]
+    else:
+        de, df = _reverse(c["down"][1], c["down"][2])
+    return np.concatenate([up_e, de]), np.concatenate([up_f, df])
 
 
 def select(cands: list[dict], stations: list[dict], params: CatalogParams) -> list[dict]:
@@ -378,7 +410,8 @@ def finalize(g: G.Graph, c: dict, stations: list[dict], targets: list[dict], dem
     s1 = stations[c["start"]]
     s2 = stations[c["end"]]
     tg = targets[c["target"]]
-    lats, lons = G.path_geometry(g, c["edges"], c["fwd"])
+    edges, fwd = candidate_path(c)
+    lats, lons = G.path_geometry(g, edges, fwd)
     rl, ro = resample(lats, lons, 20.0)
     ele = dem.sample(rl, ro)
     ele = np.where(np.isnan(ele), np.nanmedian(ele), ele)

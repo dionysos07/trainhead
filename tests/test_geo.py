@@ -93,5 +93,11 @@ def test_walkable_filters():
     assert not dif.way_is_walkable({"highway": "path", "trail_visibility": "bad"})
     assert not dif.way_is_walkable({"highway": "cycleway"})
     assert dif.way_is_walkable({"highway": "cycleway", "foot": "designated"})
-    assert not dif.way_is_walkable({"highway": "primary"})
+    assert dif.way_is_walkable({"highway": "primary"})
+    assert dif.way_class({"highway": "primary"}) == "busy_road"
+    assert not dif.way_is_walkable({"highway": "trunk"})
+    assert not dif.way_is_walkable({"highway": "motorway"})
     assert not dif.way_is_walkable({"highway": "via_ferrata"})
+    assert dif.way_is_walkable({"highway": "service"})
+    assert not dif.way_is_walkable({"highway": "service", "service": "driveway"})
+    assert not dif.way_is_walkable({"highway": "service", "service": "parking_aisle"})

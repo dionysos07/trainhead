@@ -41,7 +41,8 @@ class Graph:
     eallowed: np.ndarray
     weights: csr_matrix | None = None
     entry_pos: np.ndarray | None = None   # (n_edges, 2) positions of each kept edge in weights.data
-    lookup: dict | None = None            # (a, b) -> edge index, for kept edges
+    entry_key: np.ndarray | None = None   # sorted row * n + col for every weights entry
+    entry_edge: np.ndarray | None = None  # edge index for every weights entry
     _tree: cKDTree | None = None
     _tree_ids: np.ndarray | None = None
 
@@ -222,11 +223,9 @@ def _build_weights(g: Graph, t3_penalty: float) -> None:
     entry_pos[kept, 0] = inv[:m]
     entry_pos[kept, 1] = inv[m:]
     g.entry_pos = entry_pos
-    lookup = {}
-    for k, x, y in zip(kept.tolist(), ka.tolist(), kb.tolist()):
-        lookup[(x, y)] = k
-        lookup[(y, x)] = k
-    g.lookup = lookup
+    # Row-major order makes row * n + col ascending, so edge lookups are one searchsorted.
+    g.entry_key = rows_s.astype(np.int64) * n + cols_s.astype(np.int64)
+    g.entry_edge = np.concatenate([kept, kept])[srt]
     connected = np.zeros(n, dtype=bool)
     connected[ka] = True
     connected[kb] = True
@@ -251,10 +250,24 @@ def snap(g: Graph, lat: float, lon: float, max_dist_m: float) -> tuple[int, floa
     return int(g._tree_ids[i]), float(dist)
 
 
-def shortest_tree(g: Graph, source: int, limit: float, weights: csr_matrix | None = None):
-    w = g.weights if weights is None else weights
-    dist, pred = dijkstra(w, directed=True, indices=source, return_predecessors=True, limit=limit)
+def shortest_tree(g: Graph, source: int, limit: float):
+    dist, pred = dijkstra(g.weights, directed=True, indices=source, return_predecessors=True, limit=limit)
     return dist.astype(np.float32), pred.astype(np.int32)
+
+
+def shortest_tree_avoiding(g: Graph, source: int, limit: float, avoid: np.ndarray, factor: float = 4.0):
+    """Like shortest_tree, with the edges in `avoid` made `factor` times more
+    expensive. Changes the weights in place and restores them, so no copy of
+    the whole graph is made per call."""
+    pos = g.entry_pos[avoid].ravel()
+    pos = pos[pos >= 0]
+    data = g.weights.data
+    saved = data[pos].copy()
+    data[pos] = saved * factor
+    try:
+        return shortest_tree(g, source, limit)
+    finally:
+        data[pos] = saved
 
 
 def path_from_tree(g: Graph, pred: np.ndarray, source: int, target: int):
@@ -272,21 +285,15 @@ def path_from_tree(g: Graph, pred: np.ndarray, source: int, target: int):
         if guard > 1_000_000:
             raise RuntimeError("predecessor loop")
     verts.reverse()
-    edges = np.empty(len(verts) - 1, dtype=np.int64)
-    fwd = np.empty(len(verts) - 1, dtype=bool)
-    for i, (x, y) in enumerate(zip(verts[:-1], verts[1:])):
-        k = g.lookup[(x, y)]
-        edges[i] = k
-        fwd[i] = g.eu[k] == x
+    v = np.asarray(verts, dtype=np.int64)
+    x, y = v[:-1], v[1:]
+    keys = x * g.n_vertices + y
+    pos = np.searchsorted(g.entry_key, keys)
+    if np.any(pos >= len(g.entry_key)) or np.any(g.entry_key[np.minimum(pos, len(g.entry_key) - 1)] != keys):
+        raise RuntimeError("path uses a pair of vertices that is not an edge")
+    edges = g.entry_edge[pos]
+    fwd = g.eu[edges] == x
     return edges, fwd
-
-
-def penalized_weights(g: Graph, edges: np.ndarray, factor: float = 4.0) -> csr_matrix:
-    data = g.weights.data.copy()
-    pos = g.entry_pos[edges].ravel()
-    pos = pos[pos >= 0]
-    data[pos] *= factor
-    return csr_matrix((data, g.weights.indices, g.weights.indptr), shape=g.weights.shape)
 
 
 def path_geometry(g: Graph, edges: np.ndarray, fwd: np.ndarray):

@@ -30,7 +30,12 @@ HIGHWAY_CLASS = {
     "tertiary_link": "busy_road",
     "secondary": "busy_road",
     "secondary_link": "busy_road",
+    "primary": "busy_road",       # kept for short links through villages; the weekly filter caps busy-road km
+    "primary_link": "busy_road",
 }
+
+# Service roads that never help a hike and make up a large share of town data.
+SKIP_SERVICE = {"driveway", "parking_aisle", "drive-through", "emergency_access"}
 
 CLASS_CODES = {"path": 0, "steps": 1, "track": 2, "minor_road": 3, "road": 4, "busy_road": 5}
 CODE_CLASSES = {v: k for k, v in CLASS_CODES.items()}
@@ -91,6 +96,8 @@ def way_is_walkable(tags) -> bool:
     if access in ("no", "private") and foot not in FOOT_OK:
         return False
     if highway == "cycleway" and foot not in FOOT_OK:
+        return False
+    if highway == "service" and tags.get("service") in SKIP_SERVICE:
         return False
     if tags.get("trail_visibility") in BAD_VISIBILITY:
         return False
