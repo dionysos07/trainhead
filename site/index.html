@@ -282,6 +282,9 @@ a { color: inherit; }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
 .seg button[disabled] { cursor: default; opacity: 0.6; }
 
+.rate-in-card { display: grid; gap: 6px; border-top: 1px solid var(--line); padding-top: 12px; }
+.rate-in-card .rate-row { padding: 0; border: 0; background: transparent; }
+
 /* Rules */
 .rules { display: grid; gap: 10px; }
 .rules dl {
@@ -409,6 +412,44 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
     return WEEKDAYS[d.getUTCDay()] + " " + (+m[3]) + " " + MONTHS[+m[2] - 1] + ", " + m[4] + ":" + m[5];
   }
 
+  function pad2(n) { return (n < 10 ? "0" : "") + n; }
+
+  function todayISO() {
+    var d = new Date();
+    return d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate());
+  }
+
+  function isPast(iso) { return !!iso && iso <= todayISO(); }
+
+  function labelFor(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "");
+    if (!m) return iso || "";
+    var d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+    return WEEKDAYS[d.getUTCDay()] + " " + (+m[3]) + " " + MONTHS[+m[2] - 1];
+  }
+
+  function nextThursdayLabel() {
+    var d = new Date();
+    var add = (4 - d.getDay() + 7) % 7;
+    if (add === 0 && d.getHours() >= 22) add = 7;
+    d.setDate(d.getDate() + add);
+    return WEEKDAYS[d.getDay()] + " " + d.getDate() + " " + MONTHS[d.getMonth()];
+  }
+
+  function itemFromCard(c) {
+    return { key: c.key, date: c.date, route_id: c.route.id, kind: c.kind, name: c.route.name, day: labelFor(c.date) };
+  }
+
+  function rateRowHtml(it, compact) {
+    return '<div class="rate-row" data-key="' + esc(it.key) + '"><div>' +
+      (compact ? "" : '<p class="name">' + esc(it.name) + '</p>') +
+      '<p class="meta">' + esc(it.day) + ' · ' + (it.kind === "run" ? "trail run" : "hike") +
+      ' <span class="status" aria-live="polite"></span></p></div>' +
+      '<div class="seg" role="group" aria-label="Rating for ' + esc(it.name) + '">' +
+      RATINGS.map(function (r) { return '<button type="button" data-rating="' + r[0] + '" aria-pressed="false" disabled>' + r[1] + '</button>'; }).join("") +
+      '</div></div>';
+  }
+
   function decodePolyline(str) {
     var index = 0, lat = 0, lon = 0, out = [];
     while (index < str.length) {
@@ -449,11 +490,12 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
     var ys = pts.map(function (p) { return -p[0] * ky; });
     var minX = Math.min.apply(null, xs), maxX = Math.max.apply(null, xs);
     var minY = Math.min.apply(null, ys), maxY = Math.max.apply(null, ys);
-    var W = 240, H = 180, pad = 16;
-    var span = Math.max(maxX - minX, (maxY - minY) * W / H, 0.5);
+    // The route fits in the top area; the scale bar gets its own strip below it.
+    var W = 240, H = 188, areaH = 166, pad = 14;
+    var span = Math.max(maxX - minX, (maxY - minY) * (W - 2 * pad) / (areaH - 2 * pad), 0.5);
     var scale = (W - 2 * pad) / span;
     var offX = pad + ((W - 2 * pad) - (maxX - minX) * scale) / 2;
-    var offY = pad + ((H - 2 * pad) - (maxY - minY) * scale) / 2;
+    var offY = pad + ((areaH - 2 * pad) - (maxY - minY) * scale) / 2;
     function px(x) { return (offX + (x - minX) * scale).toFixed(1); }
     function py(y) { return (offY + (y - minY) * scale).toFixed(1); }
     var d = xs.map(function (x, i) { return (i ? "L" : "M") + px(x) + " " + py(ys[i]); }).join("");
@@ -470,8 +512,8 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
       '<circle cx="' + sx + '" cy="' + sy + '" r="5" fill="var(--ink)" stroke="var(--surface)" stroke-width="1.5"></circle>' +
       (route.start === route.end ? "" :
         '<rect x="' + (ex - 4.5) + '" y="' + (ey - 4.5) + '" width="9" height="9" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"></rect>') +
-      '<line x1="' + (W - pad - barPx).toFixed(1) + '" y1="' + (H - 8) + '" x2="' + (W - pad) + '" y2="' + (H - 8) + '" stroke="var(--muted)" stroke-width="2"></line>' +
-      '<text x="' + (W - pad) + '" y="' + (H - 12) + '" text-anchor="end" font-size="10" fill="var(--muted)" font-family="IBM Plex Mono, monospace">' + (barKm === 1 ? "1 km" : "500 m") + '</text>' +
+      '<line x1="' + (W - pad - barPx).toFixed(1) + '" y1="' + (H - 6) + '" x2="' + (W - pad) + '" y2="' + (H - 6) + '" stroke="var(--muted)" stroke-width="2"></line>' +
+      '<text x="' + (W - pad - barPx - 6).toFixed(1) + '" y="' + (H - 2.5) + '" text-anchor="end" font-size="10" fill="var(--muted)" font-family="IBM Plex Mono, monospace">' + (barKm === 1 ? "1 km" : "500 m") + '</text>' +
       '</svg>';
   }
 
@@ -573,6 +615,7 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
           '<button class="btn gpx" type="button" data-gpx="' + esc(c.gpx) + '" data-name="' + esc(r.id) + '" hidden>Save GPX</button>' +
           (mapHref ? '<a class="btn" href="' + esc(mapHref) + '" target="_blank" rel="noopener">Map</a>' : "") +
         '</div>' +
+        (isPast(c.date) ? '<div class="rate-in-card" hidden><p class="eyebrow">How was it?</p>' + rateRowHtml(itemFromCard(c), true) + '</div>' : "") +
       '</div></article>';
   }
 
@@ -588,7 +631,7 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
     var days = (data.days || []).filter(function (d) { return d.cards && d.cards.length; });
     if (!days.length) {
       plan.innerHTML = '<section class="empty"><h2>' +
-        (data.next_plan ? "First plan arrives " + esc(data.next_plan) : "No plan for this weekend yet") + '</h2>' +
+        (data.updated ? "No plan for this weekend" : "First plan arrives " + esc(nextThursdayLabel()) + ", evening") + '</h2>' +
         '<p>Every Thursday evening this page gets two picks for the weekend and a bad-weather fallback. Each card shows the route, walking and running time, the hardest trail section, the train there and the last sensible train back, plus the forecast at the top.</p>' +
         '<p>On Friday evening the plan is checked again against fresh weather and timetables. You only hear about it if something changed.</p></section>';
     } else {
@@ -606,8 +649,11 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
       el("rules").hidden = false;
     }
 
+    var inCard = [];
+    days.forEach(function (d) { d.cards.forEach(function (c) { if (isPast(c.date)) inCard.push(itemFromCard(c)); }); });
+    if (days.length && data.fallback && isPast(data.fallback.date)) inCard.push(itemFromCard(data.fallback));
     initGpx();
-    initRatings(data.previous || []);
+    initRatings(data.previous || [], inCard);
   }
 
   function initGpx() {
@@ -631,26 +677,23 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
     });
   }
 
-  function initRatings(items) {
-    if (!items.length) return;
+  function initRatings(previous, inCard) {
+    if (!previous.length && !inCard.length) return;
     var section = el("ratings");
-    var rows = el("rate-rows");
-    rows.innerHTML = items.map(function (it) {
-      return '<div class="rate-row" data-key="' + esc(it.key) + '"><div><p class="name">' + esc(it.name) + '</p>' +
-        '<p class="meta">' + esc(it.day) + ' · ' + (it.kind === "run" ? "trail run" : "hike") + ' <span class="status" aria-live="polite"></span></p></div>' +
-        '<div class="seg" role="group" aria-label="Rating for ' + esc(it.name) + '">' +
-        RATINGS.map(function (r) { return '<button type="button" data-rating="' + r[0] + '" aria-pressed="false" disabled>' + r[1] + '</button>'; }).join("") +
-        '</div></div>';
-    }).join("");
-    section.hidden = false;
+    if (previous.length) {
+      el("rate-rows").innerHTML = previous.map(function (it) { return rateRowHtml(it, false); }).join("");
+      section.hidden = false;
+    }
 
     var byKey = {};
-    items.forEach(function (it) { byKey[it.key] = it; });
+    previous.concat(inCard).forEach(function (it) { byKey[it.key] = it; });
     var current = {};
     var busy = {};
 
+    function allRows() { return document.querySelectorAll(".rate-row"); }
+
     function paint() {
-      Array.prototype.forEach.call(rows.querySelectorAll(".rate-row"), function (row) {
+      Array.prototype.forEach.call(allRows(), function (row) {
         var key = row.getAttribute("data-key");
         Array.prototype.forEach.call(row.querySelectorAll("button"), function (b) {
           b.setAttribute("aria-pressed", current[key] === b.getAttribute("data-rating") ? "true" : "false");
@@ -659,8 +702,13 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
     }
 
     function setStatus(key, text) {
-      var row = rows.querySelector('.rate-row[data-key="' + key + '"]');
-      if (row) row.querySelector(".status").textContent = text ? "· " + text : "";
+      Array.prototype.forEach.call(allRows(), function (row) {
+        if (row.getAttribute("data-key") === key) row.querySelector(".status").textContent = text ? "· " + text : "";
+      });
+    }
+
+    function showCardBlocks(show) {
+      Array.prototype.forEach.call(document.querySelectorAll(".rate-in-card"), function (b) { b.hidden = !show; });
     }
 
     Promise.all([use("db"), use("user")]).then(function (caps) {
@@ -672,7 +720,11 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
       var ownerCheck = user ? user.isOwner() : Promise.resolve(null);
       ownerCheck.then(function (isOwner) {
         var readOnly = isOwner === false;
-        if (readOnly) el("ratings-hint").textContent = "Only the page's owner can rate routes.";
+        if (readOnly) {
+          el("ratings-hint").textContent = "Only the page's owner can rate routes.";
+          return;
+        }
+        showCardBlocks(true);
         db.collection("ratings").onSnapshot(function (snap) {
           var next = {};
           snap.docs.forEach(function (d) { var v = d.data(); if (v && v.rating) next[d.id] = v.rating; });
@@ -681,10 +733,10 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
         }, function () {
           el("ratings-hint").textContent = "Saved ratings couldn't be loaded. Reload the page to try again.";
         });
-        Array.prototype.forEach.call(rows.querySelectorAll(".rate-row"), function (row) {
+        Array.prototype.forEach.call(allRows(), function (row) {
           var key = row.getAttribute("data-key");
           Array.prototype.forEach.call(row.querySelectorAll("button"), function (b) {
-            b.disabled = readOnly;
+            b.disabled = false;
             b.addEventListener("click", function () {
               var rating = b.getAttribute("data-rating");
               if (busy[key] || current[key] === rating) return;
@@ -705,7 +757,10 @@ footer { font-size: 0.8rem; color: var(--muted); display: grid; gap: 4px; border
                 if (e && e.code === "invalid_argument") {
                   setStatus(key, "");
                   el("ratings-hint").textContent = "This view can't save ratings. Open the page as its owner.";
-                  Array.prototype.forEach.call(rows.querySelectorAll("button"), function (x) { x.disabled = true; });
+                  showCardBlocks(false);
+                  Array.prototype.forEach.call(allRows(), function (x) {
+                    Array.prototype.forEach.call(x.querySelectorAll("button"), function (y) { y.disabled = true; });
+                  });
                 } else {
                   setStatus(key, "not saved, try again");
                 }
