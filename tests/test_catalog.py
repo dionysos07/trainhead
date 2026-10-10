@@ -30,7 +30,7 @@ def test_reads_stations_targets_and_marked_ways(mini_osm, dem, settings):
     names = {s["name"] for s in osm.stations}
     assert names == {"Talbahnhof", "Seebahnhof"}  # the funicular station is skipped
     kinds = {t["name"]: t["kind"] for t in osm.targets}
-    assert kinds == {"Testkopf": "peak", "Testhütte": "hut"}
+    assert kinds == {"Testkopf": "peak", "Testhütte": "hut", "Weghütte": "hut"}
     marked = [m for wid, m in zip(osm.way_ids, osm.way_marked) if wid == 101]
     assert marked == [True]
 
@@ -138,3 +138,23 @@ def test_no_bus_stops_when_disabled(mini_osm, dem, settings):
     params.bus_stops = False
     stations = C.prepare_stations(osm, g, dem, params, targets=targets)
     assert all(s["mode"] == "rail" for s in stations)
+
+
+def test_skips_on_demand_and_foreign_stops_and_reads_hut_buildings(mini_osm, settings):
+    osm = read_osm(str(mini_osm), settings["region"]["bbox"])
+    names = {b["name"] for b in osm.bus_stops}
+    assert "AST 303" not in names and "Grenzalm" not in names
+    huts = [t for t in osm.targets if t["name"] == "Weghütte"]
+    assert huts and huts[0]["kind"] == "hut" and huts[0]["id"] < 0
+    assert abs(huts[0]["lat"] - 47.62985) < 1e-4
+
+
+def test_selection_covers_every_destination_first():
+    params = C.CatalogParams(total=3, per_target=4, per_station=30)
+    stations = [{"name": "A"}, {"name": "B"}, {"name": "C"}]
+    cands = [{"start": 0, "end": e, "target": 0, "score": 0.9 - e / 100} for e in (1, 2)]
+    cands += [{"start": 1, "end": 2, "target": 0, "score": 0.85}]
+    cands += [{"start": 0, "end": 1, "target": 1, "score": 0.2}]
+    chosen = C.select(cands, stations, params)
+    assert len(chosen) == 3
+    assert {c["target"] for c in chosen} == {0, 1}

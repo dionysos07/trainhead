@@ -35,6 +35,11 @@ log = logging.getLogger(__name__)
 
 KIND_RANK = {"peak": 0, "hut": 1, "viewpoint": 2, "inn": 3}
 SNAP_M = {"peak": 60.0, "hut": 80.0, "viewpoint": 60.0, "inn": 80.0, "station": 400.0, "bus": 300.0}
+# A rounded summit often has its peak node a little off the path. Within this
+# radius it still counts as reached when the path point is at most
+# PEAK_DROP_M lower (both heights from the same elevation model).
+PEAK_SNAP_FAR_M = 150.0
+PEAK_DROP_M = 25.0
 MIN_ELE = {"peak": 700.0, "hut": 0.0, "viewpoint": 750.0, "inn": 900.0}
 
 
@@ -50,7 +55,7 @@ class CatalogParams:
     max_station_ele_m: float = 1000.0
     per_target: int = 4
     per_station: int = 30
-    total: int = 1500
+    total: int = 2500
     loop_penalty: float = 4.0
     t3_penalty: float = 1.25
     keep_per_target: int = 12        # traverse candidates kept per destination before selection
@@ -191,6 +196,12 @@ def prepare_targets(osm: OsmData, g: G.Graph, dem: DemSampler) -> list[dict]:
         if check_ele < MIN_ELE[t["kind"]]:
             continue
         snapped = G.snap(g, t["lat"], t["lon"], SNAP_M[t["kind"]])
+        if snapped is None and t["kind"] == "peak" and np.isfinite(dem_ele):
+            far = G.snap(g, t["lat"], t["lon"], PEAK_SNAP_FAR_M)
+            if far is not None:
+                v_ele = float(dem.sample([g.vlat[far[0]]], [g.vlon[far[0]]])[0])
+                if np.isfinite(v_ele) and v_ele >= float(dem_ele) - PEAK_DROP_M:
+                    snapped = far
         if snapped is None:
             continue
         cands.append(dict(t, ele=round(ele), vertex=snapped[0], snap_m=round(snapped[1])))
@@ -362,27 +373,37 @@ def candidate_path(c: dict) -> tuple[np.ndarray, np.ndarray]:
 
 
 def select(cands: list[dict], stations: list[dict], params: CatalogParams) -> list[dict]:
-    """Best-scoring routes with variety: limits per destination and per start station,
-    and only one direction of each traverse."""
+    """Every destination with a candidate gets its best route first; the
+    remaining slots go by score, with limits per destination and per start
+    stop, and only one direction of each traverse."""
     cands = sorted(cands, key=lambda c: -c["score"])
     per_target: dict[int, int] = {}
     per_station: dict[int, int] = {}
     seen_pairs = set()
     out = []
-    for c in cands:
+
+    def take(c, check_station: bool) -> bool:
         key = (min(c["start"], c["end"]), max(c["start"], c["end"]), c["target"])
-        if key in seen_pairs:
-            continue
-        if per_target.get(c["target"], 0) >= params.per_target:
-            continue
-        if per_station.get(c["start"], 0) >= params.per_station:
-            continue
+        if key in seen_pairs or per_target.get(c["target"], 0) >= params.per_target:
+            return False
+        if check_station and per_station.get(c["start"], 0) >= params.per_station:
+            return False
         seen_pairs.add(key)
         per_target[c["target"]] = per_target.get(c["target"], 0) + 1
         per_station[c["start"]] = per_station.get(c["start"], 0) + 1
         out.append(c)
+        return True
+
+    for c in cands:
         if len(out) >= params.total:
             break
+        if c["target"] not in per_target:
+            take(c, check_station=False)
+    for c in cands:
+        if len(out) >= params.total:
+            break
+        take(c, check_station=True)
+    out.sort(key=lambda c: -c["score"])
     return out
 
 

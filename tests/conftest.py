@@ -57,6 +57,9 @@ def build_osm(path: Path) -> Path:
     # Mountain bus stop far from the railway, on a path to the summit; and one next to the station.
     node(47.6300, 11.7950, {"highway": "bus_stop", "name": "Almbus Wendeplatz"}, nid=7)
     node(47.6005, 11.8005, {"highway": "bus_stop", "name": "Talbahnhof Bus"}, nid=8)
+    # Stops that must be skipped: on-demand taxi, and one tagged as Austrian.
+    node(47.6290, 11.8000, {"highway": "bus_stop", "name": "AST 303"}, nid=9)
+    node(47.6295, 11.8030, {"highway": "bus_stop", "name": "Grenzalm", "ref:IFOPT": "at:45:1234:0:1"}, nid=10)
 
     a = node(47.6003, 11.8003)
     b = node(47.6003, 11.8597)
@@ -86,6 +89,10 @@ def build_osm(path: Path) -> Path:
 
     w7 = [7] + [node(la, lo) for la, lo in _line((47.6300, 11.7950), (47.6305, 11.8300), 20)[1:-1]] + [p]
     way(w7, {"highway": "path", "sac_scale": "mountain_hiking"}, 107)
+
+    # A hut drawn as a building outline next to the path from the bus stop.
+    hut_ring = [node(47.6297, 11.8148), node(47.6297, 11.8152), node(47.6300, 11.8152), node(47.6300, 11.8148)]
+    way(hut_ring + [hut_ring[0]], {"building": "yes", "tourism": "alpine_hut", "name": "Weghütte"}, 108)
 
     lines = ["<?xml version='1.0' encoding='UTF-8'?>", '<osm version="0.6" generator="trainhead-test">']
     for nid, (lat, lon, tags) in sorted(nodes.items()):

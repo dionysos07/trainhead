@@ -19,6 +19,11 @@ log = logging.getLogger(__name__)
 
 EXCLUDED_STATION_TYPES = {"subway", "light_rail", "monorail", "funicular", "miniature", "tram"}
 MOUNTAIN_FOOD = {"restaurant", "cafe", "biergarten"}
+# Stops outside Germany: tickets and timetables differ, and the map data there is partial.
+FOREIGN_NETWORKS = {"VVT", "SVV", "Salzburger Verkehrsverbund", "Verkehrsverbund Tirol", "OÖVV", "VVV"}
+FOREIGN_OPERATOR = re.compile(r"ÖBB|Postbus|Salzburg AG|Salzburger Lokalbahn|Innsbrucker Verkehrsbetriebe")
+# On-demand services have to be booked by phone, so their stops are not trailheads.
+ON_DEMAND_NAME = re.compile(r"^(AST|Rufbus|Ruftaxi)\b|Anrufsammeltaxi", re.IGNORECASE)
 # Cog railways and cable cars aren't trailheads the planner can rely on.
 MOUNTAIN_RAILWAY = re.compile(
     r"talstation|bergstation|mittelstation|seilbahn|zugspitzbahn|wendelsteinbahn|bergbahn|zahnrad|chiemsee-bahn",
@@ -66,6 +71,15 @@ def _in_bbox(lat, lon, bbox) -> bool:
     return south <= lat <= north and west <= lon <= east
 
 
+def is_foreign(tags) -> bool:
+    ifopt = tags.get("ref:IFOPT", "")
+    if ifopt and not ifopt.lower().startswith("de:"):
+        return True
+    if tags.get("network") in FOREIGN_NETWORKS:
+        return True
+    return bool(FOREIGN_OPERATOR.search(tags.get("operator", "")))
+
+
 def _station_from_node(node, bbox):
     tags = node.tags
     if tags.get("railway") not in ("station", "halt"):
@@ -80,6 +94,8 @@ def _station_from_node(node, bbox):
     if MOUNTAIN_RAILWAY.search(name) or MOUNTAIN_RAILWAY.search(tags.get("operator", "")):
         return None
     if tags.get("railway:preserved") == "yes" or tags.get("usage") == "tourism":
+        return None
+    if is_foreign(tags):
         return None
     lat, lon = node.location.lat, node.location.lon
     if not _in_bbox(lat, lon, bbox):
@@ -97,10 +113,45 @@ def _bus_stop_from_node(node, bbox):
     name = tags.get("name")
     if not name or tags.get("disused") == "yes":
         return None
+    if ON_DEMAND_NAME.search(name) or is_foreign(tags):
+        return None
     lat, lon = node.location.lat, node.location.lon
     if not _in_bbox(lat, lon, bbox):
         return None
     return {"id": node.id, "name": name, "lat": lat, "lon": lon}
+
+
+def _target_kind(tags) -> str | None:
+    if tags.get("natural") == "peak":
+        return "peak"
+    if tags.get("tourism") == "alpine_hut":
+        return "hut"
+    if tags.get("tourism") == "viewpoint":
+        return "viewpoint"
+    if tags.get("amenity") in MOUNTAIN_FOOD:
+        return "inn"  # kept only if high enough, decided once elevation is known
+    return None
+
+
+def _target_from_way(way, bbox):
+    """Huts and inns drawn as buildings: their centre becomes the destination."""
+    tags = way.tags
+    name = tags.get("name")
+    kind = _target_kind(tags)
+    if not name or kind not in ("hut", "inn"):
+        return None
+    lats, lons = [], []
+    for n in way.nodes:
+        if not n.location.valid():
+            return None
+        lats.append(n.lat)
+        lons.append(n.lon)
+    if len(lats) > 1 and lats[0] == lats[-1] and lons[0] == lons[-1]:
+        lats, lons = lats[:-1], lons[:-1]
+    lat, lon = sum(lats) / len(lats), sum(lons) / len(lons)
+    if not _in_bbox(lat, lon, bbox):
+        return None
+    return {"id": -way.id, "name": name, "lat": lat, "lon": lon, "kind": kind, "ele": parse_ele(tags.get("ele"))}
 
 
 def _target_from_node(node, bbox):
@@ -167,6 +218,9 @@ def read_osm(path: str, bbox) -> OsmData:
 
         tags = obj.tags
         if not dif.way_is_walkable(tags):
+            tw = _target_from_way(obj, bbox)
+            if tw:
+                data.targets.append(tw)
             continue
         ids, lats, lons = [], [], []
         ok = True

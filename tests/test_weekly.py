@@ -273,3 +273,9 @@ def test_plan_falls_back_to_older_api_version():
     assert client.plan("48.1,11.5", "47.6,11.9", when) == {"itineraries": []}
     assert client.plan("48.1,11.5", "47.6,11.9", when) == {"itineraries": []}
     assert session.paths == ["/api/v6/plan", "/api/v5/plan", "/api/v5/plan"]
+
+
+def test_on_demand_leg_is_flagged():
+    leg = _leg("BUS", "AST 303", "Kreuth", "Bayerwald", "2026-10-17T06:00:00Z", "2026-10-17T06:20:00Z", "RVO")
+    s = T.summarize(_it([leg], leg["startTime"], leg["endTime"], 0), TZ)
+    assert any("on-demand" in i for i in s["issues"])

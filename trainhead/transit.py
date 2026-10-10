@@ -123,6 +123,7 @@ def _leg_line(leg: dict) -> str:
 
 
 LONG_DISTANCE_LINE = re.compile(r"^(ICE|IC|ECE|EC|RJX|RJ|NJ|EN|FLX)\d")
+ON_DEMAND = re.compile(r"\bAST\b|(?i:rufbus|ruftaxi|anrufsammeltaxi|on.demand)")
 
 
 def _leg_covered(leg: dict) -> bool:
@@ -155,6 +156,9 @@ def summarize(it: dict, tz: ZoneInfo) -> dict:
             issues.append(f"{_leg_line(leg)} cancelled")
         if not ok:
             issues.append(f"{_leg_line(leg)} not covered by the Deutschlandticket")
+        label = " ".join(str(leg.get(k) or "") for k in ("displayName", "routeShortName", "routeLongName", "headsign"))
+        if ON_DEMAND.search(label):
+            issues.append(f"{_leg_line(leg)} is an on-demand service: book it by phone in advance")
         for a in alerts:
             issues.append(a)
         legs.append({
