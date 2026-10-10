@@ -39,10 +39,14 @@ mkdir -p /tmp/th && git archive origin/data | tar -x -C /tmp/th
 ```
 
 Code in Claude's cloud sessions can't reach the weather and timetable
-services; the GitHub jobs fetch, Claude judges. If `weekly/latest.json` was
-not generated today (`generated_at`), stop and finish with one line: "The
+services; the GitHub jobs fetch, Claude judges. If there is no `data` branch
+yet, the route catalog hasn't been built: finish with "No plan this week: the
+route catalog is still being built." If `weekly/latest.json` was not
+generated today (`generated_at`), stop and finish with one line: "The
 Thursday data job didn't run, so there's no plan this week." Never plan from
-stale data.
+stale data. In both cases, look at the latest runs of the `catalog` and
+`weekly` workflows if you can (`gh run list`) and add the failing step in a
+second line.
 
 ## Thursday run
 
