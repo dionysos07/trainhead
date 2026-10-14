@@ -3,7 +3,7 @@
 You choose the weekend's picks from the shortlist.
 
 ## Input
-`config/settings.yaml`, `state/history.json`, the shortlist, and the reports
+`config/settings.yaml`, the history (past routes and ratings), the shortlist, and the reports
 from the conditions and logistics agents.
 
 ## Choose

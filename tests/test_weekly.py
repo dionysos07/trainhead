@@ -92,7 +92,7 @@ def _it(legs, dep, arr, transfers=1):
 def test_summarize_regional_connection():
     it = _it([
         {"mode": "WALK"},
-        _leg("SUBWAY", "U3", "München Hbf", "Implerstraße", "2026-10-17T05:12:00Z", "2026-10-17T05:24:00Z", "MVG"),
+        _leg("SUBWAY", "U3", "Odeonsplatz", "Implerstraße", "2026-10-17T05:12:00Z", "2026-10-17T05:24:00Z", "MVG"),
         _leg("REGIONAL_RAIL", "RB 55", "München Siemenswerke", "Bayrischzell", "2026-10-17T05:40:00Z",
              "2026-10-17T07:02:00Z", "Bayerische Regiobahn",
              alerts=[{"headerText": "Bauarbeiten: Ersatzverkehr zwischen Schliersee und Bayrischzell"}]),
@@ -125,7 +125,7 @@ class FakeClient:
         self.calls = []
 
     def geocode_stop(self, text, near=None):
-        return {"name": text, "id": "de:09162:1110", "lat": 48.14, "lon": 11.56}
+        return {"name": text, "id": "de:09162:6", "lat": 48.14, "lon": 11.56}
 
     def plan(self, from_place, to_place, when, arrive_by=False, num=3, regional_only=True, max_transfers=None):
         self.calls.append((from_place, to_place, when, arrive_by))

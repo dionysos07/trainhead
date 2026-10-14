@@ -19,17 +19,23 @@ a lighter run checks the plan again and only reports what changed.
 
 ## Where things are
 
-- `main` branch: code, `config/settings.yaml`, `state/history.json` (what he
-  did and how he rated it), `plans/` (`latest.json` plus one file per weekend,
-  named after its Saturday), `site/index.html` (the page), `agents/*.md`
-  (subagent briefs).
-- `data` branch, rewritten by the GitHub jobs (one commit, force-pushed):
-  `catalog/` (routes, stations, destinations, meta), `weekly/latest.json`
-  (Thursday's candidates with weather and connections), `recheck/latest.json`
-  (Friday's comparison).
-- Ratings: the page's database, collection `ratings`, one document per pick
-  (`<date>__<route_id>` with `rating` = `too_easy`, `right`, `too_hard` or
-  `skipped`). Read it with the ArtifactData tool, `action: list`.
+- `main` branch (public): code, `config/settings.yaml` (general limits,
+  starting from München Hbf), `site/index.html` (the route page),
+  `agents/*.md` (subagent briefs).
+- `data` branch (public), rewritten by the GitHub jobs (one commit,
+  force-pushed): `catalog/` (routes, stations, destinations, meta),
+  `weekly/latest.json` (Thursday's candidates with weather and connections),
+  `recheck/latest.json` (Friday's fresh check of every Thursday candidate),
+  `logs/`.
+- Personal data lives only in the route page's private database, read and
+  written with the ArtifactData tool on the page URL:
+  - `ratings`: one document per pick (`<date>__<route_id>` with `rating` =
+    `too_easy`, `right`, `too_hard` or `skipped`), written by the page.
+  - `plans`: document `latest` and one document per weekend named after its
+    Saturday (`2026-10-17`), each with a field `plan` holding the plan JSON.
+
+The repository is public. Never commit plans, ratings, history, dates of
+outings or anything else about the owner to it.
 
 Get the data branch into a scratch directory:
 
@@ -56,12 +62,14 @@ of its log. Raw log downloads are blocked here.
 1. Attach and clone the repo, install `requirements-light.txt`
    (`pip install --break-system-packages -q -r requirements-light.txt`), get
    the data branch as above, check `weekly/latest.json` is from today.
-2. Sync ratings: list the `ratings` collection on the route page and merge
-   new or changed ratings into `state/history.json` as
-   `{"date", "route_id", "kind", "rating"}`, one entry per date and route.
-3. Read `config/settings.yaml`, `state/history.json`, last weekend's plan
-   (`plans/latest.json` before you replace it) and `weekly/latest.json`.
-   Note any `notes` in the weekly file (for example failed connection checks).
+2. History: list the `ratings` collection on the route page and write the
+   entries to `/tmp/th/history.json` (outside the clone) as
+   `{"date", "route_id", "kind", "rating"}`, one per date and route.
+3. Read `config/settings.yaml`, the history, last weekend's plan (`plans/latest`
+   in the page database; save its `plan` field to `/tmp/th/previous.json`) and
+   `weekly/latest.json`. Apply the history rules yourself: drop candidates
+   rated `too_hard` and routes done within `picks.avoid_repeat_weeks`. Note any
+   `notes` in the weekly file (for example failed connection checks).
 4. Shortlist per day: the top 6 hikes, top 3 runs and top 2 fallbacks by
    `rank_score`.
 5. Run the four subagents with the Agent tool, each with its brief from
@@ -73,7 +81,7 @@ of its log. Raw log downloads are blocked here.
      without the scout's reasoning.
    If the checker rejects a pick, take the scout's next option and check
    again. Never ship a rejected pick.
-6. Write `plans/latest.json` in this shape (the page command fills in times,
+6. Write `/tmp/th/plan.json` in this shape (the page command fills in times,
    connections and weather from the weekly file):
 
    ```json
@@ -91,35 +99,42 @@ of its log. Raw log downloads are blocked here.
 7. Build the page files:
 
    ```
-   python -m trainhead.cli page --plan plans/latest.json \
+   python -m trainhead.cli page --plan /tmp/th/plan.json \
      --weekly /tmp/th/weekly/latest.json --catalog /tmp/th/catalog \
-     --previous plans/<last weekend's Saturday>.json --out out/site
+     --previous /tmp/th/previous.json --out /tmp/th/site
    ```
 
-   It prints the files it wrote. It also writes `plans/<Saturday>.json`.
+   It prints the files it wrote and fills times, connections and weather into
+   `/tmp/th/plan.json`.
 8. Publish: first `Artifact` `action: read` on the page URL, then
    `Artifact` publish with `url` = the page URL, `file_path` =
    `site/index.html`, and `files` mapping each printed path to
-   `out/site/<path>` (for example `{"plan.json": "out/site/plan.json",
-   "gpx/<id>.zip": "out/site/gpx/<id>.zip"}`). Don't pass `capabilities` or
+   `/tmp/th/site/<path>` (for example `{"plan.json": "/tmp/th/site/plan.json",
+   "gpx/<id>.zip": "/tmp/th/site/gpx/<id>.zip"}`). Don't pass `capabilities` or
    `icon`; the page keeps its own.
-9. Commit `plans/` and `state/history.json` to `main` and push.
+9. Save the enriched plan to the page database: `plans/latest` and
+   `plans/<Saturday>`, field `plan` (ArtifactData `set`; pass `if_version`
+   when the document exists). Commit nothing to the repository.
 10. Finish with a short message, which is what reaches his phone: one line
     per pick (day, route, walking time, first train), one line for the
     fallback, and any warning that matters.
 
 ## Friday run
 
-1. Attach and clone, get the data branch, read `recheck/latest.json`. If
-   `checked_at` isn't from today, finish with "Friday check didn't run; the
-   Thursday plan stands."
-2. If `changed` is false, finish with exactly: "Weekend plan unchanged."
+1. Attach and clone, get the data branch, read `recheck/latest.json` and the
+   plan from `plans/latest` in the page database. If there's no plan for this
+   weekend, finish with "No weekend plan to check." If `checked_at` isn't from
+   today, finish with "Friday check didn't run; the Thursday plan stands."
+   The recheck covers every Thursday candidate; look up the plan's picks in
+   its `checks` by `route_id` and `date`, and ignore the rest.
+2. If none of the picks has `reasons`, finish with exactly: "Weekend plan unchanged."
 3. If it changed: decide per affected pick whether it still works with a
    caveat (an earlier start, a different train) or needs replacing from
    Thursday's `weekly/latest.json`. A replacement goes through the safety
-   checker subagent first. Update `plans/latest.json`, rebuild the page with
+   checker subagent first. Update the plan, rebuild the page with
    `--notice "<one line on what changed>"` (add `--weekly` when a pick was
-   replaced), republish as on Thursday, commit and push.
+   replaced), republish as on Thursday, and save the plan to the page
+   database as on Thursday.
 4. Finish with what changed and what to do, in two or three lines.
 
 ## Hard rules

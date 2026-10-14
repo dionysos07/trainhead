@@ -1,6 +1,6 @@
 name: recheck
 
-# Friday: fresh weather and connections for the picks in plans/latest.json.
+# Friday: fresh weather and connections for every Thursday candidate.
 on:
   workflow_dispatch:
   schedule:
@@ -35,10 +35,10 @@ jobs:
 
       - name: Recheck the picks
         run: |
-          if [ ! -f plans/latest.json ]; then echo "no plan yet"; exit 0; fi
+          if [ ! -f data-branch/weekly/latest.json ]; then echo "no weekly data yet"; exit 0; fi
           set -o pipefail
           mkdir -p out/logs
-          python -m trainhead.cli recheck --catalog data-branch/catalog --plan plans/latest.json --out out/recheck 2>&1 | tee out/logs/recheck.log
+          python -m trainhead.cli recheck --catalog data-branch/catalog --from-weekly data-branch/weekly/latest.json --out out/recheck 2>&1 | tee out/logs/recheck.log
 
       - name: Report a failure
         if: failure()

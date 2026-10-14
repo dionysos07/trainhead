@@ -102,7 +102,23 @@ def cmd_recheck(args) -> int:
 
     settings = load_settings(args.settings)
     routes = {r["id"]: r for r in load_catalog(args.catalog)}
-    plan = _read_json(Path(args.plan), {})
+    if args.from_weekly:
+        # Recheck every candidate from Thursday. The personal picks stay private;
+        # the Friday run looks its own picks up in this list.
+        weekly = _read_json(Path(args.from_weekly), {})
+        picks = []
+        for day, d in (weekly.get("days") or {}).items():
+            for kind in ("hikes", "runs", "fallbacks"):
+                for e in d.get(kind, []):
+                    picks.append({
+                        "date": day, "kind": e["kind"], "route_id": e["route"]["id"],
+                        "walk_start": e.get("walk_start"), "expected_finish": e.get("expected_finish"),
+                        "weather_score": e["weather"].get("score"), "storm": bool(e["weather"].get("storm")),
+                        "outbound_dep": ((e.get("outbound") or {}).get("dep") or "")[11:16] or None,
+                    })
+        plan = {"home": weekly.get("home"), "picks": picks}
+    else:
+        plan = _read_json(Path(args.plan), {})
     result = run_recheck(settings, routes, plan, W.fetch, T.Client(contact=settings["transit"].get("contact") or None))
     result["checked_at"] = datetime.now(ZoneInfo(settings["schedule"]["timezone"])).isoformat(timespec="minutes")
     _write_json(Path(args.out) / "latest.json", result)
@@ -201,6 +217,7 @@ def main(argv=None) -> int:
     r = sub.add_parser("recheck")
     r.add_argument("--catalog", default="data/catalog")
     r.add_argument("--plan", default=str(REPO_ROOT / "plans" / "latest.json"))
+    r.add_argument("--from-weekly", help="recheck every candidate in this weekly file instead of a plan")
     r.add_argument("--out", default="out/recheck")
     r.set_defaults(fn=cmd_recheck)
 

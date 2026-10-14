@@ -46,7 +46,7 @@ jobs:
           mkdir -p out/logs
           ARGS=()
           if [[ "$TODAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then ARGS=(--today "$TODAY"); fi
-          python -m trainhead.cli weekly --catalog data-branch/catalog --history state/history.json --out out/weekly "${ARGS[@]}" 2>&1 | tee out/logs/weekly.log
+          python -m trainhead.cli weekly --catalog data-branch/catalog --out out/weekly "${ARGS[@]}" 2>&1 | tee out/logs/weekly.log
 
       - name: Summary
         run: |
