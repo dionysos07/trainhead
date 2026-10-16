@@ -1,0 +1,434 @@
+{
+ "changed": false,
+ "checks": [
+  {
+   "route_id": "kesselberg-pahohe-fahrenbergkopf-walchensee-herzogstandbahn-f78f92",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.951,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 3,
+    "gust_max_kmh": 19,
+    "cloud_mean": 33,
+    "temp_min": 4,
+    "temp_max": 15,
+    "freezing_level_min_m": 3030,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "walchensee-herzogstandbahn-rauchkopf-kesselberg-pahohe-3c0e25",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.951,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 3,
+    "gust_max_kmh": 19,
+    "cloud_mean": 33,
+    "temp_min": 5,
+    "temp_max": 15,
+    "freezing_level_min_m": 3030,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "enterrottach-mautstelle-bodenschneid-spitzingsattel-a1e219",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.873,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 5,
+    "gust_max_kmh": 16,
+    "cloud_mean": 85,
+    "temp_min": 6,
+    "temp_max": 15,
+    "freezing_level_min_m": 2930,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "valepp-waitzingeralm-stumpfling-spitzingsattel-77b0bf",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.873,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 5,
+    "gust_max_kmh": 16,
+    "cloud_mean": 85,
+    "temp_min": 7,
+    "temp_max": 16,
+    "freezing_level_min_m": 2930,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "spitzingsattel-suttenstein-enterrottach-mautstelle-e311df",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.876,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 3,
+    "gust_max_kmh": 14,
+    "cloud_mean": 82,
+    "temp_min": 6,
+    "temp_max": 16,
+    "freezing_level_min_m": 2930,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "albert-link-hutte-rotwandhaus-valepp-waitzingeralm-4a06a8",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.931,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 5,
+    "gust_max_kmh": 17,
+    "cloud_mean": 46,
+    "temp_min": 4,
+    "temp_max": 16,
+    "freezing_level_min_m": 2960,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "enterrottach-mautstelle-obere-firstalm-spitzingsattel-022dbb",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.873,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 5,
+    "gust_max_kmh": 16,
+    "cloud_mean": 85,
+    "temp_min": 6,
+    "temp_max": 15,
+    "freezing_level_min_m": 2930,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "schlo-elmau-grunkopf-mittenwald-8c5e91",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.982,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 3,
+    "gust_max_kmh": 21,
+    "cloud_mean": 12,
+    "temp_min": 7,
+    "temp_max": 16,
+    "freezing_level_min_m": 2920,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "schlo-elmau-grunkopf-mittenwald-8c5e91",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 1.0,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 14,
+    "cloud_mean": 0,
+    "temp_min": 7,
+    "temp_max": 16,
+    "freezing_level_min_m": 3070,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "albert-link-hutte-sebaldstein-valepp-waitzingeralm-f5a5a3",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.903,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 12,
+    "cloud_mean": 64,
+    "temp_min": 6,
+    "temp_max": 14,
+    "freezing_level_min_m": 3030,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "albert-link-hutte-rotwandhaus-valepp-waitzingeralm-4a06a8",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.951,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 7,
+    "cloud_mean": 33,
+    "temp_min": 4,
+    "temp_max": 14,
+    "freezing_level_min_m": 3050,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "bayrischzell-brunnerkopfl-grenzgasthof-backeralm-bayrischzell-1a90e1",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.889,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 3,
+    "gust_max_kmh": 16,
+    "cloud_mean": 74,
+    "temp_min": 10,
+    "temp_max": 16,
+    "freezing_level_min_m": 2980,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "biathlon-zentrum-chiemgau-arena-bichler-alm-cafe-zwing-3807e5",
+   "date": "2026-10-17",
+   "weather": {
+    "score": 0.862,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 10,
+    "gust_max_kmh": 17,
+    "cloud_mean": 92,
+    "temp_min": 13,
+    "temp_max": 16,
+    "freezing_level_min_m": 2990,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "kreuth-siebenhutten-graseckwand-kreuth-klamm-3617e5",
+   "date": "2026-10-18",
+   "weather": {
+    "score": 0.879,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 19,
+    "cloud_mean": 81,
+    "temp_min": 6,
+    "temp_max": 13,
+    "freezing_level_min_m": 3010,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "kreuth-klamm-schildenstein-kreuth-siebenhutten-00774c",
+   "date": "2026-10-18",
+   "weather": {
+    "score": 0.877,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 19,
+    "cloud_mean": 82,
+    "temp_min": 5,
+    "temp_max": 13,
+    "freezing_level_min_m": 3010,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "enterrottach-mautstelle-bodenschneid-spitzingsattel-a1e219",
+   "date": "2026-10-18",
+   "weather": {
+    "score": 0.773,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 20,
+    "cloud_mean": 85,
+    "temp_min": 3,
+    "temp_max": 13,
+    "freezing_level_min_m": 2960,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "spitzingsattel-stumpfling-enterrottach-mautstelle-5e765c",
+   "date": "2026-10-18",
+   "weather": {
+    "score": 0.773,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 20,
+    "cloud_mean": 85,
+    "temp_min": 3,
+    "temp_max": 12,
+    "freezing_level_min_m": 2960,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "albert-link-hutte-sebaldstein-valepp-waitzingeralm-f5a5a3",
+   "date": "2026-10-18",
+   "weather": {
+    "score": 0.78,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 20,
+    "cloud_mean": 80,
+    "temp_min": 3,
+    "temp_max": 16,
+    "freezing_level_min_m": 2950,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "enterrottach-mautstelle-obere-firstalm-spitzingsattel-022dbb",
+   "date": "2026-10-18",
+   "weather": {
+    "score": 0.773,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 20,
+    "cloud_mean": 85,
+    "temp_min": 3,
+    "temp_max": 13,
+    "freezing_level_min_m": 2960,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "kreuth-klamm-graseckwand-kreuth-raineralm-99d5f7",
+   "date": "2026-10-18",
+   "weather": {
+    "score": 0.863,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 18,
+    "cloud_mean": 92,
+    "temp_min": 6,
+    "temp_max": 12,
+    "freezing_level_min_m": 3010,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "albert-link-hutte-sebaldstein-valepp-waitzingeralm-f5a5a3",
+   "date": "2026-10-18",
+   "weather": {
+    "score": 0.758,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 11,
+    "cloud_mean": 95,
+    "temp_min": 3,
+    "temp_max": 12,
+    "freezing_level_min_m": 2950,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "biathlon-zentrum-chiemgau-arena-bichler-alm-cafe-zwing-3807e5",
+   "date": "2026-10-18",
+   "weather": {
+    "score": 0.784,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 25,
+    "cloud_mean": 77,
+    "temp_min": 9,
+    "temp_max": 15,
+    "freezing_level_min_m": 3070,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "bayrischzell-brunnerkopfl-grenzgasthof-backeralm-bayrischzell-1a90e1",
+   "date": "2026-10-18",
+   "weather": {
+    "score": 0.781,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 0,
+    "gust_max_kmh": 15,
+    "cloud_mean": 79,
+    "temp_min": 7,
+    "temp_max": 14,
+    "freezing_level_min_m": 2950,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  }
+ ],
+ "checked_at": "2026-10-16T19:42+02:00"
+}

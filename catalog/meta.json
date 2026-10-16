@@ -1,0 +1,11 @@
+{
+ "built_at": "2026-10-10T13:42+02:00",
+ "osm_timestamp": "",
+ "max_sac": 3,
+ "untagged_path_max_ele_m": 1000,
+ "dem": "CopernicusDem",
+ "candidates": 10251,
+ "routes": 2500,
+ "stations": 319,
+ "destinations": 1171
+}
