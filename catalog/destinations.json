@@ -1,0 +1,9370 @@
+[
+ {
+  "id": 27384190,
+  "name": "Zugspitze",
+  "kind": "peak",
+  "ele": 2962,
+  "lat": 47.421215,
+  "lon": 10.986297
+ },
+ {
+  "id": 256042768,
+  "name": "Schneefernerkopf",
+  "kind": "peak",
+  "ele": 2874,
+  "lat": 47.4095968,
+  "lon": 10.9699595
+ },
+ {
+  "id": 307562003,
+  "name": "Hocheck",
+  "kind": "peak",
+  "ele": 2651,
+  "lat": 47.558423,
+  "lon": 12.9237899
+ },
+ {
+  "id": 259486622,
+  "name": "Alpspitze",
+  "kind": "peak",
+  "ele": 2628,
+  "lat": 47.4294968,
+  "lon": 11.0478118
+ },
+ {
+  "id": 2498250593,
+  "name": "Funtenseetauern",
+  "kind": "peak",
+  "ele": 2578,
+  "lat": 47.4850145,
+  "lon": 12.9767787
+ },
+ {
+  "id": 664510186,
+  "name": "Kammerlinghorn",
+  "kind": "peak",
+  "ele": 2483,
+  "lat": 47.5450497,
+  "lon": 12.8327097
+ },
+ {
+  "id": 481694454,
+  "name": "Stuhljoch",
+  "kind": "peak",
+  "ele": 2446,
+  "lat": 47.4898784,
+  "lon": 12.9672187
+ },
+ {
+  "id": 944092774,
+  "name": "Westliche Törlspitze",
+  "kind": "peak",
+  "ele": 2427,
+  "lat": 47.4126395,
+  "lon": 11.1301239
+ },
+ {
+  "id": 256041839,
+  "name": "Westliche Karwendelspitze",
+  "kind": "peak",
+  "ele": 2385,
+  "lat": 47.4300189,
+  "lon": 11.298858
+ },
+ {
+  "id": 293247920,
+  "name": "Nördliche Linderspitze",
+  "kind": "peak",
+  "ele": 2372,
+  "lat": 47.4279802,
+  "lon": 11.2930554
+ },
+ {
+  "id": 504799999,
+  "name": "Kahlersberg",
+  "kind": "peak",
+  "ele": 2350,
+  "lat": 47.5315782,
+  "lon": 13.0320821
+ },
+ {
+  "id": 481694086,
+  "name": "Seehorn",
+  "kind": "peak",
+  "ele": 2321,
+  "lat": 47.5166781,
+  "lon": 12.8531171
+ },
+ {
+  "id": 1868477930,
+  "name": "Schneibstein",
+  "kind": "peak",
+  "ele": 2275,
+  "lat": 47.5620726,
+  "lon": 13.0575455
+ },
+ {
+  "id": 508489606,
+  "name": "Südliche Riffelspitze",
+  "kind": "peak",
+  "ele": 2262,
+  "lat": 47.437218,
+  "lon": 11.0037847
+ },
+ {
+  "id": 67233894,
+  "name": "Soiernspitze",
+  "kind": "peak",
+  "ele": 2253,
+  "lat": 47.4815666,
+  "lon": 11.3571077
+ },
+ {
+  "id": 527273299,
+  "name": "Westliches Kirchl",
+  "kind": "peak",
+  "ele": 2241,
+  "lat": 47.4307842,
+  "lon": 11.3035822
+ },
+ {
+  "id": 1621410586,
+  "name": "Mittlere Linderspitze",
+  "kind": "peak",
+  "ele": 2239,
+  "lat": 47.4254602,
+  "lon": 11.290907
+ },
+ {
+  "id": 5817402896,
+  "name": "Reißende Lahnspitz",
+  "kind": "peak",
+  "ele": 2209,
+  "lat": 47.4802879,
+  "lon": 11.3443547
+ },
+ {
+  "id": 286687475,
+  "name": "Frauenalpl",
+  "kind": "peak",
+  "ele": 2202,
+  "lat": 47.4142547,
+  "lon": 11.1175579
+ },
+ {
+  "id": 26863047,
+  "name": "Große Arnspitze",
+  "kind": "peak",
+  "ele": 2196,
+  "lat": 47.3973362,
+  "lon": 11.2223256
+ },
+ {
+  "id": 2980105509,
+  "name": "Karlkopf",
+  "kind": "peak",
+  "ele": 2195,
+  "lat": 47.5459196,
+  "lon": 12.822541
+ },
+ {
+  "id": 1999392342,
+  "name": "Rotwandlspitze",
+  "kind": "peak",
+  "ele": 2192,
+  "lat": 47.4066196,
+  "lon": 11.2882158
+ },
+ {
+  "id": 507017748,
+  "name": "Fagstein",
+  "kind": "peak",
+  "ele": 2164,
+  "lat": 47.5488385,
+  "lon": 13.0309162
+ },
+ {
+  "id": 388003958,
+  "name": "Viehkogel",
+  "kind": "peak",
+  "ele": 2158,
+  "lat": 47.4882425,
+  "lon": 12.932659
+ },
+ {
+  "id": 507105613,
+  "name": "Schärtenspitze",
+  "kind": "peak",
+  "ele": 2153,
+  "lat": 47.5822,
+  "lon": 12.8746816
+ },
+ {
+  "id": 2441923393,
+  "name": "Höllentorkopf",
+  "kind": "peak",
+  "ele": 2150,
+  "lat": 47.4381128,
+  "lon": 11.047341
+ },
+ {
+  "id": 286790301,
+  "name": "Bernadeinkopf",
+  "kind": "peak",
+  "ele": 2144,
+  "lat": 47.4310847,
+  "lon": 11.0603371
+ },
+ {
+  "id": 476459617,
+  "name": "Hirschwiese",
+  "kind": "peak",
+  "ele": 2114,
+  "lat": 47.5295856,
+  "lon": 12.916452
+ },
+ {
+  "id": 1621410767,
+  "name": "Schafreuter",
+  "kind": "peak",
+  "ele": 2102,
+  "lat": 47.509013,
+  "lon": 11.4876
+ },
+ {
+  "id": 510121159,
+  "name": "Oberer Plattelkopf",
+  "kind": "peak",
+  "ele": 2098,
+  "lat": 47.6054624,
+  "lon": 12.8028361
+ },
+ {
+  "id": 26863440,
+  "name": "Krottenkopf",
+  "kind": "peak",
+  "ele": 2086,
+  "lat": 47.5443752,
+  "lon": 11.1914281
+ },
+ {
+  "id": 1055583505,
+  "name": "Vorderberghörndl",
+  "kind": "peak",
+  "ele": 2083,
+  "lat": 47.558802,
+  "lon": 12.8284226
+ },
+ {
+  "id": 510121161,
+  "name": "Prünzlkopf",
+  "kind": "peak",
+  "ele": 2081,
+  "lat": 47.6111774,
+  "lon": 12.81527
+ },
+ {
+  "id": 507037980,
+  "name": "Lafeldkopf",
+  "kind": "peak",
+  "ele": 2074,
+  "lat": 47.5345871,
+  "lon": 13.0237221
+ },
+ {
+  "id": 515678324,
+  "name": "Feldernkopf",
+  "kind": "peak",
+  "ele": 2071,
+  "lat": 47.4831655,
+  "lon": 11.3362025
+ },
+ {
+  "id": 1055547086,
+  "name": "Schärtenwandkopf",
+  "kind": "peak",
+  "ele": 2065,
+  "lat": 47.5841081,
+  "lon": 12.8613061
+ },
+ {
+  "id": 510121160,
+  "name": "Reiter Steinberg",
+  "kind": "peak",
+  "ele": 2060,
+  "lat": 47.6102587,
+  "lon": 12.8074181
+ },
+ {
+  "id": 277722457,
+  "name": "Frieder",
+  "kind": "peak",
+  "ele": 2053,
+  "lat": 47.5217533,
+  "lon": 10.9595715
+ },
+ {
+  "id": 277727364,
+  "name": "Schellschlicht",
+  "kind": "peak",
+  "ele": 2052,
+  "lat": 47.5092999,
+  "lon": 10.9163331
+ },
+ {
+  "id": 284141671,
+  "name": "Schöttelkarspitze",
+  "kind": "peak",
+  "ele": 2050,
+  "lat": 47.4940798,
+  "lon": 11.3298011
+ },
+ {
+  "id": 277722495,
+  "name": "Friederspitz",
+  "kind": "peak",
+  "ele": 2049,
+  "lat": 47.5171414,
+  "lon": 10.9588323
+ },
+ {
+  "id": 387482195,
+  "name": "Schottmalhorn",
+  "kind": "peak",
+  "ele": 2045,
+  "lat": 47.6132271,
+  "lon": 12.8298043
+ },
+ {
+  "id": 449491364,
+  "name": "Bischof",
+  "kind": "peak",
+  "ele": 2033,
+  "lat": 47.5404528,
+  "lon": 11.1757851
+ },
+ {
+  "id": 510121162,
+  "name": "Hohes Gerstfeld",
+  "kind": "peak",
+  "ele": 2031,
+  "lat": 47.6120942,
+  "lon": 12.8245353
+ },
+ {
+  "id": 280329639,
+  "name": "Kuchelbergkopf",
+  "kind": "peak",
+  "ele": 2026,
+  "lat": 47.5349169,
+  "lon": 10.9254312
+ },
+ {
+  "id": 280328857,
+  "name": "Kuchelbergspitze",
+  "kind": "peak",
+  "ele": 2020,
+  "lat": 47.5414219,
+  "lon": 10.9425313
+ },
+ {
+  "id": 440062076,
+  "name": "Krähe",
+  "kind": "peak",
+  "ele": 2010,
+  "lat": 47.5527964,
+  "lon": 10.8252366
+ },
+ {
+  "id": 2076476475,
+  "name": "Gumpenkarspitze",
+  "kind": "peak",
+  "ele": 2010,
+  "lat": 47.4920061,
+  "lon": 11.3610059
+ },
+ {
+  "id": 296426647,
+  "name": "Hochblasse",
+  "kind": "peak",
+  "ele": 1989,
+  "lat": 47.5464516,
+  "lon": 10.8379725
+ },
+ {
+  "id": 26863431,
+  "name": "Kramerspitz",
+  "kind": "peak",
+  "ele": 1985,
+  "lat": 47.5068832,
+  "lon": 11.0472646
+ },
+ {
+  "id": 527352547,
+  "name": "Steinkarkopf",
+  "kind": "peak",
+  "ele": 1981,
+  "lat": 47.4585741,
+  "lon": 11.332227
+ },
+ {
+  "id": 297296330,
+  "name": "Großer Weitschartenkopf",
+  "kind": "peak",
+  "ele": 1979,
+  "lat": 47.632006,
+  "lon": 12.7863059
+ },
+ {
+  "id": 1621410667,
+  "name": "Predigtstuhl",
+  "kind": "peak",
+  "ele": 1975,
+  "lat": 47.4402752,
+  "lon": 11.3136586
+ },
+ {
+  "id": 21634385,
+  "name": "Berchtesgadener Hochthron",
+  "kind": "peak",
+  "ele": 1972,
+  "lat": 47.6935146,
+  "lon": 12.986619
+ },
+ {
+  "id": 13321949460,
+  "name": "Teufelsgsaß",
+  "kind": "peak",
+  "ele": 1962,
+  "lat": 47.4166455,
+  "lon": 11.1124936
+ },
+ {
+  "id": 323621225,
+  "name": "Sonntagshorn",
+  "kind": "peak",
+  "ele": 1961,
+  "lat": 47.6822111,
+  "lon": 12.6958024
+ },
+ {
+  "id": 482340809,
+  "name": "Seinskopf",
+  "kind": "peak",
+  "ele": 1961,
+  "lat": 47.4918153,
+  "lon": 11.3176634
+ },
+ {
+  "id": 277727578,
+  "name": "Brandjoch",
+  "kind": "peak",
+  "ele": 1957,
+  "lat": 47.5054845,
+  "lon": 10.9093329
+ },
+ {
+  "id": 277716192,
+  "name": "Kienjoch",
+  "kind": "peak",
+  "ele": 1953,
+  "lat": 47.5408874,
+  "lon": 10.9987127
+ },
+ {
+  "id": 297347875,
+  "name": "Edelweißlahnerkopf",
+  "kind": "peak",
+  "ele": 1953,
+  "lat": 47.6186277,
+  "lon": 12.8369017
+ },
+ {
+  "id": 277716081,
+  "name": "Kieneckspitz",
+  "kind": "peak",
+  "ele": 1943,
+  "lat": 47.545013,
+  "lon": 11.0038367
+ },
+ {
+  "id": 507017751,
+  "name": "Rothspielscheibe",
+  "kind": "peak",
+  "ele": 1940,
+  "lat": 47.5569375,
+  "lon": 13.0329717
+ },
+ {
+  "id": 519688895,
+  "name": "Hoher Fricken",
+  "kind": "peak",
+  "ele": 1940,
+  "lat": 47.5313452,
+  "lon": 11.1531653
+ },
+ {
+  "id": 268765217,
+  "name": "Hirschbichel",
+  "kind": "peak",
+  "ele": 1935,
+  "lat": 47.5142384,
+  "lon": 11.0120559
+ },
+ {
+  "id": 517181845,
+  "name": "Hoher Straußberg",
+  "kind": "peak",
+  "ele": 1933,
+  "lat": 47.5437021,
+  "lon": 10.7940684
+ },
+ {
+  "id": 6212632160,
+  "name": "Falzkopf",
+  "kind": "peak",
+  "ele": 1930,
+  "lat": 47.5713472,
+  "lon": 12.933967
+ },
+ {
+  "id": 2423273148,
+  "name": "Scheinbergspitz",
+  "kind": "peak",
+  "ele": 1929,
+  "lat": 47.554666,
+  "lon": 10.8874814
+ },
+ {
+  "id": 277716329,
+  "name": "Vorderer Felderkopf",
+  "kind": "peak",
+  "ele": 1928,
+  "lat": 47.5302443,
+  "lon": 11.0290377
+ },
+ {
+  "id": 715720509,
+  "name": "Archtalkopf",
+  "kind": "peak",
+  "ele": 1927,
+  "lat": 47.5577189,
+  "lon": 11.1944546
+ },
+ {
+  "id": 280847754,
+  "name": "Große Klammspitz",
+  "kind": "peak",
+  "ele": 1924,
+  "lat": 47.5806072,
+  "lon": 10.9093563
+ },
+ {
+  "id": 1621410556,
+  "name": "Brunnsteinkopf",
+  "kind": "peak",
+  "ele": 1924,
+  "lat": 47.4000583,
+  "lon": 11.2845752
+ },
+ {
+  "id": 7678135852,
+  "name": "Stuibenkopf",
+  "kind": "peak",
+  "ele": 1924,
+  "lat": 47.4244009,
+  "lon": 11.0791488
+ },
+ {
+  "id": 1621410920,
+  "name": "Demeljoch",
+  "kind": "peak",
+  "ele": 1923,
+  "lat": 47.5460842,
+  "lon": 11.5864439
+ },
+ {
+  "id": 268949227,
+  "name": "Hohe Kisten",
+  "kind": "peak",
+  "ele": 1922,
+  "lat": 47.5611009,
+  "lon": 11.2079696
+ },
+ {
+  "id": 5930135814,
+  "name": "Längenfelderkopf",
+  "kind": "peak",
+  "ele": 1910,
+  "lat": 47.4421328,
+  "lon": 11.0570808
+ },
+ {
+  "id": 296426650,
+  "name": "Kreuzkopf",
+  "kind": "peak",
+  "ele": 1909,
+  "lat": 47.520012,
+  "lon": 10.812711
+ },
+ {
+  "id": 1621410918,
+  "name": "Stierjoch",
+  "kind": "peak",
+  "ele": 1909,
+  "lat": 47.5109269,
+  "lon": 11.5186693
+ },
+ {
+  "id": 296426649,
+  "name": "Hirschfäng",
+  "kind": "peak",
+  "ele": 1905,
+  "lat": 47.5262788,
+  "lon": 10.8127461
+ },
+ {
+  "id": 8582538063,
+  "name": "Schwarzenköpfel",
+  "kind": "peak",
+  "ele": 1897,
+  "lat": 47.5283474,
+  "lon": 10.9081042
+ },
+ {
+  "id": 277715525,
+  "name": "Großer Zunderkopf",
+  "kind": "peak",
+  "ele": 1895,
+  "lat": 47.5337684,
+  "lon": 11.0327994
+ },
+ {
+  "id": 482340921,
+  "name": "Signalkopf",
+  "kind": "peak",
+  "ele": 1895,
+  "lat": 47.489442,
+  "lon": 11.3110956
+ },
+ {
+  "id": 277715389,
+  "name": "Notkarspitze",
+  "kind": "peak",
+  "ele": 1888,
+  "lat": 47.5534409,
+  "lon": 11.0550673
+ },
+ {
+  "id": 5163337269,
+  "name": "Hochalpkopf",
+  "kind": "peak",
+  "ele": 1886,
+  "lat": 47.6995525,
+  "lon": 12.9876208
+ },
+ {
+  "id": 26864487,
+  "name": "Rotwand",
+  "kind": "peak",
+  "ele": 1884,
+  "lat": 47.6502104,
+  "lon": 11.9344203
+ },
+ {
+  "id": 260813828,
+  "name": "Hochmiesing",
+  "kind": "peak",
+  "ele": 1883,
+  "lat": 47.6578441,
+  "lon": 11.9414061
+ },
+ {
+  "id": 751573285,
+  "name": "Geiselstein",
+  "kind": "peak",
+  "ele": 1882,
+  "lat": 47.5615677,
+  "lon": 10.8297368
+ },
+ {
+  "id": 1429977856,
+  "name": "Stuhlgrabenkogel",
+  "kind": "peak",
+  "ele": 1881,
+  "lat": 47.4868878,
+  "lon": 12.951933
+ },
+ {
+  "id": 2272725401,
+  "name": "Kehlstein",
+  "kind": "peak",
+  "ele": 1881,
+  "lat": 47.609693,
+  "lon": 13.0459547
+ },
+ {
+  "id": 21634651,
+  "name": "Jenner",
+  "kind": "peak",
+  "ele": 1874,
+  "lat": 47.5756849,
+  "lon": 13.0203822
+ },
+ {
+  "id": 481694453,
+  "name": "Feldkogel",
+  "kind": "peak",
+  "ele": 1872,
+  "lat": 47.4952577,
+  "lon": 12.9578072
+ },
+ {
+  "id": 344206497,
+  "name": "Weitalpspitz",
+  "kind": "peak",
+  "ele": 1870,
+  "lat": 47.548461,
+  "lon": 10.8620583
+ },
+ {
+  "id": 522603013,
+  "name": "Hirschwang",
+  "kind": "peak",
+  "ele": 1868,
+  "lat": 47.5787562,
+  "lon": 10.884533
+ },
+ {
+  "id": 280846855,
+  "name": "Feigenkopf",
+  "kind": "peak",
+  "ele": 1866,
+  "lat": 47.5797003,
+  "lon": 10.8902956
+ },
+ {
+  "id": 13416740774,
+  "name": "Mittergernnadel",
+  "kind": "peak",
+  "ele": 1865,
+  "lat": 47.5104849,
+  "lon": 11.0552717
+ },
+ {
+  "id": 277654091,
+  "name": "Hoher Ziegspitz",
+  "kind": "peak",
+  "ele": 1864,
+  "lat": 47.5014276,
+  "lon": 11.0032743
+ },
+ {
+  "id": 311423621,
+  "name": "Großer Bruder",
+  "kind": "peak",
+  "ele": 1864,
+  "lat": 47.6265864,
+  "lon": 12.7759008
+ },
+ {
+  "id": 268974034,
+  "name": "Halserspitz",
+  "kind": "peak",
+  "ele": 1862,
+  "lat": 47.5911671,
+  "lon": 11.7810799
+ },
+ {
+  "id": 327048019,
+  "name": "Koflerjoch",
+  "kind": "peak",
+  "ele": 1861,
+  "lat": 47.5227688,
+  "lon": 10.7621926
+ },
+ {
+  "id": 381003555,
+  "name": "Riedkopf",
+  "kind": "peak",
+  "ele": 1860,
+  "lat": 47.4075627,
+  "lon": 11.2306316
+ },
+ {
+  "id": 277716175,
+  "name": "Mittageck",
+  "kind": "peak",
+  "ele": 1855,
+  "lat": 47.550564,
+  "lon": 11.0097753
+ },
+ {
+  "id": 2119792086,
+  "name": "Salzburger Hochthron",
+  "kind": "peak",
+  "ele": 1853,
+  "lat": 47.7180172,
+  "lon": 13.004749
+ },
+ {
+  "id": 264037688,
+  "name": "Großer Traithen",
+  "kind": "peak",
+  "ele": 1852,
+  "lat": 47.6465626,
+  "lon": 12.0376336
+ },
+ {
+  "id": 2076328206,
+  "name": "Fermerskopf",
+  "kind": "peak",
+  "ele": 1851,
+  "lat": 47.5060912,
+  "lon": 11.3958755
+ },
+ {
+  "id": 268949226,
+  "name": "Simetsberg",
+  "kind": "peak",
+  "ele": 1840,
+  "lat": 47.5665209,
+  "lon": 11.2537283
+ },
+ {
+  "id": 2358670245,
+  "name": "Mitterberg",
+  "kind": "peak",
+  "ele": 1840,
+  "lat": 47.7078002,
+  "lon": 12.9753465
+ },
+ {
+  "id": 280847105,
+  "name": "Grubenkopf",
+  "kind": "peak",
+  "ele": 1839,
+  "lat": 47.5791435,
+  "lon": 10.8689698
+ },
+ {
+  "id": 26865134,
+  "name": "Wendelstein",
+  "kind": "peak",
+  "ele": 1838,
+  "lat": 47.7034761,
+  "lon": 12.0120518
+ },
+ {
+  "id": 378696078,
+  "name": "Pfaffenkegel",
+  "kind": "peak",
+  "ele": 1837,
+  "lat": 47.5760619,
+  "lon": 13.0404116
+ },
+ {
+  "id": 1617864298,
+  "name": "Rappenklammspitze",
+  "kind": "peak",
+  "ele": 1835,
+  "lat": 47.469269,
+  "lon": 11.407953
+ },
+ {
+  "id": 1621410936,
+  "name": "Dürrnbergjoch",
+  "kind": "peak",
+  "ele": 1835,
+  "lat": 47.5485133,
+  "lon": 11.5733539
+ },
+ {
+  "id": 277729379,
+  "name": "Schellkopf",
+  "kind": "peak",
+  "ele": 1832,
+  "lat": 47.4972828,
+  "lon": 10.887798
+ },
+ {
+  "id": 26864452,
+  "name": "Risserkogel",
+  "kind": "peak",
+  "ele": 1826,
+  "lat": 47.6368812,
+  "lon": 11.8035474
+ },
+ {
+  "id": 277716609,
+  "name": "Windstierlkopf",
+  "kind": "peak",
+  "ele": 1824,
+  "lat": 47.5303439,
+  "lon": 11.0068641
+ },
+ {
+  "id": 1055345002,
+  "name": "Großer Heubergkopf",
+  "kind": "peak",
+  "ele": 1820,
+  "lat": 47.7144664,
+  "lon": 13.0031728
+ },
+ {
+  "id": 272246466,
+  "name": "Predigtstuhl",
+  "kind": "peak",
+  "ele": 1818,
+  "lat": 47.506479,
+  "lon": 11.0339192
+ },
+ {
+  "id": 277716886,
+  "name": "Feldernkopf",
+  "kind": "peak",
+  "ele": 1818,
+  "lat": 47.5308189,
+  "lon": 11.0173316
+ },
+ {
+  "id": 357496429,
+  "name": "Schwarzenkopf",
+  "kind": "peak",
+  "ele": 1818,
+  "lat": 47.444678,
+  "lon": 11.0484218
+ },
+ {
+  "id": 613837530,
+  "name": "Östliches Torjoch",
+  "kind": "peak",
+  "ele": 1818,
+  "lat": 47.5100478,
+  "lon": 11.5412694
+ },
+ {
+  "id": 715835441,
+  "name": "Katzenkopf",
+  "kind": "peak",
+  "ele": 1817,
+  "lat": 47.5132455,
+  "lon": 11.0616602
+ },
+ {
+  "id": 277654098,
+  "name": "Vorderer Ziegspitz",
+  "kind": "peak",
+  "ele": 1815,
+  "lat": 47.506328,
+  "lon": 11.0107416
+ },
+ {
+  "id": 507108005,
+  "name": "Mooslahnerkopf",
+  "kind": "peak",
+  "ele": 1815,
+  "lat": 47.5605048,
+  "lon": 12.9561134
+ },
+ {
+  "id": 277716083,
+  "name": "Brünstelskopf",
+  "kind": "peak",
+  "ele": 1814,
+  "lat": 47.5386034,
+  "lon": 11.0461771
+ },
+ {
+  "id": 1487711769,
+  "name": "Unterbergerjoch",
+  "kind": "peak",
+  "ele": 1813,
+  "lat": 47.6442319,
+  "lon": 12.0435734
+ },
+ {
+  "id": 260858296,
+  "name": "Auerspitz",
+  "kind": "peak",
+  "ele": 1811,
+  "lat": 47.6437639,
+  "lon": 11.9452834
+ },
+ {
+  "id": 527352554,
+  "name": "Zunderweidkopf",
+  "kind": "peak",
+  "ele": 1810,
+  "lat": 47.461114,
+  "lon": 11.3161783
+ },
+ {
+  "id": 26864552,
+  "name": "Österreichischer Schinder",
+  "kind": "peak",
+  "ele": 1808,
+  "lat": 47.601085,
+  "lon": 11.8611348
+ },
+ {
+  "id": 1412836122,
+  "name": "Geigelstein",
+  "kind": "peak",
+  "ele": 1808,
+  "lat": 47.7075521,
+  "lon": 12.3345097
+ },
+ {
+  "id": 2076297323,
+  "name": "Galgenstangenkopf",
+  "kind": "peak",
+  "ele": 1807,
+  "lat": 47.511953,
+  "lon": 11.4038443
+ },
+ {
+  "id": 2119790098,
+  "name": "Geiereck",
+  "kind": "peak",
+  "ele": 1805,
+  "lat": 47.7224087,
+  "lon": 13.0087374
+ },
+ {
+  "id": 1978075758,
+  "name": "Platteneck",
+  "kind": "peak",
+  "ele": 1804,
+  "lat": 47.5572771,
+  "lon": 11.2265746
+ },
+ {
+  "id": 515678322,
+  "name": "Hirzeneck",
+  "kind": "peak",
+  "ele": 1803,
+  "lat": 47.4744617,
+  "lon": 11.3647559
+ },
+ {
+  "id": 345807520,
+  "name": "Karspitz",
+  "kind": "peak",
+  "ele": 1801,
+  "lat": 47.5906428,
+  "lon": 11.7760479
+ },
+ {
+  "id": 26862546,
+  "name": "Benediktenwand",
+  "kind": "peak",
+  "ele": 1800,
+  "lat": 47.6531721,
+  "lon": 11.4655437
+ },
+ {
+  "id": 1059532539,
+  "name": "Watzmanngugel",
+  "kind": "peak",
+  "ele": 1800,
+  "lat": 47.5726077,
+  "lon": 12.9237627
+ },
+ {
+  "id": 3208604528,
+  "name": "Eisberg",
+  "kind": "peak",
+  "ele": 1800,
+  "lat": 47.6258657,
+  "lon": 12.847729
+ },
+ {
+  "id": 522603012,
+  "name": "Hasentalkopf",
+  "kind": "peak",
+  "ele": 1797,
+  "lat": 47.5646376,
+  "lon": 10.8763871
+ },
+ {
+  "id": 1831217333,
+  "name": "Bayerischer Schinder",
+  "kind": "peak",
+  "ele": 1796,
+  "lat": 47.6028273,
+  "lon": 11.8515893
+ },
+ {
+  "id": 1085532056,
+  "name": "Lindenkopf",
+  "kind": "peak",
+  "ele": 1795,
+  "lat": 47.4260867,
+  "lon": 11.2775224
+ },
+ {
+  "id": 26863128,
+  "name": "Heimgarten",
+  "kind": "peak",
+  "ele": 1791,
+  "lat": 47.6125791,
+  "lon": 11.2806617
+ },
+ {
+  "id": 268972719,
+  "name": "Blaubergkopf",
+  "kind": "peak",
+  "ele": 1787,
+  "lat": 47.5901574,
+  "lon": 11.7672996
+ },
+ {
+  "id": 268973925,
+  "name": "Blaubergschneid",
+  "kind": "peak",
+  "ele": 1787,
+  "lat": 47.5891188,
+  "lon": 11.7532551
+ },
+ {
+  "id": 2958993297,
+  "name": "Hirscheck",
+  "kind": "peak",
+  "ele": 1787,
+  "lat": 47.6528287,
+  "lon": 12.8105996
+ },
+ {
+  "id": 523127107,
+  "name": "Ahornspitze",
+  "kind": "peak",
+  "ele": 1784,
+  "lat": 47.552916,
+  "lon": 10.7983434
+ },
+ {
+  "id": 1608795537,
+  "name": "Hoher Grasberg",
+  "kind": "peak",
+  "ele": 1783,
+  "lat": 47.5219889,
+  "lon": 11.3559471
+ },
+ {
+  "id": 2874807218,
+  "name": "Kirchstein",
+  "kind": "peak",
+  "ele": 1783,
+  "lat": 47.6479779,
+  "lon": 11.9260025
+ },
+ {
+  "id": 3092935257,
+  "name": "Zwiesel",
+  "kind": "peak",
+  "ele": 1782,
+  "lat": 47.7552187,
+  "lon": 12.8172991
+ },
+ {
+  "id": 304353179,
+  "name": "Wank",
+  "kind": "peak",
+  "ele": 1780,
+  "lat": 47.5087122,
+  "lon": 11.1430301
+ },
+ {
+  "id": 6327568216,
+  "name": "Dürrnbachhorn",
+  "kind": "peak",
+  "ele": 1778,
+  "lat": 47.6738838,
+  "lon": 12.6091129
+ },
+ {
+  "id": 2959022259,
+  "name": "Wartsteinkopf",
+  "kind": "peak",
+  "ele": 1772,
+  "lat": 47.6504328,
+  "lon": 12.8035684
+ },
+ {
+  "id": 304238134,
+  "name": "Hochstaufen",
+  "kind": "peak",
+  "ele": 1771,
+  "lat": 47.7549634,
+  "lon": 12.8487577
+ },
+ {
+  "id": 493469304,
+  "name": "Kotzen",
+  "kind": "peak",
+  "ele": 1771,
+  "lat": 47.5295245,
+  "lon": 11.5192539
+ },
+ {
+  "id": 2911951692,
+  "name": "Hirschangerkopf",
+  "kind": "peak",
+  "ele": 1769,
+  "lat": 47.707793,
+  "lon": 12.9555054
+ },
+ {
+  "id": 260686440,
+  "name": "Blankenstein",
+  "kind": "peak",
+  "ele": 1768,
+  "lat": 47.6401852,
+  "lon": 11.8027794
+ },
+ {
+  "id": 418778317,
+  "name": "Hennenkopf",
+  "kind": "peak",
+  "ele": 1768,
+  "lat": 47.5863533,
+  "lon": 10.9603882
+ },
+ {
+  "id": 277727204,
+  "name": "Hoher Brand",
+  "kind": "peak",
+  "ele": 1764,
+  "lat": 47.5007322,
+  "lon": 10.9109988
+ },
+ {
+  "id": 3587518230,
+  "name": "Schäferblasse",
+  "kind": "peak",
+  "ele": 1764,
+  "lat": 47.5376075,
+  "lon": 10.838681
+ },
+ {
+  "id": 260826436,
+  "name": "Aiplspitz",
+  "kind": "peak",
+  "ele": 1759,
+  "lat": 47.6731724,
+  "lon": 11.923695
+ },
+ {
+  "id": 290506923,
+  "name": "Teufelstättkopf",
+  "kind": "peak",
+  "ele": 1758,
+  "lat": 47.5873731,
+  "lon": 10.9863449
+ },
+ {
+  "id": 522603016,
+  "name": "Laubeneck",
+  "kind": "peak",
+  "ele": 1758,
+  "lat": 47.5867478,
+  "lon": 10.9793405
+ },
+ {
+  "id": 1431131372,
+  "name": "Kälbereck",
+  "kind": "peak",
+  "ele": 1757,
+  "lat": 47.5154628,
+  "lon": 11.4752916
+ },
+ {
+  "id": 401861393,
+  "name": "Soinwand",
+  "kind": "peak",
+  "ele": 1756,
+  "lat": 47.7050076,
+  "lon": 12.0213573
+ },
+ {
+  "id": 2895269085,
+  "name": "Aibleck",
+  "kind": "peak",
+  "ele": 1756,
+  "lat": 47.6895334,
+  "lon": 12.7080575
+ },
+ {
+  "id": 415842732,
+  "name": "Grasköpfl",
+  "kind": "peak",
+  "ele": 1753,
+  "lat": 47.5369062,
+  "lon": 11.4715616
+ },
+ {
+  "id": 3125422707,
+  "name": "Gamsknogel",
+  "kind": "peak",
+  "ele": 1750,
+  "lat": 47.7553323,
+  "lon": 12.8047968
+ },
+ {
+  "id": 4202440718,
+  "name": "Eckenberg",
+  "kind": "peak",
+  "ele": 1749,
+  "lat": 47.5119774,
+  "lon": 11.1391779
+ },
+ {
+  "id": 26863171,
+  "name": "Hochgern",
+  "kind": "peak",
+  "ele": 1748,
+  "lat": 47.7505749,
+  "lon": 12.515785
+ },
+ {
+  "id": 715785901,
+  "name": "Dreierköpfel",
+  "kind": "peak",
+  "ele": 1748,
+  "lat": 47.5527153,
+  "lon": 11.0029376
+ },
+ {
+  "id": 448824397,
+  "name": "Steilnerjoch",
+  "kind": "peak",
+  "ele": 1747,
+  "lat": 47.6457112,
+  "lon": 12.054693
+ },
+ {
+  "id": 260826433,
+  "name": "Jägerkamp",
+  "kind": "peak",
+  "ele": 1746,
+  "lat": 47.673511,
+  "lon": 11.9060494
+ },
+ {
+  "id": 254887423,
+  "name": "Warteck",
+  "kind": "peak",
+  "ele": 1741,
+  "lat": 47.5400783,
+  "lon": 12.9931194
+ },
+ {
+  "id": 715720555,
+  "name": "Ameisberg",
+  "kind": "peak",
+  "ele": 1741,
+  "lat": 47.511672,
+  "lon": 11.145099
+ },
+ {
+  "id": 26863335,
+  "name": "Karkopf",
+  "kind": "peak",
+  "ele": 1739,
+  "lat": 47.6863663,
+  "lon": 12.8927162
+ },
+ {
+  "id": 1567946359,
+  "name": "Benzingspitz",
+  "kind": "peak",
+  "ele": 1735,
+  "lat": 47.6731668,
+  "lon": 11.9123447
+ },
+ {
+  "id": 277715988,
+  "name": "Brünstelkreuz",
+  "kind": "peak",
+  "ele": 1734,
+  "lat": 47.538204,
+  "lon": 11.0530903
+ },
+ {
+  "id": 3233329686,
+  "name": "Sebaldstein",
+  "kind": "peak",
+  "ele": 1733,
+  "lat": 47.6468378,
+  "lon": 11.942073
+ },
+ {
+  "id": 71530342,
+  "name": "Herzogstand",
+  "kind": "peak",
+  "ele": 1731,
+  "lat": 47.6134565,
+  "lon": 11.3084925
+ },
+ {
+  "id": 4307295639,
+  "name": "Hochgscheid",
+  "kind": "peak",
+  "ele": 1729,
+  "lat": 47.5888447,
+  "lon": 12.7879578
+ },
+ {
+  "id": 513262143,
+  "name": "Zunderkopf",
+  "kind": "peak",
+  "ele": 1726,
+  "lat": 47.5294705,
+  "lon": 10.7670365
+ },
+ {
+  "id": 309316120,
+  "name": "Lacherspitz",
+  "kind": "peak",
+  "ele": 1724,
+  "lat": 47.6990563,
+  "lon": 12.0231674
+ },
+ {
+  "id": 260686432,
+  "name": "Wallberg",
+  "kind": "peak",
+  "ele": 1722,
+  "lat": 47.6658847,
+  "lon": 11.7967506
+ },
+ {
+  "id": 264037689,
+  "name": "Kleiner Traithen",
+  "kind": "peak",
+  "ele": 1722,
+  "lat": 47.6548955,
+  "lon": 12.0358478
+ },
+ {
+  "id": 9898131852,
+  "name": "Kesselwand",
+  "kind": "peak",
+  "ele": 1721,
+  "lat": 47.7018393,
+  "lon": 12.0211102
+ },
+ {
+  "id": 260978152,
+  "name": "Wildalpjoch",
+  "kind": "peak",
+  "ele": 1720,
+  "lat": 47.7013233,
+  "lon": 12.0354302
+ },
+ {
+  "id": 463541003,
+  "name": "Brunnenkopf",
+  "kind": "peak",
+  "ele": 1719,
+  "lat": 47.5830456,
+  "lon": 10.9237999
+ },
+ {
+  "id": 3068662784,
+  "name": "Ziegelspitz",
+  "kind": "peak",
+  "ele": 1719,
+  "lat": 47.5558435,
+  "lon": 11.071442
+ },
+ {
+  "id": 6581492738,
+  "name": "Kreuzjoch",
+  "kind": "peak",
+  "ele": 1719,
+  "lat": 47.4525017,
+  "lon": 11.0803157
+ },
+ {
+  "id": 1068064622,
+  "name": "Halsköpfl",
+  "kind": "peak",
+  "ele": 1718,
+  "lat": 47.5106633,
+  "lon": 12.9744106
+ },
+ {
+  "id": 507017753,
+  "name": "Farrenleiten",
+  "kind": "peak",
+  "ele": 1716,
+  "lat": 47.5604888,
+  "lon": 13.0266032
+ },
+ {
+  "id": 269134696,
+  "name": "Latschenkopf",
+  "kind": "peak",
+  "ele": 1712,
+  "lat": 47.6565948,
+  "lon": 11.4990327
+ },
+ {
+  "id": 1411465448,
+  "name": "Achselköpfe",
+  "kind": "peak",
+  "ele": 1710,
+  "lat": 47.6531047,
+  "lon": 11.4862838
+ },
+ {
+  "id": 264035398,
+  "name": "Trainsjoch",
+  "kind": "peak",
+  "ele": 1707,
+  "lat": 47.615268,
+  "lon": 12.0543473
+ },
+ {
+  "id": 260692620,
+  "name": "Setzberg",
+  "kind": "peak",
+  "ele": 1706,
+  "lat": 47.6512206,
+  "lon": 11.7846084
+ },
+ {
+  "id": 4102509394,
+  "name": "Schönleitenschrofen",
+  "kind": "peak",
+  "ele": 1706,
+  "lat": 47.5716588,
+  "lon": 10.808229
+ },
+ {
+  "id": 26862641,
+  "name": "Buchstein",
+  "kind": "peak",
+  "ele": 1701,
+  "lat": 47.63307,
+  "lon": 11.6793681
+ },
+ {
+  "id": 266993268,
+  "name": "Taubenstein",
+  "kind": "peak",
+  "ele": 1693,
+  "lat": 47.6584811,
+  "lon": 11.9211109
+ },
+ {
+  "id": 263534391,
+  "name": "Raukopf",
+  "kind": "peak",
+  "ele": 1691,
+  "lat": 47.6636283,
+  "lon": 11.9209823
+ },
+ {
+  "id": 4337688899,
+  "name": "Wildalphorn",
+  "kind": "peak",
+  "ele": 1690,
+  "lat": 47.6756647,
+  "lon": 12.628307
+ },
+ {
+  "id": 291994253,
+  "name": "Hochschlegel",
+  "kind": "peak",
+  "ele": 1688,
+  "lat": 47.6915825,
+  "lon": 12.8837574
+ },
+ {
+  "id": 714142244,
+  "name": "Roßwank",
+  "kind": "peak",
+  "ele": 1688,
+  "lat": 47.5037813,
+  "lon": 11.1555208
+ },
+ {
+  "id": 1504208959,
+  "name": "Maroldschneid",
+  "kind": "peak",
+  "ele": 1688,
+  "lat": 47.6436484,
+  "lon": 11.9666788
+ },
+ {
+  "id": 1280479976,
+  "name": "Dürrnberg",
+  "kind": "peak",
+  "ele": 1686,
+  "lat": 47.5501549,
+  "lon": 11.5638257
+ },
+ {
+  "id": 5997401874,
+  "name": "Laber Hauptgipfel",
+  "kind": "peak",
+  "ele": 1686,
+  "lat": 47.5849787,
+  "lon": 11.10044
+ },
+ {
+  "id": 292352453,
+  "name": "Brecherspitz",
+  "kind": "peak",
+  "ele": 1685,
+  "lat": 47.6764385,
+  "lon": 11.8710533
+ },
+ {
+  "id": 1772703379,
+  "name": "Wandspitz",
+  "kind": "peak",
+  "ele": 1685,
+  "lat": 47.7100621,
+  "lon": 12.3249953
+ },
+ {
+  "id": 767907047,
+  "name": "Hörndlwand",
+  "kind": "peak",
+  "ele": 1684,
+  "lat": 47.7063912,
+  "lon": 12.5844364
+ },
+ {
+  "id": 513060124,
+  "name": "Schlagstein",
+  "kind": "peak",
+  "ele": 1680,
+  "lat": 47.5296104,
+  "lon": 10.7878343
+ },
+ {
+  "id": 5782851140,
+  "name": "Dreisesselberg",
+  "kind": "peak",
+  "ele": 1680,
+  "lat": 47.6915651,
+  "lon": 12.8977074
+ },
+ {
+  "id": 3699490844,
+  "name": "Latschenschrofen",
+  "kind": "peak",
+  "ele": 1677,
+  "lat": 47.5632274,
+  "lon": 10.7863478
+ },
+ {
+  "id": 270581309,
+  "name": "Martinskopf",
+  "kind": "peak",
+  "ele": 1676,
+  "lat": 47.6089787,
+  "lon": 11.3082424
+ },
+ {
+  "id": 3580272393,
+  "name": "Hochfelln",
+  "kind": "peak",
+  "ele": 1674,
+  "lat": 47.7623481,
+  "lon": 12.5592205
+ },
+ {
+  "id": 26863152,
+  "name": "Hinterer Rauschberg",
+  "kind": "peak",
+  "ele": 1671,
+  "lat": 47.7331803,
+  "lon": 12.6966651
+ },
+ {
+  "id": 96874625,
+  "name": "Hirschberg",
+  "kind": "peak",
+  "ele": 1670,
+  "lat": 47.6607583,
+  "lon": 11.6961076
+ },
+ {
+  "id": 449238477,
+  "name": "Vorderer Kirchstein",
+  "kind": "peak",
+  "ele": 1670,
+  "lat": 47.6597349,
+  "lon": 11.501544
+ },
+ {
+  "id": 1129365627,
+  "name": "Bodenschneid",
+  "kind": "peak",
+  "ele": 1669,
+  "lat": 47.6717531,
+  "lon": 11.8381005
+ },
+ {
+  "id": 1772512527,
+  "name": "Kampenwand-Hauptgipfel",
+  "kind": "peak",
+  "ele": 1668,
+  "lat": 47.7554719,
+  "lon": 12.3640126
+ },
+ {
+  "id": 8284890973,
+  "name": "Kleinmiesing",
+  "kind": "peak",
+  "ele": 1666,
+  "lat": 47.6725887,
+  "lon": 11.9328619
+ },
+ {
+  "id": 26863307,
+  "name": "Kampenwand-Ostgipfel",
+  "kind": "peak",
+  "ele": 1664,
+  "lat": 47.7559873,
+  "lon": 12.3682524
+ },
+ {
+  "id": 429230836,
+  "name": "Seewandköpfl",
+  "kind": "peak",
+  "ele": 1664,
+  "lat": 47.701315,
+  "lon": 12.0298647
+ },
+ {
+  "id": 1469811232,
+  "name": "Grubereck",
+  "kind": "peak",
+  "ele": 1664,
+  "lat": 47.6387482,
+  "lon": 11.7850676
+ },
+ {
+  "id": 267433562,
+  "name": "Breitenstein",
+  "kind": "peak",
+  "ele": 1661,
+  "lat": 47.6971732,
+  "lon": 12.3380388
+ },
+ {
+  "id": 267792056,
+  "name": "Hirschberg",
+  "kind": "peak",
+  "ele": 1660,
+  "lat": 47.6010996,
+  "lon": 11.2414732
+ },
+ {
+  "id": 444735614,
+  "name": "Mühlhornwand",
+  "kind": "peak",
+  "ele": 1658,
+  "lat": 47.7061402,
+  "lon": 12.3175358
+ },
+ {
+  "id": 2917186131,
+  "name": "Bannkopf",
+  "kind": "peak",
+  "ele": 1658,
+  "lat": 47.6787668,
+  "lon": 12.9733574
+ },
+ {
+  "id": 378696014,
+  "name": "Königsberg",
+  "kind": "peak",
+  "ele": 1656,
+  "lat": 47.5697375,
+  "lon": 13.0314742
+ },
+ {
+  "id": 651958799,
+  "name": "Zwölferköpfl",
+  "kind": "peak",
+  "ele": 1656,
+  "lat": 47.5717425,
+  "lon": 11.2134831
+ },
+ {
+  "id": 715725562,
+  "name": "Zunderköpfel",
+  "kind": "peak",
+  "ele": 1656,
+  "lat": 47.497477,
+  "lon": 11.0089747
+ },
+ {
+  "id": 332441941,
+  "name": "Hirschberg Vorgipfel",
+  "kind": "peak",
+  "ele": 1653,
+  "lat": 47.6595256,
+  "lon": 11.7032747
+ },
+ {
+  "id": 4547463685,
+  "name": "Kreuzeck",
+  "kind": "peak",
+  "ele": 1651,
+  "lat": 47.4524243,
+  "lon": 11.0666481
+ },
+ {
+  "id": 1254353419,
+  "name": "Stangeneck",
+  "kind": "peak",
+  "ele": 1646,
+  "lat": 47.6606163,
+  "lon": 11.5086377
+ },
+ {
+  "id": 521724724,
+  "name": "Rauschberg",
+  "kind": "peak",
+  "ele": 1645,
+  "lat": 47.7329541,
+  "lon": 12.6839381
+ },
+ {
+  "id": 2641015239,
+  "name": "Brecherspitz Vorgipfel",
+  "kind": "peak",
+  "ele": 1643,
+  "lat": 47.6751604,
+  "lon": 11.8645597
+ },
+ {
+  "id": 1800860554,
+  "name": "Karspitz",
+  "kind": "peak",
+  "ele": 1641,
+  "lat": 47.6486385,
+  "lon": 12.8792182
+ },
+ {
+  "id": 454601148,
+  "name": "Schlehdorfer Kreuz",
+  "kind": "peak",
+  "ele": 1640,
+  "lat": 47.6150365,
+  "lon": 11.2995496
+ },
+ {
+  "id": 1431188386,
+  "name": "Pirschschneid",
+  "kind": "peak",
+  "ele": 1638,
+  "lat": 47.5428149,
+  "lon": 11.4794033
+ },
+ {
+  "id": 1949513276,
+  "name": "Peterskopf",
+  "kind": "peak",
+  "ele": 1634,
+  "lat": 47.6483945,
+  "lon": 12.0939084
+ },
+ {
+  "id": 300692479,
+  "name": "Ettaler Manndl",
+  "kind": "peak",
+  "ele": 1633,
+  "lat": 47.5846809,
+  "lon": 11.1156751
+ },
+ {
+  "id": 1426054102,
+  "name": "Zwölferspitz",
+  "kind": "peak",
+  "ele": 1633,
+  "lat": 47.7520245,
+  "lon": 12.5005503
+ },
+ {
+  "id": 9550470125,
+  "name": "Fahrenbergkopf",
+  "kind": "peak",
+  "ele": 1627,
+  "lat": 47.6067129,
+  "lon": 11.3146329
+ },
+ {
+  "id": 1566157975,
+  "name": "Hochsalwand",
+  "kind": "peak",
+  "ele": 1625,
+  "lat": 47.7168007,
+  "lon": 12.035762
+ },
+ {
+  "id": 303388142,
+  "name": "Schürpfeneck",
+  "kind": "peak",
+  "ele": 1623,
+  "lat": 47.5607091,
+  "lon": 11.5740509
+ },
+ {
+  "id": 260979669,
+  "name": "Breitenstein",
+  "kind": "peak",
+  "ele": 1622,
+  "lat": 47.7210941,
+  "lon": 11.9877728
+ },
+ {
+  "id": 344347709,
+  "name": "Sonnenberg",
+  "kind": "peak",
+  "ele": 1622,
+  "lat": 47.5842002,
+  "lon": 11.0162519
+ },
+ {
+  "id": 1836669376,
+  "name": "Schönberg",
+  "kind": "peak",
+  "ele": 1620,
+  "lat": 47.6385238,
+  "lon": 11.6421668
+ },
+ {
+  "id": 473011240,
+  "name": "Weitlahnerkopf",
+  "kind": "peak",
+  "ele": 1615,
+  "lat": 47.7232228,
+  "lon": 12.3431991
+ },
+ {
+  "id": 1468921785,
+  "name": "Wilde Fräulein",
+  "kind": "peak",
+  "ele": 1615,
+  "lat": 47.6679845,
+  "lon": 11.9035253
+ },
+ {
+  "id": 268974059,
+  "name": "Schildenstein",
+  "kind": "peak",
+  "ele": 1613,
+  "lat": 47.5948094,
+  "lon": 11.72499
+ },
+ {
+  "id": 618771886,
+  "name": "Hennenkopf",
+  "kind": "peak",
+  "ele": 1613,
+  "lat": 47.662083,
+  "lon": 11.481904
+ },
+ {
+  "id": 6543594144,
+  "name": "Predigtstuhl",
+  "kind": "peak",
+  "ele": 1613,
+  "lat": 47.6961857,
+  "lon": 12.8789726
+ },
+ {
+  "id": 797643804,
+  "name": "Rinnerspitz",
+  "kind": "peak",
+  "ele": 1611,
+  "lat": 47.6745316,
+  "lon": 11.8339866
+ },
+ {
+  "id": 309985323,
+  "name": "Stolzenberg",
+  "kind": "peak",
+  "ele": 1609,
+  "lat": 47.6426762,
+  "lon": 11.8724862
+ },
+ {
+  "id": 4337688896,
+  "name": "Kreuzschneid",
+  "kind": "peak",
+  "ele": 1609,
+  "lat": 47.6784486,
+  "lon": 12.6309835
+ },
+ {
+  "id": 3651124515,
+  "name": "Spitzigschröfle (Franziskaner)",
+  "kind": "peak",
+  "ele": 1608,
+  "lat": 47.5645404,
+  "lon": 10.7930286
+ },
+ {
+  "id": 264055809,
+  "name": "Auerkamp",
+  "kind": "peak",
+  "ele": 1607,
+  "lat": 47.6611778,
+  "lon": 11.6598621
+ },
+ {
+  "id": 2925631676,
+  "name": "Roverkreuz",
+  "kind": "peak",
+  "ele": 1606,
+  "lat": 47.7153853,
+  "lon": 12.9529501
+ },
+ {
+  "id": 264055810,
+  "name": "Spitzkamp",
+  "kind": "peak",
+  "ele": 1604,
+  "lat": 47.658927,
+  "lon": 11.6545785
+ },
+ {
+  "id": 506992377,
+  "name": "Großer Rauher Kopf",
+  "kind": "peak",
+  "ele": 1604,
+  "lat": 47.6691727,
+  "lon": 12.9765125
+ },
+ {
+  "id": 3906281333,
+  "name": "Stolzeneck",
+  "kind": "peak",
+  "ele": 1604,
+  "lat": 47.6432444,
+  "lon": 11.8674221
+ },
+ {
+  "id": 2041159545,
+  "name": "Zenokopf",
+  "kind": "peak",
+  "ele": 1603,
+  "lat": 47.7346353,
+  "lon": 12.7194928
+ },
+ {
+  "id": 264056175,
+  "name": "Seekarkreuz",
+  "kind": "peak",
+  "ele": 1601,
+  "lat": 47.6521541,
+  "lon": 11.6431635
+ },
+ {
+  "id": 269413201,
+  "name": "Spitzstein",
+  "kind": "peak",
+  "ele": 1598,
+  "lat": 47.7109518,
+  "lon": 12.2469305
+ },
+ {
+  "id": 1471256354,
+  "name": "Scheibenwand",
+  "kind": "peak",
+  "ele": 1598,
+  "lat": 47.7516068,
+  "lon": 12.3483288
+ },
+ {
+  "id": 264056090,
+  "name": "Ochsenkamp",
+  "kind": "peak",
+  "ele": 1594,
+  "lat": 47.6661218,
+  "lon": 11.6660249
+ },
+ {
+  "id": 751812974,
+  "name": "Haaralmschneid",
+  "kind": "peak",
+  "ele": 1594,
+  "lat": 47.7419348,
+  "lon": 12.5604918
+ },
+ {
+  "id": 793933283,
+  "name": "Streicher",
+  "kind": "peak",
+  "ele": 1594,
+  "lat": 47.7358916,
+  "lon": 12.7122774
+ },
+ {
+  "id": 2983909328,
+  "name": "Heißenplatte",
+  "kind": "peak",
+  "ele": 1593,
+  "lat": 47.6832002,
+  "lon": 11.9307431
+ },
+ {
+  "id": 3230301386,
+  "name": "Dürrnbacheck",
+  "kind": "peak",
+  "ele": 1593,
+  "lat": 47.6686751,
+  "lon": 12.6020198
+ },
+ {
+  "id": 1504216318,
+  "name": "Gamswand",
+  "kind": "peak",
+  "ele": 1592,
+  "lat": 47.651134,
+  "lon": 11.9682606
+ },
+ {
+  "id": 2973369663,
+  "name": "Hochplatte",
+  "kind": "peak",
+  "ele": 1592,
+  "lat": 47.6403833,
+  "lon": 11.6669669
+ },
+ {
+  "id": 345378250,
+  "name": "Rauheck",
+  "kind": "peak",
+  "ele": 1590,
+  "lat": 47.6135471,
+  "lon": 11.2630079
+ },
+ {
+  "id": 4104421921,
+  "name": "Niederbleick",
+  "kind": "peak",
+  "ele": 1589,
+  "lat": 47.6346821,
+  "lon": 10.9114845
+ },
+ {
+  "id": 381013586,
+  "name": "Grünkopf",
+  "kind": "peak",
+  "ele": 1587,
+  "lat": 47.4306813,
+  "lon": 11.2205967
+ },
+ {
+  "id": 2704446436,
+  "name": "Hasenpoint",
+  "kind": "peak",
+  "ele": 1587,
+  "lat": 47.7447764,
+  "lon": 12.5131464
+ },
+ {
+  "id": 402675243,
+  "name": "Hochplatte",
+  "kind": "peak",
+  "ele": 1586,
+  "lat": 47.7510894,
+  "lon": 12.405001
+ },
+ {
+  "id": 443883206,
+  "name": "Roßkopf",
+  "kind": "peak",
+  "ele": 1579,
+  "lat": 47.6556941,
+  "lon": 11.8618557
+ },
+ {
+  "id": 2005598198,
+  "name": "Auf dem Stein",
+  "kind": "peak",
+  "ele": 1579,
+  "lat": 47.5901918,
+  "lon": 10.9917475
+ },
+ {
+  "id": 402739186,
+  "name": "Weissgrabenkopf",
+  "kind": "peak",
+  "ele": 1578,
+  "lat": 47.7509878,
+  "lon": 12.5579537
+ },
+ {
+  "id": 6622125150,
+  "name": "Achenkopf",
+  "kind": "peak",
+  "ele": 1577,
+  "lat": 47.7015219,
+  "lon": 12.9536399
+ },
+ {
+  "id": 283733455,
+  "name": "Breitenstein Westgipfel",
+  "kind": "peak",
+  "ele": 1575,
+  "lat": 47.7211575,
+  "lon": 11.9828363
+ },
+ {
+  "id": 1800862183,
+  "name": "Jochköpfl",
+  "kind": "peak",
+  "ele": 1575,
+  "lat": 47.6433526,
+  "lon": 12.8754805
+ },
+ {
+  "id": 48783387,
+  "name": "Hochries",
+  "kind": "peak",
+  "ele": 1569,
+  "lat": 47.747151,
+  "lon": 12.2487348
+ },
+ {
+  "id": 399492387,
+  "name": "Brandkopf",
+  "kind": "peak",
+  "ele": 1569,
+  "lat": 47.6561236,
+  "lon": 11.6528113
+ },
+ {
+  "id": 3139978512,
+  "name": "Ristfeuchthorn",
+  "kind": "peak",
+  "ele": 1569,
+  "lat": 47.6942975,
+  "lon": 12.7817181
+ },
+ {
+  "id": 1508756034,
+  "name": "Ristfeuchthorn Kreuzgipfel",
+  "kind": "peak",
+  "ele": 1566,
+  "lat": 47.6970414,
+  "lon": 12.7833271
+ },
+ {
+  "id": 2770355657,
+  "name": "Pürschling",
+  "kind": "peak",
+  "ele": 1566,
+  "lat": 47.5822824,
+  "lon": 10.992152
+ },
+ {
+  "id": 1479475021,
+  "name": "Zinnenberg",
+  "kind": "peak",
+  "ele": 1565,
+  "lat": 47.7325675,
+  "lon": 12.265369
+ },
+ {
+  "id": 1841764370,
+  "name": "Jochberg",
+  "kind": "peak",
+  "ele": 1565,
+  "lat": 47.625939,
+  "lon": 11.3718596
+ },
+ {
+  "id": 1276074774,
+  "name": "Fockenstein",
+  "kind": "peak",
+  "ele": 1564,
+  "lat": 47.6843889,
+  "lon": 11.6522131
+ },
+ {
+  "id": 1770337345,
+  "name": "Raffen",
+  "kind": "peak",
+  "ele": 1564,
+  "lat": 47.7538573,
+  "lon": 12.3726162
+ },
+ {
+  "id": 276909078,
+  "name": "Vogelsang",
+  "kind": "peak",
+  "ele": 1563,
+  "lat": 47.6616396,
+  "lon": 12.0349335
+ },
+ {
+  "id": 440346596,
+  "name": "Predigtstuhl",
+  "kind": "peak",
+  "ele": 1562,
+  "lat": 47.5897362,
+  "lon": 11.7347352
+ },
+ {
+  "id": 473665202,
+  "name": "Gröhrkopf",
+  "kind": "peak",
+  "ele": 1562,
+  "lat": 47.7454644,
+  "lon": 12.5598032
+ },
+ {
+  "id": 4455052988,
+  "name": "Fahsteigenschneid",
+  "kind": "peak",
+  "ele": 1562,
+  "lat": 47.6810288,
+  "lon": 12.632909
+ },
+ {
+  "id": 97173084,
+  "name": "Brauneck",
+  "kind": "peak",
+  "ele": 1555,
+  "lat": 47.6641902,
+  "lon": 11.5247915
+ },
+ {
+  "id": 413685640,
+  "name": "Rabenkopf",
+  "kind": "peak",
+  "ele": 1555,
+  "lat": 47.6503674,
+  "lon": 11.4120213
+ },
+ {
+  "id": 2874047929,
+  "name": "Nagelspitz",
+  "kind": "peak",
+  "ele": 1555,
+  "lat": 47.6849103,
+  "lon": 11.9080106
+ },
+ {
+  "id": 424026576,
+  "name": "Klausenberg",
+  "kind": "peak",
+  "ele": 1554,
+  "lat": 47.7388285,
+  "lon": 12.266765
+ },
+ {
+  "id": 1579437934,
+  "name": "Wasserspitz",
+  "kind": "peak",
+  "ele": 1552,
+  "lat": 47.6803875,
+  "lon": 11.8359142
+ },
+ {
+  "id": 9301083970,
+  "name": "Hennenköpfl",
+  "kind": "peak",
+  "ele": 1551,
+  "lat": 47.6264694,
+  "lon": 13.0924135
+ },
+ {
+  "id": 270500553,
+  "name": "Schrödelstein",
+  "kind": "peak",
+  "ele": 1548,
+  "lat": 47.6619857,
+  "lon": 11.5198072
+ },
+ {
+  "id": 304477193,
+  "name": "Hinteres Hörnle",
+  "kind": "peak",
+  "ele": 1548,
+  "lat": 47.6388178,
+  "lon": 11.0745117
+ },
+ {
+  "id": 191018794,
+  "name": "Kratzer",
+  "kind": "peak",
+  "ele": 1545,
+  "lat": 47.6655995,
+  "lon": 11.7053909
+ },
+ {
+  "id": 643653890,
+  "name": "Hochwildfeuerberg",
+  "kind": "peak",
+  "ele": 1545,
+  "lat": 47.6340703,
+  "lon": 10.9389211
+ },
+ {
+  "id": 344362676,
+  "name": "Großer Aufacker",
+  "kind": "peak",
+  "ele": 1542,
+  "lat": 47.613873,
+  "lon": 11.0973495
+ },
+ {
+  "id": 648572859,
+  "name": "Ölrain",
+  "kind": "peak",
+  "ele": 1542,
+  "lat": 47.6068803,
+  "lon": 11.2423635
+ },
+ {
+  "id": 260869935,
+  "name": "Seebergkopf",
+  "kind": "peak",
+  "ele": 1538,
+  "lat": 47.664361,
+  "lon": 11.9977464
+ },
+ {
+  "id": 1992635933,
+  "name": "Hochköpfl",
+  "kind": "peak",
+  "ele": 1538,
+  "lat": 47.6914615,
+  "lon": 12.3215665
+ },
+ {
+  "id": 8536811141,
+  "name": "Sauwankl",
+  "kind": "peak",
+  "ele": 1537,
+  "lat": 47.4551244,
+  "lon": 11.081804
+ },
+ {
+  "id": 304477194,
+  "name": "Stierkopf",
+  "kind": "peak",
+  "ele": 1533,
+  "lat": 47.6354907,
+  "lon": 11.0749801
+ },
+ {
+  "id": 702261000,
+  "name": "Kleiner Aufacker",
+  "kind": "peak",
+  "ele": 1533,
+  "lat": 47.6135651,
+  "lon": 11.1059485
+ },
+ {
+  "id": 26864777,
+  "name": "Staffel",
+  "kind": "peak",
+  "ele": 1532,
+  "lat": 47.5857802,
+  "lon": 11.4677249
+ },
+ {
+  "id": 3586554893,
+  "name": "Wolfskopf",
+  "kind": "peak",
+  "ele": 1526,
+  "lat": 47.6312722,
+  "lon": 10.8680033
+ },
+ {
+  "id": 9368717342,
+  "name": "Finger",
+  "kind": "peak",
+  "ele": 1522,
+  "lat": 47.5629659,
+  "lon": 10.7800904
+ },
+ {
+  "id": 1337213883,
+  "name": "Mühlhörndl",
+  "kind": "peak",
+  "ele": 1518,
+  "lat": 47.7047687,
+  "lon": 12.2993926
+ },
+ {
+  "id": 424047395,
+  "name": "Brandelberg",
+  "kind": "peak",
+  "ele": 1516,
+  "lat": 47.7174238,
+  "lon": 12.2541891
+ },
+ {
+  "id": 264778079,
+  "name": "Hirschhörnlkopf",
+  "kind": "peak",
+  "ele": 1515,
+  "lat": 47.6274844,
+  "lon": 11.4063247
+ },
+ {
+  "id": 277716447,
+  "name": "Ochsensitz",
+  "kind": "peak",
+  "ele": 1515,
+  "lat": 47.5567233,
+  "lon": 11.0843703
+ },
+ {
+  "id": 49898914,
+  "name": "Feichteck",
+  "kind": "peak",
+  "ele": 1514,
+  "lat": 47.7344547,
+  "lon": 12.2310292
+ },
+ {
+  "id": 413585849,
+  "name": "Schweinsberg",
+  "kind": "peak",
+  "ele": 1514,
+  "lat": 47.7110389,
+  "lon": 11.9876722
+ },
+ {
+  "id": 1471175589,
+  "name": "Sonnwendwand",
+  "kind": "peak",
+  "ele": 1512,
+  "lat": 47.7462816,
+  "lon": 12.3344809
+ },
+ {
+  "id": 9895387909,
+  "name": "Türkenköpfl",
+  "kind": "peak",
+  "ele": 1512,
+  "lat": 47.7053102,
+  "lon": 11.9992281
+ },
+ {
+  "id": 1463003234,
+  "name": "Staffelstein",
+  "kind": "peak",
+  "ele": 1510,
+  "lat": 47.7563679,
+  "lon": 12.3583691
+ },
+ {
+  "id": 2262791679,
+  "name": "Karkopf",
+  "kind": "peak",
+  "ele": 1507,
+  "lat": 47.6903073,
+  "lon": 12.3399624
+ },
+ {
+  "id": 2338028258,
+  "name": "Stümpfling",
+  "kind": "peak",
+  "ele": 1506,
+  "lat": 47.6622252,
+  "lon": 11.8563377
+ },
+ {
+  "id": 1776057910,
+  "name": "Heuraffelkopf",
+  "kind": "peak",
+  "ele": 1505,
+  "lat": 47.7481443,
+  "lon": 12.2800839
+ },
+ {
+  "id": 6622386375,
+  "name": "Moosenkopf",
+  "kind": "peak",
+  "ele": 1504,
+  "lat": 47.6586508,
+  "lon": 12.8645013
+ },
+ {
+  "id": 643653886,
+  "name": "Kleinwildfeuerberg",
+  "kind": "peak",
+  "ele": 1501,
+  "lat": 47.6357108,
+  "lon": 10.934048
+ },
+ {
+  "id": 2932373412,
+  "name": "Hochbrunstkopf",
+  "kind": "peak",
+  "ele": 1499,
+  "lat": 47.6856313,
+  "lon": 12.6313799
+ },
+ {
+  "id": 304477192,
+  "name": "Mittleres Hörnle",
+  "kind": "peak",
+  "ele": 1496,
+  "lat": 47.6402678,
+  "lon": 11.0620958
+ },
+ {
+  "id": 420154753,
+  "name": "Karkopf",
+  "kind": "peak",
+  "ele": 1496,
+  "lat": 47.7397207,
+  "lon": 12.2401937
+ },
+ {
+  "id": 6622386374,
+  "name": "Horn",
+  "kind": "peak",
+  "ele": 1496,
+  "lat": 47.6610029,
+  "lon": 12.8623835
+ },
+ {
+  "id": 1779231021,
+  "name": "Predigtstuhl",
+  "kind": "peak",
+  "ele": 1494,
+  "lat": 47.7435644,
+  "lon": 12.2725502
+ },
+ {
+  "id": 926396862,
+  "name": "Gruberhörndl",
+  "kind": "peak",
+  "ele": 1493,
+  "lat": 47.7523055,
+  "lon": 12.7845789
+ },
+ {
+  "id": 264055806,
+  "name": "Geierstein",
+  "kind": "peak",
+  "ele": 1491,
+  "lat": 47.6796515,
+  "lon": 11.6190828
+ },
+ {
+  "id": 915615675,
+  "name": "Roßstallkopf",
+  "kind": "peak",
+  "ele": 1490,
+  "lat": 47.5856295,
+  "lon": 10.8644549
+ },
+ {
+  "id": 2510815534,
+  "name": "Latschenkopf",
+  "kind": "peak",
+  "ele": 1487,
+  "lat": 47.6310273,
+  "lon": 11.4639849
+ },
+ {
+  "id": 310118303,
+  "name": "Vorderes Hörnle",
+  "kind": "peak",
+  "ele": 1484,
+  "lat": 47.6436274,
+  "lon": 11.0607161
+ },
+ {
+  "id": 2460574552,
+  "name": "Angerstein",
+  "kind": "peak",
+  "ele": 1482,
+  "lat": 47.7545831,
+  "lon": 12.790015
+ },
+ {
+  "id": 3010983211,
+  "name": "Thoraukopf",
+  "kind": "peak",
+  "ele": 1481,
+  "lat": 47.7547485,
+  "lon": 12.5598071
+ },
+ {
+  "id": 11278049464,
+  "name": "Scheibelkopf",
+  "kind": "peak",
+  "ele": 1481,
+  "lat": 47.6800525,
+  "lon": 12.9633311
+ },
+ {
+  "id": 774990761,
+  "name": "Gschwandtpfeiler",
+  "kind": "peak",
+  "ele": 1480,
+  "lat": 47.7064977,
+  "lon": 12.0305994
+ },
+ {
+  "id": 3229949066,
+  "name": "Kirchwand",
+  "kind": "peak",
+  "ele": 1479,
+  "lat": 47.7078955,
+  "lon": 11.9911018
+ },
+ {
+  "id": 2878239768,
+  "name": "Hochscharten",
+  "kind": "peak",
+  "ele": 1474,
+  "lat": 47.7023768,
+  "lon": 12.5391215
+ },
+ {
+  "id": 2493733997,
+  "name": "Thorauschneid",
+  "kind": "peak",
+  "ele": 1470,
+  "lat": 47.7547187,
+  "lon": 12.5744722
+ },
+ {
+  "id": 4104421918,
+  "name": "Hochrieskopf",
+  "kind": "peak",
+  "ele": 1470,
+  "lat": 47.626281,
+  "lon": 10.8588508
+ },
+ {
+  "id": 1432769540,
+  "name": "Sulten",
+  "kind": "peak",
+  "ele": 1467,
+  "lat": 47.7633689,
+  "lon": 12.3686166
+ },
+ {
+  "id": 1486951280,
+  "name": "Kleiner Rechenberg",
+  "kind": "peak",
+  "ele": 1466,
+  "lat": 47.7268752,
+  "lon": 12.5148757
+ },
+ {
+  "id": 2796336377,
+  "name": "Scheibelberg",
+  "kind": "peak",
+  "ele": 1465,
+  "lat": 47.6312664,
+  "lon": 12.5744447
+ },
+ {
+  "id": 1574152591,
+  "name": "Rainerkopf",
+  "kind": "peak",
+  "ele": 1463,
+  "lat": 47.6857619,
+  "lon": 11.8423468
+ },
+ {
+  "id": 965990748,
+  "name": "Strohnkopf",
+  "kind": "peak",
+  "ele": 1462,
+  "lat": 47.7609552,
+  "lon": 12.5814756
+ },
+ {
+  "id": 267792214,
+  "name": "Buchrain",
+  "kind": "peak",
+  "ele": 1456,
+  "lat": 47.6145286,
+  "lon": 11.2439569
+ },
+ {
+  "id": 1770317736,
+  "name": "Hirschenstein",
+  "kind": "peak",
+  "ele": 1453,
+  "lat": 47.7561786,
+  "lon": 12.352601
+ },
+ {
+  "id": 295068783,
+  "name": "Leonhardstein",
+  "kind": "peak",
+  "ele": 1452,
+  "lat": 47.6370434,
+  "lon": 11.7160997
+ },
+ {
+  "id": 469612933,
+  "name": "Riesenberg",
+  "kind": "peak",
+  "ele": 1450,
+  "lat": 47.759754,
+  "lon": 12.2695032
+ },
+ {
+  "id": 564770358,
+  "name": "Unternberg",
+  "kind": "peak",
+  "ele": 1450,
+  "lat": 47.7293144,
+  "lon": 12.6401193
+ },
+ {
+  "id": 26865140,
+  "name": "Wildbarren",
+  "kind": "peak",
+  "ele": 1448,
+  "lat": 47.6811906,
+  "lon": 12.1382447
+ },
+ {
+  "id": 266572730,
+  "name": "Baumgartenschneid",
+  "kind": "peak",
+  "ele": 1448,
+  "lat": 47.702226,
+  "lon": 11.8111754
+ },
+ {
+  "id": 1431131534,
+  "name": "Zwölferköpfl",
+  "kind": "peak",
+  "ele": 1437,
+  "lat": 47.5840963,
+  "lon": 11.4316107
+ },
+ {
+  "id": 2493960939,
+  "name": "Nesselauer Schneid",
+  "kind": "peak",
+  "ele": 1437,
+  "lat": 47.7465771,
+  "lon": 12.571246
+ },
+ {
+  "id": 4104477133,
+  "name": "Wildeck",
+  "kind": "peak",
+  "ele": 1437,
+  "lat": 47.6369991,
+  "lon": 11.0599821
+ },
+ {
+  "id": 2875895509,
+  "name": "Teufelsstein",
+  "kind": "peak",
+  "ele": 1435,
+  "lat": 47.7473259,
+  "lon": 12.4055138
+ },
+ {
+  "id": 409617010,
+  "name": "Rudersburg",
+  "kind": "peak",
+  "ele": 1434,
+  "lat": 47.683912,
+  "lon": 12.3689643
+ },
+ {
+  "id": 419804807,
+  "name": "Grasleitenkopf",
+  "kind": "peak",
+  "ele": 1433,
+  "lat": 47.6539391,
+  "lon": 11.6297289
+ },
+ {
+  "id": 402677586,
+  "name": "Friedenrath",
+  "kind": "peak",
+  "ele": 1432,
+  "lat": 47.7610822,
+  "lon": 12.4056697
+ },
+ {
+  "id": 3859294823,
+  "name": "Haberspitz",
+  "kind": "peak",
+  "ele": 1431,
+  "lat": 47.7560538,
+  "lon": 12.4040088
+ },
+ {
+  "id": 4104421917,
+  "name": "Görgeleck",
+  "kind": "peak",
+  "ele": 1429,
+  "lat": 47.6205064,
+  "lon": 10.8410246
+ },
+ {
+  "id": 9550470126,
+  "name": "Rauchkopf",
+  "kind": "peak",
+  "ele": 1428,
+  "lat": 47.6111508,
+  "lon": 11.32014
+ },
+ {
+  "id": 268964586,
+  "name": "Hochalm",
+  "kind": "peak",
+  "ele": 1427,
+  "lat": 47.6090032,
+  "lon": 11.6041553
+ },
+ {
+  "id": 643653878,
+  "name": "Dürreckkopf",
+  "kind": "peak",
+  "ele": 1425,
+  "lat": 47.6284004,
+  "lon": 10.9391925
+ },
+ {
+  "id": 702262361,
+  "name": "Rißberg",
+  "kind": "peak",
+  "ele": 1425,
+  "lat": 47.6429629,
+  "lon": 11.0801749
+ },
+ {
+  "id": 1486951525,
+  "name": "Dampfschiff",
+  "kind": "peak",
+  "ele": 1425,
+  "lat": 47.7267975,
+  "lon": 12.5091109
+ },
+ {
+  "id": 3253363153,
+  "name": "Rosengarten",
+  "kind": "peak",
+  "ele": 1425,
+  "lat": 47.6018138,
+  "lon": 11.0038927
+ },
+ {
+  "id": 413925036,
+  "name": "Sudelfeldkopf",
+  "kind": "peak",
+  "ele": 1424,
+  "lat": 47.6657799,
+  "lon": 12.0435646
+ },
+ {
+  "id": 702261002,
+  "name": "Rehbreinkopf",
+  "kind": "peak",
+  "ele": 1422,
+  "lat": 47.6221489,
+  "lon": 11.0841863
+ },
+ {
+  "id": 765097941,
+  "name": "Rampoldplatte",
+  "kind": "peak",
+  "ele": 1422,
+  "lat": 47.7239382,
+  "lon": 12.0435958
+ },
+ {
+  "id": 1256843945,
+  "name": "Ahornkopf",
+  "kind": "peak",
+  "ele": 1422,
+  "lat": 47.6666383,
+  "lon": 11.4839215
+ },
+ {
+  "id": 2874060727,
+  "name": "Schlösselschneid",
+  "kind": "peak",
+  "ele": 1416,
+  "lat": 47.7047797,
+  "lon": 12.6013961
+ },
+ {
+  "id": 1406932403,
+  "name": "Zellerwand",
+  "kind": "peak",
+  "ele": 1415,
+  "lat": 47.7532498,
+  "lon": 12.2891318
+ },
+ {
+  "id": 1431131523,
+  "name": "Rautbergkopf",
+  "kind": "peak",
+  "ele": 1415,
+  "lat": 47.583399,
+  "lon": 11.425187
+ },
+ {
+  "id": 2526645259,
+  "name": "Elferköpfl",
+  "kind": "peak",
+  "ele": 1412,
+  "lat": 47.5731705,
+  "lon": 11.2200604
+ },
+ {
+  "id": 4380583010,
+  "name": "Hausgrabenkopf",
+  "kind": "peak",
+  "ele": 1411,
+  "lat": 47.6804936,
+  "lon": 12.5985718
+ },
+ {
+  "id": 1743681822,
+  "name": "Neuhütteneck",
+  "kind": "peak",
+  "ele": 1408,
+  "lat": 47.6791834,
+  "lon": 11.6535537
+ },
+ {
+  "id": 1410070710,
+  "name": "Feuereck",
+  "kind": "peak",
+  "ele": 1407,
+  "lat": 47.6469772,
+  "lon": 11.4018464
+ },
+ {
+  "id": 3253370804,
+  "name": "Bremeneck",
+  "kind": "peak",
+  "ele": 1405,
+  "lat": 47.6014991,
+  "lon": 10.9966936
+ },
+ {
+  "id": 773310205,
+  "name": "Zeitberg",
+  "kind": "peak",
+  "ele": 1404,
+  "lat": 47.6444288,
+  "lon": 11.0548916
+ },
+ {
+  "id": 9271247941,
+  "name": "Bärenhaupt",
+  "kind": "peak",
+  "ele": 1404,
+  "lat": 47.6262,
+  "lon": 11.41625
+ },
+ {
+  "id": 3233329554,
+  "name": "Graseckwand",
+  "kind": "peak",
+  "ele": 1400,
+  "lat": 47.5981566,
+  "lon": 11.7183214
+ },
+ {
+  "id": 1704155750,
+  "name": "Kitzstein",
+  "kind": "peak",
+  "ele": 1399,
+  "lat": 47.723057,
+  "lon": 12.188521
+ },
+ {
+  "id": 1432769334,
+  "name": "Gederer Wand",
+  "kind": "peak",
+  "ele": 1398,
+  "lat": 47.7670965,
+  "lon": 12.3816461
+ },
+ {
+  "id": 1280509706,
+  "name": "Hühnerberg",
+  "kind": "peak",
+  "ele": 1397,
+  "lat": 47.5703194,
+  "lon": 11.5874394
+ },
+ {
+  "id": 444733025,
+  "name": "Mittlerer Rotofen",
+  "kind": "peak",
+  "ele": 1396,
+  "lat": 47.6943153,
+  "lon": 12.9189747
+ },
+ {
+  "id": 643653896,
+  "name": "Hochschergen",
+  "kind": "peak",
+  "ele": 1396,
+  "lat": 47.6307827,
+  "lon": 10.9920024
+ },
+ {
+  "id": 384846582,
+  "name": "Rötelstein",
+  "kind": "peak",
+  "ele": 1395,
+  "lat": 47.6310368,
+  "lon": 11.2849208
+ },
+ {
+  "id": 3849051307,
+  "name": "Rehwaldkopf",
+  "kind": "peak",
+  "ele": 1395,
+  "lat": 47.7195687,
+  "lon": 12.5343052
+ },
+ {
+  "id": 6423595939,
+  "name": "Schoberwaldkreuz",
+  "kind": "peak",
+  "ele": 1393,
+  "lat": 47.5952472,
+  "lon": 11.1261585
+ },
+ {
+  "id": 449560297,
+  "name": "Toter Mann",
+  "kind": "peak",
+  "ele": 1392,
+  "lat": 47.6311275,
+  "lon": 12.9233171
+ },
+ {
+  "id": 61080195,
+  "name": "Hoher Kranzberg",
+  "kind": "peak",
+  "ele": 1391,
+  "lat": 47.4513588,
+  "lon": 11.2286303
+ },
+ {
+  "id": 4104489597,
+  "name": "Elmauberg",
+  "kind": "peak",
+  "ele": 1390,
+  "lat": 47.6450931,
+  "lon": 11.0736616
+ },
+ {
+  "id": 6622386372,
+  "name": "Hochmaiskopf",
+  "kind": "peak",
+  "ele": 1390,
+  "lat": 47.6722424,
+  "lon": 12.8507429
+ },
+ {
+  "id": 702918160,
+  "name": "Steckenberg",
+  "kind": "peak",
+  "ele": 1385,
+  "lat": 47.5963992,
+  "lon": 11.0271651
+ },
+ {
+  "id": 715725575,
+  "name": "Jakelberger Köpfel",
+  "kind": "peak",
+  "ele": 1385,
+  "lat": 47.4926017,
+  "lon": 11.0022845
+ },
+ {
+  "id": 10300162543,
+  "name": "Sattelkopf",
+  "kind": "peak",
+  "ele": 1384,
+  "lat": 47.6938922,
+  "lon": 11.6721641
+ },
+ {
+  "id": 401538790,
+  "name": "Schafkopf",
+  "kind": "peak",
+  "ele": 1380,
+  "lat": 47.5441336,
+  "lon": 11.0905038
+ },
+ {
+  "id": 2425615806,
+  "name": "Rötlwandkopf",
+  "kind": "peak",
+  "ele": 1379,
+  "lat": 47.7609246,
+  "lon": 12.5458676
+ },
+ {
+  "id": 1517751985,
+  "name": "Rabensteinhorn Südgipfel",
+  "kind": "peak",
+  "ele": 1373,
+  "lat": 47.6962351,
+  "lon": 12.8228377
+ },
+ {
+  "id": 3253369961,
+  "name": "Schartenköpfl",
+  "kind": "peak",
+  "ele": 1372,
+  "lat": 47.6068666,
+  "lon": 11.0056656
+ },
+ {
+  "id": 4104421919,
+  "name": "Birnkopf",
+  "kind": "peak",
+  "ele": 1372,
+  "lat": 47.616368,
+  "lon": 10.8741979
+ },
+ {
+  "id": 440940579,
+  "name": "Luckenkopf",
+  "kind": "peak",
+  "ele": 1370,
+  "lat": 47.7146342,
+  "lon": 11.6647047
+ },
+ {
+  "id": 714142246,
+  "name": "Bletschertalkopf",
+  "kind": "peak",
+  "ele": 1369,
+  "lat": 47.5040282,
+  "lon": 11.2162874
+ },
+ {
+  "id": 48783748,
+  "name": "Kranzhorn",
+  "kind": "peak",
+  "ele": 1368,
+  "lat": 47.7005164,
+  "lon": 12.1835401
+ },
+ {
+  "id": 4894244948,
+  "name": "Osterfeuerspitze",
+  "kind": "peak",
+  "ele": 1368,
+  "lat": 47.6031223,
+  "lon": 11.2150194
+ },
+ {
+  "id": 1487169532,
+  "name": "Großer Rechenberg",
+  "kind": "peak",
+  "ele": 1366,
+  "lat": 47.7269721,
+  "lon": 12.500925
+ },
+ {
+  "id": 311143265,
+  "name": "Wasserwand",
+  "kind": "peak",
+  "ele": 1363,
+  "lat": 47.7275858,
+  "lon": 12.1849961
+ },
+ {
+  "id": 1913686966,
+  "name": "Nesselberg",
+  "kind": "peak",
+  "ele": 1363,
+  "lat": 47.6178993,
+  "lon": 12.0382256
+ },
+ {
+  "id": 6202988600,
+  "name": "Kotiger Stein",
+  "kind": "peak",
+  "ele": 1363,
+  "lat": 47.658537,
+  "lon": 11.5346158
+ },
+ {
+  "id": 1382113324,
+  "name": "Rohrkopf",
+  "kind": "peak",
+  "ele": 1359,
+  "lat": 47.5695965,
+  "lon": 10.7796039
+ },
+ {
+  "id": 4117207289,
+  "name": "Bogn Nosn",
+  "kind": "peak",
+  "ele": 1358,
+  "lat": 47.7521794,
+  "lon": 12.579788
+ },
+ {
+  "id": 3485810457,
+  "name": "Scharnkopf",
+  "kind": "peak",
+  "ele": 1356,
+  "lat": 47.7388807,
+  "lon": 12.7706877
+ },
+ {
+  "id": 294642494,
+  "name": "Weissenbachkopf",
+  "kind": "peak",
+  "ele": 1352,
+  "lat": 47.6077942,
+  "lon": 11.773529
+ },
+ {
+  "id": 1679600826,
+  "name": "Breitensteinfensterl",
+  "kind": "peak",
+  "ele": 1350,
+  "lat": 47.7187677,
+  "lon": 11.9776495
+ },
+ {
+  "id": 1740669874,
+  "name": "Laubenstein",
+  "kind": "peak",
+  "ele": 1350,
+  "lat": 47.7571992,
+  "lon": 12.2885294
+ },
+ {
+  "id": 3633598457,
+  "name": "Koteck",
+  "kind": "peak",
+  "ele": 1350,
+  "lat": 47.6669824,
+  "lon": 11.5381086
+ },
+ {
+  "id": 261020752,
+  "name": "Zwiesel",
+  "kind": "peak",
+  "ele": 1348,
+  "lat": 47.7235737,
+  "lon": 11.4884518
+ },
+ {
+  "id": 442345031,
+  "name": "Breitenkopf",
+  "kind": "peak",
+  "ele": 1347,
+  "lat": 47.6180237,
+  "lon": 11.6332571
+ },
+ {
+  "id": 296034076,
+  "name": "Kofel",
+  "kind": "peak",
+  "ele": 1342,
+  "lat": 47.5868607,
+  "lon": 11.0595271
+ },
+ {
+  "id": 4158998575,
+  "name": "Flauschberg",
+  "kind": "peak",
+  "ele": 1342,
+  "lat": 47.6918676,
+  "lon": 12.6672881
+ },
+ {
+  "id": 1254353521,
+  "name": "Kogel",
+  "kind": "peak",
+  "ele": 1340,
+  "lat": 47.66997,
+  "lon": 11.5308184
+ },
+ {
+  "id": 6619156556,
+  "name": "Teufelskopf",
+  "kind": "peak",
+  "ele": 1340,
+  "lat": 47.5937664,
+  "lon": 12.823039
+ },
+ {
+  "id": 10300162542,
+  "name": "Spitzeck",
+  "kind": "peak",
+  "ele": 1339,
+  "lat": 47.7018864,
+  "lon": 11.6661234
+ },
+ {
+  "id": 701066939,
+  "name": "Rehleitenkopf",
+  "kind": "peak",
+  "ele": 1338,
+  "lat": 47.7025666,
+  "lon": 12.103677
+ },
+ {
+  "id": 2880084780,
+  "name": "Mittlerer Adlerkopf",
+  "kind": "peak",
+  "ele": 1338,
+  "lat": 47.6960642,
+  "lon": 12.6677871
+ },
+ {
+  "id": 48783878,
+  "name": "Großer Riesenkopf",
+  "kind": "peak",
+  "ele": 1337,
+  "lat": 47.7084725,
+  "lon": 12.1068813
+ },
+ {
+  "id": 476276692,
+  "name": "Zinkenkopf",
+  "kind": "peak",
+  "ele": 1336,
+  "lat": 47.64767,
+  "lon": 13.08619
+ },
+ {
+  "id": 4369817141,
+  "name": "Gindelalmschneid",
+  "kind": "peak",
+  "ele": 1335,
+  "lat": 47.7236176,
+  "lon": 11.7956894
+ },
+ {
+  "id": 402664587,
+  "name": "Teisenberg",
+  "kind": "peak",
+  "ele": 1333,
+  "lat": 47.8056554,
+  "lon": 12.7682071
+ },
+ {
+  "id": 4102642391,
+  "name": "Hennenkopf",
+  "kind": "peak",
+  "ele": 1332,
+  "lat": 47.5916682,
+  "lon": 10.8160367
+ },
+ {
+  "id": 7850348989,
+  "name": "Mittagswandl",
+  "kind": "peak",
+  "ele": 1331,
+  "lat": 47.7276165,
+  "lon": 12.6131178
+ },
+ {
+  "id": 281499400,
+  "name": "Rechelkopf",
+  "kind": "peak",
+  "ele": 1330,
+  "lat": 47.7222953,
+  "lon": 11.6247509
+ },
+ {
+  "id": 3077015210,
+  "name": "Litzlbachhörndl",
+  "kind": "peak",
+  "ele": 1330,
+  "lat": 47.7043284,
+  "lon": 12.7354602
+ },
+ {
+  "id": 8214214184,
+  "name": "Mitterberg",
+  "kind": "peak",
+  "ele": 1329,
+  "lat": 47.6973134,
+  "lon": 12.8961963
+ },
+ {
+  "id": 2398130163,
+  "name": "Altlacher Hochkopf",
+  "kind": "peak",
+  "ele": 1328,
+  "lat": 47.5542402,
+  "lon": 11.3571284
+ },
+ {
+  "id": 1257931849,
+  "name": "Pastaukopf",
+  "kind": "peak",
+  "ele": 1325,
+  "lat": 47.7087933,
+  "lon": 12.2134423
+ },
+ {
+  "id": 5876663191,
+  "name": "Hendelberg",
+  "kind": "peak",
+  "ele": 1324,
+  "lat": 47.7608542,
+  "lon": 12.830369
+ },
+ {
+  "id": 389806118,
+  "name": "Stallauer Kopf",
+  "kind": "peak",
+  "ele": 1322,
+  "lat": 47.7246598,
+  "lon": 11.4816115
+ },
+ {
+  "id": 3230301401,
+  "name": "Richtstrichkopf",
+  "kind": "peak",
+  "ele": 1322,
+  "lat": 47.695447,
+  "lon": 12.6296324
+ },
+ {
+  "id": 1141059170,
+  "name": "Fuderheustein",
+  "kind": "peak",
+  "ele": 1321,
+  "lat": 47.7537784,
+  "lon": 12.8761479
+ },
+ {
+  "id": 26864394,
+  "name": "Rabensteinhorn Nordgipfel",
+  "kind": "peak",
+  "ele": 1318,
+  "lat": 47.6988381,
+  "lon": 12.8267449
+ },
+ {
+  "id": 357274338,
+  "name": "Rohrkopf",
+  "kind": "peak",
+  "ele": 1316,
+  "lat": 47.7009765,
+  "lon": 11.7977397
+ },
+ {
+  "id": 714142232,
+  "name": "Rindberg",
+  "kind": "peak",
+  "ele": 1316,
+  "lat": 47.5094645,
+  "lon": 11.2221773
+ },
+ {
+  "id": 2448069883,
+  "name": "Achhorn",
+  "kind": "peak",
+  "ele": 1316,
+  "lat": 47.6507789,
+  "lon": 12.7530574
+ },
+ {
+  "id": 911835841,
+  "name": "Großer Illing",
+  "kind": "peak",
+  "ele": 1313,
+  "lat": 47.624011,
+  "lon": 11.2637843
+ },
+ {
+  "id": 1431131378,
+  "name": "Mitterberg",
+  "kind": "peak",
+  "ele": 1311,
+  "lat": 47.5635524,
+  "lon": 11.4003216
+ },
+ {
+  "id": 705155390,
+  "name": "Waxenstein",
+  "kind": "peak",
+  "ele": 1310,
+  "lat": 47.6658503,
+  "lon": 11.5427384
+ },
+ {
+  "id": 2883098332,
+  "name": "Mehrentaler Wand",
+  "kind": "peak",
+  "ele": 1309,
+  "lat": 47.7720837,
+  "lon": 12.5234167
+ },
+ {
+  "id": 13381243046,
+  "name": "Karkopf",
+  "kind": "peak",
+  "ele": 1308,
+  "lat": 47.6353461,
+  "lon": 13.0808054
+ },
+ {
+  "id": 2512170505,
+  "name": "Wamberg",
+  "kind": "peak",
+  "ele": 1307,
+  "lat": 47.4743224,
+  "lon": 11.1689881
+ },
+ {
+  "id": 1978075939,
+  "name": "Schafkopf",
+  "kind": "peak",
+  "ele": 1305,
+  "lat": 47.535164,
+  "lon": 11.2633473
+ },
+ {
+  "id": 60054360,
+  "name": "Götschenkopf",
+  "kind": "peak",
+  "ele": 1304,
+  "lat": 47.6317889,
+  "lon": 12.934082
+ },
+ {
+  "id": 173883540,
+  "name": "Grünstein",
+  "kind": "peak",
+  "ele": 1304,
+  "lat": 47.5943452,
+  "lon": 12.9654528
+ },
+ {
+  "id": 5485841643,
+  "name": "Vogelspitz",
+  "kind": "peak",
+  "ele": 1300,
+  "lat": 47.6815373,
+  "lon": 12.8500396
+ },
+ {
+  "id": 441306332,
+  "name": "Ringspitz",
+  "kind": "peak",
+  "ele": 1293,
+  "lat": 47.6829037,
+  "lon": 11.7330155
+ },
+ {
+  "id": 2598550656,
+  "name": "Salober",
+  "kind": "peak",
+  "ele": 1293,
+  "lat": 47.5654772,
+  "lon": 10.6127413
+ },
+ {
+  "id": 2910612830,
+  "name": "Lanzeleck",
+  "kind": "peak",
+  "ele": 1292,
+  "lat": 47.7069001,
+  "lon": 12.703796
+ },
+ {
+  "id": 3191281746,
+  "name": "Desselkopf",
+  "kind": "peak",
+  "ele": 1290,
+  "lat": 47.6183935,
+  "lon": 11.3579688
+ },
+ {
+  "id": 277585474,
+  "name": "Zwölferkopf",
+  "kind": "peak",
+  "ele": 1287,
+  "lat": 47.5668634,
+  "lon": 10.6053393
+ },
+ {
+  "id": 4102642396,
+  "name": "Brameckköpfel",
+  "kind": "peak",
+  "ele": 1287,
+  "lat": 47.6093324,
+  "lon": 10.8979843
+ },
+ {
+  "id": 5774972193,
+  "name": "Spechtenkopf",
+  "kind": "peak",
+  "ele": 1285,
+  "lat": 47.704072,
+  "lon": 12.8839484
+ },
+ {
+  "id": 409616954,
+  "name": "Wetterfahne",
+  "kind": "peak",
+  "ele": 1284,
+  "lat": 47.6828333,
+  "lon": 12.377494
+ },
+ {
+  "id": 2874031001,
+  "name": "Bairerkopf",
+  "kind": "peak",
+  "ele": 1283,
+  "lat": 47.7730979,
+  "lon": 12.5273079
+ },
+ {
+  "id": 942283724,
+  "name": "Steinerne Jäger",
+  "kind": "peak",
+  "ele": 1282,
+  "lat": 47.7532079,
+  "lon": 12.8636617
+ },
+ {
+  "id": 2638613912,
+  "name": "Zwölferturm",
+  "kind": "peak",
+  "ele": 1281,
+  "lat": 47.7677962,
+  "lon": 12.3746612
+ },
+ {
+  "id": 401706780,
+  "name": "Sulzkopf",
+  "kind": "peak",
+  "ele": 1279,
+  "lat": 47.7295347,
+  "lon": 11.620906
+ },
+ {
+  "id": 440940585,
+  "name": "Gronetseck",
+  "kind": "peak",
+  "ele": 1278,
+  "lat": 47.7155768,
+  "lon": 11.6496965
+ },
+ {
+  "id": 441306317,
+  "name": "Luchseck",
+  "kind": "peak",
+  "ele": 1278,
+  "lat": 47.6750969,
+  "lon": 11.7083359
+ },
+ {
+  "id": 1274835788,
+  "name": "Schweinberg",
+  "kind": "peak",
+  "ele": 1278,
+  "lat": 47.6966791,
+  "lon": 11.6217197
+ },
+ {
+  "id": 1406919071,
+  "name": "Hammerstein",
+  "kind": "peak",
+  "ele": 1278,
+  "lat": 47.7599108,
+  "lon": 12.2949779
+ },
+ {
+  "id": 1409857323,
+  "name": "Sonnwendköpfl",
+  "kind": "peak",
+  "ele": 1278,
+  "lat": 47.6945821,
+  "lon": 12.4326504
+ },
+ {
+  "id": 1280475354,
+  "name": "Mitterkopf",
+  "kind": "peak",
+  "ele": 1275,
+  "lat": 47.611569,
+  "lon": 11.5557259
+ },
+ {
+  "id": 292392028,
+  "name": "Farrenpoint",
+  "kind": "peak",
+  "ele": 1273,
+  "lat": 47.7433528,
+  "lon": 12.0355847
+ },
+ {
+  "id": 6731477485,
+  "name": "Strubkopf",
+  "kind": "peak",
+  "ele": 1271,
+  "lat": 47.575612,
+  "lon": 13.0071885
+ },
+ {
+  "id": 1268492645,
+  "name": "Spitzingscheibe",
+  "kind": "peak",
+  "ele": 1270,
+  "lat": 47.7005103,
+  "lon": 11.9880991
+ },
+ {
+  "id": 4494839789,
+  "name": "Pflasterbachhörndl",
+  "kind": "peak",
+  "ele": 1270,
+  "lat": 47.7015243,
+  "lon": 12.8296896
+ },
+ {
+  "id": 748804706,
+  "name": "Sonnenspitz",
+  "kind": "peak",
+  "ele": 1269,
+  "lat": 47.6393841,
+  "lon": 11.3760576
+ },
+ {
+  "id": 419804805,
+  "name": "Grasleitenstein",
+  "kind": "peak",
+  "ele": 1268,
+  "lat": 47.6552244,
+  "lon": 11.6185482
+ },
+ {
+  "id": 7245068757,
+  "name": "Salzkopf",
+  "kind": "peak",
+  "ele": 1265,
+  "lat": 47.5788986,
+  "lon": 12.8352406
+ },
+ {
+  "id": 3230301405,
+  "name": "Stuhlkopf",
+  "kind": "peak",
+  "ele": 1264,
+  "lat": 47.6881301,
+  "lon": 12.5429337
+ },
+ {
+  "id": 12560166234,
+  "name": "Teisenbergkopf",
+  "kind": "peak",
+  "ele": 1264,
+  "lat": 47.7880967,
+  "lon": 12.7732475
+ },
+ {
+  "id": 13381243045,
+  "name": "Haarpointkopf",
+  "kind": "peak",
+  "ele": 1264,
+  "lat": 47.6379472,
+  "lon": 13.0744518
+ },
+ {
+  "id": 4510320418,
+  "name": "Luchsfallwandl",
+  "kind": "peak",
+  "ele": 1263,
+  "lat": 47.7583659,
+  "lon": 12.4907647
+ },
+ {
+  "id": 13313336142,
+  "name": "Geißstallhöhe",
+  "kind": "peak",
+  "ele": 1262,
+  "lat": 47.6444375,
+  "lon": 13.091834
+ },
+ {
+  "id": 5594875706,
+  "name": "Neureuth",
+  "kind": "peak",
+  "ele": 1261,
+  "lat": 47.7284592,
+  "lon": 11.7720937
+ },
+ {
+  "id": 2597722489,
+  "name": "Nesselscheibe",
+  "kind": "peak",
+  "ele": 1258,
+  "lat": 47.7284036,
+  "lon": 11.680452
+ },
+ {
+  "id": 1741371913,
+  "name": "Rohnberg (Schliersberg)",
+  "kind": "peak",
+  "ele": 1257,
+  "lat": 47.7427943,
+  "lon": 11.8883149
+ },
+ {
+  "id": 3229970780,
+  "name": "Auer Berg",
+  "kind": "peak",
+  "ele": 1252,
+  "lat": 47.7305888,
+  "lon": 11.8104963
+ },
+ {
+  "id": 413925035,
+  "name": "Waldkopf",
+  "kind": "peak",
+  "ele": 1251,
+  "lat": 47.6749593,
+  "lon": 12.0419523
+ },
+ {
+  "id": 4102642397,
+  "name": "Lobberg",
+  "kind": "peak",
+  "ele": 1251,
+  "lat": 47.5976923,
+  "lon": 10.9378535
+ },
+ {
+  "id": 389806117,
+  "name": "Angerlkopf",
+  "kind": "peak",
+  "ele": 1249,
+  "lat": 47.7224724,
+  "lon": 11.4674014
+ },
+ {
+  "id": 414607694,
+  "name": "Blomberg Westgipfel",
+  "kind": "peak",
+  "ele": 1248,
+  "lat": 47.7333461,
+  "lon": 11.4921002
+ },
+ {
+  "id": 1254353310,
+  "name": "Kesselkopf",
+  "kind": "peak",
+  "ele": 1248,
+  "lat": 47.6805905,
+  "lon": 11.5005893
+ },
+ {
+  "id": 1427489038,
+  "name": "Büchsenkopf",
+  "kind": "peak",
+  "ele": 1247,
+  "lat": 47.569414,
+  "lon": 13.0030641
+ },
+ {
+  "id": 8244940737,
+  "name": "Längenberg",
+  "kind": "peak",
+  "ele": 1244,
+  "lat": 47.6752664,
+  "lon": 11.4914896
+ },
+ {
+  "id": 702261001,
+  "name": "Kircheck",
+  "kind": "peak",
+  "ele": 1243,
+  "lat": 47.6152822,
+  "lon": 11.0771822
+ },
+ {
+  "id": 3013978685,
+  "name": "Scheichenberg",
+  "kind": "peak",
+  "ele": 1243,
+  "lat": 47.777293,
+  "lon": 12.598997
+ },
+ {
+  "id": 3230301404,
+  "name": "Sondersberg",
+  "kind": "peak",
+  "ele": 1243,
+  "lat": 47.6545869,
+  "lon": 12.5617821
+ },
+ {
+  "id": 1254353583,
+  "name": "Kogelberg",
+  "kind": "peak",
+  "ele": 1241,
+  "lat": 47.67546,
+  "lon": 11.534111
+ },
+ {
+  "id": 2939392364,
+  "name": "Sterneck",
+  "kind": "peak",
+  "ele": 1241,
+  "lat": 47.7429338,
+  "lon": 11.9958739
+ },
+ {
+  "id": 2055669063,
+  "name": "Graseck",
+  "kind": "peak",
+  "ele": 1240,
+  "lat": 47.6363026,
+  "lon": 11.3733414
+ },
+ {
+  "id": 1161728265,
+  "name": "Eckbauer",
+  "kind": "peak",
+  "ele": 1237,
+  "lat": 47.4664668,
+  "lon": 11.1339759
+ },
+ {
+  "id": 1644165590,
+  "name": "Blomberg Ostgipfel",
+  "kind": "peak",
+  "ele": 1237,
+  "lat": 47.7335365,
+  "lon": 11.5072874
+ },
+ {
+  "id": 3126444927,
+  "name": "Altlachberg",
+  "kind": "peak",
+  "ele": 1235,
+  "lat": 47.5690831,
+  "lon": 11.3777456
+ },
+ {
+  "id": 1792128624,
+  "name": "Auracher Köpferl",
+  "kind": "peak",
+  "ele": 1231,
+  "lat": 47.7137651,
+  "lon": 11.9079192
+ },
+ {
+  "id": 12560166297,
+  "name": "Großer Kachelstein",
+  "kind": "peak",
+  "ele": 1230,
+  "lat": 47.8044064,
+  "lon": 12.7520791
+ },
+ {
+  "id": 419636761,
+  "name": "Kindlwand",
+  "kind": "peak",
+  "ele": 1229,
+  "lat": 47.7310324,
+  "lon": 12.1808792
+ },
+ {
+  "id": 389080562,
+  "name": "Steckenbergkreuz",
+  "kind": "peak",
+  "ele": 1228,
+  "lat": 47.6024309,
+  "lon": 11.0237552
+ },
+ {
+  "id": 407796645,
+  "name": "Zinnkopf",
+  "kind": "peak",
+  "ele": 1227,
+  "lat": 47.7813088,
+  "lon": 12.6773788
+ },
+ {
+  "id": 2512170190,
+  "name": "Brauneck",
+  "kind": "peak",
+  "ele": 1226,
+  "lat": 47.4715388,
+  "lon": 11.1546001
+ },
+ {
+  "id": 1256843918,
+  "name": "Buchenauer Kopf",
+  "kind": "peak",
+  "ele": 1225,
+  "lat": 47.693248,
+  "lon": 11.4667189
+ },
+ {
+  "id": 7814359906,
+  "name": "Exenberg",
+  "kind": "peak",
+  "ele": 1225,
+  "lat": 47.692278,
+  "lon": 12.4148364
+ },
+ {
+  "id": 759792018,
+  "name": "Mitterberg",
+  "kind": "peak",
+  "ele": 1224,
+  "lat": 47.6897559,
+  "lon": 12.1219738
+ },
+ {
+  "id": 3230066905,
+  "name": "Lämmeralpeneck",
+  "kind": "peak",
+  "ele": 1224,
+  "lat": 47.6285402,
+  "lon": 11.8848818
+ },
+ {
+  "id": 2939392336,
+  "name": "Sternplatte",
+  "kind": "peak",
+  "ele": 1223,
+  "lat": 47.747483,
+  "lon": 11.9923907
+ },
+ {
+  "id": 3230301410,
+  "name": "Zinnkopf",
+  "kind": "peak",
+  "ele": 1223,
+  "lat": 47.7783588,
+  "lon": 12.5263757
+ },
+ {
+  "id": 885262311,
+  "name": "Schwarzenberg",
+  "kind": "peak",
+  "ele": 1222,
+  "lat": 47.6419783,
+  "lon": 12.1358034
+ },
+ {
+  "id": 3721738280,
+  "name": "Kemeikopf",
+  "kind": "peak",
+  "ele": 1222,
+  "lat": 47.7463097,
+  "lon": 12.586438
+ },
+ {
+  "id": 1280465454,
+  "name": "Rauchenberg",
+  "kind": "peak",
+  "ele": 1221,
+  "lat": 47.6213772,
+  "lon": 11.5683741
+ },
+ {
+  "id": 8247190717,
+  "name": "Bründlingköpfl",
+  "kind": "peak",
+  "ele": 1221,
+  "lat": 47.7696331,
+  "lon": 12.5638071
+ },
+ {
+  "id": 414607685,
+  "name": "Heigelkopf",
+  "kind": "peak",
+  "ele": 1218,
+  "lat": 47.727705,
+  "lon": 11.5133539
+ },
+ {
+  "id": 5949489313,
+  "name": "Kobelwand",
+  "kind": "peak",
+  "ele": 1216,
+  "lat": 47.7676452,
+  "lon": 12.5065681
+ },
+ {
+  "id": 3190825053,
+  "name": "Brunnensteinkopf",
+  "kind": "peak",
+  "ele": 1215,
+  "lat": 47.7570115,
+  "lon": 12.3371639
+ },
+ {
+  "id": 4104402988,
+  "name": "Osterfeuerberg",
+  "kind": "peak",
+  "ele": 1215,
+  "lat": 47.6006323,
+  "lon": 11.2107518
+ },
+ {
+  "id": 935524539,
+  "name": "Mitterberg",
+  "kind": "peak",
+  "ele": 1214,
+  "lat": 47.7344286,
+  "lon": 12.041971
+ },
+ {
+  "id": 1320516864,
+  "name": "Sattmannsberg",
+  "kind": "peak",
+  "ele": 1214,
+  "lat": 47.5899283,
+  "lon": 11.2523175
+ },
+ {
+  "id": 389806119,
+  "name": "Stallauer Eck",
+  "kind": "peak",
+  "ele": 1213,
+  "lat": 47.7337525,
+  "lon": 11.4786369
+ },
+ {
+  "id": 2607182341,
+  "name": "Wasenkogel",
+  "kind": "peak",
+  "ele": 1211,
+  "lat": 47.7288407,
+  "lon": 11.6905672
+ },
+ {
+  "id": 1256843929,
+  "name": "Vogelkopf",
+  "kind": "peak",
+  "ele": 1210,
+  "lat": 47.6873696,
+  "lon": 11.4814285
+ },
+ {
+  "id": 1431131521,
+  "name": "Rautberg",
+  "kind": "peak",
+  "ele": 1210,
+  "lat": 47.5822868,
+  "lon": 11.412669
+ },
+ {
+  "id": 3230301389,
+  "name": "Haargaßberg",
+  "kind": "peak",
+  "ele": 1210,
+  "lat": 47.7736459,
+  "lon": 12.6212384
+ },
+ {
+  "id": 289759260,
+  "name": "Riederstein",
+  "kind": "peak",
+  "ele": 1207,
+  "lat": 47.704189,
+  "lon": 11.7923115
+ },
+ {
+  "id": 389806116,
+  "name": "Enzenauer Kopf",
+  "kind": "peak",
+  "ele": 1205,
+  "lat": 47.7273048,
+  "lon": 11.4602762
+ },
+ {
+  "id": 703834455,
+  "name": "Kleiner Laber",
+  "kind": "peak",
+  "ele": 1205,
+  "lat": 47.5752543,
+  "lon": 11.1292092
+ },
+ {
+  "id": 2599368586,
+  "name": "Madonna",
+  "kind": "peak",
+  "ele": 1205,
+  "lat": 47.7600983,
+  "lon": 12.4874146
+ },
+ {
+  "id": 1280475333,
+  "name": "Paradiesköpfel",
+  "kind": "peak",
+  "ele": 1204,
+  "lat": 47.6063116,
+  "lon": 11.5554406
+ },
+ {
+  "id": 1511563857,
+  "name": "Fahrtkopf",
+  "kind": "peak",
+  "ele": 1203,
+  "lat": 47.71849,
+  "lon": 11.4645391
+ },
+ {
+  "id": 4102642399,
+  "name": "Köpfel",
+  "kind": "peak",
+  "ele": 1202,
+  "lat": 47.6123428,
+  "lon": 11.0046358
+ },
+ {
+  "id": 3233329558,
+  "name": "Langeck",
+  "kind": "peak",
+  "ele": 1201,
+  "lat": 47.6313448,
+  "lon": 12.0333108
+ },
+ {
+  "id": 995773525,
+  "name": "Schwarzenberg",
+  "kind": "peak",
+  "ele": 1200,
+  "lat": 47.5505937,
+  "lon": 10.6889404
+ },
+ {
+  "id": 3233329682,
+  "name": "Schwarzenbergeck",
+  "kind": "peak",
+  "ele": 1200,
+  "lat": 47.7476985,
+  "lon": 11.9858345
+ },
+ {
+  "id": 4967432232,
+  "name": "Burgberg",
+  "kind": "peak",
+  "ele": 1194,
+  "lat": 47.4320044,
+  "lon": 11.2509755
+ },
+ {
+  "id": 1279802968,
+  "name": "Reineck",
+  "kind": "peak",
+  "ele": 1192,
+  "lat": 47.5895519,
+  "lon": 11.4889998
+ },
+ {
+  "id": 173898902,
+  "name": "Kneifelspitze",
+  "kind": "peak",
+  "ele": 1189,
+  "lat": 47.6581505,
+  "lon": 13.0178961
+ },
+ {
+  "id": 4104421920,
+  "name": "Schwarzenköpfel",
+  "kind": "peak",
+  "ele": 1189,
+  "lat": 47.6096705,
+  "lon": 10.8715586
+ },
+ {
+  "id": 384913884,
+  "name": "Schwarzenberg",
+  "kind": "peak",
+  "ele": 1187,
+  "lat": 47.7530482,
+  "lon": 11.9644133
+ },
+ {
+  "id": 1866359066,
+  "name": "Hirzeneck",
+  "kind": "peak",
+  "ele": 1186,
+  "lat": 47.48033,
+  "lon": 11.2027249
+ },
+ {
+  "id": 1256843938,
+  "name": "Hochtannenkopf",
+  "kind": "peak",
+  "ele": 1184,
+  "lat": 47.7008493,
+  "lon": 11.4956366
+ },
+ {
+  "id": 1271398990,
+  "name": "Rechelköpfel",
+  "kind": "peak",
+  "ele": 1182,
+  "lat": 47.720185,
+  "lon": 11.6167245
+ },
+ {
+  "id": 2621339830,
+  "name": "Setzbergeck",
+  "kind": "peak",
+  "ele": 1179,
+  "lat": 47.6505209,
+  "lon": 11.7658835
+ },
+ {
+  "id": 1743681602,
+  "name": "Gassler Berg",
+  "kind": "peak",
+  "ele": 1178,
+  "lat": 47.7338721,
+  "lon": 11.7683304
+ },
+ {
+  "id": 3230301403,
+  "name": "Seekopf",
+  "kind": "peak",
+  "ele": 1173,
+  "lat": 47.7050299,
+  "lon": 12.6223813
+ },
+ {
+  "id": 420493095,
+  "name": "Hornburg",
+  "kind": "peak",
+  "ele": 1172,
+  "lat": 47.5707756,
+  "lon": 10.7676372
+ },
+ {
+  "id": 4104404195,
+  "name": "Roßkopf",
+  "kind": "peak",
+  "ele": 1172,
+  "lat": 47.6054162,
+  "lon": 10.9555487
+ },
+ {
+  "id": 3230301398,
+  "name": "Platte",
+  "kind": "peak",
+  "ele": 1168,
+  "lat": 47.7699472,
+  "lon": 12.6189227
+ },
+ {
+  "id": 715720542,
+  "name": "Schafkopf",
+  "kind": "peak",
+  "ele": 1164,
+  "lat": 47.5023054,
+  "lon": 11.1249404
+ },
+ {
+  "id": 1431131352,
+  "name": "Fischberg",
+  "kind": "peak",
+  "ele": 1164,
+  "lat": 47.6000678,
+  "lon": 11.3914884
+ },
+ {
+  "id": 1256843867,
+  "name": "Waxenstein",
+  "kind": "peak",
+  "ele": 1162,
+  "lat": 47.6845031,
+  "lon": 11.4896257
+ },
+ {
+  "id": 1978075728,
+  "name": "Krepelschrofen",
+  "kind": "peak",
+  "ele": 1160,
+  "lat": 47.5264493,
+  "lon": 11.2770854
+ },
+ {
+  "id": 2874033358,
+  "name": "Breitwand",
+  "kind": "peak",
+  "ele": 1159,
+  "lat": 47.7482591,
+  "lon": 12.4145152
+ },
+ {
+  "id": 3935603160,
+  "name": "Sulzbergschneid",
+  "kind": "peak",
+  "ele": 1159,
+  "lat": 47.7757675,
+  "lon": 12.7015872
+ },
+ {
+  "id": 2877712129,
+  "name": "Reinock",
+  "kind": "peak",
+  "ele": 1158,
+  "lat": 47.72545,
+  "lon": 12.0215546
+ },
+ {
+  "id": 506997961,
+  "name": "Hinterer Brandkopf",
+  "kind": "peak",
+  "ele": 1156,
+  "lat": 47.5942492,
+  "lon": 13.0160668
+ },
+ {
+  "id": 3013850210,
+  "name": "Roßkopf",
+  "kind": "peak",
+  "ele": 1156,
+  "lat": 47.7460862,
+  "lon": 12.4913971
+ },
+ {
+  "id": 1280475386,
+  "name": "Brandkopf",
+  "kind": "peak",
+  "ele": 1152,
+  "lat": 47.6126434,
+  "lon": 11.5232574
+ },
+ {
+  "id": 4104404196,
+  "name": "Herziges Bergel",
+  "kind": "peak",
+  "ele": 1152,
+  "lat": 47.5972981,
+  "lon": 10.8582061
+ },
+ {
+  "id": 5098860808,
+  "name": "Schwarzkopf",
+  "kind": "peak",
+  "ele": 1150,
+  "lat": 47.4989205,
+  "lon": 11.3031057
+ },
+ {
+  "id": 3141368197,
+  "name": "Breitenberg",
+  "kind": "peak",
+  "ele": 1147,
+  "lat": 47.7256291,
+  "lon": 12.0646098
+ },
+ {
+  "id": 1478987449,
+  "name": "Windpasselkopf",
+  "kind": "peak",
+  "ele": 1146,
+  "lat": 47.6969366,
+  "lon": 11.4474834
+ },
+ {
+  "id": 3544588110,
+  "name": "Buchenberg",
+  "kind": "peak",
+  "ele": 1142,
+  "lat": 47.6064182,
+  "lon": 10.8114706
+ },
+ {
+  "id": 1271399144,
+  "name": "Schwarzköpfel",
+  "kind": "peak",
+  "ele": 1140,
+  "lat": 47.7273579,
+  "lon": 11.6080162
+ },
+ {
+  "id": 3013957646,
+  "name": "Brandstein",
+  "kind": "peak",
+  "ele": 1138,
+  "lat": 47.7449105,
+  "lon": 12.6001481
+ },
+ {
+  "id": 821616667,
+  "name": "Schwarzenberg",
+  "kind": "peak",
+  "ele": 1136,
+  "lat": 47.7729524,
+  "lon": 12.272903
+ },
+ {
+  "id": 2876346758,
+  "name": "Backofen",
+  "kind": "peak",
+  "ele": 1136,
+  "lat": 47.7258576,
+  "lon": 12.1780637
+ },
+ {
+  "id": 568503689,
+  "name": "Inzeller Kienbergl (Kreuzspitz)",
+  "kind": "peak",
+  "ele": 1135,
+  "lat": 47.746641,
+  "lon": 12.7420541
+ },
+ {
+  "id": 701385037,
+  "name": "Maiwand",
+  "kind": "peak",
+  "ele": 1135,
+  "lat": 47.7102985,
+  "lon": 12.1148096
+ },
+ {
+  "id": 1743681826,
+  "name": "Oeder Kogel",
+  "kind": "peak",
+  "ele": 1135,
+  "lat": 47.7344509,
+  "lon": 11.7765773
+ },
+ {
+  "id": 1743682069,
+  "name": "Schußkogel",
+  "kind": "peak",
+  "ele": 1134,
+  "lat": 47.7348091,
+  "lon": 11.7863439
+ },
+ {
+  "id": 1770485972,
+  "name": "Erlbergkopf",
+  "kind": "peak",
+  "ele": 1134,
+  "lat": 47.7783013,
+  "lon": 12.3764839
+ },
+ {
+  "id": 3229933791,
+  "name": "Katzenköpfl",
+  "kind": "peak",
+  "ele": 1132,
+  "lat": 47.738183,
+  "lon": 11.9951199
+ },
+ {
+  "id": 1240143012,
+  "name": "Roßkopf",
+  "kind": "peak",
+  "ele": 1130,
+  "lat": 47.5544917,
+  "lon": 11.5243957
+ },
+ {
+  "id": 1280463870,
+  "name": "Düftberg",
+  "kind": "peak",
+  "ele": 1126,
+  "lat": 47.6375775,
+  "lon": 11.5188518
+ },
+ {
+  "id": 401677244,
+  "name": "Keilkopf",
+  "kind": "peak",
+  "ele": 1125,
+  "lat": 47.6953903,
+  "lon": 11.6023771
+ },
+ {
+  "id": 1770485973,
+  "name": "Haindorfer Berg",
+  "kind": "peak",
+  "ele": 1123,
+  "lat": 47.7802161,
+  "lon": 12.3517898
+ },
+ {
+  "id": 2943516127,
+  "name": "Großer Turm",
+  "kind": "peak",
+  "ele": 1120,
+  "lat": 47.7416118,
+  "lon": 12.7685402
+ },
+ {
+  "id": 311986503,
+  "name": "Sulzberg",
+  "kind": "peak",
+  "ele": 1119,
+  "lat": 47.7446177,
+  "lon": 12.0626694
+ },
+ {
+  "id": 3105308096,
+  "name": "Haßlberg",
+  "kind": "peak",
+  "ele": 1117,
+  "lat": 47.7530532,
+  "lon": 12.6132077
+ },
+ {
+  "id": 440952232,
+  "name": "Zwergelberg",
+  "kind": "peak",
+  "ele": 1113,
+  "lat": 47.6988794,
+  "lon": 11.7045932
+ },
+ {
+  "id": 889074205,
+  "name": "Zugberg",
+  "kind": "peak",
+  "ele": 1113,
+  "lat": 47.7196296,
+  "lon": 12.061521
+ },
+ {
+  "id": 3233329548,
+  "name": "Auereck",
+  "kind": "peak",
+  "ele": 1113,
+  "lat": 47.7112511,
+  "lon": 11.695073
+ },
+ {
+  "id": 4104477135,
+  "name": "Aschauer Berg",
+  "kind": "peak",
+  "ele": 1108,
+  "lat": 47.6353081,
+  "lon": 11.1046659
+ },
+ {
+  "id": 1913828076,
+  "name": "Brunnerköpfl",
+  "kind": "peak",
+  "ele": 1107,
+  "lat": 47.6251162,
+  "lon": 12.0085146
+ },
+ {
+  "id": 1738763687,
+  "name": "Kleintegernseer Berg",
+  "kind": "peak",
+  "ele": 1106,
+  "lat": 47.707434,
+  "lon": 11.7782249
+ },
+ {
+  "id": 3233350789,
+  "name": "Gscheuerwand",
+  "kind": "peak",
+  "ele": 1106,
+  "lat": 47.7204933,
+  "lon": 12.4340155
+ },
+ {
+  "id": 1082083963,
+  "name": "Kienstein",
+  "kind": "peak",
+  "ele": 1101,
+  "lat": 47.6224664,
+  "lon": 11.4481812
+ },
+ {
+  "id": 3233329687,
+  "name": "Semmelberg",
+  "kind": "peak",
+  "ele": 1101,
+  "lat": 47.7105567,
+  "lon": 11.7034539
+ },
+ {
+  "id": 3230066911,
+  "name": "Schalmeiereck",
+  "kind": "peak",
+  "ele": 1098,
+  "lat": 47.6243725,
+  "lon": 11.8883125
+ },
+ {
+  "id": 942667605,
+  "name": "Schürfenkopf",
+  "kind": "peak",
+  "ele": 1096,
+  "lat": 47.7223741,
+  "lon": 11.6007828
+ },
+ {
+  "id": 4104522074,
+  "name": "Bruchköpfel",
+  "kind": "peak",
+  "ele": 1092,
+  "lat": 47.6393042,
+  "lon": 10.8642742
+ },
+ {
+  "id": 8040963501,
+  "name": "Falkenstein Nordgipfel",
+  "kind": "peak",
+  "ele": 1092,
+  "lat": 47.7511701,
+  "lon": 12.7600816
+ },
+ {
+  "id": 702262362,
+  "name": "Geißeck",
+  "kind": "peak",
+  "ele": 1086,
+  "lat": 47.638161,
+  "lon": 11.0954684
+ },
+ {
+  "id": 13306742726,
+  "name": "Kainzenberg",
+  "kind": "peak",
+  "ele": 1085,
+  "lat": 47.6378957,
+  "lon": 13.0657968
+ },
+ {
+  "id": 778602686,
+  "name": "Höhlenstein",
+  "kind": "peak",
+  "ele": 1084,
+  "lat": 47.6755356,
+  "lon": 12.1156565
+ },
+ {
+  "id": 3298157134,
+  "name": "Vogelspitz",
+  "kind": "peak",
+  "ele": 1081,
+  "lat": 47.7015798,
+  "lon": 12.4572584
+ },
+ {
+  "id": 3106095669,
+  "name": "Neustadler Berg",
+  "kind": "peak",
+  "ele": 1078,
+  "lat": 47.7814228,
+  "lon": 12.6219052
+ },
+ {
+  "id": 27257372,
+  "name": "Schachenberg",
+  "kind": "peak",
+  "ele": 1076,
+  "lat": 47.7126605,
+  "lon": 12.2943687
+ },
+ {
+  "id": 1843315194,
+  "name": "Hausleite",
+  "kind": "peak",
+  "ele": 1076,
+  "lat": 47.7563485,
+  "lon": 12.4261707
+ },
+ {
+  "id": 582519959,
+  "name": "Fahrenberg",
+  "kind": "peak",
+  "ele": 1074,
+  "lat": 47.5339474,
+  "lon": 11.291617
+ },
+ {
+  "id": 4104522072,
+  "name": "Sonneneck",
+  "kind": "peak",
+  "ele": 1074,
+  "lat": 47.6517561,
+  "lon": 11.041175
+ },
+ {
+  "id": 3101680939,
+  "name": "Kleines Kienbergl (Kreuzspitz)",
+  "kind": "peak",
+  "ele": 1071,
+  "lat": 47.7472806,
+  "lon": 12.7378819
+ },
+ {
+  "id": 705251831,
+  "name": "Teufelskapelle",
+  "kind": "peak",
+  "ele": 1069,
+  "lat": 47.5665333,
+  "lon": 11.1818637
+ },
+ {
+  "id": 1256843905,
+  "name": "Görglköpfl",
+  "kind": "peak",
+  "ele": 1068,
+  "lat": 47.6932798,
+  "lon": 11.482152
+ },
+ {
+  "id": 2213748620,
+  "name": "Pfliegeleck",
+  "kind": "peak",
+  "ele": 1065,
+  "lat": 47.7070306,
+  "lon": 11.7706673
+ },
+ {
+  "id": 3106094204,
+  "name": "Zellerberg Hauptgipfel",
+  "kind": "peak",
+  "ele": 1065,
+  "lat": 47.7651152,
+  "lon": 12.6700262
+ },
+ {
+  "id": 6731475483,
+  "name": "Klausbichel",
+  "kind": "peak",
+  "ele": 1065,
+  "lat": 47.6051559,
+  "lon": 13.0253203
+ },
+ {
+  "id": 3912536730,
+  "name": "Wetterkreuz",
+  "kind": "peak",
+  "ele": 1064,
+  "lat": 47.6826069,
+  "lon": 12.457229
+ },
+ {
+  "id": 5145536205,
+  "name": "Kleiner Illing",
+  "kind": "peak",
+  "ele": 1062,
+  "lat": 47.6250919,
+  "lon": 11.2536348
+ },
+ {
+  "id": 3230301396,
+  "name": "Mühlalpkopf",
+  "kind": "peak",
+  "ele": 1061,
+  "lat": 47.7863561,
+  "lon": 12.6013492
+ },
+ {
+  "id": 529449076,
+  "name": "Auerberg",
+  "kind": "peak",
+  "ele": 1055,
+  "lat": 47.7352959,
+  "lon": 10.7357434
+ },
+ {
+  "id": 3008227733,
+  "name": "Buch / Zwieselberg",
+  "kind": "peak",
+  "ele": 1055,
+  "lat": 47.6435033,
+  "lon": 10.6930316
+ },
+ {
+  "id": 2641018246,
+  "name": "Huberspitz",
+  "kind": "peak",
+  "ele": 1051,
+  "lat": 47.7376374,
+  "lon": 11.8342723
+ },
+ {
+  "id": 382409477,
+  "name": "Senkelekopf",
+  "kind": "peak",
+  "ele": 1047,
+  "lat": 47.6359414,
+  "lon": 10.6584983
+ },
+ {
+  "id": 1280463877,
+  "name": "Kohlberg",
+  "kind": "peak",
+  "ele": 1046,
+  "lat": 47.6386977,
+  "lon": 11.5533863
+ },
+ {
+  "id": 3233329551,
+  "name": "Breiteneck",
+  "kind": "peak",
+  "ele": 1045,
+  "lat": 47.6322445,
+  "lon": 12.0207883
+ },
+ {
+  "id": 8505225721,
+  "name": "Eichelberg",
+  "kind": "peak",
+  "ele": 1044,
+  "lat": 47.7037883,
+  "lon": 12.9015609
+ },
+ {
+  "id": 1254353253,
+  "name": "Eselauberg",
+  "kind": "peak",
+  "ele": 1041,
+  "lat": 47.6516132,
+  "lon": 11.5430831
+ },
+ {
+  "id": 1280463872,
+  "name": "Kohlberg",
+  "kind": "peak",
+  "ele": 1041,
+  "lat": 47.6386176,
+  "lon": 11.5444112
+ },
+ {
+  "id": 1256843924,
+  "name": "Brandenberg",
+  "kind": "peak",
+  "ele": 1031,
+  "lat": 47.6756758,
+  "lon": 11.4573057
+ },
+ {
+  "id": 9205150162,
+  "name": "Geschirrkopf",
+  "kind": "peak",
+  "ele": 1030,
+  "lat": 47.6538746,
+  "lon": 12.9911398
+ },
+ {
+  "id": 702260990,
+  "name": "Grünbichl",
+  "kind": "peak",
+  "ele": 1026,
+  "lat": 47.6191664,
+  "lon": 11.0539958
+ },
+ {
+  "id": 1011372360,
+  "name": "Schrofen",
+  "kind": "peak",
+  "ele": 1025,
+  "lat": 47.7330311,
+  "lon": 12.0652001
+ },
+ {
+  "id": 4104489593,
+  "name": "Wagbichl",
+  "kind": "peak",
+  "ele": 1017,
+  "lat": 47.6317601,
+  "lon": 11.2636489
+ },
+ {
+  "id": 6622620726,
+  "name": "Mahdeck",
+  "kind": "peak",
+  "ele": 1014,
+  "lat": 47.7144532,
+  "lon": 12.6728143
+ },
+ {
+  "id": 635151695,
+  "name": "Schneidberg",
+  "kind": "peak",
+  "ele": 1012,
+  "lat": 47.6624885,
+  "lon": 10.9068824
+ },
+ {
+  "id": 7599664003,
+  "name": "Freimahder Köpfl",
+  "kind": "peak",
+  "ele": 1007,
+  "lat": 47.7003827,
+  "lon": 12.9140261
+ },
+ {
+  "id": 1370150731,
+  "name": "Felsen",
+  "kind": "peak",
+  "ele": 1005,
+  "lat": 47.6442663,
+  "lon": 10.7024459
+ },
+ {
+  "id": 1833449047,
+  "name": "Arlesberg",
+  "kind": "peak",
+  "ele": 1003,
+  "lat": 47.4741917,
+  "lon": 10.929933
+ },
+ {
+  "id": 519462878,
+  "name": "Dötzenkopf",
+  "kind": "peak",
+  "ele": 1001,
+  "lat": 47.709027,
+  "lon": 12.8882982
+ },
+ {
+  "id": 4104522075,
+  "name": "Schoberköpfl",
+  "kind": "peak",
+  "ele": 1001,
+  "lat": 47.6460448,
+  "lon": 10.8771648
+ },
+ {
+  "id": 911186934,
+  "name": "Kienbergkopf",
+  "kind": "peak",
+  "ele": 998,
+  "lat": 47.7158736,
+  "lon": 13.0287424
+ },
+ {
+  "id": 319471229,
+  "name": "Kienberg",
+  "kind": "peak",
+  "ele": 996,
+  "lat": 47.5627616,
+  "lon": 10.7119082
+ },
+ {
+  "id": 1023521644,
+  "name": "Buchberg",
+  "kind": "peak",
+  "ele": 996,
+  "lat": 47.7331856,
+  "lon": 11.7541109
+ },
+ {
+  "id": 1770518698,
+  "name": "Reifenberg",
+  "kind": "peak",
+  "ele": 995,
+  "lat": 47.789563,
+  "lon": 12.3774602
+ },
+ {
+  "id": 2920306554,
+  "name": "Zellerberg Nordgipfel",
+  "kind": "peak",
+  "ele": 992,
+  "lat": 47.7677411,
+  "lon": 12.6627866
+ },
+ {
+  "id": 57802156,
+  "name": "Hoher Peißenberg",
+  "kind": "peak",
+  "ele": 988,
+  "lat": 47.8009644,
+  "lon": 11.0132328
+ },
+ {
+  "id": 4786801006,
+  "name": "Steinriegel",
+  "kind": "peak",
+  "ele": 974,
+  "lat": 47.5657476,
+  "lon": 11.3083863
+ },
+ {
+  "id": 8651584861,
+  "name": "Kranzlstein",
+  "kind": "peak",
+  "ele": 973,
+  "lat": 47.7128822,
+  "lon": 12.8275615
+ },
+ {
+  "id": 2490047553,
+  "name": "Engelstein",
+  "kind": "peak",
+  "ele": 972,
+  "lat": 47.7866732,
+  "lon": 12.5508081
+ },
+ {
+  "id": 414025338,
+  "name": "Höhenberg",
+  "kind": "peak",
+  "ele": 968,
+  "lat": 47.5816578,
+  "lon": 11.1598674
+ },
+ {
+  "id": 2081253533,
+  "name": "Kienstein",
+  "kind": "peak",
+  "ele": 968,
+  "lat": 47.6443372,
+  "lon": 11.3727532
+ },
+ {
+  "id": 322837063,
+  "name": "Kappelhöhe",
+  "kind": "peak",
+  "ele": 967,
+  "lat": 47.772797,
+  "lon": 10.7708987
+ },
+ {
+  "id": 636024131,
+  "name": "Eckberg",
+  "kind": "peak",
+  "ele": 965,
+  "lat": 47.6837122,
+  "lon": 10.9413805
+ },
+ {
+  "id": 1279783257,
+  "name": "Hennenköpfl",
+  "kind": "peak",
+  "ele": 965,
+  "lat": 47.583375,
+  "lon": 11.5445187
+ },
+ {
+  "id": 3233329685,
+  "name": "Reitberg",
+  "kind": "peak",
+  "ele": 962,
+  "lat": 47.6805761,
+  "lon": 12.0081736
+ },
+ {
+  "id": 550349351,
+  "name": "Kienberg",
+  "kind": "peak",
+  "ele": 961,
+  "lat": 47.731226,
+  "lon": 12.8072904
+ },
+ {
+  "id": 2457221319,
+  "name": "Ramskopf",
+  "kind": "peak",
+  "ele": 955,
+  "lat": 47.6250885,
+  "lon": 11.3478623
+ },
+ {
+  "id": 319471227,
+  "name": "Kalvarienberg",
+  "kind": "peak",
+  "ele": 953,
+  "lat": 47.56185,
+  "lon": 10.70435
+ },
+ {
+  "id": 4102158239,
+  "name": "Hochreut",
+  "kind": "peak",
+  "ele": 953,
+  "lat": 47.4917154,
+  "lon": 11.2596784
+ },
+ {
+  "id": 380936357,
+  "name": "Hohentanne",
+  "kind": "peak",
+  "ele": 950,
+  "lat": 47.6471916,
+  "lon": 11.2724851
+ },
+ {
+  "id": 606320617,
+  "name": "Großer Madron",
+  "kind": "peak",
+  "ele": 942,
+  "lat": 47.7110102,
+  "lon": 12.1301792
+ },
+ {
+  "id": 380918178,
+  "name": "Hirschberg",
+  "kind": "peak",
+  "ele": 940,
+  "lat": 47.6530243,
+  "lon": 11.2831276
+ },
+ {
+  "id": 281467921,
+  "name": "Burkenbichlberg",
+  "kind": "peak",
+  "ele": 939,
+  "lat": 47.563249,
+  "lon": 10.652
+ },
+ {
+  "id": 1743682072,
+  "name": "Wallenburger Kogel",
+  "kind": "peak",
+  "ele": 936,
+  "lat": 47.744995,
+  "lon": 11.7966675
+ },
+ {
+  "id": 4104433163,
+  "name": "Wetzstein",
+  "kind": "peak",
+  "ele": 936,
+  "lat": 47.6691,
+  "lon": 11.0164344
+ },
+ {
+  "id": 12437570125,
+  "name": "Michels Höh",
+  "kind": "peak",
+  "ele": 931,
+  "lat": 47.6009944,
+  "lon": 10.6010824
+ },
+ {
+  "id": 13612621776,
+  "name": "Sulzberg",
+  "kind": "peak",
+  "ele": 931,
+  "lat": 47.6541434,
+  "lon": 10.6501722
+ },
+ {
+  "id": 4763796236,
+  "name": "Hoher Götschen",
+  "kind": "peak",
+  "ele": 930,
+  "lat": 47.6958067,
+  "lon": 13.0645275
+ },
+ {
+  "id": 619240391,
+  "name": "Mühlegg",
+  "kind": "peak",
+  "ele": 926,
+  "lat": 47.7150662,
+  "lon": 10.9398997
+ },
+ {
+  "id": 11916445605,
+  "name": "Hochrießel",
+  "kind": "peak",
+  "ele": 925,
+  "lat": 47.7232885,
+  "lon": 12.8160509
+ },
+ {
+  "id": 11943042745,
+  "name": "Heuberg",
+  "kind": "peak",
+  "ele": 925,
+  "lat": 47.7179043,
+  "lon": 12.8105414
+ },
+ {
+  "id": 1280463880,
+  "name": "Langeneck",
+  "kind": "peak",
+  "ele": 924,
+  "lat": 47.6411807,
+  "lon": 11.5665219
+ },
+ {
+  "id": 747347485,
+  "name": "Rabenstein",
+  "kind": "peak",
+  "ele": 921,
+  "lat": 47.7858562,
+  "lon": 12.6183863
+ },
+ {
+  "id": 4104433161,
+  "name": "Mähdige Leite",
+  "kind": "peak",
+  "ele": 918,
+  "lat": 47.6658135,
+  "lon": 10.9662586
+ },
+ {
+  "id": 3106093355,
+  "name": "Boiderköpfl",
+  "kind": "peak",
+  "ele": 917,
+  "lat": 47.7392018,
+  "lon": 12.6479314
+ },
+ {
+  "id": 4104433146,
+  "name": "Sonnenbichel",
+  "kind": "peak",
+  "ele": 916,
+  "lat": 47.7185618,
+  "lon": 11.0417739
+ },
+ {
+  "id": 1629346238,
+  "name": "Hochplatte",
+  "kind": "peak",
+  "ele": 911,
+  "lat": 47.7100922,
+  "lon": 12.9042236
+ },
+ {
+  "id": 253348578,
+  "name": "Dandlberg",
+  "kind": "peak",
+  "ele": 910,
+  "lat": 47.766608,
+  "lon": 12.1768349
+ },
+ {
+  "id": 705251847,
+  "name": "Heldenkreuz",
+  "kind": "peak",
+  "ele": 910,
+  "lat": 47.5989479,
+  "lon": 11.2005976
+ },
+ {
+  "id": 4104433162,
+  "name": "Brunnenbichel",
+  "kind": "peak",
+  "ele": 910,
+  "lat": 47.6790113,
+  "lon": 10.9588325
+ },
+ {
+  "id": 6622125151,
+  "name": "Lattenberg",
+  "kind": "peak",
+  "ele": 909,
+  "lat": 47.7065673,
+  "lon": 12.91255
+ },
+ {
+  "id": 797532005,
+  "name": "Schönau",
+  "kind": "peak",
+  "ele": 906,
+  "lat": 47.4782435,
+  "lon": 11.1319009
+ },
+ {
+  "id": 600495150,
+  "name": "Eschenbühl",
+  "kind": "peak",
+  "ele": 905,
+  "lat": 47.7469613,
+  "lon": 10.928399
+ },
+ {
+  "id": 702260979,
+  "name": "Kappelbichl",
+  "kind": "peak",
+  "ele": 905,
+  "lat": 47.6242235,
+  "lon": 11.0399631
+ },
+ {
+  "id": 4104404191,
+  "name": "Rainenberg",
+  "kind": "peak",
+  "ele": 905,
+  "lat": 47.5927227,
+  "lon": 11.079253
+ },
+ {
+  "id": 473507869,
+  "name": "Hocheck",
+  "kind": "peak",
+  "ele": 903,
+  "lat": 47.7715997,
+  "lon": 11.9763754
+ },
+ {
+  "id": 5095185114,
+  "name": "Faulenberg",
+  "kind": "peak",
+  "ele": 903,
+  "lat": 47.6206209,
+  "lon": 10.6992613
+ },
+ {
+  "id": 1106670761,
+  "name": "Schnalz",
+  "kind": "peak",
+  "ele": 901,
+  "lat": 47.7660414,
+  "lon": 10.9687771
+ },
+ {
+  "id": 4104522073,
+  "name": "Hüttenbichel",
+  "kind": "peak",
+  "ele": 899,
+  "lat": 47.6580017,
+  "lon": 11.0224595
+ },
+ {
+  "id": 7637964550,
+  "name": "Maisenberg",
+  "kind": "peak",
+  "ele": 897,
+  "lat": 47.7279129,
+  "lon": 12.7499222
+ },
+ {
+  "id": 305653551,
+  "name": "Taubenberg",
+  "kind": "peak",
+  "ele": 896,
+  "lat": 47.8274704,
+  "lon": 11.7494514
+ },
+ {
+  "id": 1765147286,
+  "name": "Kreuzbüchel",
+  "kind": "peak",
+  "ele": 894,
+  "lat": 47.7645006,
+  "lon": 10.7587926
+ },
+ {
+  "id": 2386222152,
+  "name": "Wartstein",
+  "kind": "peak",
+  "ele": 893,
+  "lat": 47.6106069,
+  "lon": 12.8678231
+ },
+ {
+  "id": 1817738051,
+  "name": "Stutzenstein",
+  "kind": "peak",
+  "ele": 892,
+  "lat": 47.6537414,
+  "lon": 11.3881308
+ },
+ {
+  "id": 8667734919,
+  "name": "Berzenkopf",
+  "kind": "peak",
+  "ele": 892,
+  "lat": 47.5551766,
+  "lon": 10.7313263
+ },
+ {
+  "id": 7776277655,
+  "name": "Geißbichl",
+  "kind": "peak",
+  "ele": 890,
+  "lat": 47.6514007,
+  "lon": 10.8049895
+ },
+ {
+  "id": 1763101765,
+  "name": "Buchberg",
+  "kind": "peak",
+  "ele": 889,
+  "lat": 47.6499066,
+  "lon": 10.771351
+ },
+ {
+  "id": 759792010,
+  "name": "Heuberg",
+  "kind": "peak",
+  "ele": 888,
+  "lat": 47.690341,
+  "lon": 12.097604
+ },
+ {
+  "id": 1272834694,
+  "name": "Platten",
+  "kind": "peak",
+  "ele": 879,
+  "lat": 47.7490516,
+  "lon": 11.6502786
+ },
+ {
+  "id": 907919717,
+  "name": "Falkenberg",
+  "kind": "peak",
+  "ele": 877,
+  "lat": 47.7003483,
+  "lon": 12.1357401
+ },
+ {
+  "id": 4102642402,
+  "name": "Döttenbichl",
+  "kind": "peak",
+  "ele": 877,
+  "lat": 47.5867272,
+  "lon": 11.0705836
+ },
+ {
+  "id": 3230098746,
+  "name": "Nußlberg",
+  "kind": "peak",
+  "ele": 868,
+  "lat": 47.6250374,
+  "lon": 12.1582973
+ },
+ {
+  "id": 3230301385,
+  "name": "Bürgl",
+  "kind": "peak",
+  "ele": 865,
+  "lat": 47.6795513,
+  "lon": 12.5561204
+ },
+ {
+  "id": 1279803001,
+  "name": "Fuchseneck",
+  "kind": "peak",
+  "ele": 863,
+  "lat": 47.59533,
+  "lon": 11.4589313
+ },
+ {
+  "id": 4104433156,
+  "name": "Hohenstock",
+  "kind": "peak",
+  "ele": 859,
+  "lat": 47.6693068,
+  "lon": 10.8347147
+ },
+ {
+  "id": 635281331,
+  "name": "Haareck",
+  "kind": "peak",
+  "ele": 858,
+  "lat": 47.6846376,
+  "lon": 10.8871256
+ },
+ {
+  "id": 7018011436,
+  "name": "Lauseck",
+  "kind": "peak",
+  "ele": 858,
+  "lat": 47.6356285,
+  "lon": 11.2539362
+ },
+ {
+  "id": 2129720527,
+  "name": "Buchberg",
+  "kind": "peak",
+  "ele": 857,
+  "lat": 47.7530437,
+  "lon": 11.5070295
+ },
+ {
+  "id": 3017837425,
+  "name": "Kogel",
+  "kind": "peak",
+  "ele": 856,
+  "lat": 47.6092635,
+  "lon": 12.8891953
+ },
+ {
+  "id": 442708066,
+  "name": "Achselköpfl",
+  "kind": "peak",
+  "ele": 855,
+  "lat": 47.584508,
+  "lon": 11.5857435
+ },
+ {
+  "id": 339239921,
+  "name": "Großer Barmstein",
+  "kind": "peak",
+  "ele": 852,
+  "lat": 47.6911776,
+  "lon": 13.0751542
+ },
+ {
+  "id": 380925755,
+  "name": "Bromberg",
+  "kind": "peak",
+  "ele": 852,
+  "lat": 47.6538337,
+  "lon": 11.293084
+ },
+ {
+  "id": 797461020,
+  "name": "Katzenstein",
+  "kind": "peak",
+  "ele": 852,
+  "lat": 47.477763,
+  "lon": 11.0770331
+ },
+ {
+  "id": 291641424,
+  "name": "Vorderer Galgenbichel",
+  "kind": "peak",
+  "ele": 850,
+  "lat": 47.5776283,
+  "lon": 10.6972314
+ },
+ {
+  "id": 13606587017,
+  "name": "Kleiner Zwischenberg",
+  "kind": "peak",
+  "ele": 849,
+  "lat": 47.556135,
+  "lon": 10.650728
+ },
+ {
+  "id": 988186753,
+  "name": "Scherenberg",
+  "kind": "peak",
+  "ele": 848,
+  "lat": 47.6262647,
+  "lon": 10.7203832
+ },
+ {
+  "id": 12306643581,
+  "name": "Kobel",
+  "kind": "peak",
+  "ele": 846,
+  "lat": 47.56626,
+  "lon": 10.69026
+ },
+ {
+  "id": 3230301407,
+  "name": "Torkopf",
+  "kind": "peak",
+  "ele": 844,
+  "lat": 47.7692941,
+  "lon": 12.4296624
+ },
+ {
+  "id": 736758343,
+  "name": "Petersberg",
+  "kind": "peak",
+  "ele": 842,
+  "lat": 47.7118549,
+  "lon": 12.1251184
+ },
+ {
+  "id": 1200501391,
+  "name": "Kaltenbrunner Eck",
+  "kind": "peak",
+  "ele": 842,
+  "lat": 47.7478702,
+  "lon": 11.7178535
+ },
+ {
+  "id": 260982269,
+  "name": "Kleiner Barmstein",
+  "kind": "peak",
+  "ele": 840,
+  "lat": 47.6888917,
+  "lon": 13.0777636
+ },
+ {
+  "id": 4102158244,
+  "name": "Auf der Lache",
+  "kind": "peak",
+  "ele": 839,
+  "lat": 47.4896157,
+  "lon": 11.1238314
+ },
+ {
+  "id": 8700740693,
+  "name": "Ziegelberg",
+  "kind": "peak",
+  "ele": 835,
+  "lat": 47.5730199,
+  "lon": 10.6938623
+ },
+ {
+  "id": 1223715722,
+  "name": "Hainzenhöhe",
+  "kind": "peak",
+  "ele": 833,
+  "lat": 47.7445866,
+  "lon": 11.7131921
+ },
+ {
+  "id": 4104433145,
+  "name": "Schloßbichel",
+  "kind": "peak",
+  "ele": 831,
+  "lat": 47.7112165,
+  "lon": 11.0499527
+ },
+ {
+  "id": 9679893846,
+  "name": "Hinterer Galgenbichel",
+  "kind": "peak",
+  "ele": 831,
+  "lat": 47.5777218,
+  "lon": 10.685618
+ },
+ {
+  "id": 6622122551,
+  "name": "Saurüssel",
+  "kind": "peak",
+  "ele": 830,
+  "lat": 47.647048,
+  "lon": 13.010716
+ },
+ {
+  "id": 304061350,
+  "name": "Högl",
+  "kind": "peak",
+  "ele": 827,
+  "lat": 47.8081355,
+  "lon": 12.8999496
+ },
+ {
+  "id": 988176284,
+  "name": "Schöne Buche",
+  "kind": "peak",
+  "ele": 827,
+  "lat": 47.5964091,
+  "lon": 10.6877566
+ },
+ {
+  "id": 4104545537,
+  "name": "Straßberg",
+  "kind": "peak",
+  "ele": 827,
+  "lat": 47.6569288,
+  "lon": 10.7361503
+ },
+ {
+  "id": 445077392,
+  "name": "Pfarrbühel",
+  "kind": "peak",
+  "ele": 826,
+  "lat": 47.8481966,
+  "lon": 10.8421694
+ },
+ {
+  "id": 705251677,
+  "name": "Heuberg",
+  "kind": "peak",
+  "ele": 825,
+  "lat": 47.6142399,
+  "lon": 11.2109797
+ },
+ {
+  "id": 988162226,
+  "name": "Pertlesbichel",
+  "kind": "peak",
+  "ele": 825,
+  "lat": 47.613807,
+  "lon": 10.655436
+ },
+ {
+  "id": 885182782,
+  "name": "Gletscherblick",
+  "kind": "peak",
+  "ele": 824,
+  "lat": 47.6482196,
+  "lon": 12.1489342
+ },
+ {
+  "id": 2641023721,
+  "name": "Vogelherd",
+  "kind": "peak",
+  "ele": 822,
+  "lat": 47.7966835,
+  "lon": 11.8635983
+ },
+ {
+  "id": 387790427,
+  "name": "Straußberg",
+  "kind": "peak",
+  "ele": 820,
+  "lat": 47.7650248,
+  "lon": 10.9441418
+ },
+ {
+  "id": 477445303,
+  "name": "Kalvarienberg",
+  "kind": "peak",
+  "ele": 820,
+  "lat": 47.7985814,
+  "lon": 10.916207
+ },
+ {
+  "id": 3233350795,
+  "name": "Sattelberg",
+  "kind": "peak",
+  "ele": 820,
+  "lat": 47.7513709,
+  "lon": 12.1697622
+ },
+ {
+  "id": 310179457,
+  "name": "Bullachberg",
+  "kind": "peak",
+  "ele": 817,
+  "lat": 47.5673971,
+  "lon": 10.7338168
+ },
+ {
+  "id": 477445305,
+  "name": "Schloßberg",
+  "kind": "peak",
+  "ele": 816,
+  "lat": 47.8045068,
+  "lon": 10.9154551
+ },
+ {
+  "id": 4104433143,
+  "name": "Fuchsbichel",
+  "kind": "peak",
+  "ele": 814,
+  "lat": 47.7117109,
+  "lon": 10.7238436
+ },
+ {
+  "id": 11161553346,
+  "name": "Kalvarienberg",
+  "kind": "peak",
+  "ele": 814,
+  "lat": 47.8172306,
+  "lon": 10.7331517
+ },
+ {
+  "id": 4104421911,
+  "name": "Ob",
+  "kind": "peak",
+  "ele": 812,
+  "lat": 47.6267094,
+  "lon": 10.732873
+ },
+ {
+  "id": 4104545535,
+  "name": "Müllersbichel",
+  "kind": "peak",
+  "ele": 810,
+  "lat": 47.6445856,
+  "lon": 10.8347497
+ },
+ {
+  "id": 11274541705,
+  "name": "Föhrenberg",
+  "kind": "peak",
+  "ele": 810,
+  "lat": 47.5764386,
+  "lon": 10.7271673
+ },
+ {
+  "id": 4104433148,
+  "name": "Bucheck",
+  "kind": "peak",
+  "ele": 808,
+  "lat": 47.6778426,
+  "lon": 10.7592616
+ },
+ {
+  "id": 1106331759,
+  "name": "Baumberg",
+  "kind": "peak",
+  "ele": 807,
+  "lat": 47.7160725,
+  "lon": 11.2770198
+ },
+ {
+  "id": 4104433134,
+  "name": "Hochbichel",
+  "kind": "peak",
+  "ele": 807,
+  "lat": 47.7297015,
+  "lon": 10.9855001
+ },
+ {
+  "id": 4104433144,
+  "name": "Dürrer Bichel",
+  "kind": "peak",
+  "ele": 807,
+  "lat": 47.7021343,
+  "lon": 10.7537123
+ },
+ {
+  "id": 13265950881,
+  "name": "Fentberg",
+  "kind": "peak",
+  "ele": 807,
+  "lat": 47.8429955,
+  "lon": 11.7869901
+ },
+ {
+  "id": 4102642389,
+  "name": "Dorniger Bichel",
+  "kind": "peak",
+  "ele": 805,
+  "lat": 47.6217882,
+  "lon": 10.7605089
+ },
+ {
+  "id": 6855251442,
+  "name": "Schindelberg",
+  "kind": "peak",
+  "ele": 805,
+  "lat": 47.8247168,
+  "lon": 11.6076604
+ },
+ {
+  "id": 8587266578,
+  "name": "Moserstein",
+  "kind": "peak",
+  "ele": 803,
+  "lat": 47.6650963,
+  "lon": 13.0907478
+ },
+ {
+  "id": 480468115,
+  "name": "Winterleiten",
+  "kind": "peak",
+  "ele": 800,
+  "lat": 47.7938499,
+  "lon": 10.9812265
+ },
+ {
+  "id": 3697083967,
+  "name": "Marbling",
+  "kind": "peak",
+  "ele": 800,
+  "lat": 47.6094209,
+  "lon": 12.1513748
+ },
+ {
+  "id": 373135471,
+  "name": "Berlachberg",
+  "kind": "peak",
+  "ele": 798,
+  "lat": 47.8225979,
+  "lon": 10.917586
+ },
+ {
+  "id": 1106331899,
+  "name": "Hohe Lüß",
+  "kind": "peak",
+  "ele": 798,
+  "lat": 47.7158247,
+  "lon": 11.2634319
+ },
+ {
+  "id": 6653891186,
+  "name": "Kastensteinhöhe",
+  "kind": "peak",
+  "ele": 796,
+  "lat": 47.6550841,
+  "lon": 12.965958
+ },
+ {
+  "id": 4104433151,
+  "name": "Kögelhalde",
+  "kind": "peak",
+  "ele": 795,
+  "lat": 47.6633092,
+  "lon": 10.7593886
+ },
+ {
+  "id": 9286591362,
+  "name": "Eisenrichterstein",
+  "kind": "peak",
+  "ele": 795,
+  "lat": 47.690193,
+  "lon": 12.9362886
+ },
+ {
+  "id": 482895417,
+  "name": "Roter Berg",
+  "kind": "peak",
+  "ele": 794,
+  "lat": 47.8269621,
+  "lon": 10.9430155
+ },
+ {
+  "id": 4104433137,
+  "name": "Roßkopf",
+  "kind": "peak",
+  "ele": 792,
+  "lat": 47.7275443,
+  "lon": 10.8825955
+ },
+ {
+  "id": 11618198251,
+  "name": "Stanpfleiten",
+  "kind": "peak",
+  "ele": 792,
+  "lat": 47.7640466,
+  "lon": 11.9822916
+ },
+ {
+  "id": 5104503967,
+  "name": "Burgberg",
+  "kind": "peak",
+  "ele": 789,
+  "lat": 47.7843709,
+  "lon": 10.819529
+ },
+ {
+  "id": 1805181988,
+  "name": "Aidlinger Höhe",
+  "kind": "peak",
+  "ele": 788,
+  "lat": 47.7157219,
+  "lon": 11.2558744
+ },
+ {
+  "id": 13448147156,
+  "name": "Kälberstein",
+  "kind": "peak",
+  "ele": 786,
+  "lat": 47.6354477,
+  "lon": 12.9923663
+ },
+ {
+  "id": 4104433131,
+  "name": "Auf der Platte",
+  "kind": "peak",
+  "ele": 776,
+  "lat": 47.7216074,
+  "lon": 11.1019212
+ },
+ {
+  "id": 4104433135,
+  "name": "Roßhurtenbichel",
+  "kind": "peak",
+  "ele": 776,
+  "lat": 47.7388101,
+  "lon": 10.8559238
+ },
+ {
+  "id": 10925225585,
+  "name": "Rettenberg",
+  "kind": "peak",
+  "ele": 776,
+  "lat": 47.7177823,
+  "lon": 12.4607434
+ },
+ {
+  "id": 2514070515,
+  "name": "Hochberg",
+  "kind": "peak",
+  "ele": 775,
+  "lat": 47.8412301,
+  "lon": 12.6560584
+ },
+ {
+  "id": 5700656528,
+  "name": "Schlossberg",
+  "kind": "peak",
+  "ele": 775,
+  "lat": 47.7820017,
+  "lon": 10.6643123
+ },
+ {
+  "id": 373264767,
+  "name": "Schwalbenstein",
+  "kind": "peak",
+  "ele": 774,
+  "lat": 47.8355515,
+  "lon": 10.9221127
+ },
+ {
+  "id": 1805182342,
+  "name": "Stöcklesberg",
+  "kind": "peak",
+  "ele": 772,
+  "lat": 47.7155918,
+  "lon": 11.302976
+ },
+ {
+  "id": 559721286,
+  "name": "Bürgermeisterhöhe",
+  "kind": "peak",
+  "ele": 770,
+  "lat": 47.71471,
+  "lon": 12.85637
+ },
+ {
+  "id": 4104433136,
+  "name": "Franzenbichel",
+  "kind": "peak",
+  "ele": 764,
+  "lat": 47.7291521,
+  "lon": 10.8451233
+ },
+ {
+  "id": 2347281696,
+  "name": "Galgenberg",
+  "kind": "peak",
+  "ele": 763,
+  "lat": 47.7888344,
+  "lon": 10.6284497
+ },
+ {
+  "id": 4104433138,
+  "name": "Breitbichel",
+  "kind": "peak",
+  "ele": 760,
+  "lat": 47.7199481,
+  "lon": 10.8384764
+ },
+ {
+  "id": 11527414396,
+  "name": "Kogel",
+  "kind": "peak",
+  "ele": 759,
+  "lat": 47.9086009,
+  "lon": 11.5845824
+ },
+ {
+  "id": 465281118,
+  "name": "Irschenberg",
+  "kind": "peak",
+  "ele": 756,
+  "lat": 47.8295206,
+  "lon": 11.918891
+ },
+ {
+  "id": 9205039752,
+  "name": "Baderlehenkopf",
+  "kind": "peak",
+  "ele": 756,
+  "lat": 47.6367037,
+  "lon": 12.9849634
+ },
+ {
+  "id": 1805182012,
+  "name": "Hirtenbuckel (Hirtabichi)",
+  "kind": "peak",
+  "ele": 755,
+  "lat": 47.7119761,
+  "lon": 11.2523472
+ },
+ {
+  "id": 5565942390,
+  "name": "Brandenstein",
+  "kind": "peak",
+  "ele": 754,
+  "lat": 47.6403529,
+  "lon": 11.3636638
+ },
+ {
+  "id": 11662921221,
+  "name": "Freyberg",
+  "kind": "peak",
+  "ele": 754,
+  "lat": 47.8459684,
+  "lon": 10.6574428
+ },
+ {
+  "id": 1123271177,
+  "name": "Binsberg",
+  "kind": "peak",
+  "ele": 753,
+  "lat": 47.8785655,
+  "lon": 11.5475893
+ },
+ {
+  "id": 7029981597,
+  "name": "Kalvarienberg",
+  "kind": "peak",
+  "ele": 753,
+  "lat": 47.9074735,
+  "lon": 10.9633466
+ },
+ {
+  "id": 1123508867,
+  "name": "Streitberg",
+  "kind": "peak",
+  "ele": 752,
+  "lat": 47.8179277,
+  "lon": 11.5906059
+ },
+ {
+  "id": 1143774785,
+  "name": "Jasberg",
+  "kind": "peak",
+  "ele": 750,
+  "lat": 47.8899676,
+  "lon": 11.6375893
+ },
+ {
+  "id": 1337343291,
+  "name": "Wappbachkopf",
+  "kind": "peak",
+  "ele": 750,
+  "lat": 47.7133958,
+  "lon": 12.8926686
+ },
+ {
+  "id": 2268300232,
+  "name": "Berndorfer Buchet",
+  "kind": "peak",
+  "ele": 750,
+  "lat": 47.9167392,
+  "lon": 11.2190043
+ },
+ {
+  "id": 483466569,
+  "name": "Hoher Bühel",
+  "kind": "peak",
+  "ele": 745,
+  "lat": 47.8466934,
+  "lon": 10.9685433
+ },
+ {
+  "id": 483593893,
+  "name": "Merauthberg",
+  "kind": "peak",
+  "ele": 745,
+  "lat": 47.8286707,
+  "lon": 11.0370591
+ },
+ {
+  "id": 14245216895,
+  "name": "Wurzberg",
+  "kind": "peak",
+  "ele": 744,
+  "lat": 47.9207845,
+  "lon": 10.9218978
+ },
+ {
+  "id": 1767677490,
+  "name": "Sperber",
+  "kind": "peak",
+  "ele": 743,
+  "lat": 47.8642753,
+  "lon": 10.9329934
+ },
+ {
+  "id": 1767677486,
+  "name": "Eselsberg",
+  "kind": "peak",
+  "ele": 740,
+  "lat": 47.8763845,
+  "lon": 10.9415886
+ },
+ {
+  "id": 1106341727,
+  "name": "Hemmesberg",
+  "kind": "peak",
+  "ele": 738,
+  "lat": 47.708245,
+  "lon": 11.2557425
+ },
+ {
+  "id": 1123506584,
+  "name": "Spöttberg",
+  "kind": "peak",
+  "ele": 738,
+  "lat": 47.8336345,
+  "lon": 11.5710169
+ },
+ {
+  "id": 13128211719,
+  "name": "Eisenberg",
+  "kind": "peak",
+  "ele": 738,
+  "lat": 47.810948,
+  "lon": 11.6520428
+ },
+ {
+  "id": 4104433165,
+  "name": "Hocheck",
+  "kind": "peak",
+  "ele": 737,
+  "lat": 47.6724994,
+  "lon": 11.112206
+ },
+ {
+  "id": 7028811948,
+  "name": "Kranzbühl",
+  "kind": "peak",
+  "ele": 737,
+  "lat": 47.8898992,
+  "lon": 10.9541715
+ },
+ {
+  "id": 416933996,
+  "name": "Schlittenberg",
+  "kind": "peak",
+  "ele": 735,
+  "lat": 47.8047881,
+  "lon": 10.882336
+ },
+ {
+  "id": 373373404,
+  "name": "Galgenbichl",
+  "kind": "peak",
+  "ele": 733,
+  "lat": 47.8303146,
+  "lon": 10.8976709
+ },
+ {
+  "id": 4104433132,
+  "name": "Haslesberg",
+  "kind": "peak",
+  "ele": 732,
+  "lat": 47.7239892,
+  "lon": 11.0970718
+ },
+ {
+  "id": 617310151,
+  "name": "Steinberg",
+  "kind": "peak",
+  "ele": 729,
+  "lat": 47.7616666,
+  "lon": 12.1564587
+ },
+ {
+  "id": 620509447,
+  "name": "Peretshofer Höhe",
+  "kind": "peak",
+  "ele": 729,
+  "lat": 47.8565795,
+  "lon": 11.5255847
+ },
+ {
+  "id": 13124079412,
+  "name": "Rauhenberg",
+  "kind": "peak",
+  "ele": 729,
+  "lat": 47.9480285,
+  "lon": 11.198137
+ },
+ {
+  "id": 1307635610,
+  "name": "Vestbichel",
+  "kind": "peak",
+  "ele": 726,
+  "lat": 47.5952688,
+  "lon": 11.1774477
+ },
+ {
+  "id": 2770082835,
+  "name": "Bäckerbichl",
+  "kind": "peak",
+  "ele": 726,
+  "lat": 47.9662481,
+  "lon": 11.2033623
+ },
+ {
+  "id": 7029981598,
+  "name": "Eselsberg",
+  "kind": "peak",
+  "ele": 725,
+  "lat": 47.9088115,
+  "lon": 10.9542083
+ },
+ {
+  "id": 1119918335,
+  "name": "Fürst Tegernberg",
+  "kind": "peak",
+  "ele": 718,
+  "lat": 47.8736946,
+  "lon": 11.3735582
+ },
+ {
+  "id": 6618688111,
+  "name": "Hundskehl",
+  "kind": "peak",
+  "ele": 717,
+  "lat": 47.6011247,
+  "lon": 12.9967136
+ },
+ {
+  "id": 9981089308,
+  "name": "Höllersberg",
+  "kind": "peak",
+  "ele": 717,
+  "lat": 47.6774762,
+  "lon": 11.283245
+ },
+ {
+  "id": 7028811940,
+  "name": "Sandberg",
+  "kind": "peak",
+  "ele": 712,
+  "lat": 47.9297899,
+  "lon": 11.0199765
+ },
+ {
+  "id": 7318210390,
+  "name": "Gutratberg",
+  "kind": "peak",
+  "ele": 710,
+  "lat": 47.7102994,
+  "lon": 13.0570364
+ },
+ {
+  "id": 7028811943,
+  "name": "Schloßberg",
+  "kind": "peak",
+  "ele": 708,
+  "lat": 47.9394903,
+  "lon": 11.0256015
+ },
+ {
+  "id": 1189565522,
+  "name": "Hohenberg",
+  "kind": "peak",
+  "ele": 703,
+  "lat": 47.8040387,
+  "lon": 11.2677125
+ },
+ {
+  "id": 8295893619,
+  "name": "Jägerberg",
+  "kind": "peak",
+  "ele": 700,
+  "lat": 47.7675993,
+  "lon": 12.4374139
+ },
+ {
+  "id": 476498599,
+  "name": "Knorrhütte",
+  "kind": "hut",
+  "ele": 2052,
+  "lat": 47.4100105,
+  "lon": 11.012732
+ },
+ {
+  "id": -38173874,
+  "name": "Weilheimer Hütte",
+  "kind": "hut",
+  "ele": 1946,
+  "lat": 47.547227,
+  "lon": 11.188829666666669
+ },
+ {
+  "id": -150204245,
+  "name": "Stöhrhaus",
+  "kind": "hut",
+  "ele": 1894,
+  "lat": 47.69310736666667,
+  "lon": 12.980640566666667
+ },
+ {
+  "id": -100510700,
+  "name": "Tölzer Hütte",
+  "kind": "hut",
+  "ele": 1825,
+  "lat": 47.504117025,
+  "lon": 11.492619883333333
+ },
+ {
+  "id": -91920694,
+  "name": "Rotwandhaus",
+  "kind": "hut",
+  "ele": 1737,
+  "lat": 47.64612925,
+  "lon": 11.9351516375
+ },
+ {
+  "id": 528992044,
+  "name": "Tegelberghaus",
+  "kind": "hut",
+  "ele": 1707,
+  "lat": 47.5593927,
+  "lon": 10.7780688
+ },
+ {
+  "id": 254546886,
+  "name": "Purtschellerhaus",
+  "kind": "hut",
+  "ele": 1692,
+  "lat": 47.6095206,
+  "lon": 13.0716402
+ },
+ {
+  "id": -91760170,
+  "name": "Gotzenalm",
+  "kind": "hut",
+  "ele": 1685,
+  "lat": 47.53729535,
+  "lon": 12.9963460375
+ },
+ {
+  "id": -180985122,
+  "name": "Blaueishütte",
+  "kind": "hut",
+  "ele": 1680,
+  "lat": 47.58686898333334,
+  "lon": 12.869498116666668
+ },
+ {
+  "id": -127978113,
+  "name": "Schneibsteinhaus",
+  "kind": "hut",
+  "ele": 1668,
+  "lat": 47.57217402857143,
+  "lon": 13.039211814285716
+ },
+ {
+  "id": 293246279,
+  "name": "Dammkarhütte",
+  "kind": "hut",
+  "ele": 1650,
+  "lat": 47.4373796,
+  "lon": 11.3088936
+ },
+ {
+  "id": 278226693,
+  "name": "Kärlinger Haus",
+  "kind": "hut",
+  "ele": 1638,
+  "lat": 47.495471,
+  "lon": 12.9371264
+ },
+ {
+  "id": 1621410739,
+  "name": "Hochlandhütte",
+  "kind": "hut",
+  "ele": 1630,
+  "lat": 47.4497413,
+  "lon": 11.3187322
+ },
+ {
+  "id": -128630808,
+  "name": "Soiernhaus",
+  "kind": "hut",
+  "ele": 1616,
+  "lat": 47.493719666666664,
+  "lon": 11.348588133333335
+ },
+ {
+  "id": -93450448,
+  "name": "Taubensteinhaus",
+  "kind": "hut",
+  "ele": 1567,
+  "lat": 47.660799728571426,
+  "lon": 11.925530921428571
+ },
+ {
+  "id": 296163774,
+  "name": "Brunnsteinhütte",
+  "kind": "hut",
+  "ele": 1560,
+  "lat": 47.4137026,
+  "lon": 11.2785584
+ },
+ {
+  "id": -29176583,
+  "name": "Neue Traunsteiner Hütte",
+  "kind": "hut",
+  "ele": 1560,
+  "lat": 47.62818278235294,
+  "lon": 12.800948282352941
+ },
+ {
+  "id": 528882177,
+  "name": "Jausenstation Blaubergalm",
+  "kind": "hut",
+  "ele": 1540,
+  "lat": 47.5873314,
+  "lon": 11.7369609
+ },
+ {
+  "id": -110221196,
+  "name": "Obere Maxlraineralm",
+  "kind": "hut",
+  "ele": 1528,
+  "lat": 47.65783436666666,
+  "lon": 11.916419144444443
+ },
+ {
+  "id": -109885898,
+  "name": "Stie-Alm",
+  "kind": "hut",
+  "ele": 1520,
+  "lat": 47.65772077142857,
+  "lon": 11.50765962857143
+ },
+ {
+  "id": 340560279,
+  "name": "Mittenwalder Hütte",
+  "kind": "hut",
+  "ele": 1518,
+  "lat": 47.4338329,
+  "lon": 11.2823729
+ },
+ {
+  "id": -150204244,
+  "name": "Toni-Lenz-Hütte",
+  "kind": "hut",
+  "ele": 1450,
+  "lat": 47.714978,
+  "lon": 13.008849380000001
+ },
+ {
+  "id": -39742124,
+  "name": "Wasseralm in der Röth",
+  "kind": "hut",
+  "ele": 1423,
+  "lat": 47.494802533333335,
+  "lon": 13.006580050000002
+ },
+ {
+  "id": 13131702124,
+  "name": "Kührointalm",
+  "kind": "hut",
+  "ele": 1410,
+  "lat": 47.5708459,
+  "lon": 12.9612323
+ },
+ {
+  "id": -30725037,
+  "name": "Priener Hütte",
+  "kind": "hut",
+  "ele": 1410,
+  "lat": 47.70200275,
+  "lon": 12.32781065
+ },
+ {
+  "id": -93450441,
+  "name": "Schönfeldhütte",
+  "kind": "hut",
+  "ele": 1410,
+  "lat": 47.6650875,
+  "lon": 11.906132625
+ },
+ {
+  "id": -370669072,
+  "name": "Höllentalangerhütte",
+  "kind": "hut",
+  "ele": 1387,
+  "lat": 47.437971075,
+  "lon": 11.025116333333335
+ },
+ {
+  "id": -60315210,
+  "name": "Obere Firstalm",
+  "kind": "hut",
+  "ele": 1369,
+  "lat": 47.670078175,
+  "lon": 11.854012425
+ },
+ {
+  "id": -173682244,
+  "name": "Reintalangerhütte",
+  "kind": "hut",
+  "ele": 1366,
+  "lat": 47.405336750000004,
+  "lon": 11.03572918
+ },
+ {
+  "id": -60310929,
+  "name": "Bodenschneidhaus",
+  "kind": "hut",
+  "ele": 1365,
+  "lat": 47.67770301,
+  "lon": 11.83908989
+ },
+ {
+  "id": -67146529,
+  "name": "Brünnsteinhaus",
+  "kind": "hut",
+  "ele": 1342,
+  "lat": 47.64470461,
+  "lon": 12.09841407
+ },
+ {
+  "id": -97575267,
+  "name": "Tutzinger Hütte",
+  "kind": "hut",
+  "ele": 1327,
+  "lat": 47.657725925,
+  "lon": 11.4624323375
+ },
+ {
+  "id": -149297576,
+  "name": "Wimbachgrieshütte (Naturfreundehaus)",
+  "kind": "hut",
+  "ele": 1327,
+  "lat": 47.53920846666667,
+  "lon": 12.888263175
+ },
+ {
+  "id": -227945922,
+  "name": "AGV Drehmöser Hutte",
+  "kind": "hut",
+  "ele": 1298,
+  "lat": 47.46382233333333,
+  "lon": 11.10185085
+ },
+ {
+  "id": -174962964,
+  "name": "Kenzenhütte",
+  "kind": "hut",
+  "ele": 1294,
+  "lat": 47.566461509999996,
+  "lon": 10.857212239999999
+ },
+ {
+  "id": -109699039,
+  "name": "Florianshütte",
+  "kind": "hut",
+  "ele": 1290,
+  "lat": 47.65758292500001,
+  "lon": 11.52956535
+ },
+ {
+  "id": -84097007,
+  "name": "Kesselalm",
+  "kind": "hut",
+  "ele": 1278,
+  "lat": 47.71426375,
+  "lon": 11.979896125
+ },
+ {
+  "id": -197589379,
+  "name": "Kolbensattelhütte",
+  "kind": "hut",
+  "ele": 1276,
+  "lat": 47.59091686666667,
+  "lon": 11.027414899999998
+ },
+ {
+  "id": 5340084297,
+  "name": "Buchsteinhütte",
+  "kind": "hut",
+  "ele": 1274,
+  "lat": 47.6398127,
+  "lon": 11.6795654
+ },
+ {
+  "id": -37452163,
+  "name": "Aueralm",
+  "kind": "hut",
+  "ele": 1269,
+  "lat": 47.68894340833333,
+  "lon": 11.673211058333335
+ },
+ {
+  "id": -123146467,
+  "name": "Dr.-Hugo-Beck-Haus",
+  "kind": "hut",
+  "ele": 1260,
+  "lat": 47.583948975,
+  "lon": 13.01642695
+ },
+ {
+  "id": -36333042,
+  "name": "Spitzsteinhaus",
+  "kind": "hut",
+  "ele": 1252,
+  "lat": 47.70446886,
+  "lon": 12.24324492
+ },
+ {
+  "id": 1559102082,
+  "name": "Mariandlalm",
+  "kind": "hut",
+  "ele": 1250,
+  "lat": 47.6135436,
+  "lon": 12.0384223
+ },
+ {
+  "id": 1507068518,
+  "name": "Kranzhorn Schutzhütte",
+  "kind": "hut",
+  "ele": 1230,
+  "lat": 47.7010697,
+  "lon": 12.1879436
+ },
+ {
+  "id": -97296499,
+  "name": "Berggasthof Blomberghaus",
+  "kind": "hut",
+  "ele": 1203,
+  "lat": 47.73507354615385,
+  "lon": 11.497625699999999
+ },
+ {
+  "id": -70463565,
+  "name": "Mitteralm",
+  "kind": "hut",
+  "ele": 1200,
+  "lat": 47.708143799999995,
+  "lon": 12.038586883333332
+ },
+ {
+  "id": -60305502,
+  "name": "Untere Suttenalm",
+  "kind": "hut",
+  "ele": 1196,
+  "lat": 47.65780541666667,
+  "lon": 11.84453085
+ },
+ {
+  "id": -361256295,
+  "name": "untere Kälberalm",
+  "kind": "hut",
+  "ele": 1178,
+  "lat": 47.448170675,
+  "lon": 11.299772275
+ },
+ {
+  "id": -150946079,
+  "name": "Traunsteiner Hütte",
+  "kind": "hut",
+  "ele": 1160,
+  "lat": 47.6590578,
+  "lon": 12.58569101
+ },
+ {
+  "id": -97030582,
+  "name": "Liftstüberl",
+  "kind": "hut",
+  "ele": 1159,
+  "lat": 47.762758399999996,
+  "lon": 12.35515615
+ },
+ {
+  "id": -111088094,
+  "name": "Schuhbräualm",
+  "kind": "hut",
+  "ele": 1157,
+  "lat": 47.7301832,
+  "lon": 12.043831
+ },
+ {
+  "id": -230425967,
+  "name": "Bergheim Hirschbichl",
+  "kind": "hut",
+  "ele": 1146,
+  "lat": 47.555481575,
+  "lon": 12.795777575
+ },
+ {
+  "id": -36555424,
+  "name": "Rießerkopf Haus (Toni Hütte)",
+  "kind": "hut",
+  "ele": 1096,
+  "lat": 47.468904066666674,
+  "lon": 11.088223616666667
+ },
+ {
+  "id": -96257977,
+  "name": "Albert-Link-Hütte",
+  "kind": "hut",
+  "ele": 1053,
+  "lat": 47.65490157,
+  "lon": 11.88673795
+ },
+ {
+  "id": -82803159,
+  "name": "Deindlhütte",
+  "kind": "hut",
+  "ele": 1050,
+  "lat": 47.729308616666664,
+  "lon": 12.194289716666667
+ },
+ {
+  "id": -82814302,
+  "name": "Breitenberghütte",
+  "kind": "hut",
+  "ele": 1050,
+  "lat": 47.72265826666666,
+  "lon": 12.0681043
+ },
+ {
+  "id": -109160819,
+  "name": "Kirchsteinhütte",
+  "kind": "hut",
+  "ele": 1050,
+  "lat": 47.6800531625,
+  "lon": 11.507800075
+ },
+ {
+  "id": 357482706,
+  "name": "Höllentaleingangshütte",
+  "kind": "hut",
+  "ele": 1045,
+  "lat": 47.4483891,
+  "lon": 11.0444884
+ },
+ {
+  "id": 6796862386,
+  "name": "Weißenburger Hütte",
+  "kind": "hut",
+  "ele": 1037,
+  "lat": 47.6484684,
+  "lon": 11.8901548
+ },
+ {
+  "id": -81639631,
+  "name": "Schwarzrieshütte",
+  "kind": "hut",
+  "ele": 973,
+  "lat": 47.7217271,
+  "lon": 12.234445966666668
+ },
+ {
+  "id": -180175084,
+  "name": "Wimbachschloss",
+  "kind": "hut",
+  "ele": 930,
+  "lat": 47.572212799999996,
+  "lon": 12.896634066666666
+ },
+ {
+  "id": 833885363,
+  "name": "Alpe Reith",
+  "kind": "hut",
+  "ele": 844,
+  "lat": 47.5661826,
+  "lon": 10.7578982
+ },
+ {
+  "id": 259406839,
+  "name": "Tunnelfenster",
+  "kind": "viewpoint",
+  "ele": 2028,
+  "lat": 47.4332343,
+  "lon": 11.0515501
+ },
+ {
+  "id": 3274089662,
+  "name": "Ehemalige Gatterlhütte",
+  "kind": "viewpoint",
+  "ele": 1995,
+  "lat": 47.3991658,
+  "lon": 11.0108578
+ },
+ {
+  "id": 809849759,
+  "name": "Schachentor",
+  "kind": "viewpoint",
+  "ele": 1872,
+  "lat": 47.4213746,
+  "lon": 11.1267689
+ },
+ {
+  "id": 286687184,
+  "name": "Belvedere",
+  "kind": "viewpoint",
+  "ele": 1829,
+  "lat": 47.4185041,
+  "lon": 11.108791
+ },
+ {
+  "id": 1869746530,
+  "name": "Aussicht am Vogelstein",
+  "kind": "viewpoint",
+  "ele": 1632,
+  "lat": 47.5801885,
+  "lon": 13.0242026
+ },
+ {
+  "id": 2648589283,
+  "name": "Wallberg Fernrohr",
+  "kind": "viewpoint",
+  "ele": 1607,
+  "lat": 47.6611459,
+  "lon": 11.7926036
+ },
+ {
+  "id": 13002772952,
+  "name": "Roßfeld",
+  "kind": "viewpoint",
+  "ele": 1531,
+  "lat": 47.6280034,
+  "lon": 13.0958973
+ },
+ {
+  "id": 1297061645,
+  "name": "Eibseeblick",
+  "kind": "viewpoint",
+  "ele": 1445,
+  "lat": 47.4431686,
+  "lon": 10.9673301
+ },
+ {
+  "id": 286715634,
+  "name": "Partnach Ursprung",
+  "kind": "viewpoint",
+  "ele": 1433,
+  "lat": 47.4058688,
+  "lon": 11.0283094
+ },
+ {
+  "id": 274573215,
+  "name": "Suttenstein",
+  "kind": "viewpoint",
+  "ele": 1390,
+  "lat": 47.6632572,
+  "lon": 11.8474276
+ },
+ {
+  "id": 8275487417,
+  "name": "Bankei",
+  "kind": "viewpoint",
+  "ele": 1379,
+  "lat": 47.6417132,
+  "lon": 12.8629575
+ },
+ {
+  "id": 3825207299,
+  "name": "Jochstein",
+  "kind": "viewpoint",
+  "ele": 1346,
+  "lat": 47.6820537,
+  "lon": 12.1342347
+ },
+ {
+  "id": 462380052,
+  "name": "Blick auf Seen",
+  "kind": "viewpoint",
+  "ele": 1331,
+  "lat": 47.5763927,
+  "lon": 10.8008313
+ },
+ {
+  "id": 5876975227,
+  "name": "Aussichtspunkt Obersee",
+  "kind": "viewpoint",
+  "ele": 1317,
+  "lat": 47.5077034,
+  "lon": 13.0187909
+ },
+ {
+  "id": 440062300,
+  "name": "Blick auf den Kenzenwasserfall",
+  "kind": "viewpoint",
+  "ele": 1307,
+  "lat": 47.5636566,
+  "lon": 10.8570692
+ },
+ {
+  "id": 2454863144,
+  "name": "Taubensee-Blick",
+  "kind": "viewpoint",
+  "ele": 1280,
+  "lat": 47.6981213,
+  "lon": 12.4366394
+ },
+ {
+  "id": 4906886290,
+  "name": "Chiemsee-Blick",
+  "kind": "viewpoint",
+  "ele": 1269,
+  "lat": 47.6963122,
+  "lon": 12.4449298
+ },
+ {
+  "id": 1843390935,
+  "name": "Auerhahnwandlblick",
+  "kind": "viewpoint",
+  "ele": 1267,
+  "lat": 47.7461913,
+  "lon": 12.4010027
+ },
+ {
+  "id": 1503095968,
+  "name": "Felsen-Kanzel",
+  "kind": "viewpoint",
+  "ele": 1236,
+  "lat": 47.5052565,
+  "lon": 11.0667699
+ },
+ {
+  "id": 6594115561,
+  "name": "Eibseeblick",
+  "kind": "viewpoint",
+  "ele": 1236,
+  "lat": 47.4469259,
+  "lon": 10.9888138
+ },
+ {
+  "id": 9976769661,
+  "name": "Denkmal",
+  "kind": "viewpoint",
+  "ele": 1202,
+  "lat": 47.7137863,
+  "lon": 13.0146621
+ },
+ {
+  "id": 6012405151,
+  "name": "Elmauer Alm",
+  "kind": "viewpoint",
+  "ele": 1184,
+  "lat": 47.4746945,
+  "lon": 11.1881461
+ },
+ {
+  "id": 9999399318,
+  "name": "6-Seen-Blick",
+  "kind": "viewpoint",
+  "ele": 1132,
+  "lat": 47.6022878,
+  "lon": 10.810782
+ },
+ {
+  "id": 2598573412,
+  "name": "Weißensee Panorama Blick",
+  "kind": "viewpoint",
+  "ele": 1126,
+  "lat": 47.5659521,
+  "lon": 10.6224637
+ },
+ {
+  "id": 2018333070,
+  "name": "Felix-Köpfl",
+  "kind": "viewpoint",
+  "ele": 1090,
+  "lat": 47.6726718,
+  "lon": 12.147669
+ },
+ {
+  "id": 1267971976,
+  "name": "Blick über Alatsee und Neuschwanstein",
+  "kind": "viewpoint",
+  "ele": 1089,
+  "lat": 47.5615305,
+  "lon": 10.6259726
+ },
+ {
+  "id": 3182568561,
+  "name": "Waldfernseher",
+  "kind": "viewpoint",
+  "ele": 1048,
+  "lat": 47.7365569,
+  "lon": 11.5114182
+ },
+ {
+  "id": 2454863041,
+  "name": "Geigelsteinblick",
+  "kind": "viewpoint",
+  "ele": 1035,
+  "lat": 47.7024422,
+  "lon": 12.4191083
+ },
+ {
+  "id": 1097038653,
+  "name": "Buffernandl",
+  "kind": "viewpoint",
+  "ele": 1025,
+  "lat": 47.7310913,
+  "lon": 10.7330896
+ },
+ {
+  "id": 3007389175,
+  "name": "Stein-Garten",
+  "kind": "viewpoint",
+  "ele": 1019,
+  "lat": 47.4419631,
+  "lon": 11.2507725
+ },
+ {
+  "id": 14244889489,
+  "name": "Voller Durchblick",
+  "kind": "viewpoint",
+  "ele": 1018,
+  "lat": 47.4408666,
+  "lon": 11.2397381
+ },
+ {
+  "id": 6504799514,
+  "name": "Lange Bank",
+  "kind": "viewpoint",
+  "ele": 1011,
+  "lat": 47.7855254,
+  "lon": 12.6701847
+ },
+ {
+  "id": 7617442263,
+  "name": "Elmau & Zugspitzmassiv",
+  "kind": "viewpoint",
+  "ele": 1011,
+  "lat": 47.4652344,
+  "lon": 11.1914366
+ },
+ {
+  "id": 3005644342,
+  "name": "'Schluchtenblick'",
+  "kind": "viewpoint",
+  "ele": 1007,
+  "lat": 47.5164049,
+  "lon": 11.2453947
+ },
+ {
+  "id": 2400607484,
+  "name": "Hintersee-Blick",
+  "kind": "viewpoint",
+  "ele": 1001,
+  "lat": 47.6007231,
+  "lon": 12.8706336
+ },
+ {
+  "id": 6124120935,
+  "name": "Gamsköpfl",
+  "kind": "viewpoint",
+  "ele": 1000,
+  "lat": 47.6351245,
+  "lon": 11.3652775
+ },
+ {
+  "id": 1631172973,
+  "name": "Aussichtspunkt Marienbrücke",
+  "kind": "viewpoint",
+  "ele": 998,
+  "lat": 47.5549563,
+  "lon": 10.7494061
+ },
+ {
+  "id": 4005963773,
+  "name": "Maxhütte",
+  "kind": "viewpoint",
+  "ele": 995,
+  "lat": 47.5284899,
+  "lon": 11.2902647
+ },
+ {
+  "id": 10738233342,
+  "name": "Einblick",
+  "kind": "viewpoint",
+  "ele": 991,
+  "lat": 47.6408693,
+  "lon": 11.6987865
+ },
+ {
+  "id": 11998538571,
+  "name": "Lärchecker Wand",
+  "kind": "viewpoint",
+  "ele": 967,
+  "lat": 47.6618489,
+  "lon": 13.0579575
+ },
+ {
+  "id": 1337250682,
+  "name": "Hirschbichlstraße",
+  "kind": "viewpoint",
+  "ele": 964,
+  "lat": 47.5738345,
+  "lon": 12.8016057
+ },
+ {
+  "id": 294023203,
+  "name": "Drei-Kirchen-Blick",
+  "kind": "viewpoint",
+  "ele": 963,
+  "lat": 47.596843,
+  "lon": 11.3045477
+ },
+ {
+  "id": 4126738333,
+  "name": "Chiemseeblick",
+  "kind": "viewpoint",
+  "ele": 961,
+  "lat": 47.6843536,
+  "lon": 12.4863844
+ },
+ {
+  "id": 11281900099,
+  "name": "Wasserfall",
+  "kind": "viewpoint",
+  "ele": 960,
+  "lat": 47.717978,
+  "lon": 12.0060139
+ },
+ {
+  "id": 404520557,
+  "name": "Zweiseenblick",
+  "kind": "viewpoint",
+  "ele": 952,
+  "lat": 47.5631211,
+  "lon": 10.6417731
+ },
+ {
+  "id": 2601426803,
+  "name": "Nogg",
+  "kind": "viewpoint",
+  "ele": 950,
+  "lat": 47.6820172,
+  "lon": 12.0019923
+ },
+ {
+  "id": 1770307860,
+  "name": "Geigersau",
+  "kind": "viewpoint",
+  "ele": 949,
+  "lat": 47.727287,
+  "lon": 11.0316892
+ },
+ {
+  "id": 10543269684,
+  "name": "Aussicht auf Watzmann und Berchtesgaden",
+  "kind": "viewpoint",
+  "ele": 949,
+  "lat": 47.6211151,
+  "lon": 13.0191469
+ },
+ {
+  "id": 616725669,
+  "name": "Rotwand-Aussicht",
+  "kind": "viewpoint",
+  "ele": 940,
+  "lat": 47.5997907,
+  "lon": 11.4988496
+ },
+ {
+  "id": 602478685,
+  "name": "Aussichtspunkt Bad Kohlgrub",
+  "kind": "viewpoint",
+  "ele": 926,
+  "lat": 47.6597805,
+  "lon": 11.0416414
+ },
+ {
+  "id": 9779110919,
+  "name": "Hängebrücken",
+  "kind": "viewpoint",
+  "ele": 920,
+  "lat": 47.5803694,
+  "lon": 12.8125494
+ },
+ {
+  "id": 1629361836,
+  "name": "Türmereck",
+  "kind": "viewpoint",
+  "ele": 919,
+  "lat": 47.7085169,
+  "lon": 12.8785333
+ },
+ {
+  "id": 653750329,
+  "name": "Am Grünen Fleck",
+  "kind": "viewpoint",
+  "ele": 910,
+  "lat": 47.5707986,
+  "lon": 11.1343879
+ },
+ {
+  "id": 3088981173,
+  "name": "Alpenpanorama Schwarz",
+  "kind": "viewpoint",
+  "ele": 909,
+  "lat": 47.7323008,
+  "lon": 10.7120438
+ },
+ {
+  "id": 10811510144,
+  "name": "Chiemseeblick",
+  "kind": "viewpoint",
+  "ele": 900,
+  "lat": 47.7229869,
+  "lon": 12.4362161
+ },
+ {
+  "id": 1425895108,
+  "name": "Forggenseeblick",
+  "kind": "viewpoint",
+  "ele": 899,
+  "lat": 47.6357947,
+  "lon": 10.7128249
+ },
+ {
+  "id": 7598117774,
+  "name": "Wittelsbacher Höhe",
+  "kind": "viewpoint",
+  "ele": 890,
+  "lat": 47.7616049,
+  "lon": 12.6653764
+ },
+ {
+  "id": 305490368,
+  "name": "Aussichtsplatz",
+  "kind": "viewpoint",
+  "ele": 888,
+  "lat": 47.6103711,
+  "lon": 10.6713101
+ },
+ {
+  "id": 1588865805,
+  "name": "Gotthelf Linde",
+  "kind": "viewpoint",
+  "ele": 887,
+  "lat": 47.6673874,
+  "lon": 11.0409022
+ },
+ {
+  "id": 1350436781,
+  "name": "Tiefsee",
+  "kind": "viewpoint",
+  "ele": 873,
+  "lat": 47.6602118,
+  "lon": 11.0103581
+ },
+ {
+  "id": 687078260,
+  "name": "Aufm Knöbel",
+  "kind": "viewpoint",
+  "ele": 867,
+  "lat": 47.8328327,
+  "lon": 10.786553
+ },
+ {
+  "id": 8936221492,
+  "name": "Fische beobachten",
+  "kind": "viewpoint",
+  "ele": 867,
+  "lat": 47.4957153,
+  "lon": 11.2791898
+ },
+ {
+  "id": 73870624,
+  "name": "Loisachblick",
+  "kind": "viewpoint",
+  "ele": 863,
+  "lat": 47.5752692,
+  "lon": 11.1540712
+ },
+ {
+  "id": 8911938682,
+  "name": "Aubichlaussicht",
+  "kind": "viewpoint",
+  "ele": 861,
+  "lat": 47.6840167,
+  "lon": 11.003442
+ },
+ {
+  "id": 9691532876,
+  "name": "Kanzel",
+  "kind": "viewpoint",
+  "ele": 858,
+  "lat": 47.5615777,
+  "lon": 10.6979431
+ },
+ {
+  "id": 1186686381,
+  "name": "Hochburg",
+  "kind": "viewpoint",
+  "ele": 856,
+  "lat": 47.7356196,
+  "lon": 11.868436
+ },
+ {
+  "id": 3741163001,
+  "name": "Linderversickerung/ Ammerentstehung",
+  "kind": "viewpoint",
+  "ele": 852,
+  "lat": 47.567869,
+  "lon": 11.0516601
+ },
+ {
+  "id": 3824383910,
+  "name": "Chiemseeblick",
+  "kind": "viewpoint",
+  "ele": 851,
+  "lat": 47.7923634,
+  "lon": 12.6059785
+ },
+ {
+  "id": 1412080141,
+  "name": "Aussichtspilz Rieden",
+  "kind": "viewpoint",
+  "ele": 849,
+  "lat": 47.6195533,
+  "lon": 10.7079242
+ },
+ {
+  "id": 392921581,
+  "name": "Prinzenruh",
+  "kind": "viewpoint",
+  "ele": 848,
+  "lat": 47.7083594,
+  "lon": 11.7164507
+ },
+ {
+  "id": 5158361250,
+  "name": "Aschau-Blick",
+  "kind": "viewpoint",
+  "ele": 848,
+  "lat": 47.6437833,
+  "lon": 12.7599551
+ },
+ {
+  "id": 282865911,
+  "name": "Bichler Alm",
+  "kind": "viewpoint",
+  "ele": 845,
+  "lat": 47.7205272,
+  "lon": 12.7261886
+ },
+ {
+  "id": 5231476208,
+  "name": "Alpenpanorama",
+  "kind": "viewpoint",
+  "ele": 845,
+  "lat": 47.6624617,
+  "lon": 10.8654196
+ },
+ {
+  "id": 6814367158,
+  "name": "Wandertrilogie Allgäu Kapelle St. Peter",
+  "kind": "viewpoint",
+  "ele": 843,
+  "lat": 47.6299942,
+  "lon": 10.8049717
+ },
+ {
+  "id": 14108489654,
+  "name": "Selfie-Point",
+  "kind": "viewpoint",
+  "ele": 842,
+  "lat": 47.6531614,
+  "lon": 10.7145238
+ },
+ {
+  "id": 4319641436,
+  "name": "Steinadler-Beobachtungspunkt",
+  "kind": "viewpoint",
+  "ele": 836,
+  "lat": 47.5873391,
+  "lon": 12.8273896
+ },
+ {
+  "id": 1838610377,
+  "name": "Zugspitzblick",
+  "kind": "viewpoint",
+  "ele": 830,
+  "lat": 47.6074527,
+  "lon": 11.4436982
+ },
+ {
+  "id": 7837413685,
+  "name": "Aussichtskanzel zur Vogelbeobachtung",
+  "kind": "viewpoint",
+  "ele": 830,
+  "lat": 47.6084901,
+  "lon": 11.0501236
+ },
+ {
+  "id": 9044780254,
+  "name": "Nesslauer Wasserfall",
+  "kind": "viewpoint",
+  "ele": 825,
+  "lat": 47.7408876,
+  "lon": 12.5956831
+ },
+ {
+  "id": 13030560866,
+  "name": "Aussichtspunkt am Mooslahnerkopf",
+  "kind": "viewpoint",
+  "ele": 814,
+  "lat": 47.6395803,
+  "lon": 13.0365928
+ },
+ {
+  "id": 10925273287,
+  "name": "Chiemseeblick",
+  "kind": "viewpoint",
+  "ele": 812,
+  "lat": 47.7153514,
+  "lon": 12.4642768
+ },
+ {
+  "id": 9643257926,
+  "name": "Quaglioblick",
+  "kind": "viewpoint",
+  "ele": 803,
+  "lat": 47.567217,
+  "lon": 10.7031767
+ },
+ {
+  "id": 622293393,
+  "name": "Windeck",
+  "kind": "viewpoint",
+  "ele": 802,
+  "lat": 47.7570952,
+  "lon": 12.4771916
+ },
+ {
+  "id": 5353194100,
+  "name": "St. Anton Panorama",
+  "kind": "viewpoint",
+  "ele": 794,
+  "lat": 47.4988049,
+  "lon": 11.1119908
+ },
+ {
+  "id": 5231476207,
+  "name": "Alpenpanorama",
+  "kind": "viewpoint",
+  "ele": 793,
+  "lat": 47.7037477,
+  "lon": 10.8486812
+ },
+ {
+  "id": 9759391702,
+  "name": "Magnusblick",
+  "kind": "viewpoint",
+  "ele": 792,
+  "lat": 47.565337,
+  "lon": 10.7002463
+ },
+ {
+  "id": 7471401935,
+  "name": "Melterkreuz",
+  "kind": "viewpoint",
+  "ele": 790,
+  "lat": 47.8880018,
+  "lon": 10.724909
+ },
+ {
+  "id": 1925035998,
+  "name": "Vogelschau",
+  "kind": "viewpoint",
+  "ele": 788,
+  "lat": 47.73159,
+  "lon": 12.393981
+ },
+ {
+  "id": 11124727804,
+  "name": "Beste Aussichten",
+  "kind": "viewpoint",
+  "ele": 786,
+  "lat": 47.4794669,
+  "lon": 11.0818806
+ },
+ {
+  "id": 2018244473,
+  "name": "Heldenkreuz",
+  "kind": "viewpoint",
+  "ele": 784,
+  "lat": 47.5711605,
+  "lon": 11.1429679
+ },
+ {
+  "id": 3088981175,
+  "name": "Auf der Naßleithe",
+  "kind": "viewpoint",
+  "ele": 784,
+  "lat": 47.7350287,
+  "lon": 10.6948464
+ },
+ {
+  "id": 1976552526,
+  "name": "Fotographenbank",
+  "kind": "viewpoint",
+  "ele": 783,
+  "lat": 47.5486879,
+  "lon": 11.1208905
+ },
+ {
+  "id": 5158297330,
+  "name": "Aschauer Klamm-Blick",
+  "kind": "viewpoint",
+  "ele": 781,
+  "lat": 47.6541492,
+  "lon": 12.7768449
+ },
+ {
+  "id": 6550775686,
+  "name": "Aussichtspunkt Oberzell",
+  "kind": "viewpoint",
+  "ele": 774,
+  "lat": 47.8724941,
+  "lon": 10.7524734
+ },
+ {
+  "id": 7977493327,
+  "name": "Walchenklamm",
+  "kind": "viewpoint",
+  "ele": 773,
+  "lat": 47.5814449,
+  "lon": 11.5953436
+ },
+ {
+  "id": 7395273796,
+  "name": "Hochhorn",
+  "kind": "viewpoint",
+  "ele": 772,
+  "lat": 47.8472917,
+  "lon": 12.7486212
+ },
+ {
+  "id": 1910122778,
+  "name": "Wasserfall",
+  "kind": "viewpoint",
+  "ele": 760,
+  "lat": 47.5478679,
+  "lon": 11.1503362
+ },
+ {
+  "id": 388309739,
+  "name": "Luitpoldeiche",
+  "kind": "viewpoint",
+  "ele": 757,
+  "lat": 47.7832767,
+  "lon": 12.2056657
+ },
+ {
+  "id": 2018231042,
+  "name": "Arbeiterkreuz",
+  "kind": "viewpoint",
+  "ele": 756,
+  "lat": 47.5569277,
+  "lon": 11.1280991
+ },
+ {
+  "id": 269215718,
+  "name": "Nagelfluhfelsen",
+  "kind": "viewpoint",
+  "ele": 752,
+  "lat": 47.690984,
+  "lon": 10.8178689
+ },
+ {
+  "id": 357255978,
+  "name": "Gletscherrestaurant SonnAlpin",
+  "kind": "inn",
+  "ele": 2588,
+  "lat": 47.4133827,
+  "lon": 10.9799992
+ },
+ {
+  "id": 476488947,
+  "name": "Schachenhaus",
+  "kind": "inn",
+  "ele": 1856,
+  "lat": 47.419367,
+  "lon": 11.1130617
+ },
+ {
+  "id": -123189987,
+  "name": "Kehlsteinhaus",
+  "kind": "inn",
+  "ele": 1834,
+  "lat": 47.61151372352941,
+  "lon": 13.04185764117647
+ },
+ {
+  "id": -123144373,
+  "name": "Jenneralm",
+  "kind": "inn",
+  "ele": 1789,
+  "lat": 47.57589468333333,
+  "lon": 13.0245015
+ },
+ {
+  "id": -62080320,
+  "name": "Hochalm 1705",
+  "kind": "inn",
+  "ele": 1705,
+  "lat": 47.44051579999999,
+  "lon": 11.062465083333334
+ },
+ {
+  "id": -132048365,
+  "name": "Rossalm",
+  "kind": "inn",
+  "ele": 1680,
+  "lat": 47.717879175,
+  "lon": 12.3293991
+ },
+ {
+  "id": 3005646144,
+  "name": "Kuhalm",
+  "kind": "inn",
+  "ele": 1648,
+  "lat": 47.5564893,
+  "lon": 11.2205956
+ },
+ {
+  "id": -36909755,
+  "name": "Krüner Alm",
+  "kind": "inn",
+  "ele": 1621,
+  "lat": 47.5414606,
+  "lon": 11.2211423
+ },
+ {
+  "id": -36384372,
+  "name": "Kreuzalm",
+  "kind": "inn",
+  "ele": 1600,
+  "lat": 47.45227751538461,
+  "lon": 11.071993661538462
+ },
+ {
+  "id": 1851263421,
+  "name": "Stepbergalm",
+  "kind": "inn",
+  "ele": 1589,
+  "lat": 47.5088735,
+  "lon": 11.022073
+ },
+ {
+  "id": -295153756,
+  "name": "Enningalm",
+  "kind": "inn",
+  "ele": 1550,
+  "lat": 47.524847375,
+  "lon": 11.007755074999999
+ },
+ {
+  "id": -37758458,
+  "name": "Wallgauer Alm",
+  "kind": "inn",
+  "ele": 1533,
+  "lat": 47.540672275,
+  "lon": 11.238863375000001
+ },
+ {
+  "id": -218452861,
+  "name": "Mitterkaseralm",
+  "kind": "inn",
+  "ele": 1530,
+  "lat": 47.58029843333333,
+  "lon": 13.030796166666667
+ },
+ {
+  "id": 13625714612,
+  "name": "Ahornkaser",
+  "kind": "inn",
+  "ele": 1523,
+  "lat": 47.6197591,
+  "lon": 13.0786228
+ },
+ {
+  "id": -46439969,
+  "name": "Roßsteinalm",
+  "kind": "inn",
+  "ele": 1493,
+  "lat": 47.63726,
+  "lon": 11.67106235
+ },
+ {
+  "id": 11975171575,
+  "name": "Wallberghaus",
+  "kind": "inn",
+  "ele": 1489,
+  "lat": 47.6556363,
+  "lon": 11.7884527
+ },
+ {
+  "id": -31119033,
+  "name": "Sonnberg Alm",
+  "kind": "inn",
+  "ele": 1485,
+  "lat": 47.628775024999996,
+  "lon": 11.6804984
+ },
+ {
+  "id": 894728205,
+  "name": "Wettersteinalm",
+  "kind": "inn",
+  "ele": 1464,
+  "lat": 47.4296848,
+  "lon": 11.1441299
+ },
+ {
+  "id": -97581409,
+  "name": "Tölzer Hütte",
+  "kind": "inn",
+  "ele": 1463,
+  "lat": 47.658740333333334,
+  "lon": 11.517008833333334
+ },
+ {
+  "id": -220699227,
+  "name": "Rossfeld Skihütte",
+  "kind": "inn",
+  "ele": 1461,
+  "lat": 47.6312097,
+  "lon": 13.093018966666667
+ },
+ {
+  "id": -97121775,
+  "name": "SonnenAlm",
+  "kind": "inn",
+  "ele": 1460,
+  "lat": 47.75312667,
+  "lon": 12.35398515
+ },
+ {
+  "id": 5340081009,
+  "name": "Schönberg Alm",
+  "kind": "inn",
+  "ele": 1459,
+  "lat": 47.6359646,
+  "lon": 11.6477274
+ },
+ {
+  "id": -91752728,
+  "name": "Priesbergalm",
+  "kind": "inn",
+  "ele": 1457,
+  "lat": 47.55546725,
+  "lon": 13.0124457
+ },
+ {
+  "id": -37837377,
+  "name": "Steinlingalm",
+  "kind": "inn",
+  "ele": 1450,
+  "lat": 47.759138125,
+  "lon": 12.3656964
+ },
+ {
+  "id": -112706528,
+  "name": "Bichler Alm",
+  "kind": "inn",
+  "ele": 1437,
+  "lat": 47.646269312499996,
+  "lon": 11.473506050000001
+ },
+ {
+  "id": -53141075,
+  "name": "Wirtsalm",
+  "kind": "inn",
+  "ele": 1430,
+  "lat": 47.70238605,
+  "lon": 12.33747075
+ },
+ {
+  "id": -136891997,
+  "name": "Reindleralm",
+  "kind": "inn",
+  "ele": 1425,
+  "lat": 47.711033549999996,
+  "lon": 12.01336665
+ },
+ {
+  "id": -41745849,
+  "name": "Alpe Jägerhütte",
+  "kind": "inn",
+  "ele": 1420,
+  "lat": 47.537574725,
+  "lon": 10.82043145
+ },
+ {
+  "id": -88700227,
+  "name": "Enzian-Hütte",
+  "kind": "inn",
+  "ele": 1414,
+  "lat": 47.74960933333333,
+  "lon": 12.497062900000001
+ },
+ {
+  "id": -112396010,
+  "name": "Berggasthaus Walleralm",
+  "kind": "inn",
+  "ele": 1412,
+  "lat": 47.663964775,
+  "lon": 12.03831065
+ },
+ {
+  "id": -26970516,
+  "name": "Vereiner Alm",
+  "kind": "inn",
+  "ele": 1406,
+  "lat": 47.467499725,
+  "lon": 11.355300525
+ },
+ {
+  "id": 452385755,
+  "name": "Mitterkaser",
+  "kind": "inn",
+  "ele": 1404,
+  "lat": 47.5779425,
+  "lon": 12.9425938
+ },
+ {
+  "id": 283379059,
+  "name": "Fischbachalm",
+  "kind": "inn",
+  "ele": 1402,
+  "lat": 47.5162487,
+  "lon": 11.3463907
+ },
+ {
+  "id": -130206815,
+  "name": "Moosenalm",
+  "kind": "inn",
+  "ele": 1400,
+  "lat": 47.655243325,
+  "lon": 12.864442925
+ },
+ {
+  "id": -91989707,
+  "name": "Oberjochalm",
+  "kind": "inn",
+  "ele": 1397,
+  "lat": 47.573986733333335,
+  "lon": 13.061910366666666
+ },
+ {
+  "id": 5030863918,
+  "name": "Bischofsfellnalm",
+  "kind": "inn",
+  "ele": 1387,
+  "lat": 47.7476474,
+  "lon": 12.5260178
+ },
+ {
+  "id": -99521820,
+  "name": "Hofbauernalm",
+  "kind": "inn",
+  "ele": 1386,
+  "lat": 47.742682099999996,
+  "lon": 12.3343603
+ },
+ {
+  "id": -225706594,
+  "name": "Bergrestaurant Hirschkaser",
+  "kind": "inn",
+  "ele": 1380,
+  "lat": 47.628142625,
+  "lon": 12.920147374999999
+ },
+ {
+  "id": -165498736,
+  "name": "Piesenhauser Hochalm",
+  "kind": "inn",
+  "ele": 1360,
+  "lat": 47.7530761,
+  "lon": 12.39059105
+ },
+ {
+  "id": -180985116,
+  "name": "Schärtenalm",
+  "kind": "inn",
+  "ele": 1359,
+  "lat": 47.595737150000005,
+  "lon": 12.8725725
+ },
+ {
+  "id": -89374693,
+  "name": "Boider Kaser",
+  "kind": "inn",
+  "ele": 1354,
+  "lat": 47.726161,
+  "lon": 12.630231799999999
+ },
+ {
+  "id": -35938301,
+  "name": "Feichteckalm",
+  "kind": "inn",
+  "ele": 1350,
+  "lat": 47.729716124999996,
+  "lon": 12.23226
+ },
+ {
+  "id": -48923300,
+  "name": "Osthangalm",
+  "kind": "inn",
+  "ele": 1336,
+  "lat": 47.66113469,
+  "lon": 11.863551699999999
+ },
+ {
+  "id": -36379914,
+  "name": "Garmischer Haus",
+  "kind": "inn",
+  "ele": 1333,
+  "lat": 47.463421,
+  "lon": 11.093494
+ },
+ {
+  "id": -222472784,
+  "name": "Geitauer Alm",
+  "kind": "inn",
+  "ele": 1327,
+  "lat": 47.6772688,
+  "lon": 11.932230033333333
+ },
+ {
+  "id": -38024453,
+  "name": "Soila-Alm",
+  "kind": "inn",
+  "ele": 1325,
+  "lat": 47.59016415,
+  "lon": 11.115721575
+ },
+ {
+  "id": -40891187,
+  "name": "Ackeralm",
+  "kind": "inn",
+  "ele": 1320,
+  "lat": 47.695543975,
+  "lon": 12.317619624999999
+ },
+ {
+  "id": -60313973,
+  "name": "Untere Firstalm",
+  "kind": "inn",
+  "ele": 1319,
+  "lat": 47.667773940000004,
+  "lon": 11.85055662
+ },
+ {
+  "id": -108258440,
+  "name": "Haaralm",
+  "kind": "inn",
+  "ele": 1315,
+  "lat": 47.73670515,
+  "lon": 12.55606315
+ },
+ {
+  "id": -48821845,
+  "name": "Ankel-Alm",
+  "kind": "inn",
+  "ele": 1311,
+  "lat": 47.6838398,
+  "lon": 11.86894685
+ },
+ {
+  "id": -239882856,
+  "name": "Litzlalm Querleit-Kaser",
+  "kind": "inn",
+  "ele": 1310,
+  "lat": 47.555800149999996,
+  "lon": 12.786741750000001
+ },
+ {
+  "id": 1871174158,
+  "name": "Jausenstation Trainsalm (geschlossen)",
+  "kind": "inn",
+  "ele": 1303,
+  "lat": 47.6122774,
+  "lon": 12.0644734
+ },
+ {
+  "id": -120580866,
+  "name": "Stoißer Alm",
+  "kind": "inn",
+  "ele": 1272,
+  "lat": 47.803795916666665,
+  "lon": 12.771300591666666
+ },
+ {
+  "id": -35331969,
+  "name": "Esterbergalm",
+  "kind": "inn",
+  "ele": 1265,
+  "lat": 47.516953990000005,
+  "lon": 11.15763945
+ },
+ {
+  "id": -60316216,
+  "name": "Freudenreich-Alm",
+  "kind": "inn",
+  "ele": 1262,
+  "lat": 47.67732683333333,
+  "lon": 11.852310311111111
+ },
+ {
+  "id": -97030566,
+  "name": "Schlechtenberg Alm",
+  "kind": "inn",
+  "ele": 1260,
+  "lat": 47.759114733333334,
+  "lon": 12.355199644444445
+ },
+ {
+  "id": -257591435,
+  "name": "Alpengasthof Hindenburghütte",
+  "kind": "inn",
+  "ele": 1260,
+  "lat": 47.6466145125,
+  "lon": 12.501579325
+ },
+ {
+  "id": -102948102,
+  "name": "Anthauptenalm",
+  "kind": "inn",
+  "ele": 1250,
+  "lat": 47.6785393,
+  "lon": 12.851433775
+ },
+ {
+  "id": -170963502,
+  "name": "Drehhütte",
+  "kind": "inn",
+  "ele": 1250,
+  "lat": 47.5713145,
+  "lon": 10.7879774625
+ },
+ {
+  "id": 3725525948,
+  "name": "Sulzner Kaser",
+  "kind": "inn",
+  "ele": 1242,
+  "lat": 47.6409784,
+  "lon": 12.5079613
+ },
+ {
+  "id": -143851114,
+  "name": "Gindlalm 3",
+  "kind": "inn",
+  "ele": 1242,
+  "lat": 47.72582461111111,
+  "lon": 11.802553
+ },
+ {
+  "id": -152181594,
+  "name": "Bucher Alm",
+  "kind": "inn",
+  "ele": 1236,
+  "lat": 47.72466868,
+  "lon": 11.9765372
+ },
+ {
+  "id": 299521928,
+  "name": "St. Anton",
+  "kind": "inn",
+  "ele": 1233,
+  "lat": 47.4495828,
+  "lon": 11.2380747
+ },
+ {
+  "id": 13625714806,
+  "name": "Perlerkaser",
+  "kind": "inn",
+  "ele": 1232,
+  "lat": 47.6204124,
+  "lon": 13.0698523
+ },
+ {
+  "id": -110558866,
+  "name": "Finstermünz-Alm",
+  "kind": "inn",
+  "ele": 1232,
+  "lat": 47.657322925,
+  "lon": 11.5233058
+ },
+ {
+  "id": -112396014,
+  "name": "Berggasthaus Tiroler Stüberl",
+  "kind": "inn",
+  "ele": 1227,
+  "lat": 47.671916966666664,
+  "lon": 12.039663133333333
+ },
+ {
+  "id": -31900595,
+  "name": "Kreuzbergalm",
+  "kind": "inn",
+  "ele": 1225,
+  "lat": 47.7160905875,
+  "lon": 11.80686055
+ },
+ {
+  "id": -36333437,
+  "name": "Brandelbergalm",
+  "kind": "inn",
+  "ele": 1225,
+  "lat": 47.714292,
+  "lon": 12.257975933333334
+ },
+ {
+  "id": -95639233,
+  "name": "Halsalm",
+  "kind": "inn",
+  "ele": 1211,
+  "lat": 47.60379145,
+  "lon": 12.8337808
+ },
+ {
+  "id": 410925272,
+  "name": "Berggasthaus Ederkanzel",
+  "kind": "inn",
+  "ele": 1208,
+  "lat": 47.432229,
+  "lon": 11.2453293
+ },
+ {
+  "id": 1066257985,
+  "name": "Königsbachalm",
+  "kind": "inn",
+  "ele": 1190,
+  "lat": 47.5659264,
+  "lon": 13.0128353
+ },
+ {
+  "id": 4405378299,
+  "name": "Thoraualm",
+  "kind": "inn",
+  "ele": 1188,
+  "lat": 47.7505062,
+  "lon": 12.5723747
+ },
+ {
+  "id": -97585120,
+  "name": "Berggasthaus Kotalm",
+  "kind": "inn",
+  "ele": 1180,
+  "lat": 47.662768,
+  "lon": 11.5386709
+ },
+ {
+  "id": -136455631,
+  "name": "Brachtalm",
+  "kind": "inn",
+  "ele": 1176,
+  "lat": 47.7608304,
+  "lon": 12.51822765
+ },
+ {
+  "id": 371698797,
+  "name": "Korbinianhütte",
+  "kind": "inn",
+  "ele": 1170,
+  "lat": 47.4505497,
+  "lon": 11.2483213
+ },
+ {
+  "id": 528980776,
+  "name": "Berggasthaus Bleckenau",
+  "kind": "inn",
+  "ele": 1167,
+  "lat": 47.5386195,
+  "lon": 10.7764406
+ },
+ {
+  "id": -107582435,
+  "name": "Bründlingalm",
+  "kind": "inn",
+  "ele": 1165,
+  "lat": 47.768616775,
+  "lon": 12.56847525
+ },
+ {
+  "id": -135303367,
+  "name": "Rechenbergalm",
+  "kind": "inn",
+  "ele": 1165,
+  "lat": 47.72334885,
+  "lon": 12.502596650000001
+ },
+ {
+  "id": -182389660,
+  "name": "Taubenseehütte",
+  "kind": "inn",
+  "ele": 1162,
+  "lat": 47.6935166125,
+  "lon": 12.419950374999999
+ },
+ {
+  "id": -124057424,
+  "name": "Sellarnalm",
+  "kind": "inn",
+  "ele": 1152,
+  "lat": 47.68976,
+  "lon": 12.758941700000001
+ },
+ {
+  "id": 3669684626,
+  "name": "SonnenAlm",
+  "kind": "inn",
+  "ele": 1151,
+  "lat": 47.6565349,
+  "lon": 12.5821251
+ },
+ {
+  "id": -306074125,
+  "name": "Berggasthof Wildensee",
+  "kind": "inn",
+  "ele": 1149,
+  "lat": 47.45596185,
+  "lon": 11.2361632875
+ },
+ {
+  "id": -91848900,
+  "name": "Stubenalm",
+  "kind": "inn",
+  "ele": 1143,
+  "lat": 47.5890076,
+  "lon": 12.93431735
+ },
+ {
+  "id": -88700251,
+  "name": "Staudacheralm / Schmiedkaser",
+  "kind": "inn",
+  "ele": 1142,
+  "lat": 47.75734244,
+  "lon": 12.50048132
+ },
+ {
+  "id": -130402127,
+  "name": "Vorderalm / Schwemmbräukaser",
+  "kind": "inn",
+  "ele": 1140,
+  "lat": 47.767997199999996,
+  "lon": 12.5186868
+ },
+ {
+  "id": -290551629,
+  "name": "Brander Alm",
+  "kind": "inn",
+  "ele": 1133,
+  "lat": 47.7128884375,
+  "lon": 12.6018271875
+ },
+ {
+  "id": 4392878007,
+  "name": "Hinteralm",
+  "kind": "inn",
+  "ele": 1130,
+  "lat": 47.7545498,
+  "lon": 12.5333284
+ },
+ {
+  "id": 13593768729,
+  "name": "Berggasthof Pechhäusl",
+  "kind": "inn",
+  "ele": 1122,
+  "lat": 47.6409728,
+  "lon": 13.0873879
+ },
+ {
+  "id": -128168308,
+  "name": "Kressen-Kaser",
+  "kind": "inn",
+  "ele": 1119,
+  "lat": 47.55928915,
+  "lon": 12.800601525
+ },
+ {
+  "id": 613404761,
+  "name": "Kurvenlift-Stüberl",
+  "kind": "inn",
+  "ele": 1118,
+  "lat": 47.665528,
+  "lon": 11.876032
+ },
+ {
+  "id": -35442154,
+  "name": "Wallbergmoosalm Berggaststätte",
+  "kind": "inn",
+  "ele": 1117,
+  "lat": 47.661404087499996,
+  "lon": 11.7731630125
+ },
+ {
+  "id": -166866506,
+  "name": "Schnauferl Wirt",
+  "kind": "inn",
+  "ele": 1117,
+  "lat": 47.681233399999996,
+  "lon": 12.033958833333335
+ },
+ {
+  "id": -35444602,
+  "name": "Königsalm",
+  "kind": "inn",
+  "ele": 1115,
+  "lat": 47.60213065,
+  "lon": 11.711904
+ },
+ {
+  "id": -90239994,
+  "name": "Lyra Alm",
+  "kind": "inn",
+  "ele": 1114,
+  "lat": 47.6607919375,
+  "lon": 11.8786339125
+ },
+ {
+  "id": -608436955,
+  "name": "Brösel Alm",
+  "kind": "inn",
+  "ele": 1107,
+  "lat": 47.678361833333334,
+  "lon": 12.036493
+ },
+ {
+  "id": -60305516,
+  "name": "Berggasthof Lukas-Alm",
+  "kind": "inn",
+  "ele": 1104,
+  "lat": 47.65508144,
+  "lon": 11.84057524
+ },
+ {
+  "id": -77109727,
+  "name": "Berggasthof Hohe Asten",
+  "kind": "inn",
+  "ele": 1103,
+  "lat": 47.700321625,
+  "lon": 12.1165218
+ },
+ {
+  "id": -81550219,
+  "name": "Ammerwald-Alm",
+  "kind": "inn",
+  "ele": 1103,
+  "lat": 47.532325015384615,
+  "lon": 10.85934036923077
+ },
+ {
+  "id": -304264298,
+  "name": "Nesslauer Alm",
+  "kind": "inn",
+  "ele": 1100,
+  "lat": 47.743342,
+  "lon": 12.57568925
+ },
+ {
+  "id": -198619948,
+  "name": "Jagdhof",
+  "kind": "inn",
+  "ele": 1098,
+  "lat": 47.6622263875,
+  "lon": 11.8885178625
+ },
+ {
+  "id": -112396018,
+  "name": "Almgasthof Grafenherberg",
+  "kind": "inn",
+  "ele": 1093,
+  "lat": 47.6746232,
+  "lon": 12.0546153
+ },
+ {
+  "id": -1084997013,
+  "name": "Panoramagaststätte Hochfellnblick",
+  "kind": "inn",
+  "ele": 1077,
+  "lat": 47.7691771,
+  "lon": 12.57571925
+ },
+ {
+  "id": 7812023027,
+  "name": "Lainer Alm",
+  "kind": "inn",
+  "ele": 1073,
+  "lat": 47.5806007,
+  "lon": 11.4471675
+ },
+ {
+  "id": 411023472,
+  "name": "Bäckeralm",
+  "kind": "inn",
+  "ele": 1067,
+  "lat": 47.7817514,
+  "lon": 12.7755306
+ },
+ {
+  "id": -824814631,
+  "name": "Finz Alm",
+  "kind": "inn",
+  "ele": 1065,
+  "lat": 47.5184089,
+  "lon": 11.2247106
+ },
+ {
+  "id": -60318909,
+  "name": "Kühzagl-Alm",
+  "kind": "inn",
+  "ele": 1064,
+  "lat": 47.6919922,
+  "lon": 11.836324399999999
+ },
+ {
+  "id": -168180677,
+  "name": "Gasthof Vorderbrand",
+  "kind": "inn",
+  "ele": 1064,
+  "lat": 47.596773625000004,
+  "lon": 13.018517758333333
+ },
+ {
+  "id": 292977269,
+  "name": "Gasthaus Ferchensee",
+  "kind": "inn",
+  "ele": 1063,
+  "lat": 47.4405659,
+  "lon": 11.2124193
+ },
+ {
+  "id": -95194224,
+  "name": "Schliersberg-Alm",
+  "kind": "inn",
+  "ele": 1061,
+  "lat": 47.740927090909096,
+  "lon": 11.873741690909092
+ },
+ {
+  "id": 303838561,
+  "name": "Sillberghaus",
+  "kind": "inn",
+  "ele": 1057,
+  "lat": 47.6406076,
+  "lon": 12.0046119
+ },
+ {
+  "id": -36544330,
+  "name": "Bockhütte",
+  "kind": "inn",
+  "ele": 1052,
+  "lat": 47.418171125,
+  "lon": 11.0943449
+ },
+ {
+  "id": -35911224,
+  "name": "Wagner-Alm",
+  "kind": "inn",
+  "ele": 1050,
+  "lat": 47.72685546,
+  "lon": 12.21809432
+ },
+ {
+  "id": -57971553,
+  "name": "Tannenhütte",
+  "kind": "inn",
+  "ele": 1050,
+  "lat": 47.495313708333335,
+  "lon": 11.129277558333333
+ },
+ {
+  "id": -117334822,
+  "name": "Staffn-Alm",
+  "kind": "inn",
+  "ele": 1050,
+  "lat": 47.76756018333333,
+  "lon": 12.417759775
+ },
+ {
+  "id": -88700232,
+  "name": "Agersgschwendtalm",
+  "kind": "inn",
+  "ele": 1045,
+  "lat": 47.7418112,
+  "lon": 12.487182425
+ },
+ {
+  "id": -132068518,
+  "name": "Stoana Alm",
+  "kind": "inn",
+  "ele": 1044,
+  "lat": 47.69632954,
+  "lon": 12.23929582
+ },
+ {
+  "id": -76212049,
+  "name": "Bayralm",
+  "kind": "inn",
+  "ele": 1041,
+  "lat": 47.5925869,
+  "lon": 11.83019255
+ },
+ {
+  "id": -57733366,
+  "name": "St. Martin am Grasberg",
+  "kind": "inn",
+  "ele": 1040,
+  "lat": 47.502975976923075,
+  "lon": 11.070835015384615
+ },
+ {
+  "id": -81145956,
+  "name": "Niederhoferalm",
+  "kind": "inn",
+  "ele": 1040,
+  "lat": 47.65841345,
+  "lon": 11.98168055
+ },
+ {
+  "id": -165823630,
+  "name": "Schapbachalm",
+  "kind": "inn",
+  "ele": 1040,
+  "lat": 47.583622225,
+  "lon": 12.95336725
+ },
+ {
+  "id": -227895701,
+  "name": "Kolbenalm",
+  "kind": "inn",
+  "ele": 1040,
+  "lat": 47.591705000000005,
+  "lon": 11.045593425
+ },
+ {
+  "id": 12114185035,
+  "name": "Panoramarestaurant",
+  "kind": "inn",
+  "ele": 1035,
+  "lat": 47.4721075,
+  "lon": 11.2149942
+ },
+ {
+  "id": -156630936,
+  "name": "Hocherbalm",
+  "kind": "inn",
+  "ele": 1035,
+  "lat": 47.771233675,
+  "lon": 12.5907474
+ },
+ {
+  "id": 486412886,
+  "name": "Chiemhauser-Alm",
+  "kind": "inn",
+  "ele": 1034,
+  "lat": 47.7044024,
+  "lon": 12.4220793
+ },
+ {
+  "id": -129450652,
+  "name": "Wildbichl Alm",
+  "kind": "inn",
+  "ele": 1033,
+  "lat": 47.68190782,
+  "lon": 12.27136299
+ },
+ {
+  "id": 12476036270,
+  "name": "Baumgartenalm",
+  "kind": "inn",
+  "ele": 1032,
+  "lat": 47.7080541,
+  "lon": 12.433908
+ },
+ {
+  "id": -112396022,
+  "name": "Waldkopfstüberl",
+  "kind": "inn",
+  "ele": 1032,
+  "lat": 47.680589975000004,
+  "lon": 12.04344695
+ },
+ {
+  "id": -136441155,
+  "name": "Gleichenbergalm-Gasseikaser",
+  "kind": "inn",
+  "ele": 1031,
+  "lat": 47.772463574999996,
+  "lon": 12.569852025
+ },
+ {
+  "id": -35436928,
+  "name": "Schwarzentennalm",
+  "kind": "inn",
+  "ele": 1027,
+  "lat": 47.646374924999996,
+  "lon": 11.684507125
+ },
+ {
+  "id": 1864140047,
+  "name": "Luttenseehof",
+  "kind": "inn",
+  "ele": 1025,
+  "lat": 47.4564444,
+  "lon": 11.2536083
+ },
+ {
+  "id": -109151083,
+  "name": "Hintere Längentalalm",
+  "kind": "inn",
+  "ele": 1025,
+  "lat": 47.67003691666667,
+  "lon": 11.501008666666666
+ },
+ {
+  "id": -57979105,
+  "name": "Gschwandtnerbauer",
+  "kind": "inn",
+  "ele": 1020,
+  "lat": 47.494369375000005,
+  "lon": 11.163292625
+ },
+ {
+  "id": 794157189,
+  "name": "Lautersee Stub'n",
+  "kind": "inn",
+  "ele": 1018,
+  "lat": 47.4381317,
+  "lon": 11.2324476
+ },
+ {
+  "id": -61693884,
+  "name": "Berggasthof Wamberg",
+  "kind": "inn",
+  "ele": 1014,
+  "lat": 47.478851271428574,
+  "lon": 11.151852614285714
+ },
+ {
+  "id": 292995230,
+  "name": "Luce d'Oro",
+  "kind": "inn",
+  "ele": 1012,
+  "lat": 47.4617225,
+  "lon": 11.1872645
+ },
+ {
+  "id": 1865852737,
+  "name": "Eibsee-Alm",
+  "kind": "inn",
+  "ele": 1010,
+  "lat": 47.4546241,
+  "lon": 10.9928392
+ },
+ {
+  "id": -129010537,
+  "name": "Weissenalm",
+  "kind": "inn",
+  "ele": 1010,
+  "lat": 47.774880175,
+  "lon": 12.3761717
+ },
+ {
+  "id": -38754655,
+  "name": "Berggasthaus Steinberg-Alm",
+  "kind": "inn",
+  "ele": 1007,
+  "lat": 47.7686420375,
+  "lon": 12.5926875375
+ },
+ {
+  "id": -33832168,
+  "name": "Steiner Alm",
+  "kind": "inn",
+  "ele": 1000,
+  "lat": 47.76776126666667,
+  "lon": 12.842418666666667
+ },
+ {
+  "id": -117334805,
+  "name": "Moieralm",
+  "kind": "inn",
+  "ele": 1000,
+  "lat": 47.775850675,
+  "lon": 12.41110335
+ },
+ {
+  "id": -60305511,
+  "name": "Berghotel Sutten",
+  "kind": "inn",
+  "ele": 996,
+  "lat": 47.6560243,
+  "lon": 11.8332878
+ },
+ {
+  "id": -143270539,
+  "name": "Bergcafé Siglhof",
+  "kind": "inn",
+  "ele": 994,
+  "lat": 47.684664325,
+  "lon": 12.005732349999999
+ },
+ {
+  "id": -310885007,
+  "name": "Goas-Alm",
+  "kind": "inn",
+  "ele": 988,
+  "lat": 47.4776142375,
+  "lon": 11.264714225
+ },
+ {
+  "id": -283842510,
+  "name": "Hutzenalm",
+  "kind": "inn",
+  "ele": 987,
+  "lat": 47.68664405,
+  "lon": 12.445887025000001
+ },
+ {
+  "id": -36799292,
+  "name": "Eibsee-Hotel",
+  "kind": "inn",
+  "ele": 985,
+  "lat": 47.4578454,
+  "lon": 10.989835186666665
+ },
+ {
+  "id": -35936376,
+  "name": "Doaglalm",
+  "kind": "inn",
+  "ele": 980,
+  "lat": 47.74380565,
+  "lon": 12.224793524999999
+ },
+ {
+  "id": -61696755,
+  "name": "Almwirtschaft Hintergraseck",
+  "kind": "inn",
+  "ele": 974,
+  "lat": 47.4618520375,
+  "lon": 11.1336347
+ },
+ {
+  "id": 378262532,
+  "name": "Alpengasthof Gröblalm",
+  "kind": "inn",
+  "ele": 973,
+  "lat": 47.4501061,
+  "lon": 11.2636485
+ },
+ {
+  "id": -220618822,
+  "name": "Berghütte Holzkäfer",
+  "kind": "inn",
+  "ele": 972,
+  "lat": 47.63124173333333,
+  "lon": 13.065726841666667
+ },
+ {
+  "id": -43156125,
+  "name": "Hofalm",
+  "kind": "inn",
+  "ele": 970,
+  "lat": 47.768829100000005,
+  "lon": 12.3010219
+ },
+ {
+  "id": 3661220901,
+  "name": "Kärntner Alm",
+  "kind": "inn",
+  "ele": 967,
+  "lat": 47.444165,
+  "lon": 11.256867
+ },
+ {
+  "id": 4432269497,
+  "name": "Restaurant LE CIEL",
+  "kind": "inn",
+  "ele": 965,
+  "lat": 47.6338826,
+  "lon": 13.0463234
+ },
+ {
+  "id": -50915646,
+  "name": "Berggasthaus Romanshöhe",
+  "kind": "inn",
+  "ele": 959,
+  "lat": 47.61320865,
+  "lon": 11.0670414
+ },
+ {
+  "id": 13096389513,
+  "name": "Stubn in der Frasdorfer Hütte",
+  "kind": "inn",
+  "ele": 958,
+  "lat": 47.7692051,
+  "lon": 12.29518
+ },
+ {
+  "id": 856601830,
+  "name": "Nattersbergalm",
+  "kind": "inn",
+  "ele": 955,
+  "lat": 47.6529141,
+  "lon": 12.5335279
+ },
+ {
+  "id": 4587487977,
+  "name": "Feldlahnalm",
+  "kind": "inn",
+  "ele": 955,
+  "lat": 47.7168708,
+  "lon": 12.5169997
+ },
+ {
+  "id": 14183914571,
+  "name": "Alpe Beichelstein",
+  "kind": "inn",
+  "ele": 951,
+  "lat": 47.6326909,
+  "lon": 10.6426838
+ },
+ {
+  "id": -111254268,
+  "name": "Tregler Alm",
+  "kind": "inn",
+  "ele": 951,
+  "lat": 47.75448125384616,
+  "lon": 11.99682276923077
+ },
+ {
+  "id": -123180748,
+  "name": "Berggasthof Obersalzberg",
+  "kind": "inn",
+  "ele": 951,
+  "lat": 47.63028224444444,
+  "lon": 13.040886344444445
+ },
+ {
+  "id": -57986051,
+  "name": "Pfeiffer Alm",
+  "kind": "inn",
+  "ele": 950,
+  "lat": 47.4889673,
+  "lon": 11.146778611111111
+ },
+ {
+  "id": -79130409,
+  "name": "Reiter Alm",
+  "kind": "inn",
+  "ele": 950,
+  "lat": 47.711985875,
+  "lon": 12.7488594
+ },
+ {
+  "id": -102303643,
+  "name": "Denkalm",
+  "kind": "inn",
+  "ele": 950,
+  "lat": 47.6943177125,
+  "lon": 11.5941035
+ },
+ {
+  "id": 7658280849,
+  "name": "Ludwig's",
+  "kind": "inn",
+  "ele": 949,
+  "lat": 47.5706071,
+  "lon": 10.95591
+ },
+ {
+  "id": 173893546,
+  "name": "Windbeutelbaron",
+  "kind": "inn",
+  "ele": 948,
+  "lat": 47.6135202,
+  "lon": 13.0179669
+ },
+ {
+  "id": 449556480,
+  "name": "Berggasthof Söldenköpfl",
+  "kind": "inn",
+  "ele": 945,
+  "lat": 47.6193703,
+  "lon": 12.9371128
+ },
+ {
+  "id": -192089081,
+  "name": "Huber-Kaser",
+  "kind": "inn",
+  "ele": 945,
+  "lat": 47.734513566666664,
+  "lon": 12.350564416666666
+ },
+ {
+  "id": 449556481,
+  "name": "Berggasthof Gerstreit",
+  "kind": "inn",
+  "ele": 936,
+  "lat": 47.6093662,
+  "lon": 12.9228434
+ },
+ {
+  "id": -52887037,
+  "name": "Zinkenwirt",
+  "kind": "inn",
+  "ele": 936,
+  "lat": 47.656115871428575,
+  "lon": 13.084959542857144
+ },
+ {
+  "id": -846972863,
+  "name": "Café „Klaiser Stube“",
+  "kind": "inn",
+  "ele": 935,
+  "lat": 47.48265215,
+  "lon": 11.238341725
+ },
+ {
+  "id": -35212310,
+  "name": "Schlossrestaurant Neuschwanstein",
+  "kind": "inn",
+  "ele": 933,
+  "lat": 47.5581731,
+  "lon": 10.748641075
+ },
+ {
+  "id": 1251018058,
+  "name": "Mittenwalder Klammkiosk",
+  "kind": "inn",
+  "ele": 930,
+  "lat": 47.4276013,
+  "lon": 11.2536064
+ },
+ {
+  "id": 2995502843,
+  "name": "Gasthof Bichlersee",
+  "kind": "inn",
+  "ele": 930,
+  "lat": 47.6720814,
+  "lon": 12.1282349
+ },
+ {
+  "id": 336105773,
+  "name": "Gasthof Sonnenhof",
+  "kind": "inn",
+  "ele": 928,
+  "lat": 47.4846178,
+  "lon": 11.2331155
+ },
+ {
+  "id": 8777261317,
+  "name": "Saloniki",
+  "kind": "inn",
+  "ele": 926,
+  "lat": 47.4268845,
+  "lon": 11.2587316
+ },
+ {
+  "id": 3656681762,
+  "name": "Bio Gasthof Post",
+  "kind": "inn",
+  "ele": 922,
+  "lat": 47.4412482,
+  "lon": 11.2604559
+ },
+ {
+  "id": -50752038,
+  "name": "Guggenberg Alm",
+  "kind": "inn",
+  "ele": 922,
+  "lat": 47.65988986,
+  "lon": 11.0506181
+ },
+ {
+  "id": 2376210435,
+  "name": "Gasthaus Römerschanz mit Gunglstub'n",
+  "kind": "inn",
+  "ele": 921,
+  "lat": 47.4355681,
+  "lon": 11.2594226
+ },
+ {
+  "id": -109885527,
+  "name": "Reiseralm",
+  "kind": "inn",
+  "ele": 920,
+  "lat": 47.67365225,
+  "lon": 11.54281765
+ },
+ {
+  "id": 12152997743,
+  "name": "Golfplatz",
+  "kind": "inn",
+  "ele": 919,
+  "lat": 47.4412783,
+  "lon": 11.2558057
+ },
+ {
+  "id": 3658603792,
+  "name": "Cafébar Paula",
+  "kind": "inn",
+  "ele": 918,
+  "lat": 47.4382049,
+  "lon": 11.2604135
+ },
+ {
+  "id": 13068290575,
+  "name": "Hillstoaner Alm",
+  "kind": "inn",
+  "ele": 917,
+  "lat": 47.7316335,
+  "lon": 12.0293876
+ },
+ {
+  "id": 8848686710,
+  "name": "Die Kräuterhexe",
+  "kind": "inn",
+  "ele": 916,
+  "lat": 47.7607483,
+  "lon": 12.2399114
+ },
+ {
+  "id": 13157785570,
+  "name": "Platzfisch – Das Chalet",
+  "kind": "inn",
+  "ele": 916,
+  "lat": 47.4407767,
+  "lon": 11.2647253
+ },
+ {
+  "id": -121194589,
+  "name": "Raffneralm",
+  "kind": "inn",
+  "ele": 915,
+  "lat": 47.7360976,
+  "lon": 12.634350116666667
+ },
+ {
+  "id": -128984553,
+  "name": "Rachlalm",
+  "kind": "inn",
+  "ele": 910,
+  "lat": 47.77030515,
+  "lon": 12.421534900000001
+ },
+ {
+  "id": 255075802,
+  "name": "Zipfhausl",
+  "kind": "inn",
+  "ele": 908,
+  "lat": 47.6174027,
+  "lon": 12.8965216
+ },
+ {
+  "id": -25414323,
+  "name": "Maisalm",
+  "kind": "inn",
+  "ele": 905,
+  "lat": 47.77378205,
+  "lon": 12.3552075
+ },
+ {
+  "id": 339247277,
+  "name": "Beim Mini am Tennsee",
+  "kind": "inn",
+  "ele": 904,
+  "lat": 47.4904816,
+  "lon": 11.255803
+ },
+ {
+  "id": -36334528,
+  "name": "Partnachalm",
+  "kind": "inn",
+  "ele": 893,
+  "lat": 47.462793500000004,
+  "lon": 11.118629433333334
+ }
+]

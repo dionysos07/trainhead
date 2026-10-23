@@ -1,0 +1,4459 @@
+{
+ "generated_at": "2026-10-22T20:10+02:00",
+ "home": {
+  "name": "München Hbf",
+  "id": "at-Railway-Current-Reference-Data-2026_de:09162:100:11:11",
+  "lat": 48.13988,
+  "lon": 11.557491
+ },
+ "days": {
+  "2026-10-24": {
+   "date": "2026-10-24",
+   "weekday": "saturday",
+   "hikes": [
+    {
+     "route": {
+      "id": "albert-link-hutte-sebaldstein-valepp-waitzingeralm-f5a5a3",
+      "name": "Albert-Link-Hütte → Sebaldstein (1733 m) → Valepp, Waitzingeralm",
+      "type": "traverse",
+      "distance_km": 13.0,
+      "ascent_m": 739,
+      "descent_m": 849,
+      "max_ele_m": 1741,
+      "din_min": 347,
+      "run_min": 143,
+      "max_sac": 2,
+      "t3_km": 0.0,
+      "marked_share": 0.99,
+      "unpaved_share": 0.82,
+      "road_km": 0.52,
+      "score": 0.9137,
+      "start": "Albert-Link-Hütte",
+      "start_mode": "bus",
+      "end": "Valepp, Waitzingeralm",
+      "end_mode": "bus",
+      "target": {
+       "name": "Sebaldstein",
+       "kind": "peak",
+       "ele": 1733
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.932,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 20,
+      "gust_max_kmh": 34,
+      "cloud_mean": 45,
+      "temp_min": -2,
+      "temp_max": 7,
+      "freezing_level_min_m": 1390,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T07:22:00+02:00",
+      "arr": "2026-10-24T09:04:00+02:00",
+      "duration_min": 102,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77355)",
+        "from": "München Hbf",
+        "to": "Schliersee",
+        "dep": "07:29",
+        "arr": "08:26",
+        "headsign": "Bayrischzell",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Schliersee",
+        "to": "Spitzingsee, Kirche",
+        "dep": "08:31",
+        "arr": "08:54",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Spitzingsee, Kirche",
+        "to": "Albert-Link-Hütte",
+        "dep": "09:00",
+        "arr": "09:03",
+        "headsign": "Valepp, Johannesbrücke",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T07:22:00+02:00",
+       "arr": "2026-10-24T09:06:00+02:00",
+       "duration_min": 104,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77355)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "07:29",
+         "arr": "08:26",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "08:31",
+         "arr": "08:54",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T07:55:00+02:00",
+       "arr": "2026-10-24T09:32:00+02:00",
+       "duration_min": 97,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77357)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "08:02",
+         "arr": "08:56",
+         "headsign": "Schliersee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "09:01",
+         "arr": "09:20",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:14",
+     "expected_finish": "15:53",
+     "suggested_return": {
+      "dep": "2026-10-24T16:28:00+02:00",
+      "arr": "2026-10-24T18:40:00+02:00",
+      "duration_min": 132,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Valepp, Waitzingeralm",
+        "to": "Spitzingsee, Kirche",
+        "dep": "16:29",
+        "arr": "16:45",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "17:00",
+        "arr": "17:19",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77398)",
+        "from": "Schliersee",
+        "to": "München Hbf",
+        "dep": "17:30",
+        "arr": "18:33",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T17:28:00+02:00",
+      "arr": "2026-10-24T19:38:00+02:00",
+      "duration_min": 130,
+      "transfers": 3,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Valepp, Waitzingeralm",
+        "to": "Spitzingsee, Kirche",
+        "dep": "17:29",
+        "arr": "17:45",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "18:00",
+        "arr": "18:22",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (86786)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "18:30",
+        "arr": "19:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "19:30",
+        "arr": "19:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 94,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 234,
+     "rank_score": 0.6233
+    },
+    {
+     "route": {
+      "id": "enterrottach-mautstelle-bodenschneid-spitzingsattel-a1e219",
+      "name": "Enterrottach, Mautstelle → Bodenschneid (1669 m) → Spitzingsattel",
+      "type": "traverse",
+      "distance_km": 8.6,
+      "ascent_m": 857,
+      "descent_m": 528,
+      "max_ele_m": 1652,
+      "din_min": 300,
+      "run_min": 120,
+      "max_sac": 3,
+      "t3_km": 1.08,
+      "marked_share": 0.91,
+      "unpaved_share": 0.97,
+      "road_km": 0.25,
+      "score": 0.929,
+      "start": "Enterrottach, Mautstelle",
+      "start_mode": "bus",
+      "end": "Spitzingsattel",
+      "end_mode": "bus",
+      "target": {
+       "name": "Bodenschneid",
+       "kind": "peak",
+       "ele": 1669
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.902,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 15,
+      "gust_max_kmh": 42,
+      "cloud_mean": 66,
+      "temp_min": -2,
+      "temp_max": 8,
+      "freezing_level_min_m": 1350,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T07:55:00+02:00",
+      "arr": "2026-10-24T09:45:00+02:00",
+      "duration_min": 110,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (86957)",
+        "from": "München Hbf",
+        "to": "Tegernsee",
+        "dep": "08:02",
+        "arr": "09:09",
+        "headsign": "Tegernsee",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "360",
+        "from": "Tegernsee",
+        "to": "Enterrottach, Mautstelle",
+        "dep": "09:21",
+        "arr": "09:44",
+        "headsign": "Sutten, Moni-Alm",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T08:55:00+02:00",
+       "arr": "2026-10-24T10:45:00+02:00",
+       "duration_min": 110,
+       "transfers": 2,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86961)",
+         "from": "München Hbf",
+         "to": "Tegernsee",
+         "dep": "09:02",
+         "arr": "10:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "359",
+         "from": "Tegernsee",
+         "to": "Rottach-Egern, Rathaus",
+         "dep": "10:12",
+         "arr": "10:22",
+         "headsign": "Tegernsee ü. Bad Wiessee (Ring A)",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "360",
+         "from": "Rottach-Egern, Rathaus",
+         "to": "Enterrottach, Mautstelle",
+         "dep": "10:35",
+         "arr": "10:44",
+         "headsign": "Sutten, Moni-Alm",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T11:56:00+02:00",
+       "arr": "2026-10-24T13:45:00+02:00",
+       "duration_min": 109,
+       "transfers": 3,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "SUBURBAN",
+         "line": "S1",
+         "from": "Hauptbahnhof (U, Tram)",
+         "to": "Donnersbergerbrücke",
+         "dep": "12:02",
+         "arr": "12:04",
+         "headsign": "Flughafen München",
+         "agency": "DB Regio AG S-Bahn München",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86973)",
+         "from": "Donnersbergerbrücke",
+         "to": "Tegernsee",
+         "dep": "12:06",
+         "arr": "13:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "359",
+         "from": "Tegernsee",
+         "to": "Rottach-Egern, Rathaus",
+         "dep": "13:12",
+         "arr": "13:22",
+         "headsign": "Tegernsee ü. Bad Wiessee (Ring A)",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "360",
+         "from": "Rottach-Egern, Rathaus",
+         "to": "Enterrottach, Mautstelle",
+         "dep": "13:35",
+         "arr": "13:44",
+         "headsign": "Sutten, Moni-Alm",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:55",
+     "expected_finish": "15:40",
+     "suggested_return": {
+      "dep": "2026-10-24T16:01:00+02:00",
+      "arr": "2026-10-24T17:38:00+02:00",
+      "duration_min": 97,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsattel",
+        "to": "Schliersee",
+        "dep": "16:02",
+        "arr": "16:19",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77394)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "16:30",
+        "arr": "17:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "17:30",
+        "arr": "17:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T18:01:00+02:00",
+      "arr": "2026-10-24T19:38:00+02:00",
+      "duration_min": 97,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsattel",
+        "to": "Schliersee",
+        "dep": "18:02",
+        "arr": "18:22",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (86786)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "18:30",
+        "arr": "19:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "19:30",
+        "arr": "19:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 141,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 207,
+     "rank_score": 0.6198
+    },
+    {
+     "route": {
+      "id": "albert-link-hutte-rotwandhaus-valepp-waitzingeralm-4a06a8",
+      "name": "Albert-Link-Hütte → Rotwandhaus (1737 m) → Valepp, Waitzingeralm",
+      "type": "traverse",
+      "distance_km": 12.6,
+      "ascent_m": 693,
+      "descent_m": 802,
+      "max_ele_m": 1736,
+      "din_min": 330,
+      "run_min": 137,
+      "max_sac": 2,
+      "t3_km": 0.0,
+      "marked_share": 0.98,
+      "unpaved_share": 0.81,
+      "road_km": 0.52,
+      "score": 0.9107,
+      "start": "Albert-Link-Hütte",
+      "start_mode": "bus",
+      "end": "Valepp, Waitzingeralm",
+      "end_mode": "bus",
+      "target": {
+       "name": "Rotwandhaus",
+       "kind": "hut",
+       "ele": 1737
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.926,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 20,
+      "gust_max_kmh": 40,
+      "cloud_mean": 49,
+      "temp_min": -4,
+      "temp_max": 7,
+      "freezing_level_min_m": 1310,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T07:22:00+02:00",
+      "arr": "2026-10-24T09:04:00+02:00",
+      "duration_min": 102,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77355)",
+        "from": "München Hbf",
+        "to": "Schliersee",
+        "dep": "07:29",
+        "arr": "08:26",
+        "headsign": "Bayrischzell",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Schliersee",
+        "to": "Spitzingsee, Kirche",
+        "dep": "08:31",
+        "arr": "08:54",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Spitzingsee, Kirche",
+        "to": "Albert-Link-Hütte",
+        "dep": "09:00",
+        "arr": "09:03",
+        "headsign": "Valepp, Johannesbrücke",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T07:22:00+02:00",
+       "arr": "2026-10-24T09:06:00+02:00",
+       "duration_min": 104,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77355)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "07:29",
+         "arr": "08:26",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "08:31",
+         "arr": "08:54",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T07:55:00+02:00",
+       "arr": "2026-10-24T09:32:00+02:00",
+       "duration_min": 97,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77357)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "08:02",
+         "arr": "08:56",
+         "headsign": "Schliersee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "09:01",
+         "arr": "09:20",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:14",
+     "expected_finish": "15:33",
+     "suggested_return": {
+      "dep": "2026-10-24T16:28:00+02:00",
+      "arr": "2026-10-24T18:40:00+02:00",
+      "duration_min": 132,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Valepp, Waitzingeralm",
+        "to": "Spitzingsee, Kirche",
+        "dep": "16:29",
+        "arr": "16:45",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "17:00",
+        "arr": "17:19",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77398)",
+        "from": "Schliersee",
+        "to": "München Hbf",
+        "dep": "17:30",
+        "arr": "18:33",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T17:28:00+02:00",
+      "arr": "2026-10-24T19:38:00+02:00",
+      "duration_min": 130,
+      "transfers": 3,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Valepp, Waitzingeralm",
+        "to": "Spitzingsee, Kirche",
+        "dep": "17:29",
+        "arr": "17:45",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "18:00",
+        "arr": "18:22",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (86786)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "18:30",
+        "arr": "19:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "19:30",
+        "arr": "19:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 114,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 234,
+     "rank_score": 0.6169
+    },
+    {
+     "route": {
+      "id": "valepp-waitzingeralm-stumpfling-spitzingsattel-77b0bf",
+      "name": "Valepp, Waitzingeralm → Stümpfling (1506 m) → Spitzingsattel",
+      "type": "traverse",
+      "distance_km": 11.8,
+      "ascent_m": 735,
+      "descent_m": 541,
+      "max_ele_m": 1504,
+      "din_min": 300,
+      "run_min": 134,
+      "max_sac": 3,
+      "t3_km": 0.23,
+      "marked_share": 0.96,
+      "unpaved_share": 0.98,
+      "road_km": 0.08,
+      "score": 0.9175,
+      "start": "Valepp, Waitzingeralm",
+      "start_mode": "bus",
+      "end": "Spitzingsattel",
+      "end_mode": "bus",
+      "target": {
+       "name": "Stümpfling",
+       "kind": "peak",
+       "ele": 1506
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.902,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 15,
+      "gust_max_kmh": 42,
+      "cloud_mean": 66,
+      "temp_min": -1,
+      "temp_max": 7,
+      "freezing_level_min_m": 1350,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T07:22:00+02:00",
+      "arr": "2026-10-24T09:11:00+02:00",
+      "duration_min": 109,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77355)",
+        "from": "München Hbf",
+        "to": "Schliersee",
+        "dep": "07:29",
+        "arr": "08:26",
+        "headsign": "Bayrischzell",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Schliersee",
+        "to": "Spitzingsee, Kirche",
+        "dep": "08:31",
+        "arr": "08:54",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Spitzingsee, Kirche",
+        "to": "Valepp, Waitzingeralm",
+        "dep": "09:00",
+        "arr": "09:10",
+        "headsign": "Valepp, Johannesbrücke",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T08:22:00+02:00",
+       "arr": "2026-10-24T10:11:00+02:00",
+       "duration_min": 109,
+       "transfers": 2,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77359)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "08:29",
+         "arr": "09:26",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "09:31",
+         "arr": "09:50",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "365",
+         "from": "Spitzingsee, Kirche",
+         "to": "Valepp, Waitzingeralm",
+         "dep": "10:00",
+         "arr": "10:10",
+         "headsign": "Valepp, Johannesbrücke",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T09:22:00+02:00",
+       "arr": "2026-10-24T11:11:00+02:00",
+       "duration_min": 109,
+       "transfers": 2,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77363)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "09:29",
+         "arr": "10:26",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "10:31",
+         "arr": "10:50",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "365",
+         "from": "Spitzingsee, Kirche",
+         "to": "Valepp, Waitzingeralm",
+         "dep": "11:00",
+         "arr": "11:10",
+         "headsign": "Valepp, Johannesbrücke",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:21",
+     "expected_finish": "15:06",
+     "suggested_return": {
+      "dep": "2026-10-24T15:31:00+02:00",
+      "arr": "2026-10-24T17:04:00+02:00",
+      "duration_min": 93,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsattel",
+        "to": "Schliersee",
+        "dep": "15:32",
+        "arr": "15:49",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77392)",
+        "from": "Schliersee",
+        "to": "München Hbf",
+        "dep": "16:01",
+        "arr": "16:57",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T18:01:00+02:00",
+      "arr": "2026-10-24T19:38:00+02:00",
+      "duration_min": 97,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsattel",
+        "to": "Schliersee",
+        "dep": "18:02",
+        "arr": "18:22",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (86786)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "18:30",
+        "arr": "19:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "19:30",
+        "arr": "19:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 175,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 202,
+     "rank_score": 0.6091
+    },
+    {
+     "route": {
+      "id": "enterrottach-mautstelle-obere-firstalm-spitzingsattel-022dbb",
+      "name": "Enterrottach, Mautstelle → Obere Firstalm (1369 m) → Spitzingsattel",
+      "type": "traverse",
+      "distance_km": 8.6,
+      "ascent_m": 857,
+      "descent_m": 528,
+      "max_ele_m": 1652,
+      "din_min": 300,
+      "run_min": 120,
+      "max_sac": 3,
+      "t3_km": 1.08,
+      "marked_share": 0.91,
+      "unpaved_share": 0.97,
+      "road_km": 0.25,
+      "score": 0.914,
+      "start": "Enterrottach, Mautstelle",
+      "start_mode": "bus",
+      "end": "Spitzingsattel",
+      "end_mode": "bus",
+      "target": {
+       "name": "Obere Firstalm",
+       "kind": "hut",
+       "ele": 1369
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.902,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 15,
+      "gust_max_kmh": 42,
+      "cloud_mean": 66,
+      "temp_min": -2,
+      "temp_max": 8,
+      "freezing_level_min_m": 1350,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T07:55:00+02:00",
+      "arr": "2026-10-24T09:45:00+02:00",
+      "duration_min": 110,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (86957)",
+        "from": "München Hbf",
+        "to": "Tegernsee",
+        "dep": "08:02",
+        "arr": "09:09",
+        "headsign": "Tegernsee",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "360",
+        "from": "Tegernsee",
+        "to": "Enterrottach, Mautstelle",
+        "dep": "09:21",
+        "arr": "09:44",
+        "headsign": "Sutten, Moni-Alm",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T08:55:00+02:00",
+       "arr": "2026-10-24T10:45:00+02:00",
+       "duration_min": 110,
+       "transfers": 2,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86961)",
+         "from": "München Hbf",
+         "to": "Tegernsee",
+         "dep": "09:02",
+         "arr": "10:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "359",
+         "from": "Tegernsee",
+         "to": "Rottach-Egern, Rathaus",
+         "dep": "10:12",
+         "arr": "10:22",
+         "headsign": "Tegernsee ü. Bad Wiessee (Ring A)",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "360",
+         "from": "Rottach-Egern, Rathaus",
+         "to": "Enterrottach, Mautstelle",
+         "dep": "10:35",
+         "arr": "10:44",
+         "headsign": "Sutten, Moni-Alm",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T11:56:00+02:00",
+       "arr": "2026-10-24T13:45:00+02:00",
+       "duration_min": 109,
+       "transfers": 3,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "SUBURBAN",
+         "line": "S1",
+         "from": "Hauptbahnhof (U, Tram)",
+         "to": "Donnersbergerbrücke",
+         "dep": "12:02",
+         "arr": "12:04",
+         "headsign": "Flughafen München",
+         "agency": "DB Regio AG S-Bahn München",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86973)",
+         "from": "Donnersbergerbrücke",
+         "to": "Tegernsee",
+         "dep": "12:06",
+         "arr": "13:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "359",
+         "from": "Tegernsee",
+         "to": "Rottach-Egern, Rathaus",
+         "dep": "13:12",
+         "arr": "13:22",
+         "headsign": "Tegernsee ü. Bad Wiessee (Ring A)",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "360",
+         "from": "Rottach-Egern, Rathaus",
+         "to": "Enterrottach, Mautstelle",
+         "dep": "13:35",
+         "arr": "13:44",
+         "headsign": "Sutten, Moni-Alm",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:55",
+     "expected_finish": "15:40",
+     "suggested_return": {
+      "dep": "2026-10-24T16:01:00+02:00",
+      "arr": "2026-10-24T17:38:00+02:00",
+      "duration_min": 97,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsattel",
+        "to": "Schliersee",
+        "dep": "16:02",
+        "arr": "16:19",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77394)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "16:30",
+        "arr": "17:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "17:30",
+        "arr": "17:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T18:01:00+02:00",
+      "arr": "2026-10-24T19:38:00+02:00",
+      "duration_min": 97,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsattel",
+        "to": "Schliersee",
+        "dep": "18:02",
+        "arr": "18:22",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (86786)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "18:30",
+        "arr": "19:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "19:30",
+        "arr": "19:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 141,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 207,
+     "rank_score": 0.6058
+    },
+    {
+     "route": {
+      "id": "kreuth-siebenhutten-graseckwand-kreuth-klamm-3617e5",
+      "name": "Kreuth, Siebenhütten → Graseckwand (1400 m) → Kreuth, Klamm",
+      "type": "traverse",
+      "distance_km": 9.9,
+      "ascent_m": 641,
+      "descent_m": 620,
+      "max_ele_m": 1378,
+      "din_min": 277,
+      "run_min": 114,
+      "max_sac": 2,
+      "t3_km": 0.0,
+      "marked_share": 0.91,
+      "unpaved_share": 0.99,
+      "road_km": 0.16,
+      "score": 0.8806,
+      "start": "Kreuth, Siebenhütten",
+      "start_mode": "bus",
+      "end": "Kreuth, Klamm",
+      "end_mode": "bus",
+      "target": {
+       "name": "Graseckwand",
+       "kind": "peak",
+       "ele": 1400
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.931,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 18,
+      "gust_max_kmh": 30,
+      "cloud_mean": 46,
+      "temp_min": -1,
+      "temp_max": 8,
+      "freezing_level_min_m": 1340,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T06:56:00+02:00",
+      "arr": "2026-10-24T09:06:00+02:00",
+      "duration_min": 130,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "SUBURBAN",
+        "line": "S1",
+        "from": "Hauptbahnhof (U, Tram)",
+        "to": "Donnersbergerbrücke",
+        "dep": "07:02",
+        "arr": "07:04",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (86953)",
+        "from": "Donnersbergerbrücke",
+        "to": "Tegernsee",
+        "dep": "07:06",
+        "arr": "08:09",
+        "headsign": "Tegernsee",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Tegernsee",
+        "to": "Wildbad Kreuth",
+        "dep": "08:17",
+        "arr": "08:52",
+        "headsign": "Wildbad Kreuth",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T06:55:00+02:00",
+       "arr": "2026-10-24T09:06:00+02:00",
+       "duration_min": 131,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86953)",
+         "from": "München Hbf",
+         "to": "Tegernsee",
+         "dep": "07:02",
+         "arr": "08:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "356",
+         "from": "Tegernsee",
+         "to": "Wildbad Kreuth",
+         "dep": "08:17",
+         "arr": "08:52",
+         "headsign": "Wildbad Kreuth",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T07:55:00+02:00",
+       "arr": "2026-10-24T09:55:00+02:00",
+       "duration_min": 120,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86957)",
+         "from": "München Hbf",
+         "to": "Tegernsee",
+         "dep": "08:02",
+         "arr": "09:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "356",
+         "from": "Tegernsee",
+         "to": "Kreuth, Siebenhütten",
+         "dep": "09:17",
+         "arr": "09:54",
+         "headsign": "Kreuth, Klamm",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:16",
+     "expected_finish": "14:34",
+     "suggested_return": {
+      "dep": "2026-10-24T15:56:00+02:00",
+      "arr": "2026-10-24T18:04:00+02:00",
+      "duration_min": 128,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Kreuth, Klamm",
+        "to": "Tegernsee",
+        "dep": "15:57",
+        "arr": "16:37",
+        "headsign": "Tegernsee",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (86996)",
+        "from": "Tegernsee",
+        "to": "München Hbf",
+        "dep": "16:52",
+        "arr": "17:57",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T18:13:00+02:00",
+      "arr": "2026-10-24T20:02:00+02:00",
+      "duration_min": 109,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Kreuth, Klamm",
+        "to": "Tegernsee",
+        "dep": "18:14",
+        "arr": "18:41",
+        "headsign": "Tegernsee",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (87028)",
+        "from": "Tegernsee",
+        "to": "München Hbf",
+        "dep": "18:52",
+        "arr": "19:55",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 218,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 258,
+     "rank_score": 0.5911
+    },
+    {
+     "route": {
+      "id": "valepp-waitzingeralm-auerspitz-ursprungtal-stockerparkplatz-f27b22",
+      "name": "Valepp, Waitzingeralm → Auerspitz (1811 m) → Ursprungtal/ Stockerparkplatz",
+      "type": "traverse",
+      "distance_km": 14.0,
+      "ascent_m": 892,
+      "descent_m": 995,
+      "max_ele_m": 1803,
+      "din_min": 403,
+      "run_min": 160,
+      "max_sac": 2,
+      "t3_km": 0.0,
+      "marked_share": 0.98,
+      "unpaved_share": 0.99,
+      "road_km": 0.12,
+      "score": 0.871,
+      "start": "Valepp, Waitzingeralm",
+      "start_mode": "bus",
+      "end": "Ursprungtal/ Stockerparkplatz",
+      "end_mode": "bus",
+      "target": {
+       "name": "Auerspitz",
+       "kind": "peak",
+       "ele": 1811
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.939,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 20,
+      "gust_max_kmh": 41,
+      "cloud_mean": 41,
+      "temp_min": -3,
+      "temp_max": 8,
+      "freezing_level_min_m": 1390,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T07:22:00+02:00",
+      "arr": "2026-10-24T09:11:00+02:00",
+      "duration_min": 109,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77355)",
+        "from": "München Hbf",
+        "to": "Schliersee",
+        "dep": "07:29",
+        "arr": "08:26",
+        "headsign": "Bayrischzell",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Schliersee",
+        "to": "Spitzingsee, Kirche",
+        "dep": "08:31",
+        "arr": "08:54",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Spitzingsee, Kirche",
+        "to": "Valepp, Waitzingeralm",
+        "dep": "09:00",
+        "arr": "09:10",
+        "headsign": "Valepp, Johannesbrücke",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T08:22:00+02:00",
+       "arr": "2026-10-24T10:11:00+02:00",
+       "duration_min": 109,
+       "transfers": 2,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77359)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "08:29",
+         "arr": "09:26",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "09:31",
+         "arr": "09:50",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "365",
+         "from": "Spitzingsee, Kirche",
+         "to": "Valepp, Waitzingeralm",
+         "dep": "10:00",
+         "arr": "10:10",
+         "headsign": "Valepp, Johannesbrücke",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T09:22:00+02:00",
+       "arr": "2026-10-24T11:11:00+02:00",
+       "duration_min": 109,
+       "transfers": 2,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77363)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "09:29",
+         "arr": "10:26",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "10:31",
+         "arr": "10:50",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "365",
+         "from": "Spitzingsee, Kirche",
+         "to": "Valepp, Waitzingeralm",
+         "dep": "11:00",
+         "arr": "11:10",
+         "headsign": "Valepp, Johannesbrücke",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:21",
+     "expected_finish": "17:04",
+     "suggested_return": {
+      "dep": "2026-10-24T18:34:00+02:00",
+      "arr": "2026-10-24T20:33:00+02:00",
+      "duration_min": 119,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "396",
+        "from": "Ursprungtal Stockerparkplatz",
+        "to": "Ostbahnhof Friedenstraße",
+        "dep": "18:35",
+        "arr": "20:10",
+        "headsign": "München Ostbf./Friedenstraße (S) (U)",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S2",
+        "from": "Ostbahnhof",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "20:19",
+        "arr": "20:27",
+        "headsign": "Petershausen",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T18:34:00+02:00",
+      "arr": "2026-10-24T20:33:00+02:00",
+      "duration_min": 119,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "396",
+        "from": "Ursprungtal Stockerparkplatz",
+        "to": "Ostbahnhof Friedenstraße",
+        "dep": "18:35",
+        "arr": "20:10",
+        "headsign": "München Ostbf./Friedenstraße (S) (U)",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S2",
+        "from": "Ostbahnhof",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "20:19",
+        "arr": "20:27",
+        "headsign": "Petershausen",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 89,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 228,
+     "rank_score": 0.5865
+    },
+    {
+     "route": {
+      "id": "kreuth-klamm-schildenstein-kreuth-siebenhutten-00774c",
+      "name": "Kreuth, Klamm → Schildenstein (1613 m) → Kreuth, Siebenhütten",
+      "type": "traverse",
+      "distance_km": 12.1,
+      "ascent_m": 826,
+      "descent_m": 851,
+      "max_ele_m": 1591,
+      "din_min": 358,
+      "run_min": 142,
+      "max_sac": 3,
+      "t3_km": 0.27,
+      "marked_share": 0.88,
+      "unpaved_share": 0.99,
+      "road_km": 0.16,
+      "score": 0.8726,
+      "start": "Kreuth, Klamm",
+      "start_mode": "bus",
+      "end": "Kreuth, Siebenhütten",
+      "end_mode": "bus",
+      "target": {
+       "name": "Schildenstein",
+       "kind": "peak",
+       "ele": 1613
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.935,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 18,
+      "gust_max_kmh": 38,
+      "cloud_mean": 43,
+      "temp_min": -1,
+      "temp_max": 8,
+      "freezing_level_min_m": 1370,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T07:55:00+02:00",
+      "arr": "2026-10-24T09:56:00+02:00",
+      "duration_min": 121,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (86957)",
+        "from": "München Hbf",
+        "to": "Tegernsee",
+        "dep": "08:02",
+        "arr": "09:09",
+        "headsign": "Tegernsee",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Tegernsee",
+        "to": "Kreuth, Klamm",
+        "dep": "09:17",
+        "arr": "09:55",
+        "headsign": "Kreuth, Klamm",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T08:55:00+02:00",
+       "arr": "2026-10-24T10:56:00+02:00",
+       "duration_min": 121,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86961)",
+         "from": "München Hbf",
+         "to": "Tegernsee",
+         "dep": "09:02",
+         "arr": "10:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "356",
+         "from": "Tegernsee",
+         "to": "Kreuth, Klamm",
+         "dep": "10:17",
+         "arr": "10:55",
+         "headsign": "Kreuth, Klamm",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T13:56:00+02:00",
+       "arr": "2026-10-24T15:56:00+02:00",
+       "duration_min": 120,
+       "transfers": 2,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "SUBURBAN",
+         "line": "S1",
+         "from": "Hauptbahnhof (U, Tram)",
+         "to": "Donnersbergerbrücke",
+         "dep": "14:02",
+         "arr": "14:04",
+         "headsign": "Flughafen München",
+         "agency": "DB Regio AG S-Bahn München",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86977)",
+         "from": "Donnersbergerbrücke",
+         "to": "Tegernsee",
+         "dep": "14:06",
+         "arr": "15:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "356",
+         "from": "Tegernsee",
+         "to": "Kreuth, Klamm",
+         "dep": "15:17",
+         "arr": "15:55",
+         "headsign": "Kreuth, Klamm",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "10:06",
+     "expected_finish": "16:57",
+     "suggested_return": {
+      "dep": "2026-10-24T18:14:00+02:00",
+      "arr": "2026-10-24T20:02:00+02:00",
+      "duration_min": 108,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Kreuth, Siebenhütten",
+        "to": "Tegernsee",
+        "dep": "18:15",
+        "arr": "18:41",
+        "headsign": "Tegernsee",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (87028)",
+        "from": "Tegernsee",
+        "to": "München Hbf",
+        "dep": "18:52",
+        "arr": "19:55",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T18:33:00+02:00",
+      "arr": "2026-10-24T20:39:00+02:00",
+      "duration_min": 126,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Wildbad Kreuth",
+        "to": "Tegernsee",
+        "dep": "18:47",
+        "arr": "19:10",
+        "headsign": "Tegernsee",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (87030)",
+        "from": "Tegernsee",
+        "to": "München Hbf",
+        "dep": "19:22",
+        "arr": "20:32",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 95,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 229,
+     "rank_score": 0.5857
+    }
+   ],
+   "runs": [
+    {
+     "route": {
+      "id": "albert-link-hutte-rotwandhaus-valepp-waitzingeralm-4a06a8",
+      "name": "Albert-Link-Hütte → Rotwandhaus (1737 m) → Valepp, Waitzingeralm",
+      "type": "traverse",
+      "distance_km": 12.6,
+      "ascent_m": 693,
+      "descent_m": 802,
+      "max_ele_m": 1736,
+      "din_min": 330,
+      "run_min": 137,
+      "max_sac": 2,
+      "t3_km": 0.0,
+      "marked_share": 0.98,
+      "unpaved_share": 0.81,
+      "road_km": 0.52,
+      "score": 0.9107,
+      "start": "Albert-Link-Hütte",
+      "start_mode": "bus",
+      "end": "Valepp, Waitzingeralm",
+      "end_mode": "bus",
+      "target": {
+       "name": "Rotwandhaus",
+       "kind": "hut",
+       "ele": 1737
+      }
+     },
+     "kind": "run",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.917,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 20,
+      "gust_max_kmh": 23,
+      "cloud_mean": 55,
+      "temp_min": -4,
+      "temp_max": 5,
+      "freezing_level_min_m": 1310,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T07:22:00+02:00",
+      "arr": "2026-10-24T09:04:00+02:00",
+      "duration_min": 102,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77355)",
+        "from": "München Hbf",
+        "to": "Schliersee",
+        "dep": "07:29",
+        "arr": "08:26",
+        "headsign": "Bayrischzell",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Schliersee",
+        "to": "Spitzingsee, Kirche",
+        "dep": "08:31",
+        "arr": "08:54",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Spitzingsee, Kirche",
+        "to": "Albert-Link-Hütte",
+        "dep": "09:00",
+        "arr": "09:03",
+        "headsign": "Valepp, Johannesbrücke",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T07:22:00+02:00",
+       "arr": "2026-10-24T09:06:00+02:00",
+       "duration_min": 104,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77355)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "07:29",
+         "arr": "08:26",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "08:31",
+         "arr": "08:54",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T07:55:00+02:00",
+       "arr": "2026-10-24T09:32:00+02:00",
+       "duration_min": 97,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77357)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "08:02",
+         "arr": "08:56",
+         "headsign": "Schliersee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "09:01",
+         "arr": "09:20",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:14",
+     "expected_finish": "11:44",
+     "suggested_return": {
+      "dep": "2026-10-24T12:28:00+02:00",
+      "arr": "2026-10-24T14:39:00+02:00",
+      "duration_min": 131,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Valepp, Waitzingeralm",
+        "to": "Spitzingsee, Kirche",
+        "dep": "12:29",
+        "arr": "12:45",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "13:00",
+        "arr": "13:19",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77384)",
+        "from": "Schliersee",
+        "to": "München Hbf",
+        "dep": "13:30",
+        "arr": "14:32",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T17:28:00+02:00",
+      "arr": "2026-10-24T19:38:00+02:00",
+      "duration_min": 130,
+      "transfers": 3,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Valepp, Waitzingeralm",
+        "to": "Spitzingsee, Kirche",
+        "dep": "17:29",
+        "arr": "17:45",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "18:00",
+        "arr": "18:22",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (86786)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "18:30",
+        "arr": "19:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "19:30",
+        "arr": "19:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 343,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 233,
+     "rank_score": 0.6116
+    },
+    {
+     "route": {
+      "id": "albert-link-hutte-sebaldstein-valepp-waitzingeralm-f5a5a3",
+      "name": "Albert-Link-Hütte → Sebaldstein (1733 m) → Valepp, Waitzingeralm",
+      "type": "traverse",
+      "distance_km": 13.0,
+      "ascent_m": 739,
+      "descent_m": 849,
+      "max_ele_m": 1741,
+      "din_min": 347,
+      "run_min": 143,
+      "max_sac": 2,
+      "t3_km": 0.0,
+      "marked_share": 0.99,
+      "unpaved_share": 0.82,
+      "road_km": 0.52,
+      "score": 0.9137,
+      "start": "Albert-Link-Hütte",
+      "start_mode": "bus",
+      "end": "Valepp, Waitzingeralm",
+      "end_mode": "bus",
+      "target": {
+       "name": "Sebaldstein",
+       "kind": "peak",
+       "ele": 1733
+      }
+     },
+     "kind": "run",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.904,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 20,
+      "gust_max_kmh": 19,
+      "cloud_mean": 64,
+      "temp_min": -2,
+      "temp_max": 5,
+      "freezing_level_min_m": 1390,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T07:22:00+02:00",
+      "arr": "2026-10-24T09:04:00+02:00",
+      "duration_min": 102,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77355)",
+        "from": "München Hbf",
+        "to": "Schliersee",
+        "dep": "07:29",
+        "arr": "08:26",
+        "headsign": "Bayrischzell",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Schliersee",
+        "to": "Spitzingsee, Kirche",
+        "dep": "08:31",
+        "arr": "08:54",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Spitzingsee, Kirche",
+        "to": "Albert-Link-Hütte",
+        "dep": "09:00",
+        "arr": "09:03",
+        "headsign": "Valepp, Johannesbrücke",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T07:22:00+02:00",
+       "arr": "2026-10-24T09:06:00+02:00",
+       "duration_min": 104,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77355)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "07:29",
+         "arr": "08:26",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "08:31",
+         "arr": "08:54",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T07:55:00+02:00",
+       "arr": "2026-10-24T09:32:00+02:00",
+       "duration_min": 97,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77357)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "08:02",
+         "arr": "08:56",
+         "headsign": "Schliersee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "09:01",
+         "arr": "09:20",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:14",
+     "expected_finish": "11:51",
+     "suggested_return": {
+      "dep": "2026-10-24T12:28:00+02:00",
+      "arr": "2026-10-24T14:39:00+02:00",
+      "duration_min": 131,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Valepp, Waitzingeralm",
+        "to": "Spitzingsee, Kirche",
+        "dep": "12:29",
+        "arr": "12:45",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "13:00",
+        "arr": "13:19",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77384)",
+        "from": "Schliersee",
+        "to": "München Hbf",
+        "dep": "13:30",
+        "arr": "14:32",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T17:28:00+02:00",
+      "arr": "2026-10-24T19:38:00+02:00",
+      "duration_min": 130,
+      "transfers": 3,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Valepp, Waitzingeralm",
+        "to": "Spitzingsee, Kirche",
+        "dep": "17:29",
+        "arr": "17:45",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "18:00",
+        "arr": "18:22",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (86786)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "18:30",
+        "arr": "19:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "19:30",
+        "arr": "19:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 336,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 233,
+     "rank_score": 0.6067
+    },
+    {
+     "route": {
+      "id": "jachenau-post-staffel-backer-gde-jachenau-8f9587",
+      "name": "Jachenau, Post → Staffel (1532 m) → Bäcker (Gde. Jachenau)",
+      "type": "traverse",
+      "distance_km": 10.6,
+      "ascent_m": 771,
+      "descent_m": 803,
+      "max_ele_m": 1522,
+      "din_min": 330,
+      "run_min": 128,
+      "max_sac": 2,
+      "t3_km": 0.0,
+      "marked_share": 0.97,
+      "unpaved_share": 0.88,
+      "road_km": 1.01,
+      "score": 0.8757,
+      "start": "Jachenau, Post",
+      "start_mode": "bus",
+      "end": "Bäcker (Gde. Jachenau)",
+      "end_mode": "bus",
+      "target": {
+       "name": "Staffel",
+       "kind": "peak",
+       "ele": 1532
+      }
+     },
+     "kind": "run",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.928,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 10,
+      "gust_max_kmh": 31,
+      "cloud_mean": 48,
+      "temp_min": 1,
+      "temp_max": 8,
+      "freezing_level_min_m": 1380,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T08:55:00+02:00",
+      "arr": "2026-10-24T10:47:00+02:00",
+      "duration_min": 112,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB56 (86861)",
+        "from": "München Hbf",
+        "to": "Lenggries",
+        "dep": "09:02",
+        "arr": "10:11",
+        "headsign": "Lenggries",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "395",
+        "from": "Lenggries",
+        "to": "Jachenau, Post",
+        "dep": "10:17",
+        "arr": "10:46",
+        "headsign": "Jachenau, Post",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T13:56:00+02:00",
+       "arr": "2026-10-24T16:00:00+02:00",
+       "duration_min": 124,
+       "transfers": 2,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "SUBURBAN",
+         "line": "S1",
+         "from": "Hauptbahnhof (U, Tram)",
+         "to": "Donnersbergerbrücke",
+         "dep": "14:02",
+         "arr": "14:04",
+         "headsign": "Flughafen München",
+         "agency": "DB Regio AG S-Bahn München",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB56 (86877)",
+         "from": "Donnersbergerbrücke",
+         "to": "Lenggries",
+         "dep": "14:06",
+         "arr": "15:11",
+         "headsign": "Lenggries",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "395",
+         "from": "Lenggries",
+         "to": "Jachenau, Post",
+         "dep": "15:35",
+         "arr": "15:59",
+         "headsign": "Jachenau, Mühle",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T13:55:00+02:00",
+       "arr": "2026-10-24T16:00:00+02:00",
+       "duration_min": 125,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB56 (86877)",
+         "from": "München Hbf",
+         "to": "Lenggries",
+         "dep": "14:02",
+         "arr": "15:11",
+         "headsign": "Lenggries",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "395",
+         "from": "Lenggries",
+         "to": "Jachenau, Post",
+         "dep": "15:35",
+         "arr": "15:59",
+         "headsign": "Jachenau, Mühle",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "10:57",
+     "expected_finish": "13:17",
+     "suggested_return": {
+      "dep": "2026-10-24T16:12:00+02:00",
+      "arr": "2026-10-24T18:04:00+02:00",
+      "duration_min": 112,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "395",
+        "from": "Bäcker (Gem. Jachenau)",
+        "to": "Lenggries",
+        "dep": "16:13",
+        "arr": "16:40",
+        "headsign": "Lenggries",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB56 (86896)",
+        "from": "Lenggries",
+        "to": "München Hbf",
+        "dep": "16:47",
+        "arr": "17:57",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T16:12:00+02:00",
+      "arr": "2026-10-24T18:04:00+02:00",
+      "duration_min": 112,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "395",
+        "from": "Bäcker (Gem. Jachenau)",
+        "to": "Lenggries",
+        "dep": "16:13",
+        "arr": "16:40",
+        "headsign": "Lenggries",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB56 (86896)",
+        "from": "Lenggries",
+        "to": "München Hbf",
+        "dep": "16:47",
+        "arr": "17:57",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 174,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 224,
+     "rank_score": 0.5847
+    }
+   ],
+   "fallbacks": [
+    {
+     "route": {
+      "id": "bayrischzell-brunnerkopfl-grenzgasthof-backeralm-bayrischzell-1a90e1",
+      "name": "Bayrischzell → Brunnerköpfl (1107 m) → Grenzgasthof Bäckeralm,Bayrischzell",
+      "type": "traverse",
+      "distance_km": 13.9,
+      "ascent_m": 388,
+      "descent_m": 344,
+      "max_ele_m": 1090,
+      "din_min": 268,
+      "run_min": 124,
+      "max_sac": 1,
+      "t3_km": 0.0,
+      "marked_share": 0.57,
+      "unpaved_share": 0.91,
+      "road_km": 0.67,
+      "score": 0.7598,
+      "start": "Bayrischzell",
+      "start_mode": "rail",
+      "end": "Grenzgasthof Bäckeralm,Bayrischzell",
+      "end_mode": "bus",
+      "target": {
+       "name": "Brunnerköpfl",
+       "kind": "peak",
+       "ele": 1107
+      }
+     },
+     "kind": "fallback",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.946,
+      "flags": [],
+      "storm": false,
+      "precip_mm": 0.0,
+      "precip_prob_max": 18,
+      "gust_max_kmh": 25,
+      "cloud_mean": 36,
+      "temp_min": 2,
+      "temp_max": 8,
+      "freezing_level_min_m": 1390,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-24T07:22:00+02:00",
+      "arr": "2026-10-24T08:57:00+02:00",
+      "duration_min": 95,
+      "transfers": 0,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77355)",
+        "from": "München Hbf",
+        "to": "Bayrischzell",
+        "dep": "07:29",
+        "arr": "08:56",
+        "headsign": "Bayrischzell",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-24T08:22:00+02:00",
+       "arr": "2026-10-24T09:57:00+02:00",
+       "duration_min": 95,
+       "transfers": 0,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77359)",
+         "from": "München Hbf",
+         "to": "Bayrischzell",
+         "dep": "08:29",
+         "arr": "09:56",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-24T08:30:00+02:00",
+       "arr": "2026-10-24T10:25:00+02:00",
+       "duration_min": 115,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "SUBWAY",
+         "line": "U5",
+         "from": "Hauptbahnhof (U, Tram)",
+         "to": "Ostbahnhof",
+         "dep": "08:34",
+         "arr": "08:41",
+         "headsign": "Neuperlach Zentrum",
+         "agency": "U-Bahn München",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "396",
+         "from": "Ostbahnhof Friedenstraße",
+         "to": "B'zell, Alpenstr.70 (Sportalm)",
+         "dep": "08:45",
+         "arr": "10:15",
+         "headsign": "Hinterthiersee",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:07",
+     "expected_finish": "14:15",
+     "suggested_return": {
+      "dep": "2026-10-24T16:28:00+02:00",
+      "arr": "2026-10-24T18:33:00+02:00",
+      "duration_min": 125,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "396",
+        "from": "Bayrischz., Grenzgh. Bäckeralm",
+        "to": "Ostbahnhof Friedenstraße",
+        "dep": "16:29",
+        "arr": "18:10",
+        "headsign": "München Ostbf./Friedenstraße (S) (U)",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S2",
+        "from": "Ostbahnhof",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "18:19",
+        "arr": "18:27",
+        "headsign": "Petershausen",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-24T18:28:00+02:00",
+      "arr": "2026-10-24T20:33:00+02:00",
+      "duration_min": 125,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "396",
+        "from": "Bayrischz., Grenzgh. Bäckeralm",
+        "to": "Ostbahnhof Friedenstraße",
+        "dep": "18:29",
+        "arr": "20:10",
+        "headsign": "München Ostbf./Friedenstraße (S) (U)",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S2",
+        "from": "Ostbahnhof",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "20:19",
+        "arr": "20:27",
+        "headsign": "Petershausen",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 252,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 220,
+     "rank_score": 0.4831
+    }
+   ]
+  },
+  "2026-10-25": {
+   "date": "2026-10-25",
+   "weekday": "sunday",
+   "hikes": [
+    {
+     "route": {
+      "id": "spitzingsattel-rokopf-albert-link-hutte-bc1248",
+      "name": "Spitzingsattel → Roßkopf (1579 m) → Albert-Link-Hütte",
+      "type": "traverse",
+      "distance_km": 10.5,
+      "ascent_m": 711,
+      "descent_m": 800,
+      "max_ele_m": 1571,
+      "din_min": 317,
+      "run_min": 123,
+      "max_sac": 3,
+      "t3_km": 0.23,
+      "marked_share": 0.8,
+      "unpaved_share": 0.96,
+      "road_km": 0.12,
+      "score": 0.8997,
+      "start": "Spitzingsattel",
+      "start_mode": "bus",
+      "end": "Albert-Link-Hütte",
+      "end_mode": "bus",
+      "target": {
+       "name": "Roßkopf",
+       "kind": "peak",
+       "ele": 1579
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.35,
+      "flags": [
+       "9.1 mm rain"
+      ],
+      "storm": false,
+      "precip_mm": 9.1,
+      "precip_prob_max": 100,
+      "gust_max_kmh": 57,
+      "cloud_mean": 100,
+      "temp_min": 2,
+      "temp_max": 10,
+      "freezing_level_min_m": 2910,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-25T07:22:00+01:00",
+      "arr": "2026-10-25T08:50:00+01:00",
+      "duration_min": 88,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77355)",
+        "from": "München Hbf",
+        "to": "Schliersee",
+        "dep": "07:29",
+        "arr": "08:26",
+        "headsign": "Bayrischzell",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Schliersee",
+        "to": "Spitzingsattel",
+        "dep": "08:31",
+        "arr": "08:49",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-25T07:55:00+01:00",
+       "arr": "2026-10-25T09:16:00+01:00",
+       "duration_min": 81,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77357)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "08:02",
+         "arr": "08:56",
+         "headsign": "Schliersee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsattel",
+         "dep": "09:01",
+         "arr": "09:15",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-25T08:22:00+01:00",
+       "arr": "2026-10-25T09:46:00+01:00",
+       "duration_min": 84,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77359)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "08:29",
+         "arr": "09:26",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsattel",
+         "dep": "09:31",
+         "arr": "09:45",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:00",
+     "expected_finish": "15:04",
+     "suggested_return": {
+      "dep": "2026-10-25T15:48:00+01:00",
+      "arr": "2026-10-25T17:38:00+01:00",
+      "duration_min": 110,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "16:00",
+        "arr": "16:19",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77394)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "16:30",
+        "arr": "17:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "17:30",
+        "arr": "17:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-25T17:48:00+01:00",
+      "arr": "2026-10-25T19:38:00+01:00",
+      "duration_min": 110,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "18:00",
+        "arr": "18:22",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (86786)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "18:30",
+        "arr": "19:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "19:30",
+        "arr": "19:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 163,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 198,
+     "rank_score": 0.2696
+    },
+    {
+     "route": {
+      "id": "albert-link-hutte-sebaldstein-valepp-waitzingeralm-f5a5a3",
+      "name": "Albert-Link-Hütte → Sebaldstein (1733 m) → Valepp, Waitzingeralm",
+      "type": "traverse",
+      "distance_km": 13.0,
+      "ascent_m": 739,
+      "descent_m": 849,
+      "max_ele_m": 1741,
+      "din_min": 347,
+      "run_min": 143,
+      "max_sac": 2,
+      "t3_km": 0.0,
+      "marked_share": 0.99,
+      "unpaved_share": 0.82,
+      "road_km": 0.52,
+      "score": 0.9137,
+      "start": "Albert-Link-Hütte",
+      "start_mode": "bus",
+      "end": "Valepp, Waitzingeralm",
+      "end_mode": "bus",
+      "target": {
+       "name": "Sebaldstein",
+       "kind": "peak",
+       "ele": 1733
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.329,
+      "flags": [
+       "8.6 mm rain",
+       "gusts 63 km/h at the top"
+      ],
+      "storm": false,
+      "precip_mm": 8.6,
+      "precip_prob_max": 100,
+      "gust_max_kmh": 63,
+      "cloud_mean": 99,
+      "temp_min": 1,
+      "temp_max": 10,
+      "freezing_level_min_m": 2910,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-25T07:22:00+01:00",
+      "arr": "2026-10-25T09:04:00+01:00",
+      "duration_min": 102,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77355)",
+        "from": "München Hbf",
+        "to": "Schliersee",
+        "dep": "07:29",
+        "arr": "08:26",
+        "headsign": "Bayrischzell",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Schliersee",
+        "to": "Spitzingsee, Kirche",
+        "dep": "08:31",
+        "arr": "08:54",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Spitzingsee, Kirche",
+        "to": "Albert-Link-Hütte",
+        "dep": "09:00",
+        "arr": "09:03",
+        "headsign": "Valepp, Johannesbrücke",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-25T07:22:00+01:00",
+       "arr": "2026-10-25T09:06:00+01:00",
+       "duration_min": 104,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77355)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "07:29",
+         "arr": "08:26",
+         "headsign": "Bayrischzell",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "08:31",
+         "arr": "08:54",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-25T07:55:00+01:00",
+       "arr": "2026-10-25T09:32:00+01:00",
+       "duration_min": 97,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB55 (77357)",
+         "from": "München Hbf",
+         "to": "Schliersee",
+         "dep": "08:02",
+         "arr": "08:56",
+         "headsign": "Schliersee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "362",
+         "from": "Schliersee",
+         "to": "Spitzingsee, Kirche",
+         "dep": "09:01",
+         "arr": "09:20",
+         "headsign": "Spitzingsee, Kirche",
+         "agency": "MVV-Regionalbus",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:14",
+     "expected_finish": "15:53",
+     "suggested_return": {
+      "dep": "2026-10-25T16:28:00+01:00",
+      "arr": "2026-10-25T18:40:00+01:00",
+      "duration_min": 132,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Valepp, Waitzingeralm",
+        "to": "Spitzingsee, Kirche",
+        "dep": "16:29",
+        "arr": "16:45",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "17:00",
+        "arr": "17:19",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (77398)",
+        "from": "Schliersee",
+        "to": "München Hbf",
+        "dep": "17:30",
+        "arr": "18:33",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-25T17:28:00+01:00",
+      "arr": "2026-10-25T19:38:00+01:00",
+      "duration_min": 130,
+      "transfers": 3,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "365",
+        "from": "Valepp, Waitzingeralm",
+        "to": "Spitzingsee, Kirche",
+        "dep": "17:29",
+        "arr": "17:45",
+        "headsign": "Spitzingsee, Kirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "362",
+        "from": "Spitzingsee, Kirche",
+        "to": "Schliersee",
+        "dep": "18:00",
+        "arr": "18:22",
+        "headsign": "Schliersee Bahnhof",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB55 (86786)",
+        "from": "Schliersee",
+        "to": "Donnersbergerbrücke",
+        "dep": "18:30",
+        "arr": "19:28",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "SUBURBAN",
+        "line": "S8",
+        "from": "Donnersbergerbrücke",
+        "to": "Hauptbahnhof (U, Tram)",
+        "dep": "19:30",
+        "arr": "19:32",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 94,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 234,
+     "rank_score": 0.2652
+    },
+    {
+     "route": {
+      "id": "kreuth-siebenhutten-graseckwand-kreuth-klamm-3617e5",
+      "name": "Kreuth, Siebenhütten → Graseckwand (1400 m) → Kreuth, Klamm",
+      "type": "traverse",
+      "distance_km": 9.9,
+      "ascent_m": 641,
+      "descent_m": 620,
+      "max_ele_m": 1378,
+      "din_min": 277,
+      "run_min": 114,
+      "max_sac": 2,
+      "t3_km": 0.0,
+      "marked_share": 0.91,
+      "unpaved_share": 0.99,
+      "road_km": 0.16,
+      "score": 0.8806,
+      "start": "Kreuth, Siebenhütten",
+      "start_mode": "bus",
+      "end": "Kreuth, Klamm",
+      "end_mode": "bus",
+      "target": {
+       "name": "Graseckwand",
+       "kind": "peak",
+       "ele": 1400
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.35,
+      "flags": [
+       "7.1 mm rain"
+      ],
+      "storm": false,
+      "precip_mm": 7.1,
+      "precip_prob_max": 100,
+      "gust_max_kmh": 32,
+      "cloud_mean": 100,
+      "temp_min": 3,
+      "temp_max": 11,
+      "freezing_level_min_m": 2930,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-25T06:56:00+01:00",
+      "arr": "2026-10-25T09:06:00+01:00",
+      "duration_min": 130,
+      "transfers": 2,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "SUBURBAN",
+        "line": "S1",
+        "from": "Hauptbahnhof (U, Tram)",
+        "to": "Donnersbergerbrücke",
+        "dep": "07:02",
+        "arr": "07:04",
+        "headsign": "Flughafen München",
+        "agency": "DB Regio AG S-Bahn München",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (86953)",
+        "from": "Donnersbergerbrücke",
+        "to": "Tegernsee",
+        "dep": "07:06",
+        "arr": "08:09",
+        "headsign": "Tegernsee",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Tegernsee",
+        "to": "Wildbad Kreuth",
+        "dep": "08:17",
+        "arr": "08:52",
+        "headsign": "Wildbad Kreuth",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-25T06:55:00+01:00",
+       "arr": "2026-10-25T09:06:00+01:00",
+       "duration_min": 131,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86953)",
+         "from": "München Hbf",
+         "to": "Tegernsee",
+         "dep": "07:02",
+         "arr": "08:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "356",
+         "from": "Tegernsee",
+         "to": "Wildbad Kreuth",
+         "dep": "08:17",
+         "arr": "08:52",
+         "headsign": "Wildbad Kreuth",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-25T07:55:00+01:00",
+       "arr": "2026-10-25T09:55:00+01:00",
+       "duration_min": 120,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86957)",
+         "from": "München Hbf",
+         "to": "Tegernsee",
+         "dep": "08:02",
+         "arr": "09:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "356",
+         "from": "Tegernsee",
+         "to": "Kreuth, Siebenhütten",
+         "dep": "09:17",
+         "arr": "09:54",
+         "headsign": "Kreuth, Klamm",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "09:16",
+     "expected_finish": "14:34",
+     "suggested_return": {
+      "dep": "2026-10-25T15:56:00+01:00",
+      "arr": "2026-10-25T18:04:00+01:00",
+      "duration_min": 128,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Kreuth, Klamm",
+        "to": "Tegernsee",
+        "dep": "15:57",
+        "arr": "16:37",
+        "headsign": "Tegernsee",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (86996)",
+        "from": "Tegernsee",
+        "to": "München Hbf",
+        "dep": "16:52",
+        "arr": "17:57",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-25T18:13:00+01:00",
+      "arr": "2026-10-25T20:02:00+01:00",
+      "duration_min": 109,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Kreuth, Klamm",
+        "to": "Tegernsee",
+        "dep": "18:14",
+        "arr": "18:41",
+        "headsign": "Tegernsee",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (87028)",
+        "from": "Tegernsee",
+        "to": "München Hbf",
+        "dep": "18:52",
+        "arr": "19:55",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 218,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 258,
+     "rank_score": 0.2585
+    },
+    {
+     "route": {
+      "id": "kreuth-klamm-schildenstein-kreuth-siebenhutten-00774c",
+      "name": "Kreuth, Klamm → Schildenstein (1613 m) → Kreuth, Siebenhütten",
+      "type": "traverse",
+      "distance_km": 12.1,
+      "ascent_m": 826,
+      "descent_m": 851,
+      "max_ele_m": 1591,
+      "din_min": 358,
+      "run_min": 142,
+      "max_sac": 3,
+      "t3_km": 0.27,
+      "marked_share": 0.88,
+      "unpaved_share": 0.99,
+      "road_km": 0.16,
+      "score": 0.8726,
+      "start": "Kreuth, Klamm",
+      "start_mode": "bus",
+      "end": "Kreuth, Siebenhütten",
+      "end_mode": "bus",
+      "target": {
+       "name": "Schildenstein",
+       "kind": "peak",
+       "ele": 1613
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.35,
+      "flags": [
+       "11.6 mm rain"
+      ],
+      "storm": false,
+      "precip_mm": 11.6,
+      "precip_prob_max": 100,
+      "gust_max_kmh": 32,
+      "cloud_mean": 100,
+      "temp_min": 3,
+      "temp_max": 11,
+      "freezing_level_min_m": 2810,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-25T07:55:00+01:00",
+      "arr": "2026-10-25T09:56:00+01:00",
+      "duration_min": 121,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (86957)",
+        "from": "München Hbf",
+        "to": "Tegernsee",
+        "dep": "08:02",
+        "arr": "09:09",
+        "headsign": "Tegernsee",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Tegernsee",
+        "to": "Kreuth, Klamm",
+        "dep": "09:17",
+        "arr": "09:55",
+        "headsign": "Kreuth, Klamm",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [
+      {
+       "dep": "2026-10-25T08:55:00+01:00",
+       "arr": "2026-10-25T10:56:00+01:00",
+       "duration_min": 121,
+       "transfers": 1,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86961)",
+         "from": "München Hbf",
+         "to": "Tegernsee",
+         "dep": "09:02",
+         "arr": "10:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "356",
+         "from": "Tegernsee",
+         "to": "Kreuth, Klamm",
+         "dep": "10:17",
+         "arr": "10:55",
+         "headsign": "Kreuth, Klamm",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      },
+      {
+       "dep": "2026-10-25T13:56:00+01:00",
+       "arr": "2026-10-25T15:56:00+01:00",
+       "duration_min": 120,
+       "transfers": 2,
+       "covered_by_dticket": true,
+       "issues": [],
+       "legs": [
+        {
+         "mode": "SUBURBAN",
+         "line": "S1",
+         "from": "Hauptbahnhof (U, Tram)",
+         "to": "Donnersbergerbrücke",
+         "dep": "14:02",
+         "arr": "14:04",
+         "headsign": "Flughafen München",
+         "agency": "DB Regio AG S-Bahn München",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "REGIONAL_RAIL",
+         "line": "RB57 (86977)",
+         "from": "Donnersbergerbrücke",
+         "to": "Tegernsee",
+         "dep": "14:06",
+         "arr": "15:09",
+         "headsign": "Tegernsee",
+         "agency": "Bayerische Regiobahn",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        },
+        {
+         "mode": "BUS",
+         "line": "356",
+         "from": "Tegernsee",
+         "to": "Kreuth, Klamm",
+         "dep": "15:17",
+         "arr": "15:55",
+         "headsign": "Kreuth, Klamm",
+         "agency": "Regionalverkehr Oberbayer (überregional)",
+         "realtime": false,
+         "cancelled": false,
+         "alerts": []
+        }
+       ]
+      }
+     ],
+     "walk_start": "10:06",
+     "expected_finish": "16:57",
+     "suggested_return": {
+      "dep": "2026-10-25T18:14:00+01:00",
+      "arr": "2026-10-25T20:02:00+01:00",
+      "duration_min": 108,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Kreuth, Siebenhütten",
+        "to": "Tegernsee",
+        "dep": "18:15",
+        "arr": "18:41",
+        "headsign": "Tegernsee",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (87028)",
+        "from": "Tegernsee",
+        "to": "München Hbf",
+        "dep": "18:52",
+        "arr": "19:55",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-25T18:33:00+01:00",
+      "arr": "2026-10-25T20:39:00+01:00",
+      "duration_min": 126,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "356",
+        "from": "Wildbad Kreuth",
+        "to": "Tegernsee",
+        "dep": "18:47",
+        "arr": "19:10",
+        "headsign": "Tegernsee",
+        "agency": "Regionalverkehr Oberbayer (überregional)",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB57 (87030)",
+        "from": "Tegernsee",
+        "to": "München Hbf",
+        "dep": "19:22",
+        "arr": "20:32",
+        "headsign": "München Hbf",
+        "agency": "Bayerische Regiobahn",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 95,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 229,
+     "rank_score": 0.2539
+    },
+    {
+     "route": {
+      "id": "schwangau-tegelbergbahn-finger-schwangau-tegelbergbahn-406f9f",
+      "name": "Finger (1522 m), loop from Schwangau, Tegelbergbahn",
+      "type": "loop",
+      "distance_km": 8.0,
+      "ascent_m": 803,
+      "descent_m": 802,
+      "max_ele_m": 1627,
+      "din_min": 317,
+      "run_min": 112,
+      "max_sac": 2,
+      "t3_km": 0.0,
+      "marked_share": 0.54,
+      "unpaved_share": 0.83,
+      "road_km": 0.16,
+      "score": 0.8497,
+      "start": "Schwangau, Tegelbergbahn",
+      "start_mode": "bus",
+      "end": "Schwangau, Tegelbergbahn",
+      "end_mode": "bus",
+      "target": {
+       "name": "Finger",
+       "kind": "peak",
+       "ele": 1522
+      }
+     },
+     "kind": "hike",
+     "transit_checked": true,
+     "weather": {
+      "score": 0.211,
+      "flags": [
+       "5.4 mm rain",
+       "gusts 78 km/h at the top"
+      ],
+      "storm": false,
+      "precip_mm": 5.4,
+      "precip_prob_max": 100,
+      "gust_max_kmh": 78,
+      "cloud_mean": 100,
+      "temp_min": 6,
+      "temp_max": 14,
+      "freezing_level_min_m": 2810,
+      "snow_depth_top_m": 0.0
+     },
+     "outbound": {
+      "dep": "2026-10-25T07:55:00+01:00",
+      "arr": "2026-10-25T10:21:00+01:00",
+      "duration_min": 146,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RE72 (78921)",
+        "from": "München Hbf",
+        "to": "Pasing",
+        "dep": "08:02",
+        "arr": "08:09",
+        "headsign": "Memmingen, Bahnhof ZOB",
+        "agency": "Arverio Bayern GmbH",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "BUS",
+        "line": "996",
+        "from": "Pasing",
+        "to": "Schwangau, Tegelbergbahn",
+        "dep": "08:15",
+        "arr": "10:20",
+        "headsign": "Wieskirche",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "outbound_alternatives": [],
+     "walk_start": "10:31",
+     "expected_finish": "16:35",
+     "suggested_return": {
+      "dep": "2026-10-25T16:59:00+01:00",
+      "arr": "2026-10-25T19:24:00+01:00",
+      "duration_min": 145,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "996",
+        "from": "Schwangau, Tegelbergbahn",
+        "to": "Pasing",
+        "dep": "17:00",
+        "arr": "19:05",
+        "headsign": "Pasing (S)",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RE9 (57075)",
+        "from": "Pasing",
+        "to": "München Hbf",
+        "dep": "19:15",
+        "arr": "19:23",
+        "headsign": "München Hbf",
+        "agency": "Arverio Bayern GmbH",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "last_sensible_return": {
+      "dep": "2026-10-25T18:29:00+01:00",
+      "arr": "2026-10-25T20:52:00+01:00",
+      "duration_min": 143,
+      "transfers": 1,
+      "covered_by_dticket": true,
+      "issues": [],
+      "legs": [
+       {
+        "mode": "BUS",
+        "line": "996",
+        "from": "Schwangau, Tegelbergbahn",
+        "to": "Pasing",
+        "dep": "18:30",
+        "arr": "20:35",
+        "headsign": "Pasing (S)",
+        "agency": "MVV-Regionalbus",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       },
+       {
+        "mode": "REGIONAL_RAIL",
+        "line": "RB87 (57081)",
+        "from": "Pasing",
+        "to": "München Hbf",
+        "dep": "20:43",
+        "arr": "20:51",
+        "headsign": "München Hbf",
+        "agency": "Arverio Bayern GmbH",
+        "realtime": false,
+        "cancelled": false,
+        "alerts": []
+       }
+      ]
+     },
+     "buffer_min": 113,
+     "covered_by_dticket": true,
+     "transit_issues": [],
+     "travel_min_total": 291,
+     "rank_score": 0.1639
+    }
+   ],
+   "runs": [],
+   "fallbacks": []
+  }
+ },
+ "notes": []
+}

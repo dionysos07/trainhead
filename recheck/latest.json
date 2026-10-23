@@ -1,0 +1,322 @@
+{
+ "changed": false,
+ "checks": [
+  {
+   "route_id": "albert-link-hutte-sebaldstein-valepp-waitzingeralm-f5a5a3",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.867,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 75,
+    "gust_max_kmh": 35,
+    "cloud_mean": 89,
+    "temp_min": -2,
+    "temp_max": 7,
+    "freezing_level_min_m": 1430,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "enterrottach-mautstelle-bodenschneid-spitzingsattel-a1e219",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.887,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 53,
+    "gust_max_kmh": 50,
+    "cloud_mean": 76,
+    "temp_min": -1,
+    "temp_max": 8,
+    "freezing_level_min_m": 1390,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "albert-link-hutte-rotwandhaus-valepp-waitzingeralm-4a06a8",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.877,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 75,
+    "gust_max_kmh": 37,
+    "cloud_mean": 82,
+    "temp_min": -3,
+    "temp_max": 7,
+    "freezing_level_min_m": 1380,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "valepp-waitzingeralm-stumpfling-spitzingsattel-77b0bf",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.887,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 53,
+    "gust_max_kmh": 50,
+    "cloud_mean": 76,
+    "temp_min": 0,
+    "temp_max": 7,
+    "freezing_level_min_m": 1390,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "enterrottach-mautstelle-obere-firstalm-spitzingsattel-022dbb",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.887,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 53,
+    "gust_max_kmh": 50,
+    "cloud_mean": 76,
+    "temp_min": -1,
+    "temp_max": 8,
+    "freezing_level_min_m": 1390,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "kreuth-siebenhutten-graseckwand-kreuth-klamm-3617e5",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.876,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 68,
+    "gust_max_kmh": 38,
+    "cloud_mean": 83,
+    "temp_min": 1,
+    "temp_max": 8,
+    "freezing_level_min_m": 1410,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "valepp-waitzingeralm-auerspitz-ursprungtal-stockerparkplatz-f27b22",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.869,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 75,
+    "gust_max_kmh": 35,
+    "cloud_mean": 87,
+    "temp_min": -2,
+    "temp_max": 8,
+    "freezing_level_min_m": 1430,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "kreuth-klamm-schildenstein-kreuth-siebenhutten-00774c",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.874,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 73,
+    "gust_max_kmh": 38,
+    "cloud_mean": 84,
+    "temp_min": 0,
+    "temp_max": 8,
+    "freezing_level_min_m": 1420,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "albert-link-hutte-rotwandhaus-valepp-waitzingeralm-4a06a8",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.85,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 23,
+    "gust_max_kmh": 25,
+    "cloud_mean": 100,
+    "temp_min": -3,
+    "temp_max": 5,
+    "freezing_level_min_m": 1380,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "albert-link-hutte-sebaldstein-valepp-waitzingeralm-f5a5a3",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.85,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 23,
+    "gust_max_kmh": 35,
+    "cloud_mean": 100,
+    "temp_min": -2,
+    "temp_max": 5,
+    "freezing_level_min_m": 1430,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "jachenau-post-staffel-backer-gde-jachenau-8f9587",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.881,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 50,
+    "gust_max_kmh": 43,
+    "cloud_mean": 79,
+    "temp_min": 1,
+    "temp_max": 9,
+    "freezing_level_min_m": 1440,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "bayrischzell-brunnerkopfl-grenzgasthof-backeralm-bayrischzell-1a90e1",
+   "date": "2026-10-24",
+   "weather": {
+    "score": 0.862,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 68,
+    "gust_max_kmh": 35,
+    "cloud_mean": 92,
+    "temp_min": 3,
+    "temp_max": 8,
+    "freezing_level_min_m": 1430,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "spitzingsattel-rokopf-albert-link-hutte-bc1248",
+   "date": "2026-10-25",
+   "weather": {
+    "score": 0.351,
+    "flags": [
+     "10.3 mm rain"
+    ],
+    "storm": false,
+    "precip_mm": 10.3,
+    "precip_prob_max": 100,
+    "gust_max_kmh": 19,
+    "cloud_mean": 100,
+    "temp_min": 0,
+    "temp_max": 12,
+    "freezing_level_min_m": 2830,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "albert-link-hutte-sebaldstein-valepp-waitzingeralm-f5a5a3",
+   "date": "2026-10-25",
+   "weather": {
+    "score": 0.362,
+    "flags": [
+     "10.7 mm rain"
+    ],
+    "storm": false,
+    "precip_mm": 10.7,
+    "precip_prob_max": 100,
+    "gust_max_kmh": 20,
+    "cloud_mean": 92,
+    "temp_min": 0,
+    "temp_max": 10,
+    "freezing_level_min_m": 2880,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "kreuth-siebenhutten-graseckwand-kreuth-klamm-3617e5",
+   "date": "2026-10-25",
+   "weather": {
+    "score": 0.35,
+    "flags": [
+     "10.7 mm rain"
+    ],
+    "storm": false,
+    "precip_mm": 10.7,
+    "precip_prob_max": 100,
+    "gust_max_kmh": 17,
+    "cloud_mean": 100,
+    "temp_min": 4,
+    "temp_max": 12,
+    "freezing_level_min_m": 2790,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "kreuth-klamm-schildenstein-kreuth-siebenhutten-00774c",
+   "date": "2026-10-25",
+   "weather": {
+    "score": 0.35,
+    "flags": [
+     "13.0 mm rain"
+    ],
+    "storm": false,
+    "precip_mm": 13.0,
+    "precip_prob_max": 100,
+    "gust_max_kmh": 16,
+    "cloud_mean": 100,
+    "temp_min": 4,
+    "temp_max": 12,
+    "freezing_level_min_m": 2885,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "schwangau-tegelbergbahn-finger-schwangau-tegelbergbahn-406f9f",
+   "date": "2026-10-25",
+   "weather": {
+    "score": 0.35,
+    "flags": [
+     "7.2 mm rain"
+    ],
+    "storm": false,
+    "precip_mm": 7.2,
+    "precip_prob_max": 99,
+    "gust_max_kmh": 55,
+    "cloud_mean": 100,
+    "temp_min": 7,
+    "temp_max": 14,
+    "freezing_level_min_m": 2830,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  }
+ ],
+ "checked_at": "2026-10-23T19:57+02:00"
+}

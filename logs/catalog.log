@@ -1,0 +1,9 @@
+2026-10-10 11:41:06,402 INFO trainhead.osm_extract: 47347 ways belong to hiking routes
+2026-10-10 11:41:16,769 INFO trainhead.osm_extract: read 241615 walkable ways, 152 stations, 11855 bus stops, 5471 destinations
+2026-10-10 11:41:22,420 INFO trainhead.graph: graph: 341424 vertices, 409014 edges
+2026-10-10 11:41:59,124 INFO trainhead.graph: routable: 402754 of 409014 edges
+2026-10-10 11:41:59,579 INFO trainhead.catalog: 1171 usable destinations
+2026-10-10 11:41:59,740 INFO trainhead.catalog: 147 usable stations, 172 bus stops
+2026-10-10 11:42:01,539 INFO trainhead.catalog: 9265 legs to 1057 destinations in 2s
+2026-10-10 11:42:05,812 INFO trainhead.catalog: 10251 candidate routes (2094 loop searches) in 6s
+2026-10-10 11:42:17,034 INFO trainhead: catalog: 2500 routes from 10251 candidates

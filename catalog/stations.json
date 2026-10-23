@@ -1,0 +1,2554 @@
+[
+ {
+  "id": 11298518,
+  "name": "Weilheim (Oberbayern)",
+  "mode": "rail",
+  "lat": 47.8452213,
+  "lon": 11.1430287,
+  "ele": 563
+ },
+ {
+  "id": 13796821,
+  "name": "Dießen",
+  "mode": "rail",
+  "lat": 47.9510414,
+  "lon": 11.1072936,
+  "ele": 536
+ },
+ {
+  "id": 13876509,
+  "name": "Übersee",
+  "mode": "rail",
+  "lat": 47.8220816,
+  "lon": 12.487299,
+  "ele": 527
+ },
+ {
+  "id": 13876512,
+  "name": "Bad Endorf (Oberbay)",
+  "mode": "rail",
+  "lat": 47.9048551,
+  "lon": 12.3018108,
+  "ele": 525
+ },
+ {
+  "id": 13876514,
+  "name": "Großkarolinenfeld",
+  "mode": "rail",
+  "lat": 47.8888133,
+  "lon": 12.0849115,
+  "ele": 470
+ },
+ {
+  "id": 13876515,
+  "name": "Ostermünchen",
+  "mode": "rail",
+  "lat": 47.9421742,
+  "lon": 12.0415581,
+  "ele": 503
+ },
+ {
+  "id": 13878759,
+  "name": "Huglfing",
+  "mode": "rail",
+  "lat": 47.77679,
+  "lon": 11.1405351,
+  "ele": 595
+ },
+ {
+  "id": 13925786,
+  "name": "Mittenwald",
+  "mode": "rail",
+  "lat": 47.4399924,
+  "lon": 11.265749,
+  "ele": 914
+ },
+ {
+  "id": 13925787,
+  "name": "Klais",
+  "mode": "rail",
+  "lat": 47.4830341,
+  "lon": 11.2384212,
+  "ele": 934
+ },
+ {
+  "id": 13927006,
+  "name": "Garmisch-Partenkirchen",
+  "mode": "rail",
+  "lat": 47.4915407,
+  "lon": 11.0970176,
+  "ele": 709
+ },
+ {
+  "id": 13929049,
+  "name": "Eschenlohe",
+  "mode": "rail",
+  "lat": 47.6017819,
+  "lon": 11.187959,
+  "ele": 637
+ },
+ {
+  "id": 13929109,
+  "name": "Oberau",
+  "mode": "rail",
+  "lat": 47.5596144,
+  "lon": 11.1393003,
+  "ele": 654
+ },
+ {
+  "id": 24985745,
+  "name": "Rosenheim Hochschule",
+  "mode": "rail",
+  "lat": 47.8664447,
+  "lon": 12.104305,
+  "ele": 451
+ },
+ {
+  "id": 30925453,
+  "name": "Kirchanschöring",
+  "mode": "rail",
+  "lat": 47.9532932,
+  "lon": 12.8317966,
+  "ele": 416
+ },
+ {
+  "id": 33712146,
+  "name": "Marktoberdorf",
+  "mode": "rail",
+  "lat": 47.7790753,
+  "lon": 10.6142361,
+  "ele": 729
+ },
+ {
+  "id": 33712150,
+  "name": "Seeg",
+  "mode": "rail",
+  "lat": 47.6559248,
+  "lon": 10.6136929,
+  "ele": 818
+ },
+ {
+  "id": 33712151,
+  "name": "Weizern-Hopferau",
+  "mode": "rail",
+  "lat": 47.6145558,
+  "lon": 10.6204675,
+  "ele": 806
+ },
+ {
+  "id": 33712152,
+  "name": "Füssen",
+  "mode": "rail",
+  "lat": 47.570733,
+  "lon": 10.6967299,
+  "ele": 799
+ },
+ {
+  "id": 35705138,
+  "name": "Vachendorf",
+  "mode": "rail",
+  "lat": 47.8268196,
+  "lon": 12.3217135,
+  "ele": 592
+ },
+ {
+  "id": 35705180,
+  "name": "Urschalling",
+  "mode": "rail",
+  "lat": 47.8358146,
+  "lon": 12.3389809,
+  "ele": 562
+ },
+ {
+  "id": 35715380,
+  "name": "Traundorf",
+  "mode": "rail",
+  "lat": 47.8383296,
+  "lon": 12.6398704,
+  "ele": 595
+ },
+ {
+  "id": 36677249,
+  "name": "Peißenberg",
+  "mode": "rail",
+  "lat": 47.7974906,
+  "lon": 11.0602721,
+  "ele": 590
+ },
+ {
+  "id": 36677250,
+  "name": "Hohenpeißenberg",
+  "mode": "rail",
+  "lat": 47.7887704,
+  "lon": 10.9995671,
+  "ele": 723
+ },
+ {
+  "id": 36677252,
+  "name": "Peiting Ost",
+  "mode": "rail",
+  "lat": 47.7930052,
+  "lon": 10.937346,
+  "ele": 717
+ },
+ {
+  "id": 40155348,
+  "name": "Waging am See",
+  "mode": "rail",
+  "lat": 47.931477,
+  "lon": 12.7270657,
+  "ele": 470
+ },
+ {
+  "id": 40155353,
+  "name": "Otting",
+  "mode": "rail",
+  "lat": 47.92877,
+  "lon": 12.703534,
+  "ele": 501
+ },
+ {
+  "id": 40155378,
+  "name": "Hufschlag",
+  "mode": "rail",
+  "lat": 47.8756212,
+  "lon": 12.664931,
+  "ele": 610
+ },
+ {
+  "id": 40180757,
+  "name": "Matzing",
+  "mode": "rail",
+  "lat": 47.935683,
+  "lon": 12.5922887,
+  "ele": 562
+ },
+ {
+  "id": 40180761,
+  "name": "Hörpolding",
+  "mode": "rail",
+  "lat": 47.9643068,
+  "lon": 12.5681965,
+  "ele": 521
+ },
+ {
+  "id": 40180766,
+  "name": "Traunreut",
+  "mode": "rail",
+  "lat": 47.9650257,
+  "lon": 12.5898403,
+  "ele": 551
+ },
+ {
+  "id": 40202885,
+  "name": "Laufen (Oberbayern)",
+  "mode": "rail",
+  "lat": 47.9335738,
+  "lon": 12.9224592,
+  "ele": 442
+ },
+ {
+  "id": 206156024,
+  "name": "Fischhausen-Neuhaus",
+  "mode": "rail",
+  "lat": 47.7062602,
+  "lon": 11.8733766,
+  "ele": 806
+ },
+ {
+  "id": 206156505,
+  "name": "Geitau",
+  "mode": "rail",
+  "lat": 47.6939023,
+  "lon": 11.9661809,
+  "ele": 776
+ },
+ {
+  "id": 206156533,
+  "name": "Bayrischzell",
+  "mode": "rail",
+  "lat": 47.6757044,
+  "lon": 12.010998,
+  "ele": 804
+ },
+ {
+  "id": 257722632,
+  "name": "Osterhofen (Oberbayern)",
+  "mode": "rail",
+  "lat": 47.6878397,
+  "lon": 11.9864723,
+  "ele": 805
+ },
+ {
+  "id": 262301240,
+  "name": "Ohlstadt",
+  "mode": "rail",
+  "lat": 47.6332855,
+  "lon": 11.2174508,
+  "ele": 636
+ },
+ {
+  "id": 264996976,
+  "name": "Umrathshausen Ort",
+  "mode": "rail",
+  "lat": 47.8057113,
+  "lon": 12.3270598,
+  "ele": 604
+ },
+ {
+  "id": 291722431,
+  "name": "Bruckmühl",
+  "mode": "rail",
+  "lat": 47.8808656,
+  "lon": 11.9156833,
+  "ele": 511
+ },
+ {
+  "id": 292563591,
+  "name": "Farchant",
+  "mode": "rail",
+  "lat": 47.5311056,
+  "lon": 11.1148716,
+  "ele": 670
+ },
+ {
+  "id": 331879462,
+  "name": "Miesbach",
+  "mode": "rail",
+  "lat": 47.7907904,
+  "lon": 11.8307819,
+  "ele": 685
+ },
+ {
+  "id": 356269203,
+  "name": "Schechen",
+  "mode": "rail",
+  "lat": 47.9268818,
+  "lon": 12.1266026,
+  "ele": 442
+ },
+ {
+  "id": 393714581,
+  "name": "Eisenärzt",
+  "mode": "rail",
+  "lat": 47.7961075,
+  "lon": 12.6382403,
+  "ele": 630
+ },
+ {
+  "id": 441049049,
+  "name": "Kreuzeck-/Alpspitzbahn",
+  "mode": "rail",
+  "lat": 47.4720407,
+  "lon": 11.0628638,
+  "ele": 753
+ },
+ {
+  "id": 458085985,
+  "name": "Höpfling",
+  "mode": "rail",
+  "lat": 47.8112702,
+  "lon": 12.6511739,
+  "ele": 614
+ },
+ {
+  "id": 473263393,
+  "name": "Bad Kohlgrub",
+  "mode": "rail",
+  "lat": 47.667914,
+  "lon": 11.0578811,
+  "ele": 817
+ },
+ {
+  "id": 473263479,
+  "name": "Murnau",
+  "mode": "rail",
+  "lat": 47.6822758,
+  "lon": 11.1927787,
+  "ele": 692
+ },
+ {
+  "id": 484358674,
+  "name": "Heufeld",
+  "mode": "rail",
+  "lat": 47.8712678,
+  "lon": 11.9671455,
+  "ele": 493
+ },
+ {
+  "id": 703839579,
+  "name": "Prien am Chiemsee",
+  "mode": "rail",
+  "lat": 47.8550786,
+  "lon": 12.3475176,
+  "ele": 533
+ },
+ {
+  "id": 765325252,
+  "name": "Aschau (Chiemgau)",
+  "mode": "rail",
+  "lat": 47.7790999,
+  "lon": 12.3254679,
+  "ele": 606
+ },
+ {
+  "id": 772400419,
+  "name": "Sankt Alban",
+  "mode": "rail",
+  "lat": 47.9640899,
+  "lon": 11.1053579,
+  "ele": 539
+ },
+ {
+  "id": 1026998131,
+  "name": "Kaufbeuren",
+  "mode": "rail",
+  "lat": 47.8756167,
+  "lon": 10.6297629,
+  "ele": 681
+ },
+ {
+  "id": 1185889695,
+  "name": "Traunstein Klinikum",
+  "mode": "rail",
+  "lat": 47.8747434,
+  "lon": 12.6334948,
+  "ele": 609
+ },
+ {
+  "id": 1328463617,
+  "name": "Griesen (Oberbay)",
+  "mode": "rail",
+  "lat": 47.4781927,
+  "lon": 10.946117,
+  "ele": 820
+ },
+ {
+  "id": 1329539689,
+  "name": "Kreuzstraße",
+  "mode": "rail",
+  "lat": 47.9171236,
+  "lon": 11.7594933,
+  "ele": 623
+ },
+ {
+  "id": 1516794222,
+  "name": "Fischbachau",
+  "mode": "rail",
+  "lat": 47.7056945,
+  "lon": 11.933214,
+  "ele": 757
+ },
+ {
+  "id": 1641990985,
+  "name": "Bibelöd",
+  "mode": "rail",
+  "lat": 47.7717681,
+  "lon": 12.6464693,
+  "ele": 648
+ },
+ {
+  "id": 1641991002,
+  "name": "Ruhpolding",
+  "mode": "rail",
+  "lat": 47.7622762,
+  "lon": 12.6489048,
+  "ele": 655
+ },
+ {
+  "id": 1641994938,
+  "name": "Weibhausen",
+  "mode": "rail",
+  "lat": 47.8985975,
+  "lon": 12.6924256,
+  "ele": 601
+ },
+ {
+  "id": 2084772149,
+  "name": "Bad Aibling Kurpark",
+  "mode": "rail",
+  "lat": 47.8573551,
+  "lon": 12.0144491,
+  "ele": 476
+ },
+ {
+  "id": 2476467529,
+  "name": "Aying",
+  "mode": "rail",
+  "lat": 47.9689954,
+  "lon": 11.7692669,
+  "ele": 603
+ },
+ {
+  "id": 2476467531,
+  "name": "Großhelfendorf",
+  "mode": "rail",
+  "lat": 47.9460091,
+  "lon": 11.7812559,
+  "ele": 614
+ },
+ {
+  "id": 2478976739,
+  "name": "Otterfing",
+  "mode": "rail",
+  "lat": 47.9113421,
+  "lon": 11.6821438,
+  "ele": 669
+ },
+ {
+  "id": 2479039859,
+  "name": "Holzkirchen",
+  "mode": "rail",
+  "lat": 47.8844678,
+  "lon": 11.6973194,
+  "ele": 684
+ },
+ {
+  "id": 2497168220,
+  "name": "Tutzing",
+  "mode": "rail",
+  "lat": 47.9071073,
+  "lon": 11.2728014,
+  "ele": 613
+ },
+ {
+  "id": 2497204852,
+  "name": "Feldafing",
+  "mode": "rail",
+  "lat": 47.9469563,
+  "lon": 11.2902416,
+  "ele": 650
+ },
+ {
+  "id": 2512798123,
+  "name": "Wolfratshausen",
+  "mode": "rail",
+  "lat": 47.9145344,
+  "lon": 11.4271034,
+  "ele": 576
+ },
+ {
+  "id": 2512859204,
+  "name": "Icking",
+  "mode": "rail",
+  "lat": 47.9532071,
+  "lon": 11.4366558,
+  "ele": 654
+ },
+ {
+  "id": 2578699502,
+  "name": "Rosenheim",
+  "mode": "rail",
+  "lat": 47.8503485,
+  "lon": 12.1195039,
+  "ele": 451
+ },
+ {
+  "id": 3222092064,
+  "name": "Reichersbeuern",
+  "mode": "rail",
+  "lat": 47.7745755,
+  "lon": 11.6356346,
+  "ele": 719
+ },
+ {
+  "id": 3222092464,
+  "name": "Schaftlach",
+  "mode": "rail",
+  "lat": 47.7953442,
+  "lon": 11.6840491,
+  "ele": 758
+ },
+ {
+  "id": 3222103261,
+  "name": "Bad Tölz",
+  "mode": "rail",
+  "lat": 47.7603672,
+  "lon": 11.5735926,
+  "ele": 688
+ },
+ {
+  "id": 3222103461,
+  "name": "Lenggries",
+  "mode": "rail",
+  "lat": 47.6802772,
+  "lon": 11.5735467,
+  "ele": 679
+ },
+ {
+  "id": 3222103561,
+  "name": "Obergries",
+  "mode": "rail",
+  "lat": 47.7074613,
+  "lon": 11.5636091,
+  "ele": 667
+ },
+ {
+  "id": 3222104561,
+  "name": "Warngau",
+  "mode": "rail",
+  "lat": 47.8333738,
+  "lon": 11.7093792,
+  "ele": 716
+ },
+ {
+  "id": 3232642073,
+  "name": "Hinrichssegen",
+  "mode": "rail",
+  "lat": 47.8744221,
+  "lon": 11.9506309,
+  "ele": 497
+ },
+ {
+  "id": 3261599953,
+  "name": "Berchtesgaden Hauptbahnhof",
+  "mode": "rail",
+  "lat": 47.626717,
+  "lon": 12.9997241,
+  "ele": 543
+ },
+ {
+  "id": 3266969269,
+  "name": "Freilassing-Hofham",
+  "mode": "rail",
+  "lat": 47.831822,
+  "lon": 12.9678309,
+  "ele": 426
+ },
+ {
+  "id": 3270130580,
+  "name": "Bischofswiesen",
+  "mode": "rail",
+  "lat": 47.651861,
+  "lon": 12.9602426,
+  "ele": 615
+ },
+ {
+  "id": 3270464737,
+  "name": "Bayerisch Gmain",
+  "mode": "rail",
+  "lat": 47.7202673,
+  "lon": 12.8943983,
+  "ele": 539
+ },
+ {
+  "id": 3272657277,
+  "name": "Bad Reichenhall-Kirchberg",
+  "mode": "rail",
+  "lat": 47.7184846,
+  "lon": 12.874279,
+  "ele": 478
+ },
+ {
+  "id": 3273548495,
+  "name": "Piding",
+  "mode": "rail",
+  "lat": 47.7596347,
+  "lon": 12.9115963,
+  "ele": 453
+ },
+ {
+  "id": 3297440613,
+  "name": "Bad Reichenhall",
+  "mode": "rail",
+  "lat": 47.7313761,
+  "lon": 12.8818914,
+  "ele": 467
+ },
+ {
+  "id": 3508395174,
+  "name": "Freilassing",
+  "mode": "rail",
+  "lat": 47.8368894,
+  "lon": 12.9767167,
+  "ele": 422
+ },
+ {
+  "id": 3681321612,
+  "name": "Hammerau",
+  "mode": "rail",
+  "lat": 47.7958367,
+  "lon": 12.9461623,
+  "ele": 441
+ },
+ {
+  "id": 3732295325,
+  "name": "Possenhofen",
+  "mode": "rail",
+  "lat": 47.9618619,
+  "lon": 11.3063646,
+  "ele": 631
+ },
+ {
+  "id": 3779246592,
+  "name": "Schliersee",
+  "mode": "rail",
+  "lat": 47.7355828,
+  "lon": 11.8597632,
+  "ele": 785
+ },
+ {
+  "id": 3970814664,
+  "name": "Kochel",
+  "mode": "rail",
+  "lat": 47.660793,
+  "lon": 11.3714592,
+  "ele": 607
+ },
+ {
+  "id": 3997609522,
+  "name": "Bad Aibling",
+  "mode": "rail",
+  "lat": 47.8621154,
+  "lon": 12.0038531,
+  "ele": 481
+ },
+ {
+  "id": 3997609523,
+  "name": "Heufeldmühle",
+  "mode": "rail",
+  "lat": 47.8775473,
+  "lon": 11.9344032,
+  "ele": 505
+ },
+ {
+  "id": 3997609524,
+  "name": "Kolbermoor",
+  "mode": "rail",
+  "lat": 47.8519436,
+  "lon": 12.0643647,
+  "ele": 463
+ },
+ {
+  "id": 3997609525,
+  "name": "Westerham",
+  "mode": "rail",
+  "lat": 47.9039418,
+  "lon": 11.8284201,
+  "ele": 558
+ },
+ {
+  "id": 4441672850,
+  "name": "Benediktbeuern",
+  "mode": "rail",
+  "lat": 47.7094424,
+  "lon": 11.4033754,
+  "ele": 619
+ },
+ {
+  "id": 4512194964,
+  "name": "Gmund",
+  "mode": "rail",
+  "lat": 47.7496082,
+  "lon": 11.7349962,
+  "ele": 736
+ },
+ {
+  "id": 4512205693,
+  "name": "Tegernsee",
+  "mode": "rail",
+  "lat": 47.7143662,
+  "lon": 11.7569037,
+  "ele": 759
+ },
+ {
+  "id": 4512231127,
+  "name": "Darching",
+  "mode": "rail",
+  "lat": 47.8707624,
+  "lon": 11.7773774,
+  "ele": 666
+ },
+ {
+  "id": 4512256249,
+  "name": "Agatharied",
+  "mode": "rail",
+  "lat": 47.7653313,
+  "lon": 11.8246136,
+  "ele": 729
+ },
+ {
+  "id": 4530820012,
+  "name": "Traunstein",
+  "mode": "rail",
+  "lat": 47.8697417,
+  "lon": 12.6388146,
+  "ele": 598
+ },
+ {
+  "id": 4531914849,
+  "name": "Siegsdorf",
+  "mode": "rail",
+  "lat": 47.8222502,
+  "lon": 12.6459245,
+  "ele": 607
+ },
+ {
+  "id": 4550729458,
+  "name": "Hausham",
+  "mode": "rail",
+  "lat": 47.7505216,
+  "lon": 11.8401733,
+  "ele": 761
+ },
+ {
+  "id": 4553661064,
+  "name": "Ebenhofen",
+  "mode": "rail",
+  "lat": 47.814754,
+  "lon": 10.6185342,
+  "ele": 713
+ },
+ {
+  "id": 4563703921,
+  "name": "Moosrain",
+  "mode": "rail",
+  "lat": 47.7676735,
+  "lon": 11.7205246,
+  "ele": 757
+ },
+ {
+  "id": 4575620344,
+  "name": "Flintsbach",
+  "mode": "rail",
+  "lat": 47.724157,
+  "lon": 12.1280678,
+  "ele": 468
+ },
+ {
+  "id": 4637037498,
+  "name": "Bichl",
+  "mode": "rail",
+  "lat": 47.7238031,
+  "lon": 11.408709,
+  "ele": 615
+ },
+ {
+  "id": 4695167987,
+  "name": "Seeshaupt",
+  "mode": "rail",
+  "lat": 47.8225613,
+  "lon": 11.2871838,
+  "ele": 601
+ },
+ {
+  "id": 4696899514,
+  "name": "Kiefersfelden",
+  "mode": "rail",
+  "lat": 47.6098511,
+  "lon": 12.1905026,
+  "ele": 485
+ },
+ {
+  "id": 4698983146,
+  "name": "Uffing am Staffelsee",
+  "mode": "rail",
+  "lat": 47.7206021,
+  "lon": 11.158694,
+  "ele": 666
+ },
+ {
+  "id": 4699018840,
+  "name": "Unteraschau",
+  "mode": "rail",
+  "lat": 47.9229568,
+  "lon": 12.6977803,
+  "ele": 533
+ },
+ {
+  "id": 4699028735,
+  "name": "Untergrainau",
+  "mode": "rail",
+  "lat": 47.4810336,
+  "lon": 11.0429056,
+  "ele": 743
+ },
+ {
+  "id": 4703516452,
+  "name": "Lengenwang",
+  "mode": "rail",
+  "lat": 47.6972072,
+  "lon": 10.601313,
+  "ele": 806
+ },
+ {
+  "id": 5159103742,
+  "name": "Peiß",
+  "mode": "rail",
+  "lat": 47.9601997,
+  "lon": 11.7765512,
+  "ele": 606
+ },
+ {
+  "id": 5300686637,
+  "name": "Bergen (Oberbayern)",
+  "mode": "rail",
+  "lat": 47.8255421,
+  "lon": 12.5948858,
+  "ele": 587
+ },
+ {
+  "id": 5511709515,
+  "name": "Muntigl",
+  "mode": "rail",
+  "lat": 47.8531364,
+  "lon": 13.0056719,
+  "ele": 411
+ },
+ {
+  "id": 5983036502,
+  "name": "Seiboldsdorf",
+  "mode": "rail",
+  "lat": 47.8568843,
+  "lon": 12.636808,
+  "ele": 588
+ },
+ {
+  "id": 6076663430,
+  "name": "Finsterwald",
+  "mode": "rail",
+  "lat": 47.753806,
+  "lon": 11.7276612,
+  "ele": 767
+ },
+ {
+  "id": 6558259237,
+  "name": "Feldolling",
+  "mode": "rail",
+  "lat": 47.895339,
+  "lon": 11.8521268,
+  "ele": 542
+ },
+ {
+  "id": 6693329309,
+  "name": "Kainzenbad",
+  "mode": "rail",
+  "lat": 47.483026,
+  "lon": 11.1162503,
+  "ele": 729
+ },
+ {
+  "id": 6707829921,
+  "name": "Marktoberdorf Schule",
+  "mode": "rail",
+  "lat": 47.7740917,
+  "lon": 10.6098425,
+  "ele": 733
+ },
+ {
+  "id": 6761510034,
+  "name": "Biessenhofen",
+  "mode": "rail",
+  "lat": 47.8298916,
+  "lon": 10.6403822,
+  "ele": 700
+ },
+ {
+  "id": 6778071471,
+  "name": "Rosenheim Aicherpark",
+  "mode": "rail",
+  "lat": 47.8515065,
+  "lon": 12.0884144,
+  "ele": 455
+ },
+ {
+  "id": 6928038102,
+  "name": "Grainau",
+  "mode": "rail",
+  "lat": 47.471821,
+  "lon": 11.0237777,
+  "ele": 756
+ },
+ {
+  "id": 7658075785,
+  "name": "Hammersbach",
+  "mode": "rail",
+  "lat": 47.4660396,
+  "lon": 11.0463946,
+  "ele": 767
+ },
+ {
+  "id": 8046673725,
+  "name": "Garmisch-Partenkirchen Hausberg",
+  "mode": "rail",
+  "lat": 47.4832842,
+  "lon": 11.0919701,
+  "ele": 716
+ },
+ {
+  "id": 8075463477,
+  "name": "Oberammergau",
+  "mode": "rail",
+  "lat": 47.5999017,
+  "lon": 11.056387,
+  "ele": 835
+ },
+ {
+  "id": 8075463478,
+  "name": "Unterammergau",
+  "mode": "rail",
+  "lat": 47.6172496,
+  "lon": 11.030423,
+  "ele": 829
+ },
+ {
+  "id": 8075463479,
+  "name": "Altenau (Bay)",
+  "mode": "rail",
+  "lat": 47.6482732,
+  "lon": 11.017461,
+  "ele": 838
+ },
+ {
+  "id": 8075463480,
+  "name": "Saulgrub",
+  "mode": "rail",
+  "lat": 47.6661437,
+  "lon": 11.0258963,
+  "ele": 859
+ },
+ {
+  "id": 8075463481,
+  "name": "Bad Kohlgrub Kurhaus",
+  "mode": "rail",
+  "lat": 47.6702742,
+  "lon": 11.0390741,
+  "ele": 856
+ },
+ {
+  "id": 8075463482,
+  "name": "Grafenaschau",
+  "mode": "rail",
+  "lat": 47.6670417,
+  "lon": 11.1377699,
+  "ele": 689
+ },
+ {
+  "id": 8075463483,
+  "name": "Seeleiten-Berggeist",
+  "mode": "rail",
+  "lat": 47.6711751,
+  "lon": 11.1660175,
+  "ele": 685
+ },
+ {
+  "id": 8075463484,
+  "name": "Murnau Ort",
+  "mode": "rail",
+  "lat": 47.6786845,
+  "lon": 11.1957917,
+  "ele": 690
+ },
+ {
+  "id": 8361421746,
+  "name": "Oberaudorf",
+  "mode": "rail",
+  "lat": 47.6526185,
+  "lon": 12.1752506,
+  "ele": 481
+ },
+ {
+  "id": 8361421748,
+  "name": "Brannenburg",
+  "mode": "rail",
+  "lat": 47.7410763,
+  "lon": 12.1069038,
+  "ele": 473
+ },
+ {
+  "id": 8361421749,
+  "name": "Raubling",
+  "mode": "rail",
+  "lat": 47.7885783,
+  "lon": 12.1102311,
+  "ele": 459
+ },
+ {
+  "id": 8361753743,
+  "name": "Bernau am Chiemsee",
+  "mode": "rail",
+  "lat": 47.8162728,
+  "lon": 12.3813748,
+  "ele": 524
+ },
+ {
+  "id": 8361753745,
+  "name": "Teisendorf",
+  "mode": "rail",
+  "lat": 47.8491404,
+  "lon": 12.8348147,
+  "ele": 503
+ },
+ {
+  "id": 8388392131,
+  "name": "Garmisch-Partenkirchen (BZB)",
+  "mode": "rail",
+  "lat": 47.4896523,
+  "lon": 11.0965648,
+  "ele": 708
+ },
+ {
+  "id": 8518481904,
+  "name": "Iffeldorf",
+  "mode": "rail",
+  "lat": 47.7823852,
+  "lon": 11.3288362,
+  "ele": 598
+ },
+ {
+  "id": 8518481905,
+  "name": "Penzberg",
+  "mode": "rail",
+  "lat": 47.7495131,
+  "lon": 11.3715508,
+  "ele": 601
+ },
+ {
+  "id": 9433235510,
+  "name": "Schongau",
+  "mode": "rail",
+  "lat": 47.8127401,
+  "lon": 10.9023776,
+  "ele": 682
+ },
+ {
+  "id": 12959605633,
+  "name": "Bernried",
+  "mode": "rail",
+  "lat": 47.8613776,
+  "lon": 11.2836977,
+  "ele": 635
+ },
+ {
+  "id": 12959627818,
+  "name": "Gaißach",
+  "mode": "rail",
+  "lat": 47.7375942,
+  "lon": 11.5755344,
+  "ele": 668
+ },
+ {
+  "id": 12959636442,
+  "name": "Peiting Nord",
+  "mode": "rail",
+  "lat": 47.8019572,
+  "lon": 10.9264437,
+  "ele": 714
+ },
+ {
+  "id": 12959651247,
+  "name": "Peißenberg Nord",
+  "mode": "rail",
+  "lat": 47.8155317,
+  "lon": 11.0767534,
+  "ele": 600
+ },
+ {
+  "id": 13125573944,
+  "name": "Thansau",
+  "mode": "rail",
+  "lat": 47.8193889,
+  "lon": 12.1576223,
+  "ele": 447
+ },
+ {
+  "id": 13406887825,
+  "name": "Raisting",
+  "mode": "rail",
+  "lat": 47.9116801,
+  "lon": 11.1144744,
+  "ele": 553
+ },
+ {
+  "id": 13523719977,
+  "name": "Marktoberdorf Nord",
+  "mode": "rail",
+  "lat": 47.7894881,
+  "lon": 10.6155308,
+  "ele": 724
+ },
+ {
+  "id": 14204274527,
+  "name": "Rohrdorf",
+  "mode": "rail",
+  "lat": 47.7977249,
+  "lon": 12.1739747,
+  "ele": 464
+ },
+ {
+  "id": 7151755549,
+  "name": "Abzweig Kammerlingalm",
+  "mode": "bus",
+  "lat": 47.5510454,
+  "lon": 12.7956244,
+  "ele": 1163
+ },
+ {
+  "id": 128514643,
+  "name": "Mautstelle Nord",
+  "mode": "bus",
+  "lat": 47.6411428,
+  "lon": 13.0899084,
+  "ele": 1157
+ },
+ {
+  "id": 1706463355,
+  "name": "Winklmoosalm",
+  "mode": "bus",
+  "lat": 47.6580865,
+  "lon": 12.5794714,
+  "ele": 1148
+ },
+ {
+  "id": 1129179766,
+  "name": "Spitzingsattel",
+  "mode": "bus",
+  "lat": 47.6722099,
+  "lon": 11.8860019,
+  "ele": 1136
+ },
+ {
+  "id": 892563058,
+  "name": "Hinterbrand",
+  "mode": "bus",
+  "lat": 47.5956663,
+  "lon": 13.0234283,
+  "ele": 1130
+ },
+ {
+  "id": 387734988,
+  "name": "Grafenherberge",
+  "mode": "bus",
+  "lat": 47.6744362,
+  "lon": 12.0543353,
+  "ele": 1094
+ },
+ {
+  "id": 3742840061,
+  "name": "Almbus",
+  "mode": "bus",
+  "lat": 47.5175499,
+  "lon": 11.2314025,
+  "ele": 1093
+ },
+ {
+  "id": 10860930629,
+  "name": "Parkplatz Grenze",
+  "mode": "bus",
+  "lat": 47.5365829,
+  "lon": 10.8887741,
+  "ele": 1089
+ },
+ {
+  "id": 61080573,
+  "name": "Ferchensee",
+  "mode": "bus",
+  "lat": 47.4407395,
+  "lon": 11.2123798,
+  "ele": 1065
+ },
+ {
+  "id": 254539474,
+  "name": "Bindalm",
+  "mode": "bus",
+  "lat": 47.5648064,
+  "lon": 12.7991983,
+  "ele": 1061
+ },
+ {
+  "id": 12466770003,
+  "name": "Albert-Link-Hütte",
+  "mode": "bus",
+  "lat": 47.6563268,
+  "lon": 11.8879956,
+  "ele": 1049
+ },
+ {
+  "id": 1490559552,
+  "name": "Hochschwarzeck",
+  "mode": "bus",
+  "lat": 47.6265573,
+  "lon": 12.9042473,
+  "ele": 1039
+ },
+ {
+  "id": 1631172956,
+  "name": "Marienbrücke",
+  "mode": "bus",
+  "lat": 47.5544632,
+  "lon": 10.748179,
+  "ele": 997
+ },
+ {
+  "id": 276952035,
+  "name": "Schloß Elmau",
+  "mode": "bus",
+  "lat": 47.4635908,
+  "lon": 11.1878297,
+  "ele": 993
+ },
+ {
+  "id": 1258938127,
+  "name": "Moni-Alm",
+  "mode": "bus",
+  "lat": 47.6542545,
+  "lon": 11.8344242,
+  "ele": 990
+ },
+ {
+  "id": 10860930634,
+  "name": "Parkplatz Sägertal",
+  "mode": "bus",
+  "lat": 47.5624678,
+  "lon": 10.9359766,
+  "ele": 977
+ },
+ {
+  "id": 1811420303,
+  "name": "Klaushöhe",
+  "mode": "bus",
+  "lat": 47.6302306,
+  "lon": 13.0562304,
+  "ele": 974
+ },
+ {
+  "id": 2171882408,
+  "name": "Stuben",
+  "mode": "bus",
+  "lat": 47.6039805,
+  "lon": 11.6356742,
+  "ele": 944
+ },
+ {
+  "id": 12980502800,
+  "name": "Valepp, Waitzingeralm",
+  "mode": "bus",
+  "lat": 47.6393663,
+  "lon": 11.8957466,
+  "ele": 940
+ },
+ {
+  "id": 1346242588,
+  "name": "Linderhof, Schloß",
+  "mode": "bus",
+  "lat": 47.5697049,
+  "lon": 10.9569674,
+  "ele": 939
+ },
+ {
+  "id": 254539357,
+  "name": "Hängebrücke",
+  "mode": "bus",
+  "lat": 47.5803073,
+  "lon": 12.8117001,
+  "ele": 932
+ },
+ {
+  "id": 254546650,
+  "name": "Gmerk",
+  "mode": "bus",
+  "lat": 47.654412,
+  "lon": 13.0817239,
+  "ele": 922
+ },
+ {
+  "id": 1097123379,
+  "name": "Roßhaupten, Sulzberg",
+  "mode": "bus",
+  "lat": 47.6549775,
+  "lon": 10.654948,
+  "ele": 922
+ },
+ {
+  "id": 10884296232,
+  "name": "Graswang, Brandwiese",
+  "mode": "bus",
+  "lat": 47.5686077,
+  "lon": 10.9898335,
+  "ele": 908
+ },
+ {
+  "id": 304168702,
+  "name": "Aufstieg Tölzer Hütte",
+  "mode": "bus",
+  "lat": 47.4929392,
+  "lon": 11.4614419,
+  "ele": 899
+ },
+ {
+  "id": 577388115,
+  "name": "Bichl",
+  "mode": "bus",
+  "lat": 47.5279988,
+  "lon": 11.2840887,
+  "ele": 897
+ },
+ {
+  "id": 5660082408,
+  "name": "Taubensee",
+  "mode": "bus",
+  "lat": 47.6284473,
+  "lon": 12.8754542,
+  "ele": 894
+ },
+ {
+  "id": 879437690,
+  "name": "Mittenwald, Isarhorn",
+  "mode": "bus",
+  "lat": 47.4728957,
+  "lon": 11.2782449,
+  "ele": 892
+ },
+ {
+  "id": 5660082410,
+  "name": "Alpenstraße Abzw. Hintersee",
+  "mode": "bus",
+  "lat": 47.6359435,
+  "lon": 12.8577886,
+  "ele": 890
+ },
+ {
+  "id": 7474347532,
+  "name": "Krün, Bärnbichl",
+  "mode": "bus",
+  "lat": 47.5029395,
+  "lon": 11.2671099,
+  "ele": 889
+ },
+ {
+  "id": 2171882413,
+  "name": "Kreuth-Glashütte, Hubertus",
+  "mode": "bus",
+  "lat": 47.6127905,
+  "lon": 11.6566831,
+  "ele": 886
+ },
+ {
+  "id": 8984215662,
+  "name": "Valepp, Johannesbrücke",
+  "mode": "bus",
+  "lat": 47.6200701,
+  "lon": 11.8910045,
+  "ele": 884
+ },
+ {
+  "id": 31171774,
+  "name": "Kesselberg, Paßhöhe",
+  "mode": "bus",
+  "lat": 47.6218383,
+  "lon": 11.3493234,
+  "ele": 881
+ },
+ {
+  "id": 253235434,
+  "name": "Schlattan",
+  "mode": "bus",
+  "lat": 47.4881661,
+  "lon": 11.160738,
+  "ele": 874
+ },
+ {
+  "id": 2017857017,
+  "name": "Gröbl - Alm",
+  "mode": "bus",
+  "lat": 47.5709005,
+  "lon": 11.0206437,
+  "ele": 874
+ },
+ {
+  "id": 377975110,
+  "name": "Ettal, Klostergasthof",
+  "mode": "bus",
+  "lat": 47.5687814,
+  "lon": 11.0933392,
+  "ele": 873
+ },
+ {
+  "id": 279293744,
+  "name": "Wiedmar, Staatstraße",
+  "mode": "bus",
+  "lat": 47.578629,
+  "lon": 10.608816,
+  "ele": 868
+ },
+ {
+  "id": 2016663704,
+  "name": "Ortsmitte",
+  "mode": "bus",
+  "lat": 47.7046364,
+  "lon": 10.9390293,
+  "ele": 866
+ },
+ {
+  "id": 2016664875,
+  "name": "Wieskirche",
+  "mode": "bus",
+  "lat": 47.6829053,
+  "lon": 10.8994109,
+  "ele": 862
+ },
+ {
+  "id": 1692259961,
+  "name": "Langau",
+  "mode": "bus",
+  "lat": 47.7006732,
+  "lon": 10.8953103,
+  "ele": 860
+ },
+ {
+  "id": 8939654553,
+  "name": "Hopfen, Fachklinik Enzensberg",
+  "mode": "bus",
+  "lat": 47.6129327,
+  "lon": 10.6886806,
+  "ele": 856
+ },
+ {
+  "id": 2171882420,
+  "name": "Kreuth, Bayerwald",
+  "mode": "bus",
+  "lat": 47.6170662,
+  "lon": 11.6852327,
+  "ele": 852
+ },
+ {
+  "id": 2017857016,
+  "name": "Rahm",
+  "mode": "bus",
+  "lat": 47.5730908,
+  "lon": 11.0494917,
+  "ele": 850
+ },
+ {
+  "id": 9603163195,
+  "name": "Grenzgasthof Bäckeralm,Bayrischzell",
+  "mode": "bus",
+  "lat": 47.6147797,
+  "lon": 12.0208322,
+  "ele": 849
+ },
+ {
+  "id": 1867664607,
+  "name": "Oswaldhütte",
+  "mode": "bus",
+  "lat": 47.5221938,
+  "lon": 11.4428173,
+  "ele": 845
+ },
+ {
+  "id": 21627412,
+  "name": "Alpenstraße",
+  "mode": "bus",
+  "lat": 47.6148594,
+  "lon": 12.8903758,
+  "ele": 844
+ },
+ {
+  "id": 3714164990,
+  "name": "Steingaden, Schlauch",
+  "mode": "bus",
+  "lat": 47.6697482,
+  "lon": 10.8525953,
+  "ele": 841
+ },
+ {
+  "id": 9645132156,
+  "name": "Kniebis",
+  "mode": "bus",
+  "lat": 47.6418145,
+  "lon": 10.7839729,
+  "ele": 841
+ },
+ {
+  "id": 9574149069,
+  "name": "Frankau",
+  "mode": "bus",
+  "lat": 47.7834513,
+  "lon": 10.7513947,
+  "ele": 840
+ },
+ {
+  "id": 3629624545,
+  "name": "Ursprungtal/ Stockerparkplatz",
+  "mode": "bus",
+  "lat": 47.6398541,
+  "lon": 12.0122981,
+  "ele": 837
+ },
+ {
+  "id": 2171882424,
+  "name": "Kreuth, Klamm",
+  "mode": "bus",
+  "lat": 47.6224113,
+  "lon": 11.713657,
+  "ele": 835
+ },
+ {
+  "id": 7747331818,
+  "name": "Halsalm",
+  "mode": "bus",
+  "lat": 47.6134794,
+  "lon": 12.8632622,
+  "ele": 835
+ },
+ {
+  "id": 9645224214,
+  "name": "Roßhaupten, Rieder",
+  "mode": "bus",
+  "lat": 47.6541235,
+  "lon": 10.6900071,
+  "ele": 835
+ },
+ {
+  "id": 577388226,
+  "name": "Obernach, Versuchsanstalt",
+  "mode": "bus",
+  "lat": 47.5543165,
+  "lon": 11.2923137,
+  "ele": 832
+ },
+ {
+  "id": 3714164991,
+  "name": "Unterreithen, Sera",
+  "mode": "bus",
+  "lat": 47.6563595,
+  "lon": 10.8395676,
+  "ele": 830
+ },
+ {
+  "id": 3769471510,
+  "name": "Kenzenparkplatz",
+  "mode": "bus",
+  "lat": 47.6255188,
+  "lon": 10.8217309,
+  "ele": 829
+ },
+ {
+  "id": 590621084,
+  "name": "Lobisau",
+  "mode": "bus",
+  "lat": 47.5825361,
+  "lon": 11.3056839,
+  "ele": 826
+ },
+ {
+  "id": 1842890103,
+  "name": "Buching, Illasbergstr.",
+  "mode": "bus",
+  "lat": 47.6295087,
+  "lon": 10.7994028,
+  "ele": 824
+ },
+ {
+  "id": 1707924905,
+  "name": "Zwieselberg",
+  "mode": "bus",
+  "lat": 47.6305057,
+  "lon": 10.7238774,
+  "ele": 823
+ },
+ {
+  "id": 1387208712,
+  "name": "Roßhaupten, Weidachweg",
+  "mode": "bus",
+  "lat": 47.6511968,
+  "lon": 10.7133365,
+  "ele": 821
+ },
+ {
+  "id": 1744728510,
+  "name": "Schwangau, Tegelbergbahn",
+  "mode": "bus",
+  "lat": 47.5684774,
+  "lon": 10.7559686,
+  "ele": 821
+ },
+ {
+  "id": 5112812748,
+  "name": "Oberschuß",
+  "mode": "bus",
+  "lat": 47.7503665,
+  "lon": 11.7827691,
+  "ele": 819
+ },
+ {
+  "id": 408188196,
+  "name": "Marienstein",
+  "mode": "bus",
+  "lat": 47.7482262,
+  "lon": 11.6807049,
+  "ele": 816
+ },
+ {
+  "id": 9951537151,
+  "name": "Rieden, Hintere Schöne",
+  "mode": "bus",
+  "lat": 47.6164935,
+  "lon": 10.7087302,
+  "ele": 816
+ },
+ {
+  "id": 294686385,
+  "name": "Kreuth, Siebenhütten",
+  "mode": "bus",
+  "lat": 47.6229803,
+  "lon": 11.7347716,
+  "ele": 811
+ },
+ {
+  "id": 4952508924,
+  "name": "Bach, Abzw.",
+  "mode": "bus",
+  "lat": 47.5953536,
+  "lon": 10.6516117,
+  "ele": 811
+ },
+ {
+  "id": 9574142747,
+  "name": "Etzlensberg, Abzw.",
+  "mode": "bus",
+  "lat": 47.7890507,
+  "lon": 10.7319875,
+  "ele": 811
+ },
+ {
+  "id": 49840751,
+  "name": "Abzw. Waldparkplatz",
+  "mode": "bus",
+  "lat": 47.7434963,
+  "lon": 12.2162638,
+  "ele": 809
+ },
+ {
+  "id": 645369611,
+  "name": "Bad Bayersoien, Gh. Weißes Roß",
+  "mode": "bus",
+  "lat": 47.692224,
+  "lon": 10.9926388,
+  "ele": 809
+ },
+ {
+  "id": 1066581202,
+  "name": "Weißensee, Schlickestraße",
+  "mode": "bus",
+  "lat": 47.5823654,
+  "lon": 10.6294905,
+  "ele": 809
+ },
+ {
+  "id": 2015148137,
+  "name": "Niedernach",
+  "mode": "bus",
+  "lat": 47.5864504,
+  "lon": 11.3949086,
+  "ele": 808
+ },
+ {
+  "id": 899054242,
+  "name": "Enterrottach, Mautstelle",
+  "mode": "bus",
+  "lat": 47.6738965,
+  "lon": 11.8151518,
+  "ele": 807
+ },
+ {
+  "id": 448681533,
+  "name": "Walchensee, Herzogstandbahn",
+  "mode": "bus",
+  "lat": 47.5963611,
+  "lon": 11.3178243,
+  "ele": 803
+ },
+ {
+  "id": 4372204701,
+  "name": "Buching, Sesselbahn",
+  "mode": "bus",
+  "lat": 47.6137564,
+  "lon": 10.8041571,
+  "ele": 802
+ },
+ {
+  "id": 254539214,
+  "name": "Hirschbichlstraße",
+  "mode": "bus",
+  "lat": 47.598828,
+  "lon": 12.8428883,
+  "ele": 801
+ },
+ {
+  "id": 7137504170,
+  "name": "Birnbach",
+  "mode": "bus",
+  "lat": 47.6788638,
+  "lon": 12.4492197,
+  "ele": 800
+ },
+ {
+  "id": 679124669,
+  "name": "Bischofswang",
+  "mode": "bus",
+  "lat": 47.675768,
+  "lon": 10.718538,
+  "ele": 799
+ },
+ {
+  "id": 4380897352,
+  "name": "Dürnbach",
+  "mode": "bus",
+  "lat": 47.7458927,
+  "lon": 11.9497256,
+  "ele": 799
+ },
+ {
+  "id": 653620453,
+  "name": "Tiefenbruck",
+  "mode": "bus",
+  "lat": 47.6560482,
+  "lon": 10.7465517,
+  "ele": 798
+ },
+ {
+  "id": 2518674932,
+  "name": "Trauchgau, Poststraße",
+  "mode": "bus",
+  "lat": 47.6406321,
+  "lon": 10.8262043,
+  "ele": 797
+ },
+ {
+  "id": 9513926990,
+  "name": "Riedhof (Kr WM)",
+  "mode": "bus",
+  "lat": 47.7474498,
+  "lon": 10.7663631,
+  "ele": 797
+ },
+ {
+  "id": 458235279,
+  "name": "Vorderriß, Grenze",
+  "mode": "bus",
+  "lat": 47.5520615,
+  "lon": 11.4360482,
+  "ele": 796
+ },
+ {
+  "id": 8960375018,
+  "name": "Maserer",
+  "mode": "bus",
+  "lat": 47.6906553,
+  "lon": 12.4957819,
+  "ele": 796
+ },
+ {
+  "id": 332432795,
+  "name": "Bannwaldsee",
+  "mode": "bus",
+  "lat": 47.5916719,
+  "lon": 10.773077,
+  "ele": 794
+ },
+ {
+  "id": 4793505523,
+  "name": "Schwangau, Kröb",
+  "mode": "bus",
+  "lat": 47.5788735,
+  "lon": 10.7371018,
+  "ele": 794
+ },
+ {
+  "id": 12514004511,
+  "name": "Tatzelwurm, Abzweigung Oberaudorf",
+  "mode": "bus",
+  "lat": 47.6752597,
+  "lon": 12.0835024,
+  "ele": 794
+ },
+ {
+  "id": 8443503727,
+  "name": "Hopfen, Haagweg",
+  "mode": "bus",
+  "lat": 47.6080605,
+  "lon": 10.6631894,
+  "ele": 792
+ },
+ {
+  "id": 9645147106,
+  "name": "Langenwald",
+  "mode": "bus",
+  "lat": 47.6809215,
+  "lon": 10.7387227,
+  "ele": 792
+ },
+ {
+  "id": 1071647207,
+  "name": "Moos",
+  "mode": "bus",
+  "lat": 47.5727272,
+  "lon": 10.6483879,
+  "ele": 791
+ },
+ {
+  "id": 3717474416,
+  "name": "Winkl, Cafe Winklstüberl",
+  "mode": "bus",
+  "lat": 47.7294388,
+  "lon": 11.9530964,
+  "ele": 790
+ },
+ {
+  "id": 6176559534,
+  "name": "Reiten",
+  "mode": "bus",
+  "lat": 47.7528358,
+  "lon": 12.7161951,
+  "ele": 790
+ },
+ {
+  "id": 1445711352,
+  "name": "Kreuth, Raineralm",
+  "mode": "bus",
+  "lat": 47.634276,
+  "lon": 11.7460684,
+  "ele": 789
+ },
+ {
+  "id": 9492793983,
+  "name": "Haslach, Abzw.",
+  "mode": "bus",
+  "lat": 47.7544255,
+  "lon": 10.7939585,
+  "ele": 789
+ },
+ {
+  "id": 9853042110,
+  "name": "Wanderparkplatz",
+  "mode": "bus",
+  "lat": 47.7043242,
+  "lon": 12.4037871,
+  "ele": 789
+ },
+ {
+  "id": 253899483,
+  "name": "Hintergern",
+  "mode": "bus",
+  "lat": 47.6628913,
+  "lon": 13.0020938,
+  "ele": 788
+ },
+ {
+  "id": 611307591,
+  "name": "Lauterbach",
+  "mode": "bus",
+  "lat": 47.7106846,
+  "lon": 10.8791807,
+  "ele": 786
+ },
+ {
+  "id": 2754413901,
+  "name": "Schwangau, Brunnen",
+  "mode": "bus",
+  "lat": 47.5930491,
+  "lon": 10.7404135,
+  "ele": 785
+ },
+ {
+  "id": 4104823230,
+  "name": "Adlgass",
+  "mode": "bus",
+  "lat": 47.7733598,
+  "lon": 12.7952619,
+  "ele": 785
+ },
+ {
+  "id": 5586454499,
+  "name": "Roßruck",
+  "mode": "bus",
+  "lat": 47.7655837,
+  "lon": 11.9782887,
+  "ele": 785
+ },
+ {
+  "id": 4897202987,
+  "name": "See (Halblech)",
+  "mode": "bus",
+  "lat": 47.6453767,
+  "lon": 10.7607158,
+  "ele": 783
+ },
+ {
+  "id": 3615565539,
+  "name": "Wallbergbahn",
+  "mode": "bus",
+  "lat": 47.675393,
+  "lon": 11.775667,
+  "ele": 782
+ },
+ {
+  "id": 880858832,
+  "name": "Hundham, Marienplatz",
+  "mode": "bus",
+  "lat": 47.7581523,
+  "lon": 11.9401429,
+  "ele": 776
+ },
+ {
+  "id": 211262059,
+  "name": "Jachenau, Post",
+  "mode": "bus",
+  "lat": 47.6058017,
+  "lon": 11.4337435,
+  "ele": 775
+ },
+ {
+  "id": 270176838,
+  "name": "Lödensee",
+  "mode": "bus",
+  "lat": 47.6941893,
+  "lon": 12.6026259,
+  "ele": 775
+ },
+ {
+  "id": 1107947572,
+  "name": "Labenbach",
+  "mode": "bus",
+  "lat": 47.754321,
+  "lon": 12.6922105,
+  "ele": 773
+ },
+ {
+  "id": 764537994,
+  "name": "Fall (Oberbayern), Abzweig",
+  "mode": "bus",
+  "lat": 47.5700806,
+  "lon": 11.5302768,
+  "ele": 772
+ },
+ {
+  "id": 10555179771,
+  "name": "Füssener Straße",
+  "mode": "bus",
+  "lat": 47.6968707,
+  "lon": 10.8607961,
+  "ele": 772
+ },
+ {
+  "id": 9492681540,
+  "name": "Bernbeuren, Füssener Straße",
+  "mode": "bus",
+  "lat": 47.7338916,
+  "lon": 10.7805247,
+  "ele": 770
+ },
+ {
+  "id": 3767499992,
+  "name": "Kreuth-Scharling, Grundnerweg",
+  "mode": "bus",
+  "lat": 47.6615238,
+  "lon": 11.7486749,
+  "ele": 769
+ },
+ {
+  "id": 90525848,
+  "name": "Weitsee Badeplatz",
+  "mode": "bus",
+  "lat": 47.6880094,
+  "lon": 12.5718694,
+  "ele": 767
+ },
+ {
+  "id": 2418969732,
+  "name": "Glentleiten, Freilichtmuseum",
+  "mode": "bus",
+  "lat": 47.6648597,
+  "lon": 11.2848998,
+  "ele": 767
+ },
+ {
+  "id": 475519497,
+  "name": "Seegatterl (Winklmoosalmbahn)",
+  "mode": "bus",
+  "lat": 47.6579451,
+  "lon": 12.5394282,
+  "ele": 765
+ },
+ {
+  "id": 4243399126,
+  "name": "Urschlau",
+  "mode": "bus",
+  "lat": 47.7282659,
+  "lon": 12.5808682,
+  "ele": 765
+ },
+ {
+  "id": 12229653551,
+  "name": "Schulbus",
+  "mode": "bus",
+  "lat": 47.7189825,
+  "lon": 10.7839894,
+  "ele": 761
+ },
+ {
+  "id": 282233495,
+  "name": "Auerstraße",
+  "mode": "bus",
+  "lat": 47.7231065,
+  "lon": 11.7169153,
+  "ele": 760
+ },
+ {
+  "id": 9645205203,
+  "name": "Reuthen (Ostallgäu)",
+  "mode": "bus",
+  "lat": 47.6911604,
+  "lon": 10.7715556,
+  "ele": 760
+ },
+ {
+  "id": 2102839343,
+  "name": "Hochbergle",
+  "mode": "bus",
+  "lat": 47.7116285,
+  "lon": 10.8068751,
+  "ele": 752
+ },
+ {
+  "id": 9169954428,
+  "name": "Hummelsberg",
+  "mode": "bus",
+  "lat": 47.7866147,
+  "lon": 11.7634989,
+  "ele": 750
+ },
+ {
+  "id": 12422387460,
+  "name": "Halblech, Küchele",
+  "mode": "bus",
+  "lat": 47.6573092,
+  "lon": 10.7866061,
+  "ele": 750
+ },
+ {
+  "id": 4880886076,
+  "name": "Kalkofen",
+  "mode": "bus",
+  "lat": 47.6867757,
+  "lon": 11.7944154,
+  "ele": 746
+ },
+ {
+  "id": 89154929,
+  "name": "Bäcker (Gde. Jachenau)",
+  "mode": "bus",
+  "lat": 47.6041693,
+  "lon": 11.467218,
+  "ele": 745
+ },
+ {
+  "id": 563255522,
+  "name": "Seehaus",
+  "mode": "bus",
+  "lat": 47.7104534,
+  "lon": 12.6218271,
+  "ele": 745
+ },
+ {
+  "id": 498001790,
+  "name": "Steinbach (Stötten)",
+  "mode": "bus",
+  "lat": 47.7070504,
+  "lon": 10.6991463,
+  "ele": 744
+ },
+ {
+  "id": 3767499994,
+  "name": "Weißach, Brücke",
+  "mode": "bus",
+  "lat": 47.687259,
+  "lon": 11.7605777,
+  "ele": 742
+ },
+ {
+  "id": 9702714162,
+  "name": "Sachrang, Süd",
+  "mode": "bus",
+  "lat": 47.686671,
+  "lon": 12.2602038,
+  "ele": 742
+ },
+ {
+  "id": 9585029368,
+  "name": "Heggen",
+  "mode": "bus",
+  "lat": 47.717238,
+  "lon": 10.6854352,
+  "ele": 739
+ },
+ {
+  "id": 2015142796,
+  "name": "Hinterbichl",
+  "mode": "bus",
+  "lat": 47.6107205,
+  "lon": 11.48845,
+  "ele": 737
+ },
+ {
+  "id": 9585546328,
+  "name": "Stötten, Schule",
+  "mode": "bus",
+  "lat": 47.737608,
+  "lon": 10.6900904,
+  "ele": 736
+ },
+ {
+  "id": 9585463249,
+  "name": "Osterried Ort",
+  "mode": "bus",
+  "lat": 47.7454623,
+  "lon": 10.6643246,
+  "ele": 734
+ },
+ {
+  "id": 21627577,
+  "name": "Schusterhäusl",
+  "mode": "bus",
+  "lat": 47.6516907,
+  "lon": 13.0617123,
+  "ele": 732
+ },
+ {
+  "id": 462173246,
+  "name": "Labenbacherbrücke",
+  "mode": "bus",
+  "lat": 47.6999527,
+  "lon": 12.2724956,
+  "ele": 732
+ },
+ {
+  "id": 5476728883,
+  "name": "Lechbruck, Rathaus",
+  "mode": "bus",
+  "lat": 47.69869,
+  "lon": 10.7968169,
+  "ele": 728
+ },
+ {
+  "id": 458235270,
+  "name": "Sylvensteinsee (Kraftwerk)",
+  "mode": "bus",
+  "lat": 47.5906097,
+  "lon": 11.5480233,
+  "ele": 726
+ },
+ {
+  "id": 8311345575,
+  "name": "Bushaltestelle Hindenburghütte - Hemmersuppenalm",
+  "mode": "bus",
+  "lat": 47.6608167,
+  "lon": 12.4789456,
+  "ele": 724
+ },
+ {
+  "id": 8907034457,
+  "name": "Inzell Breitmoos",
+  "mode": "bus",
+  "lat": 47.7657512,
+  "lon": 12.769592,
+  "ele": 724
+ },
+ {
+  "id": 2015142139,
+  "name": "Tannern",
+  "mode": "bus",
+  "lat": 47.6278373,
+  "lon": 11.5165858,
+  "ele": 723
+ },
+ {
+  "id": 1687054693,
+  "name": "Bad Dürrnberg Salzbergwerk",
+  "mode": "bus",
+  "lat": 47.6669826,
+  "lon": 13.0927079,
+  "ele": 722
+ },
+ {
+  "id": 290860014,
+  "name": "Brand",
+  "mode": "bus",
+  "lat": 47.7384287,
+  "lon": 12.6020519,
+  "ele": 721
+ },
+ {
+  "id": 3848618832,
+  "name": "Cafe Nirwana",
+  "mode": "bus",
+  "lat": 47.7483474,
+  "lon": 11.5076097,
+  "ele": 716
+ },
+ {
+  "id": 94817803,
+  "name": "Abzw. Hochriesbahn",
+  "mode": "bus",
+  "lat": 47.7699308,
+  "lon": 12.2355078,
+  "ele": 715
+ },
+ {
+  "id": 1351591263,
+  "name": "Cafe Zwing",
+  "mode": "bus",
+  "lat": 47.7409693,
+  "lon": 12.7531107,
+  "ele": 714
+ },
+ {
+  "id": 666209772,
+  "name": "Leger",
+  "mode": "bus",
+  "lat": 47.6397903,
+  "lon": 11.5765936,
+  "ele": 713
+ },
+ {
+  "id": 27364062,
+  "name": "Innerwald",
+  "mode": "bus",
+  "lat": 47.7130162,
+  "lon": 12.2850324,
+  "ele": 712
+ },
+ {
+  "id": 1834243672,
+  "name": "Hohenwiesen, Schleife",
+  "mode": "bus",
+  "lat": 47.6315808,
+  "lon": 11.5944101,
+  "ele": 711
+ },
+ {
+  "id": 691232339,
+  "name": "Hinterstallau",
+  "mode": "bus",
+  "lat": 47.7481438,
+  "lon": 11.4835935,
+  "ele": 710
+ },
+ {
+  "id": 9170457618,
+  "name": "Lerchen Abzweig Knappenfeld",
+  "mode": "bus",
+  "lat": 47.8501095,
+  "lon": 12.7317032,
+  "ele": 710
+ },
+ {
+  "id": 3825432169,
+  "name": "Glaswinkl",
+  "mode": "bus",
+  "lat": 47.7668595,
+  "lon": 11.5112964,
+  "ele": 709
+ },
+ {
+  "id": 270176775,
+  "name": "Biathlon Zentrum / Chiemgau Arena",
+  "mode": "bus",
+  "lat": 47.7153733,
+  "lon": 12.6425949,
+  "ele": 706
+ },
+ {
+  "id": 2171070481,
+  "name": "Schwarzberg",
+  "mode": "bus",
+  "lat": 47.7787371,
+  "lon": 12.7404023,
+  "ele": 704
+ },
+ {
+  "id": 1706273692,
+  "name": "Entfelden, Gasthaus Blaserwirt",
+  "mode": "bus",
+  "lat": 47.675904,
+  "lon": 12.4858486,
+  "ele": 703
+ },
+ {
+  "id": 1201062456,
+  "name": "Törwang, Kirche",
+  "mode": "bus",
+  "lat": 47.7810463,
+  "lon": 12.2127158,
+  "ele": 702
+ },
+ {
+  "id": 1230719788,
+  "name": "Wörnsmühl",
+  "mode": "bus",
+  "lat": 47.7688884,
+  "lon": 11.9122041,
+  "ele": 700
+ },
+ {
+  "id": 1342605169,
+  "name": "Hallthurm",
+  "mode": "bus",
+  "lat": 47.7008938,
+  "lon": 12.9337089,
+  "ele": 699
+ },
+ {
+  "id": 312989923,
+  "name": "Laubau / Holzknechtmuseum",
+  "mode": "bus",
+  "lat": 47.7250856,
+  "lon": 12.6578607,
+  "ele": 696
+ },
+ {
+  "id": 10004367672,
+  "name": "Inzell Salinenweg",
+  "mode": "bus",
+  "lat": 47.761576,
+  "lon": 12.7367891,
+  "ele": 694
+ },
+ {
+  "id": 2171070497,
+  "name": "Wagenau",
+  "mode": "bus",
+  "lat": 47.7949209,
+  "lon": 12.7200965,
+  "ele": 686
+ },
+ {
+  "id": 1340994751,
+  "name": "Zollhäuser",
+  "mode": "bus",
+  "lat": 47.6868731,
+  "lon": 12.9380287,
+  "ele": 685
+ },
+ {
+  "id": 9169745587,
+  "name": "Neukirchen am Teisenberg",
+  "mode": "bus",
+  "lat": 47.8350053,
+  "lon": 12.7419291,
+  "ele": 684
+ },
+ {
+  "id": 1195751170,
+  "name": "Bad Heilbrunn, Kräuterpark/Fachklinik",
+  "mode": "bus",
+  "lat": 47.74787,
+  "lon": 11.4563839,
+  "ele": 683
+ },
+ {
+  "id": 768731483,
+  "name": "Müller am Baum",
+  "mode": "bus",
+  "lat": 47.7824296,
+  "lon": 11.7888832,
+  "ele": 682
+ },
+ {
+  "id": 27252950,
+  "name": "Stein",
+  "mode": "bus",
+  "lat": 47.7272239,
+  "lon": 12.2982219,
+  "ele": 681
+ },
+ {
+  "id": 3686736343,
+  "name": "Leitzach, Unterwartbichl",
+  "mode": "bus",
+  "lat": 47.7761518,
+  "lon": 11.8855592,
+  "ele": 681
+ },
+ {
+  "id": 1868769154,
+  "name": "Roßholzen",
+  "mode": "bus",
+  "lat": 47.7573638,
+  "lon": 12.1837256,
+  "ele": 680
+ },
+ {
+  "id": 1832433921,
+  "name": "Ruh am Bach",
+  "mode": "bus",
+  "lat": 47.7516961,
+  "lon": 11.5355213,
+  "ele": 677
+ },
+ {
+  "id": 2026641260,
+  "name": "Schwaighofen",
+  "mode": "bus",
+  "lat": 47.7810704,
+  "lon": 11.466182,
+  "ele": 664
+ },
+ {
+  "id": 3126669759,
+  "name": "Ohlstadt, Schwaiganger",
+  "mode": "bus",
+  "lat": 47.6561743,
+  "lon": 11.2498,
+  "ele": 664
+ },
+ {
+  "id": 7589876689,
+  "name": "Boschenlehen",
+  "mode": "bus",
+  "lat": 47.5921831,
+  "lon": 12.9985024,
+  "ele": 659
+ },
+ {
+  "id": 462175467,
+  "name": "Schoßrinn",
+  "mode": "bus",
+  "lat": 47.7403695,
+  "lon": 12.3069158,
+  "ele": 657
+ },
+ {
+  "id": 2171200223,
+  "name": "Hachau",
+  "mode": "bus",
+  "lat": 47.8069997,
+  "lon": 12.6931283,
+  "ele": 655
+ },
+ {
+  "id": 8927478979,
+  "name": "Oberwössen, Kirche/ Alte Schule",
+  "mode": "bus",
+  "lat": 47.7100109,
+  "lon": 12.4805916,
+  "ele": 653
+ },
+ {
+  "id": 3825445372,
+  "name": "Fischbach, Abzweig",
+  "mode": "bus",
+  "lat": 47.7829729,
+  "lon": 11.5392643,
+  "ele": 651
+ },
+ {
+  "id": 504702338,
+  "name": "Hochkalter",
+  "mode": "bus",
+  "lat": 47.6061669,
+  "lon": 12.9067214,
+  "ele": 650
+ }
+]
