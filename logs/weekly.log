@@ -1,0 +1,4 @@
+2026-11-19 21:46:18,460 INFO trainhead.plan: pool sizes: {'hike': 2120, 'run': 1566, 'fallback': 64}
+2026-11-19 21:46:18,477 INFO trainhead.plan: 345 weather points
+2026-11-19 21:52:28,799 INFO trainhead.plan: 109 connection lookups, 0 failed
+2026-11-19 21:52:28,809 INFO trainhead: weekly: 12 candidates

@@ -1,0 +1,241 @@
+{
+ "changed": true,
+ "checks": [
+  {
+   "route_id": "mittenwald-untere-kalberalm-bichl-7e5fa0",
+   "date": "2026-11-21",
+   "weather": {
+    "score": 0.028,
+    "flags": [
+     "1.7 mm rain",
+     "finishes after sunset (16:33)"
+    ],
+    "storm": false,
+    "precip_mm": 1.7,
+    "precip_prob_max": 93,
+    "gust_max_kmh": 21,
+    "cloud_mean": 98,
+    "temp_min": 1,
+    "temp_max": 5,
+    "freezing_level_min_m": 1390,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": [
+    "weather score down from 0.28 to 0.03"
+   ]
+  },
+  {
+   "route_id": "mittenwald-untere-kalberalm-bichl-7e5fa0",
+   "date": "2026-11-21",
+   "weather": {
+    "score": 0.531,
+    "flags": [
+     "1.3 mm rain"
+    ],
+    "storm": false,
+    "precip_mm": 1.3,
+    "precip_prob_max": 93,
+    "gust_max_kmh": 19,
+    "cloud_mean": 96,
+    "temp_min": 1,
+    "temp_max": 5,
+    "freezing_level_min_m": 1390,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": [
+    "weather score down from 0.84 to 0.53"
+   ]
+  },
+  {
+   "route_id": "enterrottach-mautstelle-bodenschneid-spitzingsattel-a1e219",
+   "date": "2026-11-22",
+   "weather": {
+    "score": 0.75,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 15,
+    "gust_max_kmh": 17,
+    "cloud_mean": 100,
+    "temp_min": -3,
+    "temp_max": 6,
+    "freezing_level_min_m": 2040,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "spitzingsattel-stumpfling-enterrottach-mautstelle-5e765c",
+   "date": "2026-11-22",
+   "weather": {
+    "score": 0.75,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 16,
+    "gust_max_kmh": 17,
+    "cloud_mean": 100,
+    "temp_min": -3,
+    "temp_max": 6,
+    "freezing_level_min_m": 2040,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "enterrottach-mautstelle-obere-firstalm-spitzingsattel-022dbb",
+   "date": "2026-11-22",
+   "weather": {
+    "score": 0.75,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 15,
+    "gust_max_kmh": 17,
+    "cloud_mean": 100,
+    "temp_min": -3,
+    "temp_max": 6,
+    "freezing_level_min_m": 2040,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "spitzingsattel-jagerkamp-fischbachau-3624f7",
+   "date": "2026-11-22",
+   "weather": {
+    "score": 0.75,
+    "flags": [
+     "fog at the top"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 16,
+    "gust_max_kmh": 9,
+    "cloud_mean": 100,
+    "temp_min": -4,
+    "temp_max": 6,
+    "freezing_level_min_m": 1950,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "kreuth-siebenhutten-graseckwand-kreuth-klamm-3617e5",
+   "date": "2026-11-22",
+   "weather": {
+    "score": 0.85,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 10,
+    "gust_max_kmh": 6,
+    "cloud_mean": 100,
+    "temp_min": -2,
+    "temp_max": 5,
+    "freezing_level_min_m": 2100,
+    "snow_depth_top_m": 0.01
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "osterhofen-oberbayern-seebergkopf-bayrischzell-ecd1bf",
+   "date": "2026-11-22",
+   "weather": {
+    "score": 0.85,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 12,
+    "gust_max_kmh": 10,
+    "cloud_mean": 100,
+    "temp_min": -3,
+    "temp_max": 6,
+    "freezing_level_min_m": 1980,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "kreuth-klamm-schildenstein-kreuth-siebenhutten-00774c",
+   "date": "2026-11-22",
+   "weather": {
+    "score": 0.45,
+    "flags": [
+     "finishes after sunset (16:29)"
+    ],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 25,
+    "gust_max_kmh": 6,
+    "cloud_mean": 100,
+    "temp_min": -2,
+    "temp_max": 5,
+    "freezing_level_min_m": 2010,
+    "snow_depth_top_m": 0.01
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "spitzingsattel-rokopf-albert-link-hutte-bc1248",
+   "date": "2026-11-22",
+   "weather": {
+    "score": 0.85,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 3,
+    "gust_max_kmh": 7,
+    "cloud_mean": 100,
+    "temp_min": -3,
+    "temp_max": 3,
+    "freezing_level_min_m": 2070,
+    "snow_depth_top_m": 0.01
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "spitzingsattel-stumpfling-fischhausen-neuhaus-45d295",
+   "date": "2026-11-22",
+   "weather": {
+    "score": 0.85,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 3,
+    "gust_max_kmh": 17,
+    "cloud_mean": 100,
+    "temp_min": -2,
+    "temp_max": 5,
+    "freezing_level_min_m": 2040,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  },
+  {
+   "route_id": "jachenau-post-staffel-backer-gde-jachenau-8f9587",
+   "date": "2026-11-22",
+   "weather": {
+    "score": 0.85,
+    "flags": [],
+    "storm": false,
+    "precip_mm": 0.0,
+    "precip_prob_max": 5,
+    "gust_max_kmh": 4,
+    "cloud_mean": 100,
+    "temp_min": 0,
+    "temp_max": 6,
+    "freezing_level_min_m": 2180,
+    "snow_depth_top_m": 0.0
+   },
+   "reasons": []
+  }
+ ],
+ "checked_at": "2026-11-20T22:31+01:00"
+}

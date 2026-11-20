@@ -1,0 +1,13 @@
+2026-11-01 09:30:46,168 INFO trainhead.osm_extract: 47473 ways belong to hiking routes
+2026-11-01 09:30:55,843 INFO trainhead.osm_extract: read 242130 walkable ways, 152 stations, 11850 bus stops, 5469 destinations
+2026-11-01 09:30:55,929 INFO trainhead.dem: downloading https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N47_00_E010_00_DEM/Copernicus_DSM_COG_10_N47_00_E010_00_DEM.tif
+2026-11-01 09:30:58,086 INFO trainhead.dem: downloading https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N47_00_E011_00_DEM/Copernicus_DSM_COG_10_N47_00_E011_00_DEM.tif
+2026-11-01 09:30:59,399 INFO trainhead.dem: downloading https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N47_00_E012_00_DEM/Copernicus_DSM_COG_10_N47_00_E012_00_DEM.tif
+2026-11-01 09:31:00,703 INFO trainhead.dem: downloading https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N47_00_E013_00_DEM/Copernicus_DSM_COG_10_N47_00_E013_00_DEM.tif
+2026-11-01 09:31:07,285 INFO trainhead.graph: graph: 342065 vertices, 409787 edges
+2026-11-01 09:31:48,307 INFO trainhead.graph: routable: 403500 of 409787 edges
+2026-11-01 09:31:48,794 INFO trainhead.catalog: 1170 usable destinations
+2026-11-01 09:31:48,984 INFO trainhead.catalog: 147 usable stations, 172 bus stops
+2026-11-01 09:31:51,003 INFO trainhead.catalog: 9249 legs to 1055 destinations in 2s
+2026-11-01 09:31:55,122 INFO trainhead.catalog: 10246 candidate routes (2090 loop searches) in 6s
+2026-11-01 09:32:06,704 INFO trainhead: catalog: 2500 routes from 10246 candidates
